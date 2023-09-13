@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «KotoFarm»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «KotoFarm»</h1>
+
+		<h2>.Лендинг-Регистрация и вход:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="sign-up.html">Регистрация</a></li>
+			<li><a target="_blank" href="sign-in.html">Вход</a></li>
+			<li><a target="_blank" href="recovery-password.html">Восстановление</a></li>
+		</ol>
+
+		<h2>Лендинг (неавторизованный пользователь):</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="landing-page.html">.Лэндинг-Главная</a></li>
+			<li><a target="_blank" href="help-page.html">.Лендинг-Помощь</a></li>
+			<li><a target="_blank" href="present-page.html">.Лединг-Подарки</a></li>
+		</ol>
+
+		<h2>Лендинг (авторизованный пользователь):</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="landing-page-user.html">.Лэндинг-Главная</a></li>
+			<li><a target="_blank" href="help-page-user.html">.Лендинг-Помощь</a></li>
+			<li><a target="_blank" href="present-page-user.html">.Лединг-Подарки</a></li>
+		</ol>
+
+		<h2>Игровая страница (пробник):</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="farm-page.html">.Игра-Ферма</a></li>
+			<!-- <li><a target="_blank" href="choose-page.html">.Игра-Выбор персонажа</a></li> -->
+		</ol>
+
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #484749;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #7a96f1
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #da7c02;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+			text-align: center;
+		}
+	}
+
+	h2 {
+		color: #da7c02;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage {
+		align-items: center;
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+</style>
+
+</html>
