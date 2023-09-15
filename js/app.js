@@ -3804,7 +3804,7 @@
                 loop: true,
                 autoHeight: true,
                 autoplay: {
-                    delay: 1e3,
+                    delay: 4e3,
                     disableOnInteraction: false
                 },
                 breakpoints: {
