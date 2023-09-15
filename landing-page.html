@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230915133427">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230915134442">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,84 +87,6 @@
 								<a class="header__menu-btn btn btn__transparent" href="present-pagehtml">Подарки</a>
 								<a class="header__menu-btn btn btn__transparent" href="help-page.html">Помощь</a>
 							</div>
-
-							<!-- <ul class="menu__list">
-									<li class="menu__item">
-										<a href="help-page.html" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#question"></use>
-											</svg>
-											<span>Помощь</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#cat"></use>
-											</svg>
-											<span>Игры</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#task"></use>
-											</svg>
-											<span>Ежедневные задания</span>
-										</a>
-									</li>
-			
-									<li class="menu-line"></li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#neighbor"></use>
-											</svg>
-											<span>Соседи</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="present-page.html" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#market"></use>
-											</svg>
-											<span>Подарки</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#rocket"></use>
-											</svg>
-											<span>Бустеры</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#settings"></use>
-											</svg>
-											<span>Настройки</span>
-										</a>
-									</li>
-			
-									<li class="menu-line"></li>
-			
-								</ul>
-			
-								<div class="menu__bottom">
-									<div class="menu__online">
-										<img src="img/common/group.svg" width="40" height="40" alt="Image">
-				
-										<p>Онлайн: <span>9678</span> чел.</p>
-									</div>
-								</div> -->
 						</nav>
 					</div>
 				</div>
@@ -377,53 +299,7 @@
 		</footer>
 	</div>
 
-	<script>
-		//-- Scroll_animation ------------------------------------------------------
-		const animItems = document.querySelectorAll('._anim-items');
-
-		if (animItems.length > 0) {
-			window.addEventListener('scroll', animOnScroll);
-
-			function animOnScroll() {
-				for (let index = 0; index < animItems.length; index++) {
-					const animItem = animItems[index];
-					const animItemHeight = animItem.offsetHeight;
-					const animItemOffset = offset(animItem).top;
-					const animStart = 4;
-
-					let animItemPoint = window.innerHeight - animItemHeight / animStart;
-					if (animItemHeight > window.innerHeight) {
-						animItemPoint = window.innerHeight - window.innerHeight / animStart;
-					}
-
-					if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-						animItem.classList.add('_active');
-					} else {
-						if (!animItem.classList.contains('_anim-no-hide')) {
-							animItem.classList.remove('_active');
-						}
-					}
-				}
-			}
-
-			function offset(el) {
-				const rect = el.getBoundingClientRect(),
-					scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-					scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-				return {
-					top: rect.top + scrollTop,
-					left: rect.left + scrollLeft
-				}
-			}
-
-			setTimeout(() => {
-				animOnScroll();
-			}, 300);
-		}
-		//-- /Scroll_animation ------------------------------------------------------
-	</script>
-
-	<script src="js/app.min.js?_v=20230915133427"></script>
+	<script src="js/app.min.js?_v=20230915134442"></script>
 </body>
 
 </html>
