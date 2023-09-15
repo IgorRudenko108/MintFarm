@@ -1946,6 +1946,7 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
 .main-steps__img-3 {
   max-width: 100%;
   z-index: 1;
+  position: relative;
 }
 
 .main-steps__top--small {
@@ -5402,6 +5403,7 @@ span.market__banner-small-prise {
   .main-steps__img-3 {
     max-width: 260px;
     margin: 0 auto;
+    display: block;
   }
 
   .main-steps__top--small {
