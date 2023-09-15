@@ -396,6 +396,26 @@
                 document.documentElement.classList.add(className);
             }));
         }
+        let isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+            }
+        };
         function functions_getHash() {
             if (location.hash) return location.hash.replace("#", "");
         }
@@ -670,7 +690,7 @@
                     tabsTitles[index].setAttribute("data-tabs-title", "");
                     tabsContentItem.setAttribute("data-tabs-item", "");
                     if (tabsActiveHashBlock && index == tabsActiveHash[1]) tabsTitles[index].classList.add("_tab-active");
-                    tabsContentItem.hidden = !tabsTitles[index].classList.contains("_tab-active");
+                    tabsContentItem = !tabsTitles[index].classList.contains("_tab-active");
                 }));
             }
             function setTabsStatus(tabsBlock) {
@@ -687,9 +707,9 @@
                     tabsTitles = Array.from(tabsTitles).filter((item => item.closest("[data-tabs]") === tabsBlock));
                     tabsContent.forEach(((tabsContentItem, index) => {
                         if (tabsTitles[index].classList.contains("_tab-active")) {
-                            if (tabsBlockAnimate) _slideDown(tabsContentItem, tabsBlockAnimate); else tabsContentItem.hidden = false;
+                            if (tabsBlockAnimate) _slideDown(tabsContentItem, tabsBlockAnimate); else tabsContentItem.classList.add("tabs-anim");
                             if (isHash && !tabsContentItem.closest(".popup")) setHash(`tab-${tabsBlockIndex}-${index}`);
-                        } else if (tabsBlockAnimate) _slideUp(tabsContentItem, tabsBlockAnimate); else tabsContentItem.hidden = true;
+                        } else if (tabsBlockAnimate) _slideUp(tabsContentItem, tabsBlockAnimate); else tabsContentItem.classList.remove("tabs-anim");
                     }));
                 }
             }
@@ -3915,13 +3935,18 @@
         }
         const da = new DynamicAdapt("max");
         da.init();
-        let menuCloseBtn = document.querySelector(".menu__close");
-        if (menuCloseBtn) document.addEventListener("click", (function(e) {
-            document.documentElement.classList.remove("menu-open");
-            document.documentElement.classList.remove("lock");
-        }));
         "use strict";
         document.addEventListener("DOMContentLoaded", (function() {}));
+        if (isMobile.any()) {
+            document.body.classList.add("_touch");
+            let langBox = document.querySelectorAll(".lang-dropdown");
+            if (langBox.length > 0) for (let index = 0; index < langBox.length; index++) {
+                const langItem = langBox[index];
+                langItem.addEventListener("click", (function(e) {
+                    langItem.classList.toggle("dropdown-open");
+                }));
+            }
+        } else document.body.classList.add("_pc");
         window["FLS"] = false;
         isWebp();
         menuInit();
