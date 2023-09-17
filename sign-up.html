@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230915181945">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230917041824">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +25,6 @@
 					</a>
 
 					<ul class="header__nav-list">
-						<!-- <li class="header__nav-item">
-								<a class="header__nav-link active" href="#">Главная</a>
-							</li> -->
 
 						<li class="header__nav-item">
 							<a class="header__nav-link" href="help-page.html">Помощь</a>
@@ -62,84 +59,6 @@
 								<a class="header__menu-btn btn btn__transparent" href="present-pagehtml">Подарки</a>
 								<a class="header__menu-btn btn btn__transparent" href="help-page.html">Помощь</a>
 							</div>
-
-							<!-- <ul class="menu__list">
-									<li class="menu__item">
-										<a href="help-page.html" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#question"></use>
-											</svg>
-											<span>Помощь</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#cat"></use>
-											</svg>
-											<span>Игры</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#task"></use>
-											</svg>
-											<span>Ежедневные задания</span>
-										</a>
-									</li>
-			
-									<li class="menu-line"></li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#neighbor"></use>
-											</svg>
-											<span>Соседи</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="present-page.html" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#market"></use>
-											</svg>
-											<span>Подарки</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#rocket"></use>
-											</svg>
-											<span>Бустеры</span>
-										</a>
-									</li>
-			
-									<li class="menu__item">
-										<a href="#" class="menu__link">
-											<svg width="15" height="15">
-												<use xlink:href="img/icons/icons.svg#settings"></use>
-											</svg>
-											<span>Настройки</span>
-										</a>
-									</li>
-			
-									<li class="menu-line"></li>
-			
-								</ul>
-			
-								<div class="menu__bottom">
-									<div class="menu__online">
-										<img src="img/common/group.svg" width="40" height="40" alt="Image">
-				
-										<p>Онлайн: <span>9678</span> чел.</p>
-									</div>
-								</div> -->
 						</nav>
 					</div>
 				</div>
@@ -154,20 +73,23 @@
 							<h1 class="sign-up__title main-title">Регистрация</h1>
 
 							<div class="sign-up__content-inner">
-								<form class="sign-up__form" action="#">
-									<div class="sign-up__form-item">
-										<label class="sign-up__label" for="formMail-3">Email</label>
-										<input class="sign-up__input sign-up__input-email" type="text" id="formMail-3" name="formMail" data-error="Error" placeholder="">
+								<form id="form" class="sign-up__form form__body" action="#">
+
+									<div class="sign-up__form-inner">
+										<div class="sign-up__form-item form__item">
+											<label class="sign-up__label" for="formMail">Email</label>
+											<input class="sign-up__input sign-up__input-email form__input _req _email" type="text" id="formMail" name="email">
+										</div>
+
+										<div class="sign-up__form-item form__item">
+											<label class="sign-up__label" for="formPassword">Пароль</label>
+											<input class="sign-up__input sign-up__input-password form__input _req" type="password" id="formPassword" name="formPassword">
+										</div>
+
+										<a href="#" class="sign-up__button btn btn__accent form__button">Регистрация</a>
 									</div>
 
-									<div class="sign-up__form-item">
-										<label class="sign-up__label" for="formPassword-2">Пароль</label>
-										<input class="sign-up__input sign-up__input-password" type="password" id="formPassword-2" name="formPassword" data-error="Error" placeholder="">
-									</div>
-
-									<button class="sign-up__button btn btn__accent" type="submit">Регистрация</button>
-
-									<div class="checkbox">
+									<div class="checkbox form__item">
 										<input class="checkbox__input _req" id="formAgreement-1" type="checkbox" name="agreement-1">
 										<label class="checkbox__label" for="formAgreement-1"><span>Я согласен с правилами пользования</span></label>
 									</div>
@@ -217,7 +139,81 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20230915181945"></script>
+	<script>
+		// -- form-validate ------------------------------------------------------
+		document.addEventListener('DOMContentLoaded', function() {
+			const form = document.getElementById('form');
+
+			const formBtn = document.querySelector('.form__button');
+			formBtn.addEventListener('click', formSend);
+
+
+			async function formSend(e) {
+				e.preventDefault();
+				let error = formValidate(form);
+
+				if (error === 0) {
+					linkToPage();
+
+				} else if (error) {
+					formBtn.setAttribute("data-popup", "#popup-error");
+				}
+			}
+
+			function linkToPage() {
+				formBtn.removeAttribute("data-popup");
+				formBtn.classList.add("form__button--none");
+				const signInFormInner = document.querySelector('.sign-up__form-inner');
+				const signInFormHtml = '<a href="landing-page-user.html" class="sign-up__button btn btn__accent sign-in__button--click sign-up__button--order">Регистрация</a>';
+				signInFormInner.insertAdjacentHTML("beforeend", signInFormHtml);
+				document.querySelector('.sign-in__button--click').click();
+			}
+
+			function formValidate(form) {
+				let error = 0;
+				let formReq = document.querySelectorAll('._req');
+
+				for (let index = 0; index < formReq.length; index++) {
+					const input = formReq[index];
+					formRemoveError(input);
+
+					if (input.classList.contains('_email')) {
+						if (emailTest(input)) {
+							formAddError(input);
+							error++;
+						}
+					} else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
+						formAddError(input);
+						error++;
+					} else {
+						if (input.value === '') {
+							formAddError(input);
+							error++;
+						}
+					}
+				}
+				return error;
+			}
+
+			function formAddError(input) {
+				input.parentElement.classList.add('_error');
+				input.classList.add('_error');
+			}
+
+			function formRemoveError(input) {
+				input.parentElement.classList.remove('_error');
+				input.classList.remove('_error');
+			}
+			//Функция теста email
+			function emailTest(input) {
+				return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+			}
+
+		});
+		// -- /form-validate ------------------------------------------------------
+	</script>
+
+	<script src="js/app.min.js?_v=20230917041824"></script>
 </body>
 
 </html>
