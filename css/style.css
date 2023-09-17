@@ -917,6 +917,15 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   background-color: red;
 }
 
+.form__input2._error2 {
+  border: 1px solid #D11414;
+  background: #F5D2D2;
+}
+
+._error2 .recover-password__show svg {
+  fill: #D11414 !important;
+}
+
 .icon-menu {
   display: none;
 }
