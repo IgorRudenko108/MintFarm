@@ -1794,28 +1794,28 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
           flex: 0 0 60px;
 }
 
-.sign-up__image {
+.sign-up__image-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 577px;
 }
 
-.sign-up__image img {
+.sign-up__image-box .sign-up__image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   max-width: 100%;
 }
 
-.recovery__image {
+.recovery__image-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 394px;
 }
 
-.recovery__image img {
+.recovery__image-box .recovery__image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -4941,7 +4941,7 @@ span.market__banner-small-prise {
     margin-right: 1.25rem;
   }
 
-  .recovery__image {
+  .recovery__image-box {
     margin-right: 4.375rem;
   }
 
@@ -6492,34 +6492,38 @@ span.market__banner-small-prise {
     margin: 13px 0 8px;
   }
 
-  .sign-up__image {
+  .sign-up__image-box {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto;
   }
 
-  .sign-up__image img {
+  .sign-up__image-box .sign-up__image {
     max-width: 50%;
     min-width: 85px;
     padding: 0 32px;
+    display: block;
+    margin: 0 auto;
   }
 
-  .recovery__image {
+  .recovery__image-box {
     margin-right: 0.0000000625rem;
   }
 
-  .recovery__image {
+  .recovery__image-box {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto;
   }
 
-  .recovery__image img {
+  .recovery__image-box .recovery__image {
     max-width: 50%;
     min-width: 85px;
     padding: 0 32px;
+    display: block;
+    margin: 0 auto;
   }
 
   .recovery-password__title {
@@ -7987,13 +7991,13 @@ span.market__banner-small-prise {
 
 @media (min-width: 42.5em) and (max-width: 74.99875em) {
 @supports (margin-right: clamp( 0.0000000625rem , -5.7213737548rem  +  13.4620560406vw , 4.375rem )) {
-    .recovery__image {
+    .recovery__image-box {
       margin-right: clamp( 0.0000000625rem , -5.7213737548rem  +  13.4620560406vw , 4.375rem );
     }
 }
 
 @supports not (margin-right: clamp( 0.0000000625rem , -5.7213737548rem  +  13.4620560406vw , 4.375rem )) {
-    .recovery__image {
+    .recovery__image-box {
       margin-right: calc(0.0000000625rem + 4.3749999375 * (100vw - 42.5rem) / 32.49875);
     }
 }
