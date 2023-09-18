@@ -5567,7 +5567,7 @@ span.market__banner-small-prise {
     border-radius: 6px;
   }
 
-  .header-user__body {
+  .header-user__body--pc {
     max-width: 120px;
   }
 
