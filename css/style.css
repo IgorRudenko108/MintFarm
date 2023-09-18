@@ -5556,7 +5556,7 @@ span.market__banner-small-prise {
     gap: 5px;
   }
 
-  .header-wallet {
+  .header-wallet--pc {
     display: none;
   }
 
