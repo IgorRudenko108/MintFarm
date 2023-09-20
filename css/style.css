@@ -3593,7 +3593,9 @@ span.market__banner-small-prise {
 }
 
 .aside-item--big .aside-item__body {
-  height: 310px;
+  min-width: 310px;
+  height: 100%;
+  max-height: 675px;
   padding-top: 15px;
 }
 
@@ -6017,11 +6019,11 @@ body {
   }
 
   .game-catalog__btn {
-    width: 10.75rem;
+    width: 10.625rem;
   }
 
   .game-catalog__btn {
-    height: 10.75rem;
+    height: 10.625rem;
   }
 
   .game-catalog__btn {
@@ -6359,6 +6361,7 @@ body {
   }
 
   .aside-item--big .aside-item__body {
+    min-height: 270px;
     height: 270px;
   }
 
@@ -7116,11 +7119,11 @@ body {
 
 @media (max-width: 52.5em) {
   .game-catalog__btn {
-    width: 8.625rem;
+    width: 8.375rem;
   }
 
   .game-catalog__btn {
-    height: 8.625rem;
+    height: 8.375rem;
   }
 
   .game-catalog__btn {
@@ -9262,27 +9265,27 @@ body {
 }
 
 @media (min-width: 52.5em) and (max-width: 90em) {
-@supports (width: clamp( 8.625rem , 5.65rem  +  5.6666666667vw , 10.75rem )) {
+@supports (width: clamp( 8.375rem , 5.225rem  +  6vw , 10.625rem )) {
     .game-catalog__btn {
-      width: clamp( 8.625rem , 5.65rem  +  5.6666666667vw , 10.75rem );
+      width: clamp( 8.375rem , 5.225rem  +  6vw , 10.625rem );
     }
 }
 
-@supports not (width: clamp( 8.625rem , 5.65rem  +  5.6666666667vw , 10.75rem )) {
+@supports not (width: clamp( 8.375rem , 5.225rem  +  6vw , 10.625rem )) {
     .game-catalog__btn {
-      width: calc(8.625rem + 2.125 * (100vw - 52.5rem) / 37.5);
+      width: calc(8.375rem + 2.25 * (100vw - 52.5rem) / 37.5);
     }
 }
 
-@supports (height: clamp( 8.625rem , 5.65rem  +  5.6666666667vw , 10.75rem )) {
+@supports (height: clamp( 8.375rem , 5.225rem  +  6vw , 10.625rem )) {
     .game-catalog__btn {
-      height: clamp( 8.625rem , 5.65rem  +  5.6666666667vw , 10.75rem );
+      height: clamp( 8.375rem , 5.225rem  +  6vw , 10.625rem );
     }
 }
 
-@supports not (height: clamp( 8.625rem , 5.65rem  +  5.6666666667vw , 10.75rem )) {
+@supports not (height: clamp( 8.375rem , 5.225rem  +  6vw , 10.625rem )) {
     .game-catalog__btn {
-      height: calc(8.625rem + 2.125 * (100vw - 52.5rem) / 37.5);
+      height: calc(8.375rem + 2.25 * (100vw - 52.5rem) / 37.5);
     }
 }
 
