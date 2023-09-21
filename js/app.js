@@ -3816,6 +3816,16 @@
                 }));
             }
         } else document.body.classList.add("_pc");
+        if (isMobile.any()) {
+            document.body.classList.add("_touch");
+            let infoBox = document.querySelectorAll(".market__banner");
+            if (infoBox.length > 0) for (let index = 0; index < infoBox.length; index++) {
+                const boxItem = infoBox[index];
+                boxItem.addEventListener("click", (function(e) {
+                    boxItem.classList.toggle("info-open");
+                }));
+            }
+        } else document.body.classList.add("_pc");
         window["FLS"] = false;
         isWebp();
         menuInit();
