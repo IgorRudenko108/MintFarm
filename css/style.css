@@ -3382,6 +3382,13 @@ body {
   border-radius: 10px;
 }
 
+.market__banner.info-open .market__device-info {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .market__banner-wrapper {
   position: relative;
 }
@@ -3530,13 +3537,6 @@ body {
 .market__banner-info:focus-visible {
   background-color: #79d0e3;
   border: 1px solid #0075FF;
-}
-
-.market__banner-info.info-open .market__device-info {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .market__device-info {
