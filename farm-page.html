@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Farm</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230921072236">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <script>
+			window.onload = function() {
+				let preloader = document.querySelector('.loader');
+				preloader.classList.add('hide-preloader');
+				setInterval(function() {
+						preloader.classList.add('preloader-hidden');
+				}, 100);
+			}
+		</script> -->
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+		<header class="header header-home">
+			<div class="header__container--big container--big">
+				<div class="header__inner">
+					<a href="landing-page.html" class="header__logo logo logo__home header-home__item">
+						<svg width="22" height="22">
+							<use xlink:href="img/icons/icons.svg#cat"></use>
+						</svg>
+						<span>MintFarm</span>
+					</a>
+
+					<div class="header-home__progress header-home__item">
+						<div class="header-home__progress-body"><span>65%</span></div>
+						<div class="header-home__device">
+							<picture><source srcset="img/home__page/device-1.webp" type="image/webp"><img src="img/home__page/device-1.png" alt="Device"></picture>
+						</div>
+					</div>
+
+					<div class="header__mint header-home__item">
+						<div class="header__mint-inner header__mint-inner--before">
+							<img src="img/home__page/mint.svg" alt="Mint">
+							<span>367</span>
+						</div>
+					</div>
+
+					<div class="header__battery header-home__item">
+						<div class="header__battery-inner">
+							<img src="img/home__page/battery-low.svg" alt="Battery">
+						</div>
+					</div>
+
+					<div class="header-home__burger-box header-home__item">
+						<div class="header-home__user-info">
+							<span>LVL 17 1013/7800xp</span>
+
+							<picture><source srcset="img/home__page/user-avatar.webp" type="image/webp"><img src="img/home__page/user-avatar.png" alt="Avatar"></picture>
+						</div>
+
+						<button type="button" class="menu__icon icon-menu header-home__burger icon-menu--pc"><span></span></button>
+					</div>
+
+					<div class="header__menu menu">
+
+						<div class="menu__top">
+							<a class="header__menu-logo menu-logo" href="landing-page.html">
+								<svg width="43" height="43">
+									<use xlink:href="img/icons/icons.svg#cat"></use>
+								</svg>
+								<span>MintFarm</span>
+							</a>
+						</div>
+
+						<nav class="menu__body">
+							<div class="header__menu-controls">
+								<a class="header__menu-btn btn btn__transparent" href="present-pagehtml">Подарки</a>
+								<a class="header__menu-btn btn btn__transparent" href="help-page.html">Помощь</a>
+							</div>
+
+							<!-- <ul class="menu__list">
+									<li class="menu__item">
+										<a href="help-page.html" class="menu__link">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#question"></use>
+											</svg>
+											<span>Помощь</span>
+										</a>
+									</li>
+			
+									<li class="menu__item">
+										<a href="#" class="menu__link">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#cat"></use>
+											</svg>
+											<span>Игры</span>
+										</a>
+									</li>
+			
+									<li class="menu__item">
+										<a href="#" class="menu__link">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#task"></use>
+											</svg>
+											<span>Ежедневные задания</span>
+										</a>
+									</li>
+			
+									<li class="menu-line"></li>
+			
+									<li class="menu__item">
+										<a href="#" class="menu__link">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#neighbor"></use>
+											</svg>
+											<span>Соседи</span>
+										</a>
+									</li>
+			
+									<li class="menu__item">
+										<a href="present-page.html" class="menu__link">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#market"></use>
+											</svg>
+											<span>Подарки</span>
+										</a>
+									</li>
+			
+									<li class="menu__item">
+										<a href="#" class="menu__link">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#rocket"></use>
+											</svg>
+											<span>Бустеры</span>
+										</a>
+									</li>
+			
+									<li class="menu__item">
+										<a href="#" class="menu__link">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#settings"></use>
+											</svg>
+											<span>Настройки</span>
+										</a>
+									</li>
+			
+									<li class="menu-line"></li>
+			
+								</ul>
+			
+								<div class="menu__bottom">
+									<div class="menu__online">
+										<img src="img/common/group.svg" width="40" height="40" alt="Image">
+				
+										<p>Онлайн: <span>9678</span> чел.</p>
+									</div>
+								</div> -->
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page home__page">
+			<div class="home__container--big">
+
+				<div class="home-rating">
+					<div class="home-rating__inner">
+						<div class="home-rating__top">
+							<img src="img/home__page/goblet--mini.svg" alt="Goblet">
+							Самые богатые
+						</div>
+
+						<div class="home-rating__list">
+							<a class="home-rating__link" href="index.html">
+								<picture><source srcset="img/home__page/goblet.webp" type="image/webp"><img src="img/home__page/goblet.png" width="50" height="50" alt="Goblet"></picture>
+								Nikitos
+								<span>#1</span>
+							</a>
+
+							<a class="home-rating__link" href="index.html">
+								<picture><source srcset="img/home__page/goblet.webp" type="image/webp"><img src="img/home__page/goblet.png" width="50" height="50" alt="Goblet"></picture>
+								Arthur
+								<span>#2</span>
+							</a>
+
+							<a class="home-rating__link" href="index.html">
+								<picture><source srcset="img/home__page/goblet.webp" type="image/webp"><img src="img/home__page/goblet.png" width="50" height="50" alt="Goblet"></picture>
+								Shane
+								<span>#3</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="home-rating home-neighborth">
+					<div class="home-rating__inner">
+						<div class="home-rating__top">
+							<img src="img/home__page/neighborth.svg" alt="Neighborth">
+							Соседи
+						</div>
+
+						<div class="home-rating__list">
+							<a class="home-neighborth__link" href="index.html">
+								<picture><source srcset="img/home__page/ava.webp" type="image/webp"><img src="img/home__page/ava.png" width="80" height="80" alt="Avatar"></picture>
+								<span>Sanya</span>
+							</a>
+
+							<a class="home-neighborth__link" href="index.html">
+								<picture><source srcset="img/home__page/ava.webp" type="image/webp"><img src="img/home__page/ava.png" width="80" height="80" alt="Avatar"></picture>
+								<span>Sanya</span>
+							</a>
+
+							<a class="home-neighborth__link" href="index.html">
+								<picture><source srcset="img/home__page/ava.webp" type="image/webp"><img src="img/home__page/ava.png" width="80" height="80" alt="Avatar"></picture>
+								<span>Sanya</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="home__bilboard">
+					<h1 class="home__title">КотоФерма</h1>
+					<p class="home__text">Отправляйся на ферму, сажай мяту, получай реальные ценные призы</p>
+					<a class="home__btn home__btn--big" href="index.html">Перейти</a>
+
+					<img class="home__bilboard-cat" src="img/home__page/cat-main.svg" alt="Cat">
+				</div>
+
+				<div class="home__main-wrapper">
+					<div class="home__main-item home__main-item--left">
+						<h3 class="home__main-item-title item-title">Кот сапер</h3>
+						<a class="home__main-btn home__btn" href="index.html">Играть</a>
+						<img data-prlx-mouse data-prlx-dxr data-prlx-cx="20" data-prlx-cy="40" data-prlx-a="100" class="home__main-item-cat item-cat" src="img/home__page/cat-1.svg" alt="Cat">
+					</div>
+
+					<div class="home__main-item home__main-item--right">
+						<h3 class="home__main-item-title item-title">Дуэль</h3>
+						<a class="home__main-btn home__btn" href="index.html">Играть</a>
+						<img data-prlx-mouse data-prlx-dxy data-prlx-cx="20" data-prlx-cy="40" data-prlx-a="100" class="home__main-item-cat item-cat" src="img/home__page/cat-2.svg" alt="Cat">
+					</div>
+
+					<div class="home__main-item home__main-item--left">
+						<h3 class="home__main-item-title item-title">Принцессы и рыцари</h3>
+						<a class="home__main-btn home__btn" href="index.html">Играть</a>
+						<img data-prlx-mouse data-prlx-dxy data-prlx-cx="20" data-prlx-cy="40" data-prlx-a="100" class="home__main-item-cat item-cat" src="img/home__page/cat-3.svg" alt="Cat">
+					</div>
+
+					<div class="home__main-item home__main-item--right">
+						<h3 class="home__main-item-title item-title">Кот парашютист</h3>
+						<a class="home__main-btn home__btn" href="index.html">Играть</a>
+						<img data-prlx-mouse data-prlx-dxr data-prlx-cx="20" data-prlx-cy="40" data-prlx-a="100" class="home__main-item-cat item-cat" src="img/home__page/cat-4.svg" alt="Cat">
+					</div>
+
+				</div>
+
+				<div class="home-chat">
+					<div class="home-chat__inner">
+						<div class="home-chat__top">
+							<img src="img/home__page/chat.svg" alt="Goblet">
+							Онлайн чат
+							<span>1327</span>
+						</div>
+
+						<div class="home-chat__list">
+							<div class="home-chat__item">
+								<picture><source srcset="img/home__page/chat-ava.webp" type="image/webp"><img src="img/home__page/chat-ava.png" width="45" height="45" alt="Avatar"></picture>
+								<div class="home-chat__content">
+									<div class="home-chat__item-top">
+										<span class="home-chat__item-name">Nikitos</span>
+										<span class="home-chat__item-time">12:02</span>
+									</div>
+									<span class="home-chat__text">It’s party time!</span>
+								</div>
+							</div>
+
+							<div class="home-chat__item">
+								<picture><source srcset="img/home__page/chat-ava.webp" type="image/webp"><img src="img/home__page/chat-ava.png" width="45" height="45" alt="Avatar"></picture>
+								<div class="home-chat__content">
+									<div class="home-chat__item-top">
+										<span class="home-chat__item-name">Nikitos</span>
+										<span class="home-chat__item-time">12:02</span>
+									</div>
+									<span class="home-chat__text">It’s party time!</span>
+								</div>
+							</div>
+
+							<div class="home-chat__item">
+								<picture><source srcset="img/home__page/chat-ava.webp" type="image/webp"><img src="img/home__page/chat-ava.png" width="45" height="45" alt="Avatar"></picture>
+								<div class="home-chat__content">
+									<div class="home-chat__item-top">
+										<span class="home-chat__item-name">Nikitos</span>
+										<span class="home-chat__item-time">12:02</span>
+									</div>
+									<span class="home-chat__text">It’s party time!</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="home-chat__bottom">
+							<textarea class="home-chat__textarea" name="chat" id="chat" placeholder="Ваше сообщение..."></textarea>
+
+							<div class="home-chat__bottom-controls">
+								<button class="home-chat__emoji"></button>
+								<button class="home-chat__send"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="home__pointer">
+					<a class="home__pointer-link" href="present-page.html">
+						<svg width="47" height="47">
+							<use xlink:href="img/icons/icons.svg#bigmarket"></use>
+						</svg>
+						МАРКЕТ
+					</a>
+
+					<a class="home__pointer-link" href="index.html">
+						<svg width="47" height="47">
+							<use xlink:href="img/icons/icons.svg#booster"></use>
+						</svg>
+						БУСТЕРЫ
+					</a>
+				</div>
+
+			</div>
+
+
+		</main>
+
+	</div>
+
+	<script src="js/app.min.js?_v=20230921072236"></script>
+</body>
+
+</html>

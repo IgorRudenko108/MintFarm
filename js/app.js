@@ -3826,6 +3826,16 @@
                 }));
             }
         } else document.body.classList.add("_pc");
+        if (isMobile.any()) {
+            document.body.classList.add("_touch");
+            let richBox = document.querySelectorAll(".aside-item__body-item");
+            if (richBox.length > 0) for (let index = 0; index < richBox.length; index++) {
+                const richItem = richBox[index];
+                richItem.addEventListener("click", (function(e) {
+                    richItem.classList.toggle("rich-open");
+                }));
+            }
+        } else document.body.classList.add("_pc");
         window["FLS"] = false;
         isWebp();
         menuInit();

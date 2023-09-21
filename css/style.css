@@ -838,6 +838,7 @@ details summary::-webkit-details-marker {
   min-width: 47px;
   z-index: 4;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -3511,6 +3512,7 @@ body {
           justify-content: center;
   max-height: none;
   height: 60px;
+  min-height: 60px;
   gap: 10px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
