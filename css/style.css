@@ -3628,7 +3628,7 @@ body._pc .market__banner-info:hover .market__device-info {
   transition: all 0.2s ease-in-out;
 }
 
-body._touch .market__banner-info .market__device-info {
+body._touch .market__banner .market__device-info {
   opacity: 0;
   visibility: hidden;
   pointer-events: all;
@@ -3636,7 +3636,7 @@ body._touch .market__banner-info .market__device-info {
   transition: all 0.2s ease-in-out;
 }
 
-body._touch .market__banner-info.info-open .market__device-info {
+body._touch .market__banner.info-open .market__device-info {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
