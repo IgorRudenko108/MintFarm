@@ -416,79 +416,6 @@
                 return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
             }
         };
-        function functions_getHash() {
-            if (location.hash) return location.hash.replace("#", "");
-        }
-        function setHash(hash) {
-            hash = hash ? `#${hash}` : window.location.href.split("#")[0];
-            history.pushState("", "", hash);
-        }
-        let _slideUp = (target, duration = 500, showmore = 0) => {
-            if (!target.classList.contains("_slide")) {
-                target.classList.add("_slide");
-                target.style.transitionProperty = "height, margin, padding";
-                target.style.transitionDuration = duration + "ms";
-                target.style.height = `${target.offsetHeight}px`;
-                target.offsetHeight;
-                target.style.overflow = "hidden";
-                target.style.height = showmore ? `${showmore}px` : `0px`;
-                target.style.paddingTop = 0;
-                target.style.paddingBottom = 0;
-                target.style.marginTop = 0;
-                target.style.marginBottom = 0;
-                window.setTimeout((() => {
-                    target.hidden = !showmore ? true : false;
-                    !showmore ? target.style.removeProperty("height") : null;
-                    target.style.removeProperty("padding-top");
-                    target.style.removeProperty("padding-bottom");
-                    target.style.removeProperty("margin-top");
-                    target.style.removeProperty("margin-bottom");
-                    !showmore ? target.style.removeProperty("overflow") : null;
-                    target.style.removeProperty("transition-duration");
-                    target.style.removeProperty("transition-property");
-                    target.classList.remove("_slide");
-                    document.dispatchEvent(new CustomEvent("slideUpDone", {
-                        detail: {
-                            target
-                        }
-                    }));
-                }), duration);
-            }
-        };
-        let _slideDown = (target, duration = 500, showmore = 0) => {
-            if (!target.classList.contains("_slide")) {
-                target.classList.add("_slide");
-                target.hidden = target.hidden ? false : null;
-                showmore ? target.style.removeProperty("height") : null;
-                let height = target.offsetHeight;
-                target.style.overflow = "hidden";
-                target.style.height = showmore ? `${showmore}px` : `0px`;
-                target.style.paddingTop = 0;
-                target.style.paddingBottom = 0;
-                target.style.marginTop = 0;
-                target.style.marginBottom = 0;
-                target.offsetHeight;
-                target.style.transitionProperty = "height, margin, padding";
-                target.style.transitionDuration = duration + "ms";
-                target.style.height = height + "px";
-                target.style.removeProperty("padding-top");
-                target.style.removeProperty("padding-bottom");
-                target.style.removeProperty("margin-top");
-                target.style.removeProperty("margin-bottom");
-                window.setTimeout((() => {
-                    target.style.removeProperty("height");
-                    target.style.removeProperty("overflow");
-                    target.style.removeProperty("transition-duration");
-                    target.style.removeProperty("transition-property");
-                    target.classList.remove("_slide");
-                    document.dispatchEvent(new CustomEvent("slideDownDone", {
-                        detail: {
-                            target
-                        }
-                    }));
-                }), duration);
-            }
-        };
         let bodyLockStatus = true;
         let bodyLockToggle = (delay = 0) => {
             if (document.documentElement.classList.contains("lock")) bodyUnlock(delay); else bodyLock(delay);
@@ -525,99 +452,6 @@
                 }), delay);
             }
         };
-        function tabs() {
-            const tabs = document.querySelectorAll("[data-tabs]");
-            let tabsActiveHash = [];
-            if (tabs.length > 0) {
-                const hash = functions_getHash();
-                if (hash && hash.startsWith("tab-")) tabsActiveHash = hash.replace("tab-", "").split("-");
-                tabs.forEach(((tabsBlock, index) => {
-                    tabsBlock.classList.add("_tab-init");
-                    tabsBlock.setAttribute("data-tabs-index", index);
-                    tabsBlock.addEventListener("click", setTabsAction);
-                    initTabs(tabsBlock);
-                }));
-                let mdQueriesArray = dataMediaQueries(tabs, "tabs");
-                if (mdQueriesArray && mdQueriesArray.length) mdQueriesArray.forEach((mdQueriesItem => {
-                    mdQueriesItem.matchMedia.addEventListener("change", (function() {
-                        setTitlePosition(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
-                    }));
-                    setTitlePosition(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
-                }));
-            }
-            function setTitlePosition(tabsMediaArray, matchMedia) {
-                tabsMediaArray.forEach((tabsMediaItem => {
-                    tabsMediaItem = tabsMediaItem.item;
-                    let tabsTitles = tabsMediaItem.querySelector("[data-tabs-titles]");
-                    let tabsTitleItems = tabsMediaItem.querySelectorAll("[data-tabs-title]");
-                    let tabsContent = tabsMediaItem.querySelector("[data-tabs-body]");
-                    let tabsContentItems = tabsMediaItem.querySelectorAll("[data-tabs-item]");
-                    tabsTitleItems = Array.from(tabsTitleItems).filter((item => item.closest("[data-tabs]") === tabsMediaItem));
-                    tabsContentItems = Array.from(tabsContentItems).filter((item => item.closest("[data-tabs]") === tabsMediaItem));
-                    tabsContentItems.forEach(((tabsContentItem, index) => {
-                        if (matchMedia.matches) {
-                            tabsContent.append(tabsTitleItems[index]);
-                            tabsContent.append(tabsContentItem);
-                            tabsMediaItem.classList.add("_tab-spoller");
-                        } else {
-                            tabsTitles.append(tabsTitleItems[index]);
-                            tabsMediaItem.classList.remove("_tab-spoller");
-                        }
-                    }));
-                }));
-            }
-            function initTabs(tabsBlock) {
-                let tabsTitles = tabsBlock.querySelectorAll("[data-tabs-titles]>*");
-                let tabsContent = tabsBlock.querySelectorAll("[data-tabs-body]>*");
-                const tabsBlockIndex = tabsBlock.dataset.tabsIndex;
-                const tabsActiveHashBlock = tabsActiveHash[0] == tabsBlockIndex;
-                if (tabsActiveHashBlock) {
-                    const tabsActiveTitle = tabsBlock.querySelector("[data-tabs-titles]>._tab-active");
-                    tabsActiveTitle ? tabsActiveTitle.classList.remove("_tab-active") : null;
-                }
-                if (tabsContent.length) tabsContent.forEach(((tabsContentItem, index) => {
-                    tabsTitles[index].setAttribute("data-tabs-title", "");
-                    tabsContentItem.setAttribute("data-tabs-item", "");
-                    if (tabsActiveHashBlock && index == tabsActiveHash[1]) tabsTitles[index].classList.add("_tab-active");
-                    tabsContentItem = !tabsTitles[index].classList.contains("_tab-active");
-                }));
-            }
-            function setTabsStatus(tabsBlock) {
-                let tabsTitles = tabsBlock.querySelectorAll("[data-tabs-title]");
-                let tabsContent = tabsBlock.querySelectorAll("[data-tabs-item]");
-                const tabsBlockIndex = tabsBlock.dataset.tabsIndex;
-                function isTabsAnamate(tabsBlock) {
-                    if (tabsBlock.hasAttribute("data-tabs-animate")) return tabsBlock.dataset.tabsAnimate > 0 ? Number(tabsBlock.dataset.tabsAnimate) : 500;
-                }
-                const tabsBlockAnimate = isTabsAnamate(tabsBlock);
-                if (tabsContent.length > 0) {
-                    const isHash = tabsBlock.hasAttribute("data-tabs-hash");
-                    tabsContent = Array.from(tabsContent).filter((item => item.closest("[data-tabs]") === tabsBlock));
-                    tabsTitles = Array.from(tabsTitles).filter((item => item.closest("[data-tabs]") === tabsBlock));
-                    tabsContent.forEach(((tabsContentItem, index) => {
-                        if (tabsTitles[index].classList.contains("_tab-active")) {
-                            if (tabsBlockAnimate) _slideDown(tabsContentItem, tabsBlockAnimate); else tabsContentItem.classList.add("tabs-anim");
-                            if (isHash && !tabsContentItem.closest(".popup")) setHash(`tab-${tabsBlockIndex}-${index}`);
-                        } else if (tabsBlockAnimate) _slideUp(tabsContentItem, tabsBlockAnimate); else tabsContentItem.classList.remove("tabs-anim");
-                    }));
-                }
-            }
-            function setTabsAction(e) {
-                const el = e.target;
-                if (el.closest("[data-tabs-title]")) {
-                    const tabTitle = el.closest("[data-tabs-title]");
-                    const tabsBlock = tabTitle.closest("[data-tabs]");
-                    if (!tabTitle.classList.contains("_tab-active") && !tabsBlock.querySelector("._slide")) {
-                        let tabActiveTitle = tabsBlock.querySelectorAll("[data-tabs-title]._tab-active");
-                        tabActiveTitle.length ? tabActiveTitle = Array.from(tabActiveTitle).filter((item => item.closest("[data-tabs]") === tabsBlock)) : null;
-                        tabActiveTitle.length ? tabActiveTitle[0].classList.remove("_tab-active") : null;
-                        tabTitle.classList.add("_tab-active");
-                        setTabsStatus(tabsBlock);
-                    }
-                    e.preventDefault();
-                }
-            }
-        }
         function menuInit() {
             if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
                 if (bodyLockStatus && e.target.closest(".icon-menu")) {
@@ -630,49 +464,6 @@
             setTimeout((() => {
                 if (window.FLS) console.log(message);
             }), 0);
-        }
-        function uniqArray(array) {
-            return array.filter((function(item, index, self) {
-                return self.indexOf(item) === index;
-            }));
-        }
-        function dataMediaQueries(array, dataSetValue) {
-            const media = Array.from(array).filter((function(item, index, self) {
-                if (item.dataset[dataSetValue]) return item.dataset[dataSetValue].split(",")[0];
-            }));
-            if (media.length) {
-                const breakpointsArray = [];
-                media.forEach((item => {
-                    const params = item.dataset[dataSetValue];
-                    const breakpoint = {};
-                    const paramsArray = params.split(",");
-                    breakpoint.value = paramsArray[0];
-                    breakpoint.type = paramsArray[1] ? paramsArray[1].trim() : "max";
-                    breakpoint.item = item;
-                    breakpointsArray.push(breakpoint);
-                }));
-                let mdQueries = breakpointsArray.map((function(item) {
-                    return "(" + item.type + "-width: " + item.value + "px)," + item.value + "," + item.type;
-                }));
-                mdQueries = uniqArray(mdQueries);
-                const mdQueriesArray = [];
-                if (mdQueries.length) {
-                    mdQueries.forEach((breakpoint => {
-                        const paramsArray = breakpoint.split(",");
-                        const mediaBreakpoint = paramsArray[1];
-                        const mediaType = paramsArray[2];
-                        const matchMedia = window.matchMedia(paramsArray[0]);
-                        const itemsArray = breakpointsArray.filter((function(item) {
-                            if (item.value === mediaBreakpoint && item.type === mediaType) return true;
-                        }));
-                        mdQueriesArray.push({
-                            itemsArray,
-                            matchMedia
-                        });
-                    }));
-                    return mdQueriesArray;
-                }
-            }
         }
         class Popup {
             constructor(options) {
@@ -918,61 +709,6 @@
             }
         }
         modules_flsModules.popup = new Popup({});
-        class MousePRLX {
-            constructor(props, data = null) {
-                let defaultConfig = {
-                    init: true,
-                    logging: true
-                };
-                this.config = Object.assign(defaultConfig, props);
-                if (this.config.init) {
-                    const paralaxMouse = document.querySelectorAll("[data-prlx-mouse]");
-                    if (paralaxMouse.length) {
-                        this.paralaxMouseInit(paralaxMouse);
-                        this.setLogging(`Прокинувся, стежу за об'єктами: (${paralaxMouse.length})`);
-                    } else this.setLogging("Немає жодного обєкта. Сплю...");
-                }
-            }
-            paralaxMouseInit(paralaxMouse) {
-                paralaxMouse.forEach((el => {
-                    const paralaxMouseWrapper = el.closest("[data-prlx-mouse-wrapper]");
-                    const paramСoefficientX = el.dataset.prlxCx ? +el.dataset.prlxCx : 100;
-                    const paramСoefficientY = el.dataset.prlxCy ? +el.dataset.prlxCy : 100;
-                    const directionX = el.hasAttribute("data-prlx-dxr") ? -1 : 1;
-                    const directionY = el.hasAttribute("data-prlx-dyr") ? -1 : 1;
-                    const paramAnimation = el.dataset.prlxA ? +el.dataset.prlxA : 50;
-                    let positionX = 0, positionY = 0;
-                    let coordXprocent = 0, coordYprocent = 0;
-                    setMouseParallaxStyle();
-                    if (paralaxMouseWrapper) mouseMoveParalax(paralaxMouseWrapper); else mouseMoveParalax();
-                    function setMouseParallaxStyle() {
-                        const distX = coordXprocent - positionX;
-                        const distY = coordYprocent - positionY;
-                        positionX += distX * paramAnimation / 1e3;
-                        positionY += distY * paramAnimation / 1e3;
-                        el.style.cssText = `transform: translate3D(${directionX * positionX / (paramСoefficientX / 10)}%,${directionY * positionY / (paramСoefficientY / 10)}%,0) rotate(0.02deg);`;
-                        requestAnimationFrame(setMouseParallaxStyle);
-                    }
-                    function mouseMoveParalax(wrapper = window) {
-                        wrapper.addEventListener("mousemove", (function(e) {
-                            const offsetTop = el.getBoundingClientRect().top + window.scrollY;
-                            if (offsetTop >= window.scrollY || offsetTop + el.offsetHeight >= window.scrollY) {
-                                const parallaxWidth = window.innerWidth;
-                                const parallaxHeight = window.innerHeight;
-                                const coordX = e.clientX - parallaxWidth / 2;
-                                const coordY = e.clientY - parallaxHeight / 2;
-                                coordXprocent = coordX / parallaxWidth * 100;
-                                coordYprocent = coordY / parallaxHeight * 100;
-                            }
-                        }));
-                    }
-                }));
-            }
-            setLogging(message) {
-                this.config.logging ? functions_FLS(`[PRLX Mouse]: ${message}`) : null;
-            }
-        }
-        modules_flsModules.mousePrlx = new MousePRLX({});
         function ssr_window_esm_isObject(obj) {
             return obj !== null && typeof obj === "object" && "constructor" in obj && obj.constructor === Object;
         }
@@ -3293,7 +3029,7 @@
             classes
         };
         const extendedDefaults = {};
-        class swiper_core_Swiper {
+        class Swiper {
             constructor() {
                 let el;
                 let params;
@@ -3309,7 +3045,7 @@
                         const newParams = utils_extend({}, params, {
                             el: containerEl
                         });
-                        swipers.push(new swiper_core_Swiper(newParams));
+                        swipers.push(new Swiper(newParams));
                     }));
                     return swipers;
                 }
@@ -3666,25 +3402,25 @@
                 return defaults;
             }
             static installModule(mod) {
-                if (!swiper_core_Swiper.prototype.__modules__) swiper_core_Swiper.prototype.__modules__ = [];
-                const modules = swiper_core_Swiper.prototype.__modules__;
+                if (!Swiper.prototype.__modules__) Swiper.prototype.__modules__ = [];
+                const modules = Swiper.prototype.__modules__;
                 if (typeof mod === "function" && modules.indexOf(mod) < 0) modules.push(mod);
             }
             static use(module) {
                 if (Array.isArray(module)) {
-                    module.forEach((m => swiper_core_Swiper.installModule(m)));
-                    return swiper_core_Swiper;
+                    module.forEach((m => Swiper.installModule(m)));
+                    return Swiper;
                 }
-                swiper_core_Swiper.installModule(module);
-                return swiper_core_Swiper;
+                Swiper.installModule(module);
+                return Swiper;
             }
         }
         Object.keys(prototypes).forEach((prototypeGroup => {
             Object.keys(prototypes[prototypeGroup]).forEach((protoMethod => {
-                swiper_core_Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
+                Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
             }));
         }));
-        swiper_core_Swiper.use([ Resize, Observer ]);
+        Swiper.use([ Resize, Observer ]);
         function Autoplay(_ref) {
             let {swiper, extendParams, on, emit, params} = _ref;
             swiper.autoplay = {
@@ -3926,7 +3662,7 @@
             });
         }
         function initSliders() {
-            if (document.querySelector(".swiper.present-slider")) new swiper_core_Swiper(".swiper.present-slider", {
+            if (document.querySelector(".swiper.present-slider")) new Swiper(".swiper.present-slider", {
                 modules: [ Autoplay ],
                 observer: true,
                 observeParents: true,
@@ -3937,7 +3673,7 @@
                 loop: true,
                 autoHeight: true,
                 autoplay: {
-                    delay: 4e3,
+                    delay: 1500,
                     disableOnInteraction: false
                 },
                 breakpoints: {
@@ -4083,6 +3819,5 @@
         window["FLS"] = false;
         isWebp();
         menuInit();
-        tabs();
     })();
 })();
