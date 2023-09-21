@@ -3534,6 +3534,7 @@ body {
 
 .market__banner-info.info-open .market__device-info {
   opacity: 1;
+  visibility: visible;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
