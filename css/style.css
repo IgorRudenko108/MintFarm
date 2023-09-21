@@ -5695,13 +5695,10 @@ body._touch .aside-item__body-item.rich-open .aside-item__rich-name {
   }
 
   .market__gallery-row {
-    gap: 15px;
-  }
-
-  .market__gallery-row {
     -ms-grid-rows: (1fr)[4];
     grid-template-rows: repeat(4, 1fr);
     margin-top: 50px;
+    gap: 15px;
   }
 
   .market__banner--1 {
