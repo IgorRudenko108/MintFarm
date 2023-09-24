@@ -4191,25 +4191,25 @@
                 },
                 breakpoints: {
                     425: {
-                        slidesPerView: "auto",
+                        slidesPerView: "1",
                         spaceBetween: 15
                     },
                     768: {
-                        slidesPerView: "auto",
+                        slidesPerView: "2.5",
                         spaceBetween: 20
                     },
                     992: {
-                        slidesPerView: "auto",
+                        slidesPerView: "2.5",
                         spaceBetween: 30
                     },
                     1199: {
-                        slidesPerView: "auto",
+                        slidesPerView: "3.5",
                         spaceBetween: 40
                     },
                     1440: {
-                        slidesPerView: "4",
+                        slidesPerView: "4.2",
                         spaceBetween: 40,
-                        centeredSlides: false
+                        centeredSlides: true
                     }
                 },
                 on: {}
