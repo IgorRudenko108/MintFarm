@@ -5023,6 +5023,9 @@ body._touch .aside-item__body-item.rich-open .aside-item__rich-name {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .no-webp .choose-slide__main .choose__skin-box{
@@ -5976,6 +5979,16 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
+}
+
+@media (min-width: 35.99875em) {
+  .choose-slide__main {
+    padding-left: 1.875rem;
+  }
+
+  .choose-slide__main {
+    padding-right: 1.875rem;
+  }
 }
 
 @media (min-width: 42.5em) {
@@ -8172,6 +8185,14 @@ button.swiper-pagination-bullet {
   .choose__controls-link span {
     font-size: 0.875rem;
   }
+
+  .choose-slide__main {
+    padding-left: 0.0000000625rem;
+  }
+
+  .choose-slide__main {
+    padding-right: 0.0000000625rem;
+  }
 }
 
 @media (min-width: 47.99875em) and (max-width: 74.99875em) {
@@ -9414,6 +9435,32 @@ button.swiper-pagination-bullet {
 @supports not (font-size: clamp( 0.875rem , 0.4583506944rem  +  1.3888888889vw , 1.125rem )) {
     .choose__controls-link span {
       font-size: calc(0.875rem + 0.25 * (100vw - 29.99875rem) / 18);
+    }
+}
+}
+
+@media (min-width: 29.99875em) and (max-width: 35.99875em) {
+@supports (padding-left: clamp( 0.0000000625rem , -9.374609rem  +  31.2499989583vw , 1.875rem )) {
+    .choose-slide__main {
+      padding-left: clamp( 0.0000000625rem , -9.374609rem  +  31.2499989583vw , 1.875rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.0000000625rem , -9.374609rem  +  31.2499989583vw , 1.875rem )) {
+    .choose-slide__main {
+      padding-left: calc(0.0000000625rem + 1.8749999375 * (100vw - 29.99875rem) / 6);
+    }
+}
+
+@supports (padding-right: clamp( 0.0000000625rem , -9.374609rem  +  31.2499989583vw , 1.875rem )) {
+    .choose-slide__main {
+      padding-right: clamp( 0.0000000625rem , -9.374609rem  +  31.2499989583vw , 1.875rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.0000000625rem , -9.374609rem  +  31.2499989583vw , 1.875rem )) {
+    .choose-slide__main {
+      padding-right: calc(0.0000000625rem + 1.8749999375 * (100vw - 29.99875rem) / 6);
     }
 }
 }
