@@ -7315,6 +7315,13 @@ button.swiper-pagination-bullet {
     grid-auto-rows: auto;
     height: auto;
   }
+
+  .tabs__body-inner picture,
+  .tabs__body-inner img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 @media (max-width: 52.5em) {
