@@ -3838,7 +3838,7 @@
         } else document.body.classList.add("_pc");
         if (isMobile.any()) {
             document.body.classList.add("_touch");
-            let skinBox = document.querySelectorAll(".cabinet__skin-controls");
+            let skinBox = document.querySelectorAll(".cabinet__skin-item");
             if (skinBox.length > 0) for (let index = 0; index < skinBox.length; index++) {
                 const skinItem = skinBox[index];
                 skinItem.addEventListener("click", (function(e) {
