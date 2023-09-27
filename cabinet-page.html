@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Present</title>
+	<title>Cabinet</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="cabinet__main-wrapper">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -245,465 +245,238 @@
 			</div>
 		</header>
 
-		<main class="page landing__page page-color">
-			<section class="present-main market">
+		<main class="page cabinet__page page-color">
+			<div class="cabinet__container">
+				<div class="cabinet__body">
+					<div class="cabinet__main">
+						<div class="cabinet__cards-box">
+							<div class="cabinet__cards-item">
+								<div class="cabinet__card-top">
+									<picture><source srcset="img/cabinet__page/card-1.webp" type="image/webp"><img class="cabinet__card-img" src="img/cabinet__page/card-1.jpg" alt="Image"></picture>
 
-				<div class="present-main__container">
-					<div class="present-main__inner">
-						<div class="present-main__top">
-							<h1 class="present-main__title">Подарки</h1>
-							<p class="present-main__text">
-								Добро пожаловать в раздел 'Призы' – место, где собраны настоящие награды за твои усилия!
-								За каждую собранную мятую и успешно выполненное задание тебя ждут захватывающие призы.
-								Исследуй этот раздел, чтобы увеличить свою мотивацию и уровень поощрения на новую высоту, превращая свои усилия в награды, достигнутые собственным трудом!
-							</p>
-						</div>
-
-						<div class="market__banner-wrapper">
-							<div class="market__label" style="background-image: url(img/market__page/label-star.svg);">
-								<p class="market__label-text">Спецпредложение</p>
-								<img class="market__label-img" src="img/present__page/coin-gold.svg" alt="Coin gold">
-								<span class="market__label-price">9999</span>
-							</div>
-
-							<div class="market__banner market__banner--big">
-
-								<h2 class="market__banner-title market__banner-title-light">Apple Iphone 14 Pro Max</h2>
-
-								<picture><source srcset="img/market__page/banner.webp" type="image/webp"><img class="market__banner-img" src="img/market__page/banner.jpg" alt="Banner"></picture>
-
-								<div class="market__banner-controls">
-									<a class="market__banner-btn btn btn__accent" data-popup="#popup-change" href="#">Обменять
-										<img src="img/common/arrow-right.svg" width="32" height="32" alt="Arrow">
-									</a>
-
-									<div class="market__banner-info btn">Info
-										<div class="market__device-info">
-											<div class="market__device-descr">
-												<p class="market__device-info-item">
-													<span>Процессор:</span>
-													Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>Дисплей:</span>
-													13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>GPU:</span>
-													Apple M1, 8 ядер, поддержка ProRes.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>ОЗУ:</span>
-													8/16 ГБ LPDDR4X Unified Memory.
-												</p>
-											</div>
-										</div>
-
-										<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="market__gallery-row">
-							<div class="market__banner-wrapper market__banner--1">
-								<div class="market__label market__label--middle" style="background-image: url(img/market__page/label-star.svg);">
-									<p class="market__label-text">Спецпредложение</p>
-									<img class="market__label-img" src="img/present__page/coin-gold.svg" alt="Coin gold">
-									<span class="market__label-price">9999</span>
-								</div>
-
-								<div class="market__banner market__banner--middle">
-
-									<h2 class="market__banner-title market__banner-title--middle market__banner-title-light">Sony <br> Playstation 5</h2>
-
-									<picture><source srcset="img/market__page/banner-middle__1.webp" type="image/webp"><img class="market__banner-img" src="img/market__page/banner-middle__1.jpg" alt="Banner"></picture>
-
-									<div class="market__banner-controls market__banner-controls--middle">
-										<a class="market__banner-btn btn btn__accent" data-popup="#popup-change" href="#">Обменять
-											<img src="img/common/arrow-right.svg" width="32" height="32" alt="Arrow">
-										</a>
-
-										<div class="market__banner-info btn">Info
-											<div class="market__device-info">
-												<div class="market__device-descr">
-													<p class="market__device-info-item">
-														<span>Процессор:</span>
-														Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-													</p>
-
-													<p class="market__device-info-item">
-														<span>Дисплей:</span>
-														13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-													</p>
-
-													<p class="market__device-info-item">
-														<span>GPU:</span>
-														Apple M1, 8 ядер, поддержка ProRes.
-													</p>
-
-													<p class="market__device-info-item">
-														<span>ОЗУ:</span>
-														8/16 ГБ LPDDR4X Unified Memory.
-													</p>
+									<div class="cabinet__progress">
+										<div class="circle-wrap">
+											<div class="circle">
+												<div class="mask full-1">
+													<div class="fill-1"></div>
 												</div>
+												<div class="mask half">
+													<div class="fill-1"></div>
+												</div>
+												<div class="inside-circle">48%</div>
 											</div>
-
-											<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="market__banner market__banner--small market__banner--2">
+								<div class="cabinet__card-middle">
+									<h3 class="cabinet__card-title">Apple Iphone <br> 14 Pro Max</h3>
+									<div class="cabinet__middle-info">Твоя цель</div>
+								</div>
 
-								<h2 class="market__banner-title">Mi <br> TV P1</h2>
+								<div class="cabinet__card-bottom">
+									<div class="cabinet__bottom-info">Выбрать другую цель</div>
 
-								<picture><source srcset="img/market__page/banner-small__1.webp" type="image/webp"><img class="market__banner-img" src="img/market__page/banner-small__1.jpg" alt="Banner"></picture>
-
-								<div class="market__banner-controls">
-									<a class="present-main__btn market__banner-small-btn" data-popup="#popup-no-money" href="#">
-										<div class="present-main__btn-top">
-											<span class="present-main__btn-name">Обменять</span>
-										</div>
-										<div class="present-main__btn-bottom">
-											<span class="market__banner-small-prise">9999</span>
-											<img src="img/present__page/coin-gold.svg" alt="Coin gold">
-										</div>
-									</a>
-
-									<div class="market__banner-info btn">Info
-										<div class="market__device-info">
-											<div class="market__device-descr">
-												<p class="market__device-info-item">
-													<span>Процессор:</span>
-													Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>Дисплей:</span>
-													13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>GPU:</span>
-													Apple M1, 8 ядер, поддержка ProRes.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>ОЗУ:</span>
-													8/16 ГБ LPDDR4X Unified Memory.
-												</p>
-											</div>
-										</div>
-
-										<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
-									</div>
+									<a class="cabinet__bottom-btn" href="#">Перейти</a>
 								</div>
 							</div>
 
-							<div class="market__banner market__banner--small market__banner--3">
+							<div class="cabinet__cards-item">
+								<div class="cabinet__card-top">
+									<picture><source srcset="img/cabinet__page/card-2.webp" type="image/webp"><img class="cabinet__card-img" src="img/cabinet__page/card-2.jpg" alt="Image"></picture>
 
-								<h2 class="market__banner-title">Apple Iphone 14 <br> Pro Max</h2>
-
-								<picture><source srcset="img/market__page/banner-small__2.webp" type="image/webp"><img class="market__banner-img" src="img/market__page/banner-small__2.jpg" alt="Banner"></picture>
-
-								<div class="market__banner-controls">
-									<a class="present-main__btn market__banner-small-btn" data-popup="#popup-no-money2" href="#">
-										<div class="present-main__btn-top">
-											<span class="present-main__btn-name">Обменять</span>
-										</div>
-										<div class="present-main__btn-bottom">
-											<span class="market__banner-small-prise">9999</span>
-											<img src="img/present__page/coin-gold.svg" alt="Coin gold">
-										</div>
-									</a>
-
-									<div class="market__banner-info btn">Info
-										<div class="market__device-info">
-											<div class="market__device-descr">
-												<p class="market__device-info-item">
-													<span>Процессор:</span>
-													Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>Дисплей:</span>
-													13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>GPU:</span>
-													Apple M1, 8 ядер, поддержка ProRes.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>ОЗУ:</span>
-													8/16 ГБ LPDDR4X Unified Memory.
-												</p>
-											</div>
-										</div>
-
-										<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
+									<div class="cabinet__card-icon">
+										<picture><source srcset="img/cabinet__page/card-icon-1.webp" type="image/webp"><img src="img/cabinet__page/card-icon-1.png" alt="Icon"></picture>
 									</div>
+								</div>
+
+								<div class="cabinet__card-middle">
+									<h3 class="cabinet__card-title">Ферма <br> номер один</h3>
+									<div class="cabinet__middle-info">+12
+										<img class="cabinet__info-icon" src="img/common/mint.svg" width="15" height="15" alt="Mint"> </span>
+										в сутки
+									</div>
+								</div>
+
+								<div class="cabinet__card-bottom">
+									<div class="cabinet__bottom-info">Перейти к выбору фермы</div>
+
+									<a class="cabinet__bottom-btn" href="#">Перейти</a>
 								</div>
 							</div>
 						</div>
 
-						<div class="market__gallery-row--2">
-							<div class="market__banner market__banner--small market__banner--4">
+						<div class="cabinet__cat-box">
+							<div class="cabinet__cat-top">
+								<div class="cabinet__cat-logo">
+									<picture><source srcset="img/cabinet__page/main-icon-1.webp" type="image/webp"><img src="img/cabinet__page/main-icon-1.png" alt="Icon"></picture>
+								</div>
 
-								<h2 class="market__banner-title">Apple Watch <br> Series 5</h2>
+								<h2 class="cabinet__cat-top-title">Кот-ученый</h2>
+							</div>
 
-								<picture><source srcset="img/market__page/banner-small__3.webp" type="image/webp"><img class="market__banner-img" src="img/market__page/banner-small__3.jpg" alt="Banner"></picture>
+							<div class="cabinet__cat-inner">
+								<picture><source srcset="img/cabinet__page/cat-1.webp" type="image/webp"><img src="img/cabinet__page/cat-1.png"></picture>
+							</div>
 
-								<div class="market__banner-controls">
-									<a class="present-main__btn market__banner-small-btn" data-popup="#popup-change" href="#">
-										<div class="present-main__btn-top">
-											<span class="present-main__btn-name">Обменять</span>
+							<a class="cabinet__bottom-btn cabinet__main-btn" href="#">Выбрать нового персонажа <img class="cabinet__info-icon" src="img/common/mint.svg" width="15" height="15" alt="Mint"> <span>50</span></a>
+						</div>
+
+						<div class="cabinet__skin-box">
+							<div class="cabinet__skin-item">
+								<div class="cabinet__skin-images">
+									<picture><source srcset="img/cabinet__page/skin-1.webp" type="image/webp"><img src="img/cabinet__page/skin-1.png" alt="Skin"></picture>
+								</div>
+
+								<div class="cabinet__skin-bottom">
+									<div class="cabinet__skin-text">Приобрести</div>
+
+									<div class="cabinet__bottom-content">
+										<div class="cabinet__skin-mint">
+											<img class="cabinet__info-icon" src="img/common/mint.svg" width="15" height="15" alt="Mint">
+											<span>25</span>
 										</div>
-										<div class="present-main__btn-bottom">
-											<span class="market__banner-small-prise">9999</span>
-											<img src="img/present__page/coin-gold.svg" alt="Coin gold">
-										</div>
-									</a>
+									</div>
 
-									<div class="market__banner-info btn">Info
-										<div class="market__device-info">
-											<div class="market__device-descr">
-												<p class="market__device-info-item">
-													<span>Процессор:</span>
-													Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>Дисплей:</span>
-													13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>GPU:</span>
-													Apple M1, 8 ядер, поддержка ProRes.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>ОЗУ:</span>
-													8/16 ГБ LPDDR4X Unified Memory.
-												</p>
-											</div>
-										</div>
-
-										<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
+									<div class="cabinet__skin-controls">
+										<button class="cabinet__skin-yes">Да</button>
+										<button class="cabinet__skin-no">Нет</button>
 									</div>
 								</div>
 							</div>
 
-							<div class="market__banner market__banner--small market__banner--5">
+							<div class="cabinet__skin-item">
+								<div class="cabinet__skin-images">
+									<picture><source srcset="img/cabinet__page/skin-2.webp" type="image/webp"><img src="img/cabinet__page/skin-2.png" alt="Skin"></picture>
+								</div>
 
-								<h2 class="market__banner-title">Mi <br> TV P1</h2>
+								<div class="cabinet__skin-bottom">
+									<div class="cabinet__skin-text">Приобрести</div>
 
-								<picture><source srcset="img/market__page/banner-small__1.webp" type="image/webp"><img class="market__banner-img" src="img/market__page/banner-small__1.jpg" alt="Banner"></picture>
+									<div class="cabinet__skin-mint">
+										<img class="cabinet__info-icon" src="img/common/mint.svg" width="15" height="15" alt="Mint">
+										<span>25</span>
+									</div>
 
-								<div class="market__banner-controls">
-									<a class="present-main__btn market__banner-small-btn" data-popup="#popup-no-money" href="#">
-										<div class="present-main__btn-top">
-											<span class="present-main__btn-name">Обменять</span>
-										</div>
-										<div class="present-main__btn-bottom">
-											<span class="market__banner-small-prise">9999</span>
-											<img src="img/present__page/coin-gold.svg" alt="Coin gold">
-										</div>
-									</a>
-
-									<div class="market__banner-info btn">Info
-										<div class="market__device-info">
-											<div class="market__device-descr">
-												<p class="market__device-info-item">
-													<span>Процессор:</span>
-													Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>Дисплей:</span>
-													13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>GPU:</span>
-													Apple M1, 8 ядер, поддержка ProRes.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>ОЗУ:</span>
-													8/16 ГБ LPDDR4X Unified Memory.
-												</p>
-											</div>
-										</div>
-
-										<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
+									<div class="cabinet__skin-controls">
+										<button class="cabinet__skin-yes">Да</button>
+										<button class="cabinet__skin-no">Нет</button>
 									</div>
 								</div>
 							</div>
 
-							<div class="market__banner-wrapper market__banner--6">
-
-								<div class="market__label market__label--middle" style="background-image: url(img/market__page/label-star.svg);">
-									<p class="market__label-text">Спецпредложение</p>
-									<img class="market__label-img" src="img/present__page/coin-gold.svg" alt="Coin gold">
-									<span class="market__label-price">9999</span>
+							<div class="cabinet__skin-item">
+								<div class="cabinet__skin-images">
+									<picture><source srcset="img/cabinet__page/skin-3.webp" type="image/webp"><img src="img/cabinet__page/skin-3.png" alt="Skin"></picture>
 								</div>
 
-								<div class="market__banner market__banner--middle">
-									<h2 class="market__banner-title market__banner-title--middle">Apple <br> MacBook Pro</h2>
+								<div class="cabinet__skin-bottom">
+									<div class="cabinet__skin-text">Приобрести</div>
 
-									<picture>
-										<source srcset="img/market__page/banner-small__1.jpg" media="(max-width: 1199.98px)" />
-										<img class="market__banner-img" src="img/market__page/banner-middle__2.jpg" alt="Image">
-									</picture>
-
-									<div class="market__banner-controls market__banner-controls--middle">
-										<a class="market__banner-btn btn btn__accent" data-popup="#popup-change" href="#">Обменять
-											<img src="img/common/arrow-right.svg" width="32" height="32" alt="Arrow">
-										</a>
-
-										<div class="market__banner-info btn">Info
-											<div class="market__device-info">
-												<div class="market__device-descr">
-													<p class="market__device-info-item">
-														<span>Процессор:</span>
-														Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-													</p>
-
-													<p class="market__device-info-item">
-														<span>Дисплей:</span>
-														13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-													</p>
-
-													<p class="market__device-info-item">
-														<span>GPU:</span>
-														Apple M1, 8 ядер, поддержка ProRes.
-													</p>
-
-													<p class="market__device-info-item">
-														<span>ОЗУ:</span>
-														8/16 ГБ LPDDR4X Unified Memory.
-													</p>
-												</div>
-											</div>
-
-											<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
-										</div>
+									<div class="cabinet__skin-mint">
+										<img class="cabinet__info-icon" src="img/common/mint.svg" width="15" height="15" alt="Mint">
+										<span>25</span>
 									</div>
-								</div>
-							</div>
 
-							<div class="market__banner market__banner--small market__banner--7">
-
-								<h2 class="market__banner-title">Apple Iphone 14 <br> Pro Max</h2>
-
-								<picture><source srcset="img/market__page/banner-small__2.webp" type="image/webp"><img class="market__banner-img" src="img/market__page/banner-small__2.jpg" alt="Banner"></picture>
-
-								<div class="market__banner-controls">
-									<a class="present-main__btn market__banner-small-btn" data-popup="#popup-no-money2" href="#">
-										<div class="present-main__btn-top">
-											<span class="present-main__btn-name">Обменять</span>
-										</div>
-										<div class="present-main__btn-bottom">
-											<span class="market__banner-small-prise">9999</span>
-											<img src="img/present__page/coin-gold.svg" alt="Coin gold">
-										</div>
-									</a>
-
-									<div class="market__banner-info btn">Info
-										<div class="market__device-info">
-											<div class="market__device-descr">
-												<p class="market__device-info-item">
-													<span>Процессор:</span>
-													Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>Дисплей:</span>
-													13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>GPU:</span>
-													Apple M1, 8 ядер, поддержка ProRes.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>ОЗУ:</span>
-													8/16 ГБ LPDDR4X Unified Memory.
-												</p>
-											</div>
-										</div>
-
-										<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
-									</div>
-								</div>
-							</div>
-
-							<div class="market__banner market__banner--small market__banner--8">
-
-								<h2 class="market__banner-title">Apple Iphone 14 <br> Pro Max</h2>
-
-								<picture><source srcset="img/market__page/banner-small__2.webp" type="image/webp"><img class="market__banner-img" src="img/market__page/banner-small__2.jpg" alt="Banner"></picture>
-
-								<div class="market__banner-controls">
-									<a class="present-main__btn market__banner-small-btn" data-popup="#popup-no-money2" href="#">
-										<div class="present-main__btn-top">
-											<span class="present-main__btn-name">Обменять</span>
-										</div>
-										<div class="present-main__btn-bottom">
-											<span class="market__banner-small-prise">9999</span>
-											<img src="img/present__page/coin-gold.svg" alt="Coin gold">
-										</div>
-									</a>
-
-									<div class="market__banner-info btn">Info
-										<div class="market__device-info">
-											<div class="market__device-descr">
-												<p class="market__device-info-item">
-													<span>Процессор:</span>
-													Apple Silicon M1, 8 ядер, 3.2 ГГц, Neural Engine 16 ядер.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>Дисплей:</span>
-													13.3", 2560×1600, Liquid Retina, IPS, True Tone, 500 нит, P3.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>GPU:</span>
-													Apple M1, 8 ядер, поддержка ProRes.
-												</p>
-
-												<p class="market__device-info-item">
-													<span>ОЗУ:</span>
-													8/16 ГБ LPDDR4X Unified Memory.
-												</p>
-											</div>
-										</div>
-
-										<img src="img/market__page/info.svg" width="30" height="30" alt="Info icon">
+									<div class="cabinet__skin-controls">
+										<button class="cabinet__skin-yes">Да</button>
+										<button class="cabinet__skin-no">Нет</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<div class="cabinet__main-bottom">
+						<div class="cabinet__user-info">
+							<div class="cabinet__user-top">
+								<a class="cabinet__user-person" href="#">
+									<picture><source srcset="img/cabinet__page/user-person.webp" type="image/webp"><img src="img/cabinet__page/user-person.png" width="50" height="50" alt="Image"></picture>
+								</a>
+
+								<a class="cabinet__user-mint" href="#">
+									<span>367+12</span>
+									<img src="img/common/mint.svg" width="32" height="32" alt="Image">
+								</a>
+
+								<div class="cabinet__user-battery-wrapper">
+									<div class="cabinet__user-battery cabinet__user-battery-1">
+										<img src="img/common/battery-1.svg" width="46" height="24" alt="Image">
+									</div>
+
+									<div class="cabinet__user-battery cabinet__user-battery-2">
+										<img src="img/common/battery-2.svg" width="46" height="24" alt="Image">
+									</div>
+
+									<div class="cabinet__user-battery cabinet__user-battery-3">
+										<img src="img/common/battery-3.svg" width="46" height="24" alt="Image">
+									</div>
+
+									<div class="cabinet__user-battery cabinet__user-battery-4">
+										<img src="img/common/battery-4.svg" width="46" height="24" alt="Image">
+									</div>
+								</div>
+							</div>
+
+							<h3 class="cabinet__user-title">Кот-ученый</h3>
+							<p class="cabinet__user-text">
+								Здравствуй, партнёр по химии! Я Кот-ученый, настоящий гений кошачьей мяты. У меня есть формула для выращивания самой чистой и сильной мяты в городе. Готов зайти на мою территорию и познать все тайны фермы?🧪🌱🧫
+							</p>
+						</div>
+
+						<div class="cabinet__buster">
+							<div class="cabinet__buster-top">
+								<a class="cabinet__user-buster" href="#">
+									<picture><source srcset="img/cabinet__page/buster-icon.webp" type="image/webp"><img class="cabinet__buster-icon" src="img/cabinet__page/buster-icon.png" width="50" height="50" alt="Image"></picture>
+								</a>
+
+								<h3 class="cabinet__buster-title">Бустеры</h3>
+							</div>
+
+							<p class="cabinet__buster-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet,
+							</p>
+
+							<a class="cabinet__buster-btn" href="#">
+								Приобрести
+								<svg width="30" height="15">
+									<use xlink:href="img/icons/icons.svg#arrow-line-left"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
 				</div>
-			</section>
+			</div>
+
+			<div class="cabinet__controls--mobile">
+				<a class="mobile-controls__item" href="#" data-popup="#popup-cabinet-target">
+					<div class="circle-wrap">
+						<div class="circle">
+							<div class="mask full-1">
+								<div class="fill-1"></div>
+							</div>
+							<div class="mask half">
+								<div class="fill-1"></div>
+							</div>
+							<div class="inside-circle">48%</div>
+						</div>
+					</div>
+				</a>
+
+				<a class="mobile-controls__item" href="#" data-popup="#popup-cabinet-ferma">
+					<picture><source srcset="img/cabinet__page/card-icon-1.webp" type="image/webp"><img src="img/cabinet__page/card-icon-1.png" alt="Icon"></picture>
+				</a>
+
+				<a class="mobile-controls__item" href="#" data-popup="#popup-cabinet-buster">
+					<picture><source srcset="img/cabinet__page/buster-icon.webp" type="image/webp"><img class="cabinet__buster-icon" src="img/cabinet__page/buster-icon.png" width="50" height="50" alt="Image"></picture>
+				</a>
+
+				<a class="mobile-controls__item" href="#" data-popup="#popup-cabinet-personage">
+					<picture><source srcset="img/cabinet__page/user-person.webp" type="image/webp"><img src="img/cabinet__page/user-person.png" width="50" height="50" alt="Image"></picture>
+				</a>
+			</div>
 		</main>
 
-		<footer class="footer">
-			<div class="footer__container">
-				<h2 class="footer__text">Footer</h2>
-			</div>
-		</footer>
 	</div>
 
 	<div id="popup-error" aria-hidden="true" class="popup-error popup">
