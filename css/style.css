@@ -228,7 +228,7 @@ body::after {
 }
 
 .popup_show {
-  z-index: 150;
+  z-index: 99999;
   visibility: visible;
   overflow: auto;
   pointer-events: auto;
@@ -7604,7 +7604,7 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
+    width: 100% !important;
     gap: 15px;
   }
 
@@ -7659,7 +7659,7 @@ button.swiper-pagination-bullet {
   }
 
   .cabinet__main-bottom {
-    display: none;
+    display: none !important;
   }
 
   .cabinet__controls--mobile {
