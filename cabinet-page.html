@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230927133229">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231003164035">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body class="cabinet__main-wrapper">
 	<div class="wrapper">
-		<header class="header">
+		<header class="header cabinet__header">
 			<div class="header__container">
 				<div class="header__inner">
 					<a href="landing-page-user.html" class="header__logo logo">
@@ -38,7 +38,7 @@
 						</li>
 
 						<li class="header__nav-item">
-							<a class="header__nav-link active" href="present-page-user.html">Подарки</a>
+							<a class="header__nav-link" href="present-page-user.html">Подарки</a>
 						</li>
 					</ul>
 
@@ -73,21 +73,21 @@
 					</div>
 
 					<div class="header__user-data">
-						<a class="header-wallet header-wallet--pc" href="#">
-							<div class="header-wallet__title">Кошелек</div>
+						<a class="header-wallet header-wallet--pc header-wallet header-wallet--adaptiv" href="#">
+							<div class="header-wallet__title header-wallet__title--adaptiv">Кошелек</div>
 							<div class="header-wallet__body">
-								<span class="header-wallet__value">657</span>
-								<img class="header-wallet__icon" src="img/present__page/coin.svg" alt="Coin">
+								<span class="header-wallet__value header-wallet__value--adaptiv">657</span>
+								<img class="header-wallet__icon header-wallet__icon--adaptiv" src="img/present__page/coin.svg" alt="Coin">
 							</div>
 						</a>
 
-						<a class="header-user" href="cabinet-page.html">
+						<a class="header-user header-user--adaptive" href="cabinet-page.html">
 							<div class="header-user__body header-user__body--pc">
-								<div class="header-user__name">Samurai</div>
+								<div class="header-user__name header-user__name--adaptiv">Samurai</div>
 								<div class="header-user__info">
-									<span class="header-user__lvl">LVL</span>
-									<span class="header-user__lvl-value user-data">17</span>
-									<span class="header-user__xp user-data">1013/7800xp</span>
+									<span class="header-user__lvl header-user__lvl--adaptiv">LVL</span>
+									<span class="header-user__lvl-value header-user__lvl-value--adaptiv user-data">17</span>
+									<span class="header-user__xp header-user__xp--adaptiv user-data">1013/7800xp</span>
 								</div>
 							</div>
 
@@ -202,7 +202,7 @@
 								</li>
 
 								<li class="menu__item">
-									<a href="present-page-user.html" class="menu__link active">
+									<a href="present-page-user.html" class="menu__link">
 										<svg width="15" height="15">
 											<use xlink:href="img/icons/icons.svg#market"></use>
 										</svg>
@@ -245,7 +245,7 @@
 			</div>
 		</header>
 
-		<main class="page cabinet__page page-color">
+		<main class="page  cabinet__page page-color">
 			<div class="cabinet__container">
 				<div class="cabinet__body">
 					<div class="cabinet__main">
@@ -390,9 +390,17 @@
 					<div class="cabinet__main-bottom">
 						<div class="cabinet__user-info">
 							<div class="cabinet__user-top">
-								<a class="cabinet__user-person" href="#">
-									<picture><source srcset="img/cabinet__page/user-person.webp" type="image/webp"><img src="img/cabinet__page/user-person.png" width="50" height="50" alt="Image"></picture>
-								</a>
+								<!-- <a class="cabinet__user-person" href="personage-page.html">
+										<picture><source srcset="img/cabinet__page/user-person.webp" type="image/webp"><img src="img/cabinet__page/user-person.png" width="50" height="50" alt="Image"></picture>
+									</a> -->
+
+								<div class="cabinet__buster-top">
+									<a class="cabinet__user-buster" href="#">
+										<picture><source srcset="img/cabinet__page/user-person.webp" type="image/webp"><img class="cabinet__buster-icon" src="img/cabinet__page/user-person.png" width="50" height="50" alt="Image"></picture>
+									</a>
+
+									<h3 class="cabinet__user-title">Кот-ученый</h3>
+								</div>
 
 								<a class="cabinet__user-mint" href="#">
 									<span>367+12</span>
@@ -418,7 +426,7 @@
 								</div>
 							</div>
 
-							<h3 class="cabinet__user-title">Кот-ученый</h3>
+							<!-- <h3 class="cabinet__user-title">Кот-ученый</h3> -->
 							<p class="cabinet__user-text">
 								Здравствуй, партнёр по химии! Я Кот-ученый, настоящий гений кошачьей мяты. У меня есть формула для выращивания самой чистой и сильной мяты в городе. Готов зайти на мою территорию и познать все тайны фермы?🧪🌱🧫
 							</p>
@@ -1325,7 +1333,7 @@
 								</div>
 
 								<div class="cabinet__personage--mobile">
-									<p class="cabinet__personage-label">Добыча</p>
+									<p class="cabinet__personage-label">Энергия</p>
 
 									<div class="cabinet__user-battery-wrapper">
 										<div class="cabinet__user-battery cabinet__user-battery-1">
@@ -1353,7 +1361,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20230927133229"></script>
+	<script src="js/app.min.js?_v=20231003164035"></script>
 </body>
 
 </html>
