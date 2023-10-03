@@ -7052,14 +7052,14 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-height: 1024px) and (min-width: 991.98px) {
+@media (max-height: 900px) and (min-width: 991.98px) {
   .cabinet__main {
     -ms-grid-columns: 200px 1fr minmax(100px, 180px);
     grid-template-columns: 200px 1fr minmax(100px, 180px);
   }
 
   .cabinet__card-top {
-    padding-bottom: 39%;
+    padding-bottom: 39% !important;
   }
 
   .cabinet__cat-inner img {
@@ -7529,7 +7529,7 @@ button.swiper-pagination-bullet {
   }
 
   .cabinet__card-top {
-    padding-bottom: 39%;
+    padding-bottom: 48%;
   }
 }
 
