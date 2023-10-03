@@ -8277,42 +8277,6 @@ button.swiper-pagination-bullet {
     margin-top: -12px;
   }
 
-  .header__user-data .header-user {
-    height: 40px;
-  }
-
-  .header__user-data .header-wallet,
-  .header__user-data .header-user {
-    height: 40px;
-  }
-
-  .header__user-data .header-wallet {
-    padding: 3px 10px;
-  }
-
-  .header__user-data .header-wallet__value {
-    font-size: 12px;
-  }
-
-  .header__user-data .header-wallet__title,
-  .header__user-data .header-user__name {
-    font-size: 14px;
-  }
-
-  .header__user-data .header-user__xp,
-  .header__user-data .header-user__lvl,
-  .header__user-data .header-user__lvl-value {
-    font-size: 12px;
-  }
-
-  .header__user-data .header-user__avatar {
-    height: 100%;
-    width: 36px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 36px;
-            flex: 0 0 36px;
-  }
-
   .sign-up__container {
     background: -webkit-gradient(linear, left top, right top, from(#FDFBFB), to(#EBEDEE));
     background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
@@ -8666,6 +8630,44 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 61.99875em), (max-height: 900px) {
+  .header__user-data .header-user {
+    height: 40px;
+  }
+
+  .header__user-data .header-wallet,
+  .header__user-data .header-user {
+    height: 40px;
+  }
+
+  .header__user-data .header-wallet {
+    padding: 3px 10px;
+  }
+
+  .header__user-data .header-wallet__value {
+    font-size: 12px;
+  }
+
+  .header__user-data .header-wallet__title,
+  .header__user-data .header-user__name {
+    font-size: 14px;
+  }
+
+  .header__user-data .header-user__xp,
+  .header__user-data .header-user__lvl,
+  .header__user-data .header-user__lvl-value {
+    font-size: 12px;
+  }
+
+  .header__user-data .header-user__avatar {
+    height: 100%;
+    width: 36px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 36px;
+            flex: 0 0 36px;
   }
 }
 
