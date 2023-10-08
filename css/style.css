@@ -8500,6 +8500,10 @@ button.swiper-pagination-bullet {
     padding: 20px 0;
   }
 
+  .game-catalog__container--big {
+    padding-bottom: 100px;
+  }
+
   .game-catalog__content {
     margin: 10px;
   }
