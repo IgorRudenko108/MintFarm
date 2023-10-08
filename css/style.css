@@ -1018,13 +1018,6 @@ body::after {
   outline: none;
 }
 
-*:focus-visible {
-  border: 2px solid #14D15D;
-  border-radius: 4px;
-  padding: 3px;
-  outline: none;
-}
-
 details summary::-webkit-details-marker {
   display: none;
 }
@@ -4328,7 +4321,6 @@ span.market__banner-small-prise {
 
 .gc-aside__personage-img {
   max-width: 100%;
-  height: 100%;
 }
 
 .gc-aside__details {
@@ -4428,7 +4420,6 @@ span.market__banner-small-prise {
 
 .gc-aside__lider-img {
   max-width: 100%;
-  height: 100%;
 }
 
 .gc-aside__lider-info {
