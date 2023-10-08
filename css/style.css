@@ -917,7 +917,7 @@ body::after {
 
 .popup-others__content {
   background-color: #B8C3FF;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .game-catalog-popup__close {
@@ -4768,6 +4768,8 @@ body {
 .game-catalog__page {
   padding: 30px 0;
   position: relative;
+  min-height: 600px;
+  overflow-y: auto;
 }
 
 .game-catalog__container--big {
