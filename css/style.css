@@ -6863,46 +6863,6 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   max-width: 100%;
 }
 
-.start__main-title .start__main-img-box {
-  max-width: 350px;
-}
-
-.start__main-title .start__main-title {
-  padding-bottom: 15%;
-}
-
-.start__main-title .start__item-img-box {
-  max-width: 160px;
-  padding: 12px 0;
-}
-
-.start__main-title .start__main-text {
-  font-size: 13px;
-  padding: 12px;
-}
-
-.start__main-title .start__main-block {
-  max-width: 560px;
-}
-
-.start__main-title .start__main-text {
-  max-width: 350px;
-  margin-top: 60px;
-}
-
-.start__main-title .start__top-deco {
-  width: 35px;
-  height: 35px;
-}
-
-.start__main-title .start__bottom-img-box {
-  max-width: 150px;
-}
-
-.start__main-title .start__top-deco--3 {
-  left: 40px;
-}
-
 /**
  * Swiper 7.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -9124,7 +9084,7 @@ button.swiper-pagination-bullet {
   .start__main-text {
     padding: 10px 5px !important;
     max-width: 200px !important;
-    margin-top: -55px !important;
+    margin-top: -70px !important;
   }
 
   .start__middle-btn-box {
@@ -10890,10 +10850,6 @@ button.swiper-pagination-bullet {
   .start__main-img-box {
     max-width: 220px;
   }
-
-  .start__main-text {
-    margin-top: -70px;
-  }
 }
 
 @media (min-width: 47.99875em) and (max-width: 74.99875em) {
@@ -12364,6 +12320,56 @@ button.swiper-pagination-bullet {
 }
 }
 
+@media (max-height: 767.98px) and (max-width: 1366px) and (min-width: 991.98px) {
+  .start__main-title {
+    font-size: 85px;
+  }
+
+  .start__main-img-box {
+    max-width: 350px;
+  }
+
+  .start__main-title {
+    padding-bottom: 15%;
+  }
+
+  .start__item-img-box {
+    max-width: 160px;
+    padding: 12px 0;
+  }
+
+  .start__main-text {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .start__main-block {
+    max-width: 560px;
+  }
+
+  .start__main-text {
+    max-width: 350px;
+    margin-top: 60px;
+  }
+
+  .start__top-deco {
+    width: 35px;
+    height: 35px;
+  }
+
+  .start__bottom-img-box {
+    max-width: 150px;
+  }
+
+  .start__top-deco--3 {
+    left: 40px;
+  }
+
+  .start__inner {
+    padding-top: 20px;
+  }
+}
+
 @media (any-hover: hover) {
   .popup-error__link:hover {
     color: #05a743;
@@ -12917,12 +12923,6 @@ button.swiper-pagination-bullet {
 
   .personage__column {
     gap: 12px;
-  }
-}
-
-@media (max-height: 767.98px) {
-  .start__main-title {
-    font-size: 85px;
   }
 }
 
