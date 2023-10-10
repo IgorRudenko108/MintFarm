@@ -12326,7 +12326,7 @@ button.swiper-pagination-bullet {
   }
 
   .start__main-img-box {
-    max-width: 350px;
+    max-width: 350px !important;
   }
 
   .start__main-title {
@@ -12344,12 +12344,12 @@ button.swiper-pagination-bullet {
   }
 
   .start__main-block {
-    max-width: 560px;
+    max-width: 560px !important;
   }
 
   .start__main-text {
-    max-width: 350px;
-    margin-top: 60px;
+    max-width: 350px !important;
+    margin-top: 60px !important;
   }
 
   .start__top-deco {
