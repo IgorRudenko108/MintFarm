@@ -6676,6 +6676,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   padding: 20px;
   background-color: #F6F6F4;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .start__middle-btn-box::before {
