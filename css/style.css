@@ -8683,9 +8683,9 @@ button.swiper-pagination-bullet {
   }
 
   .start__main-text {
-    max-width: 210px;
+    max-width: 210px !important;
     text-align: center;
-    margin-top: -45px;
+    margin-top: -45px !important;
   }
 }
 
@@ -9128,9 +9128,9 @@ button.swiper-pagination-bullet {
   }
 
   .start__main-text {
-    padding: 10px 5px;
-    max-width: 200px;
-    margin-top: -55px;
+    padding: 10px 5px !important;
+    max-width: 200px !important;
+    margin-top: -55px !important;
   }
 
   .start__middle-btn-box {
