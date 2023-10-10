@@ -10851,7 +10851,7 @@ button.swiper-pagination-bullet {
   }
 
   .start__main-text {
-    max-width: -70px !important;
+    margin-top: -70px !important;
   }
 }
 
