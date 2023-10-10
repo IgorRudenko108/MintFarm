@@ -8629,7 +8629,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 640px) {
   .start__main-block {
-    max-width: 350px !important;
+    max-width: 370px !important;
   }
 
   .start__main-img-box {
@@ -8639,7 +8639,7 @@ button.swiper-pagination-bullet {
   .start__main-text {
     max-width: 210px !important;
     text-align: center;
-    margin-top: -45px !important;
+    margin-top: -15px !important;
   }
 }
 
@@ -9084,7 +9084,6 @@ button.swiper-pagination-bullet {
   .start__main-text {
     padding: 10px 5px !important;
     max-width: 200px !important;
-    margin-top: -70px !important;
   }
 
   .start__middle-btn-box {
@@ -10844,11 +10843,15 @@ button.swiper-pagination-bullet {
   }
 
   .start__main-block {
-    max-width: 320px !important;
+    max-width: 335px !important;
   }
 
   .start__main-img-box {
     max-width: 220px;
+  }
+
+  .start__main-text {
+    max-width: -70px !important;
   }
 }
 
