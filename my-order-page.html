@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231011015456">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231013125950">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,7 @@
 						</li>
 					</ul>
 
-					<div class="lang-dropdown" data-da=".menu__top,479.98,2">
+					<div class="lang-dropdown" data-da=".menu__body,479.98,2">
 
 						<div class="lang-dropdown__btn">
 							<span class="lang-dropdown__active">RU</span>
@@ -100,144 +100,178 @@
 					<button type="button" class="menu__icon icon-menu icon-menu--pc"><span></span></button>
 
 					<div class="header__menu menu">
-
-						<div class="menu__top">
-							<a class="header__menu-logo menu-logo" href="landing-page-user.html">
-								<svg width="43" height="43">
-									<use xlink:href="img/icons/icons.svg#cat"></use>
-								</svg>
-								<span>MintFarm</span>
-							</a>
-						</div>
-
 						<nav class="menu__body">
-							<div class="header__menu-info">
-								<a class="header-user__body header-user__body--center" href="cabinet-page.html">
-									<div class="header-user__name">Samurai</div>
-									<div class="header-user__info">
-										<span class="header-user__lvl">LVL</span>
-										<span class="header-user__lvl-value user-data">17</span>
-										<span class="header-user__xp user-data">1013/7800xp</span>
+							<div class="burger__body-top">
+								<a class="burger__user" href="cabinet-page.html">
+									<div class="burger__user-info">
+										<div class="burger__user-name">Samurai</div>
+										<p class="burger__user-lvl">LVL 17 1013/7800xp</p>
+									</div>
+
+									<div class="burger__user-img">
+										<picture><source srcset="img/header/user-ava.webp" type="image/webp"><img src="img/header/user-ava.png" alt="Image"></picture>
 									</div>
 								</a>
 
-								<div class="header-user__battery-wrapper">
-									<div class="header-user__battery header-user__battery-1">
-										<img src="img/common/battery-1.svg" alt="Battery">
-									</div>
+								<div class="burger__stat-info">
+									<a href="#" class="burger__stat-item burger__stat-money">
+										<img class="burger__stat-icon" src="img/header/burger-coin-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">657</span>
+									</a>
 
-									<div class="header-user__battery header-user__battery-2">
-										<img src="img/common/battery-2.svg" alt="Battery">
-									</div>
+									<a href="#" class="burger__stat-item burger__stat-mint">
+										<img class="burger__stat-icon" src="img/header/burger-mint-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">367</span>
+									</a>
 
-									<div class="header-user__battery header-user__battery-3">
-										<img src="img/common/battery-3.svg" alt="Battery">
-									</div>
-
-									<div class="header-user__battery header-user__battery-4">
-										<img src="img/common/battery-4.svg" alt="Battery">
-									</div>
-								</div>
-
-								<a class="header-wallet header-wallet--center" href="#">
-									<div class="header-wallet__title">Кошелек</div>
-									<div class="header-wallet__body">
-										<span class="header-wallet__value">657</span>
-										<img class="header-wallet__icon" src="img/present__page/coin.svg" alt="Coin">
-									</div>
-								</a>
-
-								<div class="header__mint-inner header__burger-mint">
-									<img src="img/common/mint.svg" alt="Mint">
-									<span>367</span>
+									<a href="#" class="burger__stat-item burger__stat-energy">
+										<img class="burger__stat-icon" src="img/header/burger-energy-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">10%</span>
+									</a>
 								</div>
 							</div>
 
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="landing-page-user.html" class="menu__link">
-										<svg width="15" height="15">
-											<use xlink:href="img/icons/icons.svg#home"></use>
-										</svg>
-										<span>Главная</span>
-									</a>
-								</li>
+							<div class="burger__game-block">
+								<div class="burger__game-top">
+									<h3 class="burger__block-title">
+										<img class="burger__block-title-icon" src="img/header/title-icon-1.svg" width="20" height="20" alt="Icon">
+										Игры
+									</h3>
 
-								<li class="menu__item">
-									<a href="help-page-user.html" class="menu__link active">
-										<svg width="15" height="15">
-											<use xlink:href="img/icons/icons.svg#question"></use>
-										</svg>
-										<span>Помощь</span>
-									</a>
-								</li>
+									<div data-spollers class="spollers burger__game-spoller">
+										<details class="spollers__item">
+											<summary class="spollers__title">
+												<img class="burger__block-title-icon" src="img/header/title-icon-1.svg" width="17" height="17" alt="Icon">
+												Игры
+											</summary>
+											<div class="spollers__body">
+												<a class="spollers__body-item burger__game-body-item" href="#">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
+													Ферма
+												</a>
 
-								<li class="menu__item">
-									<a href="game-catalog-page.html" class="menu__link">
-										<svg width="15" height="15">
-											<use xlink:href="img/icons/icons.svg#cat"></use>
-										</svg>
-										<span>Игры</span>
-									</a>
-								</li>
+												<a class="spollers__body-item burger__game-body-item" href="#">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-2.svg" width="22" height="22" alt="Icon">
+													Рыцарь
+												</a>
 
-								<li class="menu__item">
-									<a href="#" class="menu__link">
-										<svg width="15" height="15">
-											<use xlink:href="img/icons/icons.svg#task"></use>
-										</svg>
-										<span>Ежедневные задания</span>
-									</a>
-								</li>
+												<a class="spollers__body-item burger__game-body-item" href="#">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
+													Стрелок
+												</a>
 
-								<li class="menu-line"></li>
+												<a class="spollers__body-item burger__game-body-item" href="#">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-4.svg" width="22" height="22" alt="Icon">
+													Сапер
+												</a>
 
-								<li class="menu__item">
-									<a href="#" class="menu__link">
-										<svg width="15" height="15">
-											<use xlink:href="img/icons/icons.svg#neighbor"></use>
-										</svg>
-										<span>Соседи</span>
-									</a>
-								</li>
-
-								<li class="menu__item">
-									<a href="present-page-user.html" class="menu__link">
-										<svg width="15" height="15">
-											<use xlink:href="img/icons/icons.svg#market"></use>
-										</svg>
-										<span>Подарки</span>
-									</a>
-								</li>
-
-								<li class="menu__item">
-									<a href="#" class="menu__link">
-										<svg width="15" height="15">
-											<use xlink:href="img/icons/icons.svg#rocket"></use>
-										</svg>
-										<span>Бустеры</span>
-									</a>
-								</li>
-
-								<li class="menu__item">
-									<a href="settings-page.html" class="menu__link">
-										<svg width="15" height="15">
-											<use xlink:href="img/icons/icons.svg#settings"></use>
-										</svg>
-										<span>Настройки</span>
-									</a>
-								</li>
-
-								<li class="menu-line"></li>
-
-							</ul>
-
-							<div class="menu__bottom">
-								<div class="menu__online">
-									<img src="img/common/group.svg" width="40" height="40" alt="Image">
-
-									<p>Онлайн: <span>9678</span> чел.</p>
+												<a class="spollers__body-item burger__game-body-item" href="#">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-5.svg" width="22" height="22" alt="Icon">
+													Летун
+												</a>
+											</div>
+										</details>
+									</div>
 								</div>
+
+								<div class="burger__game-body">
+									<a class="burger__game-body-item" href="game-catalog-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
+										Ферма
+									</a>
+
+									<a class="burger__game-body-item" href="#">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-2.svg" width="22" height="22" alt="Icon">
+										Рыцарь
+									</a>
+
+									<a class="burger__game-body-item" href="#">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
+										Стрелок
+									</a>
+
+									<a class="burger__game-body-item" href="#">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-4.svg" width="22" height="22" alt="Icon">
+										Сапер
+									</a>
+
+									<a class="burger__game-body-item" href="#">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-5.svg" width="22" height="22" alt="Icon">
+										Летун
+									</a>
+								</div>
+
+								<div class="burger__market">
+									<h3 class="burger__market-title">
+										<img class="burger__market-title-icon" src="img/header/title-icon-2.svg" width="20" height="20" alt="Icon">
+										Маркет
+									</h3>
+
+									<div class="burger__market-body">
+										<div class="burger__market-item">
+											<img src="img/header/burger-mint-1.svg" alt="Icon">
+
+											<div class="burger__market-input-wrapper">
+												<input class="burger__market-input" type="number">
+											</div>
+										</div>
+
+										<img class="burger__market-exchange" src="img/header/exchange.svg" width="25" height="25" alt="Icon">
+
+										<div class="burger__market-item">
+											<div class="burger__market-input-wrapper">
+												<input class="burger__market-input" type="number">
+											</div>
+
+											<img src="img/header/burger-coin-2.svg" alt="Icon">
+										</div>
+									</div>
+
+									<button class="burger__market-btn">Обменять</button>
+								</div>
+							</div>
+
+							<hr class="burger__line">
+
+							<div class="burger__nav">
+								<a class="burger__nav-link" href="present-page-user.html">
+									<img src="img/header/burger-link-1.svg" width="20" height="20" alt="Icon">
+									Подарки
+								</a>
+
+								<a class="burger__nav-link" href="neighbors-page.html">
+									<img src="img/header/burger-link-2.svg" width="20" height="20" alt="Icon">
+									Соседи
+								</a>
+
+								<a class="burger__nav-link" href="kotopas-page.html">
+									<img src="img/header/burger-link-3.svg" width="20" height="20" alt="Icon">
+									Котопас
+								</a>
+
+								<a class="burger__nav-link" href="tasks-page.html">
+									<img src="img/header/burger-link-4.svg" width="20" height="20" alt="Icon">
+									Задачи
+								</a>
+							</div>
+
+							<hr class="burger__line">
+
+							<div class="burger__online">
+								<img src="img/header/burger-people.svg" width="20" height="20" alt="Icon">
+								<span>Онлайн: 9678 чел.</span>
+							</div>
+
+							<div class="burger__bottom">
+								<a class="burger__bottom-link" href="settings-page.html">
+									<img src="img/header/burger-settings.svg" width="15" height="15" alt="Icon">
+									<span>Настройки</span>
+								</a>
+
+								<a class="burger__bottom-link" href="help-page-user.html">
+									<img src="img/header/burger-help.svg" width="15" height="15" alt="Icon">
+									<span>Помощь</span>
+								</a>
 							</div>
 						</nav>
 					</div>
@@ -248,18 +282,94 @@
 		<main class="page order__page page-color">
 			<div class="order__container">
 				<div class="order__inner">
-					<h1 class="order__title help-schedule__title">Мои заказы</h1>
+					<h1 class="order__title">Мои заказы</h1>
 
 					<div class="order__body">
-						<div class="order__top">
-							<picture><source srcset="img/order__page/order-1.webp" type="image/webp"><img class="order__top-img" src="img/order__page/order-1.jpg" alt="Image"></picture>
+						<div class="order__top" data-da=".order__inner,840,1">
+							<picture><source srcset="img/order__page/order-1.webp" type="image/webp"><img class="order__top-img" src="img/order__page/order-1.jpg" width="53" height="53" alt="Image"></picture>
 
 							<h1 class="order__top-title">Статус заказа / <span class="order__product">Apple Iphone 14 Pro Max</span></h1>
 						</div>
 
 						<div class="order__main">
-							<div class="order__item">
+							<div class="order__item done">
+								<div class="order__item-inner">
+									<div class="order__item-circle">
+										<span></span>
+									</div>
 
+									<svg class="order__item-icon" width="50" height="50">
+										<use xlink:href="img/icons/icons.svg#order-step-1"></use>
+									</svg>
+
+									<h3 class="order__item-title">Заказ создан</h3>
+
+									<p class="order__item-text">Ожидает обработки.</p>
+								</div>
+							</div>
+
+							<div class="order__item done">
+								<div class="order__item-inner">
+									<div class="order__item-circle">
+										<span></span>
+									</div>
+
+									<svg class="order__item-icon" width="50" height="50">
+										<use xlink:href="img/icons/icons.svg#order-step-2"></use>
+									</svg>
+
+									<h3 class="order__item-title">В процессе обработки</h3>
+
+									<p class="order__item-text">На данном этапе производится комплектация и упаковка заказа.</p>
+								</div>
+							</div>
+
+							<div class="order__item in-process">
+								<div class="order__item-inner">
+									<div class="order__item-circle">
+										<span></span>
+									</div>
+
+									<svg class="order__item-icon order__item-icon--fill" width="50" height="50">
+										<use xlink:href="img/icons/icons.svg#order-step-3"></use>
+									</svg>
+
+									<h3 class="order__item-title">В пути</h3>
+
+									<p class="order__item-text">На данном этапе происходит транспортировка заказа до места выдачи</p>
+								</div>
+							</div>
+
+							<div class="order__item">
+								<div class="order__item-inner">
+									<div class="order__item-circle">
+										<span></span>
+									</div>
+
+									<svg class="order__item-icon" width="50" height="50">
+										<use xlink:href="img/icons/icons.svg#order-step-4"></use>
+									</svg>
+
+									<h3 class="order__item-title">Готов к выдаче</h3>
+
+									<p class="order__item-text">срок хранения N дней</p>
+								</div>
+							</div>
+
+							<div class="order__item">
+								<div class="order__item-inner">
+									<div class="order__item-circle">
+										<span></span>
+									</div>
+
+									<svg class="order__item-icon" width="50" height="50">
+										<use xlink:href="img/icons/icons.svg#order-step-5"></use>
+									</svg>
+
+									<h3 class="order__item-title">Заказ получен</h3>
+
+									<p class="order__item-text">17 сентября 2023</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -269,7 +379,7 @@
 
 	</div>
 
-	<script src="js/app.min.js?_v=20231011015456"></script>
+	<script src="js/app.min.js?_v=20231013125950"></script>
 </body>
 
 </html>
