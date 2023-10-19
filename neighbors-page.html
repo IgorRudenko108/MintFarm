@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231013125950">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231019031855">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -145,7 +145,7 @@
 												Игры
 											</summary>
 											<div class="spollers__body">
-												<a class="spollers__body-item burger__game-body-item" href="#">
+												<a class="spollers__body-item burger__game-body-item" href="game-catalog-page.html">
 													<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
 													Ферма
 												</a>
@@ -377,298 +377,466 @@
 							Это ваше окружение, кого пригласили по реферальной ссылке
 						</h3>
 
-						<div class="neighbors__main-body">
-							<div class="neighbors__main-body-top">
-								<h2 class="neighbors__main-body-title">Твои соседи</h2>
+						<div class="neighbors__main-body-wrapper">
+							<div class="neighbors__main-body">
+								<div class="neighbors__main-body-top">
+									<h2 class="neighbors__main-body-title">Твои соседи</h2>
 
-								<div class="neighbors__people">
-									<div class="neighbors__people-body">
-										Всего: 56 чел.
+									<div class="neighbors__people">
+										<div class="neighbors__people-body">
+											Всего: 56 чел.
+										</div>
+										<button class="neighbors__people-btn">
+											<img src="img/neighbors__page/cross.svg" alt="Image">
+										</button>
 									</div>
-									<button class="neighbors__people-btn">
-										<img src="img/neighbors__page/cross.svg" alt="Image">
-									</button>
+
+									<a class="neighbors__statistic" href="#">
+										<div class="neighbors__statistic-box">
+											<span>Детальная</span> статистика
+										</div>
+									</a>
+
+									<select class="neighbors__select" data-scroll name="form[]" data-class-modif="form">
+										<option value="1">Сортировать по</option>
+										<option value="2">Пункт 1</option>
+										<option value="3">Пункт 2</option>
+									</select>
 								</div>
 
-								<a class="neighbors__statistic" href="#">
-									<div class="neighbors__statistic-box">
-										<span>Детальная</span> статистика
-									</div>
-								</a>
+								<table class="neighbors__table">
+									<tr class="neighbors__tr">
+										<td class="neighbors__user-box">
+											<a class="neighbors__table-user neighbors__table-item" href="#">
+												<div class="neighbors__table-user-img">
+													<picture><source srcset="img/neighbors__page/user-1.webp" type="image/webp"><img src="img/neighbors__page/user-1.jpg" width="40" height="40" alt="Image"></picture>
+												</div>
 
-								<select class="neighbors__select" data-scroll name="form[]" data-class-modif="form">
-									<option value="1">Сортировать по</option>
-									<option value="2">Пункт 1</option>
-									<option value="3">Пункт 2</option>
-								</select>
+												<div class="neighbors__table-name">
+													<div class="neighbors__level neighbors__level--mobile">16 уровень</div>
+													Ysanaieri
+												</div>
+											</a>
+										</td>
+
+										<td class="neighbors__rating-box">
+											<div class="neighbors__rating">
+												Вовлеченность
+												<div class="neighbors__rating-stars">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__level-box">
+											<div class="neighbors__level neighbors__table-item">16 уровень</div>
+										</td>
+
+										<td class="neighbors__type-box">
+											<div class="neighbors__type neighbors__type-1 neighbors__table-item">1 тип</div>
+										</td>
+
+										<td class="neighbors__value-box">
+											<div class="neighbors__value-wrapper">
+												<div class="neighbors__value neighbors__value--mobile neighbors__table-item">
+													<div class="neighbors__value-title">В день:</div>
+													<div class="neighbors__value-body">
+														+4
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+
+												<div class="neighbors__value neighbors__table-item">
+													<div class="neighbors__value-title">Всего:</div>
+													<div class="neighbors__value-body">
+														+54
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__td--mobile">
+											<a class="neighbors__table-link neighbors__table-item" href="#">
+												Написать
+												<svg width="10" height="10">
+													<use xlink:href="img/icons/icons.svg#right"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+
+									<tr class="neighbors__tr">
+										<td class="neighbors__user-box">
+											<a class="neighbors__table-user neighbors__table-item" href="#">
+												<div class="neighbors__table-user-img">
+													<picture><source srcset="img/neighbors__page/user-2.webp" type="image/webp"><img src="img/neighbors__page/user-2.jpg" width="40" height="40" alt="Image"></picture>
+												</div>
+
+												<div class="neighbors__table-name">
+													<div class="neighbors__level neighbors__level--mobile">16 уровень</div>
+													Unieyr
+												</div>
+											</a>
+										</td>
+
+										<td class="neighbors__rating-box">
+											<div class="neighbors__rating">
+												Вовлеченность
+												<div class="neighbors__rating-stars">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__level-box">
+											<div class="neighbors__level neighbors__table-item">10 уровень</div>
+										</td>
+
+										<td class="neighbors__type-box">
+											<div class="neighbors__type neighbors__type-2 neighbors__table-item">2 тип</div>
+										</td>
+
+										<td class="neighbors__value-box">
+											<div class="neighbors__value-wrapper">
+												<div class="neighbors__value neighbors__value--mobile neighbors__table-item">
+													<div class="neighbors__value-title">В день:</div>
+													<div class="neighbors__value-body">
+														+1
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+
+												<div class="neighbors__value neighbors__table-item">
+													<div class="neighbors__value-title">Всего:</div>
+													<div class="neighbors__value-body">
+														+12
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__td--mobile">
+											<a class="neighbors__table-link neighbors__table-item" href="#">
+												Написать
+												<svg width="10" height="10">
+													<use xlink:href="img/icons/icons.svg#right"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+
+									<tr class="neighbors__tr">
+										<td class="neighbors__user-box">
+											<a class="neighbors__table-user neighbors__table-item" href="#">
+												<div class="neighbors__table-user-img">
+													<picture><source srcset="img/neighbors__page/user-3.webp" type="image/webp"><img src="img/neighbors__page/user-3.jpg" width="40" height="40" alt="Image"></picture>
+												</div>
+
+												<div class="neighbors__table-name">
+													<div class="neighbors__level neighbors__level--mobile">12 уровень</div>
+													Ietio
+												</div>
+											</a>
+										</td>
+
+										<td class="neighbors__rating-box">
+											<div class="neighbors__rating">
+												Вовлеченность
+												<div class="neighbors__rating-stars">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__level-box">
+											<div class="neighbors__level neighbors__table-item">12 уровень</div>
+										</td>
+
+										<td class="neighbors__type-box">
+											<div class="neighbors__type neighbors__type-2 neighbors__table-item">2 тип</div>
+										</td>
+
+										<td class="neighbors__value-box">
+											<div class="neighbors__value-wrapper">
+												<div class="neighbors__value neighbors__value--mobile neighbors__table-item">
+													<div class="neighbors__value-title">В день:</div>
+													<div class="neighbors__value-body">
+														+3
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+
+												<div class="neighbors__value neighbors__table-item">
+													<div class="neighbors__value-title">Всего:</div>
+													<div class="neighbors__value-body">
+														+24
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__td--mobile">
+											<a class="neighbors__table-link neighbors__table-item" href="#">
+												Написать
+												<svg width="10" height="10">
+													<use xlink:href="img/icons/icons.svg#right"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+
+									<tr class="neighbors__tr">
+										<td class="neighbors__user-box">
+											<a class="neighbors__table-user neighbors__table-item" href="#">
+												<div class="neighbors__table-user-img">
+													<picture><source srcset="img/neighbors__page/user-4.webp" type="image/webp"><img src="img/neighbors__page/user-4.jpg" width="40" height="40" alt="Image"></picture>
+												</div>
+
+												<div class="neighbors__table-name">
+													<div class="neighbors__level neighbors__level--mobile">14 уровень</div>
+													Ysanaieri
+												</div>
+											</a>
+										</td>
+
+										<td class="neighbors__rating-box">
+											<div class="neighbors__rating">
+												Вовлеченность
+												<div class="neighbors__rating-stars">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__level-box">
+											<div class="neighbors__level neighbors__table-item">14 уровень</div>
+										</td>
+
+										<td class="neighbors__type-box">
+											<div class="neighbors__type neighbors__type-1 neighbors__table-item">1 тип</div>
+										</td>
+
+										<td class="neighbors__value-box">
+											<div class="neighbors__value-wrapper">
+												<div class="neighbors__value neighbors__value--mobile neighbors__table-item">
+													<div class="neighbors__value-title">В день:</div>
+													<div class="neighbors__value-body">
+														+4
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+
+												<div class="neighbors__value neighbors__table-item">
+													<div class="neighbors__value-title">Всего:</div>
+													<div class="neighbors__value-body">
+														+11
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__td--mobile">
+											<a class="neighbors__table-link neighbors__table-item" href="#">
+												Написать
+												<svg width="10" height="10">
+													<use xlink:href="img/icons/icons.svg#right"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+
+									<tr class="neighbors__tr">
+										<td class="neighbors__user-box">
+											<a class="neighbors__table-user neighbors__table-item" href="#">
+												<div class="neighbors__table-user-img">
+													<picture><source srcset="img/neighbors__page/user-5.webp" type="image/webp"><img src="img/neighbors__page/user-5.jpg" width="40" height="40" alt="Image"></picture>
+												</div>
+
+												<div class="neighbors__table-name">
+													<div class="neighbors__level neighbors__level--mobile">27 уровень</div>
+													Arr
+												</div>
+											</a>
+										</td>
+
+										<td class="neighbors__rating-box">
+											<div class="neighbors__rating">
+												Вовлеченность
+												<div class="neighbors__rating-stars">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__level-box">
+											<div class="neighbors__level neighbors__table-item">48 уровень</div>
+										</td>
+
+										<td class="neighbors__type-box">
+											<div class="neighbors__type neighbors__type-3 neighbors__table-item">3 тип</div>
+										</td>
+
+										<td class="neighbors__value-box">
+											<div class="neighbors__value-wrapper">
+												<div class="neighbors__value neighbors__value--mobile neighbors__table-item">
+													<div class="neighbors__value-title">В день:</div>
+													<div class="neighbors__value-body">
+														+9
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+
+												<div class="neighbors__value neighbors__table-item">
+													<div class="neighbors__value-title">Всего:</div>
+													<div class="neighbors__value-body">
+														+48
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__td--mobile">
+											<a class="neighbors__table-link neighbors__table-item" href="#">
+												Написать
+												<svg width="10" height="10">
+													<use xlink:href="img/icons/icons.svg#right"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+
+									<tr class="neighbors__tr">
+										<td class="neighbors__user-box">
+											<a class="neighbors__table-user neighbors__table-item" href="#">
+												<div class="neighbors__table-user-img">
+													<picture><source srcset="img/neighbors__page/user-6.webp" type="image/webp"><img src="img/neighbors__page/user-6.jpg" width="40" height="40" alt="Image"></picture>
+												</div>
+
+												<div class="neighbors__table-name">
+													<div class="neighbors__level neighbors__level--mobile">17 уровень</div>
+													Tschar
+												</div>
+											</a>
+										</td>
+
+										<td class="neighbors__rating-box">
+											<div class="neighbors__rating">
+												Вовлеченность
+												<div class="neighbors__rating-stars">
+													<img src="img/neighbors__page/star-full.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+													<img src="img/neighbors__page/star.svg" width="12" height="12" alt="Star">
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__level-box">
+											<div class="neighbors__level neighbors__table-item">17 уровень</div>
+										</td>
+
+										<td class="neighbors__type-box">
+											<div class="neighbors__type neighbors__type-3 neighbors__table-item">3 тип</div>
+										</td>
+
+										<td class="neighbors__value-box">
+											<div class="neighbors__value-wrapper">
+												<div class="neighbors__value neighbors__value--mobile neighbors__table-item">
+													<div class="neighbors__value-title">В день:</div>
+													<div class="neighbors__value-body">
+														+6
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+
+												<div class="neighbors__value neighbors__table-item">
+													<div class="neighbors__value-title">Всего:</div>
+													<div class="neighbors__value-body">
+														+17
+														<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="neighbors__td--mobile">
+											<a class="neighbors__table-link neighbors__table-item" href="#">
+												Написать
+												<svg width="10" height="10">
+													<use xlink:href="img/icons/icons.svg#right"></use>
+												</svg>
+											</a>
+										</td>
+									</tr>
+
+								</table>
 							</div>
 
-							<table class="neighbors__table">
-								<tr>
-									<td>
-										<a class="neighbors__table-user neighbors__table-item" href="#">
-											<div class="neighbors__table-user-img">
-												<picture><source srcset="img/neighbors__page/user-1.webp" type="image/webp"><img src="img/neighbors__page/user-1.jpg" width="40" height="40" alt="Image"></picture>
-											</div>
+							<div class="neighbors__main-body">
+								<div class="neighbors__main-body-top">
+									<h2 class="neighbors__main-body-title">Твои соседи</h2>
 
-											<div class="neighbors__table-name">
-												<div class="neighbors__level neighbors__level--mobile">16 уровень</div>
-												Ysanaieri
-											</div>
-										</a>
-									</td>
-
-									<td>
-										<div class="neighbors__level neighbors__table-item" data-da=".neighbors__table-name,575.89,0">16 уровень</div>
-									</td>
-
-									<td>
-										<div class="neighbors__type neighbors__type-1 neighbors__table-item">1 тип</div>
-									</td>
-
-									<td>
-										<div class="neighbors__value neighbors__table-item">
-											+54
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+									<div class="neighbors__people">
+										<div class="neighbors__people-body">
+											Всего: 56 чел.
 										</div>
-									</td>
+										<button class="neighbors__people-btn">
+											<img src="img/neighbors__page/cross.svg" alt="Image">
+										</button>
+									</div>
 
-									<td class="neighbors__td--mobile">
-										<a class="neighbors__table-link neighbors__table-item" href="#">
-											Написать
-											<svg width="10" height="10">
-												<use xlink:href="img/icons/icons.svg#right"></use>
-											</svg>
-										</a>
-
-										<div class="neighbors__value neighbors__value--mobile">
-											+54
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+									<a class="neighbors__statistic" href="#">
+										<div class="neighbors__statistic-box">
+											<span>Детальная</span> статистика
 										</div>
-									</td>
-								</tr>
+									</a>
 
-								<tr>
-									<td>
-										<a class="neighbors__table-user neighbors__table-item" href="#">
-											<div class="neighbors__table-user-img">
-												<picture><source srcset="img/neighbors__page/user-2.webp" type="image/webp"><img src="img/neighbors__page/user-2.jpg" width="40" height="40" alt="Image"></picture>
-											</div>
+									<select class="neighbors__select" data-scroll name="form[]" data-class-modif="form">
+										<option value="1">Сортировать по</option>
+										<option value="2">Пункт 1</option>
+										<option value="3">Пункт 2</option>
+									</select>
+								</div>
 
-											<div class="neighbors__table-name">
-												<div class="neighbors__level neighbors__level--mobile">10 уровень</div>
-												Unieyr
-											</div>
-										</a>
-									</td>
+								<div class="neighbors__main-invite">
+									<div class="neighbors__main-invite-head">
+										<h2 class="neighbors__main-invite-title">Пригласи друзей,чтоб играть <span>вместе с ними!</span></h2>
+										<p class="neighbors__main-invite-text">Текст о том какие бонусы дает пришлашение друзей и как это сделать.</p>
+									</div>
 
-									<td>
-										<div class="neighbors__level neighbors__table-item">10 уровень</div>
-									</td>
+									<div class="neighbors__main-invite-box">
+										<picture><source srcset="img/game-catalog/aside-invite.webp" type="image/webp"><img class="neighbors__main-invite-img" src="img/game-catalog/aside-invite.png" width="190" height="190" alt="Icon"></picture>
+									</div>
 
-									<td>
-										<div class="neighbors__type neighbors__type-2 neighbors__table-item">2 тип</div>
-									</td>
-
-									<td>
-										<div class="neighbors__value neighbors__table-item">
-											+20
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-
-									<td class="neighbors__td--mobile">
-										<a class="neighbors__table-link neighbors__table-item" href="#">
-											Написать
-											<svg width="10" height="10">
-												<use xlink:href="img/icons/icons.svg#right"></use>
-											</svg>
-										</a>
-
-										<div class="neighbors__value neighbors__value--mobile">
-											+20
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-
-								</tr>
-
-								<tr>
-									<td>
-										<a class="neighbors__table-user neighbors__table-item" href="#">
-											<div class="neighbors__table-user-img">
-												<picture><source srcset="img/neighbors__page/user-3.webp" type="image/webp"><img src="img/neighbors__page/user-3.jpg" width="40" height="40" alt="Image"></picture>
-											</div>
-
-											<div class="neighbors__table-name">
-												<div class="neighbors__level neighbors__level--mobile">12 уровень</div>
-												Ietio
-											</div>
-										</a>
-									</td>
-
-									<td>
-										<div class="neighbors__level neighbors__table-item">12 уровень</div>
-									</td>
-
-									<td>
-										<div class="neighbors__type neighbors__type-2 neighbors__table-item">2 тип</div>
-									</td>
-
-									<td>
-										<div class="neighbors__value neighbors__table-item">
-											+13
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-
-									<td class="neighbors__td--mobile">
-										<a class="neighbors__table-link neighbors__table-item" href="#">
-											Написать
-											<svg width="10" height="10">
-												<use xlink:href="img/icons/icons.svg#right"></use>
-											</svg>
-										</a>
-
-										<div class="neighbors__value neighbors__value--mobile">
-											+13
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<a class="neighbors__table-user neighbors__table-item" href="#">
-											<div class="neighbors__table-user-img">
-												<picture><source srcset="img/neighbors__page/user-4.webp" type="image/webp"><img src="img/neighbors__page/user-4.jpg" width="40" height="40" alt="Image"></picture>
-											</div>
-
-											<div class="neighbors__table-name">
-												<div class="neighbors__level neighbors__level--mobile">14 уровень</div>
-												Jamab
-											</div>
-										</a>
-									</td>
-
-									<td>
-										<div class="neighbors__level neighbors__table-item">14 уровень</div>
-									</td>
-
-									<td>
-										<div class="neighbors__type neighbors__type-1 neighbors__table-item">1 тип</div>
-									</td>
-
-									<td>
-										<div class="neighbors__value neighbors__table-item">
-											+7
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-
-									<td class="neighbors__td--mobile">
-										<a class="neighbors__table-link neighbors__table-item" href="#">
-											Написать
-											<svg width="10" height="10">
-												<use xlink:href="img/icons/icons.svg#right"></use>
-											</svg>
-										</a>
-
-										<div class="neighbors__value neighbors__value--mobile">
-											+7
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<a class="neighbors__table-user neighbors__table-item" href="#">
-											<div class="neighbors__table-user-img">
-												<picture><source srcset="img/neighbors__page/user-5.webp" type="image/webp"><img src="img/neighbors__page/user-5.jpg" width="40" height="40" alt="Image"></picture>
-											</div>
-
-											<div class="neighbors__table-name">
-												<div class="neighbors__level neighbors__level--mobile">27 уровень</div>
-												Arr
-											</div>
-										</a>
-									</td>
-
-									<td>
-										<div class="neighbors__level neighbors__table-item">27 уровень</div>
-									</td>
-
-									<td>
-										<div class="neighbors__type neighbors__type-3 neighbors__table-item">3 тип</div>
-									</td>
-
-									<td>
-										<div class="neighbors__value neighbors__table-item">
-											+102
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-
-									<td class="neighbors__td--mobile">
-										<a class="neighbors__table-link neighbors__table-item" href="#">
-											Написать
-											<svg width="10" height="10">
-												<use xlink:href="img/icons/icons.svg#right"></use>
-											</svg>
-										</a>
-
-										<div class="neighbors__value neighbors__value--mobile">
-											+102
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<a class="neighbors__table-user neighbors__table-item" href="#">
-											<div class="neighbors__table-user-img">
-												<picture><source srcset="img/neighbors__page/user-6.webp" type="image/webp"><img src="img/neighbors__page/user-6.jpg" width="40" height="40" alt="Image"></picture>
-											</div>
-
-											<div class="neighbors__table-name">
-												<div class="neighbors__level neighbors__level--mobile">11 уровень</div>
-												Tschar
-											</div>
-										</a>
-									</td>
-
-									<td>
-										<div class="neighbors__level neighbors__table-item">11 уровень</div>
-									</td>
-
-									<td>
-										<div class="neighbors__type neighbors__type-3 neighbors__table-item">3 тип</div>
-									</td>
-
-									<td>
-										<div class="neighbors__value neighbors__table-item">
-											+2
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-
-									<td class="neighbors__td--mobile">
-										<a class="neighbors__table-link neighbors__table-item" href="#">
-											Написать
-											<svg width="10" height="10">
-												<use xlink:href="img/icons/icons.svg#right"></use>
-											</svg>
-										</a>
-
-										<div class="neighbors__value neighbors__value--mobile">
-											+2
-											<img src="img/common/mint.svg" width="20" height="20" alt="Image">
-										</div>
-									</td>
-								</tr>
-							</table>
+									<a class="neighbors__main-invite-btn btn btn__accent" href="#">Пригласить</a>
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -788,6 +956,27 @@
 										</div>
 									</div>
 								</div>
+
+								<div data-spollers class="spollers neighbors-aside__spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											Общий чат
+										</summary>
+										<div class="spollers__body">
+											<a class="spollers__body-item burger__game-body-item" href="game-catalog-page.html">
+												Nikitos
+											</a>
+
+											<a class="spollers__body-item burger__game-body-item" href="#">
+												Unier
+											</a>
+
+											<a class="spollers__body-item burger__game-body-item" href="#">
+												Miles
+											</a>
+										</div>
+									</details>
+								</div>
 							</div>
 
 							<div class="neighbors-aside__chat-write">
@@ -805,6 +994,27 @@
 									</button>
 								</div>
 							</div>
+
+							<div data-spollers class="spollers neighbors-aside__spollers">
+								<details class="spollers__item">
+									<summary class="spollers__title">
+										Общий чат
+									</summary>
+									<div class="spollers__body">
+										<a class="spollers__body-item burger__game-body-item" href="game-catalog-page.html">
+											Nikitos
+										</a>
+
+										<a class="spollers__body-item burger__game-body-item" href="#">
+											Unier
+										</a>
+
+										<a class="spollers__body-item burger__game-body-item" href="#">
+											Miles
+										</a>
+									</div>
+								</details>
+							</div>
 						</div>
 
 						<div class="neighbors-aside__calc">
@@ -816,36 +1026,30 @@
 
 							<h3 class="neighbors-aside__calc-title">Открыть калькулятор соседей</h3>
 
-							<a class="neighbors-aside__calc-link" href="#">Перейти</a>
+							<a class="neighbors-aside__calc-link" data-popup="#popup-calc" href="#">Перейти</a>
 						</div>
 					</aside>
 				</div>
 			</div>
 
-			<div class="game-catalog__bottom-controls">
-				<button data-popup="#popup-statistic" class="game-catalog__button game-catalog__button--rich">
+			<div class="neighbors__bottom-controls">
+				<button data-popup="#popup-statistic" class="game-catalog__button">
 					<div class="game-catalog__icon-wrapper">
 						<picture><source srcset="img/neighbors__page/control-icon-1.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/neighbors__page/control-icon-1.png" width="35" height="35" alt="Icon"></picture>
 					</div>
 				</button>
 
-				<button data-popup="#popup-message" class="game-catalog__button game-catalog__button--neighbours">
+				<button data-popup="#popup-message" class="game-catalog__button">
 					<div class="game-catalog__icon-wrapper">
 						<picture><source srcset="img/neighbors__page/control-icon-2.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/neighbors__page/control-icon-2.png" width="35" height="35" alt="Icon"></picture>
 					</div>
 				</button>
 
-				<button class="game-catalog__button game-catalog__button--status">
+				<a data-popup="#popup-calc" href="#" class="game-catalog__button">
 					<div class="game-catalog__icon-wrapper">
 						<picture><source srcset="img/neighbors__page/control-icon-3.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/neighbors__page/control-icon-3.png" width="35" height="35" alt="Icon"></picture>
 					</div>
-				</button>
-
-				<button class="game-catalog__button game-catalog__button--others">
-					<div class="game-catalog__icon-wrapper">
-						<picture><source srcset="img/neighbors__page/control-icon-4.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/neighbors__page/control-icon-4.png" width="35" height="35" alt="Icon"></picture>
-					</div>
-				</button>
+				</a>
 			</div>
 		</main>
 
@@ -2090,6 +2294,97 @@
 									</button>
 								</div>
 							</div>
+
+							<div data-spollers class="spollers neighbors-aside__spollers">
+								<details class="spollers__item">
+									<summary class="spollers__title">
+										Общий чат
+									</summary>
+									<div class="spollers__body">
+										<a class="spollers__body-item burger__game-body-item" href="game-catalog-page.html">
+											Nikitos
+										</a>
+
+										<a class="spollers__body-item burger__game-body-item" href="#">
+											Unier
+										</a>
+
+										<a class="spollers__body-item burger__game-body-item" href="#">
+											Miles
+										</a>
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--------------------------------------------------------------------------->
+	<div id="popup-calc" aria-hidden="true" class="popup">s
+		<div class="popup__wrapper popup-cabinet-target__wrapper">
+
+			<div class="popup__content popup-statistic__content">
+
+				<div class="popup__text">
+					<div class="popup-calc__body">
+
+						<button data-close type="button" class="popup__close calc__close">
+							<svg width="15" height="15">
+								<use xlink:href="img/icons/icons.svg#close"></use>
+							</svg>
+						</button>
+
+						<h2 class="popup-calc__title">Калькулятор</h2>
+
+						<div class="popup-calc__inner">
+							<div class="popup-calc__item">
+								<h3 class="popup-calc__item-title">Количество близких соседей</h3>
+
+								<div class="popup-calc__item-box popup-calc__item-box--1">
+									<picture><source srcset="img/neighbors__page/popup-1.webp" type="image/webp"><img src="img/neighbors__page/popup-1.png" width="130" height="130" alt="Image"></picture>
+									<h3 class="popup-calc__item-title--mobile">Количество близких соседей</h3>
+									<span>1</span>
+								</div>
+
+								<input class="popup-calc__input" type="text" placeholder="Введите данные">
+							</div>
+
+							<div class="popup-calc__item">
+								<h3 class="popup-calc__item-title">Количество соседей</h3>
+
+								<div class="popup-calc__item-box popup-calc__item-box--2">
+									<picture><source srcset="img/neighbors__page/popup-1.webp" type="image/webp"><img src="img/neighbors__page/popup-1.png" width="130" height="130" alt="Image"></picture>
+									<h3 class="popup-calc__item-title--mobile">Количество близких соседей</h3>
+									<span>2</span>
+								</div>
+
+								<input class="popup-calc__input" type="text" placeholder="Введите данные">
+							</div>
+
+							<div class="popup-calc__item">
+								<h3 class="popup-calc__item-title">Количество дальних соседей</h3>
+
+								<div class="popup-calc__item-box popup-calc__item-box--3">
+									<picture><source srcset="img/neighbors__page/popup-1.webp" type="image/webp"><img src="img/neighbors__page/popup-1.png" width="130" height="130" alt="Image"></picture>
+									<h3 class="popup-calc__item-title--mobile">Количество близких соседей</h3>
+									<span>2</span>
+								</div>
+
+								<input class="popup-calc__input" type="text" placeholder="Введите данные">
+							</div>
+						</div>
+
+						<div class="popup-calc__bottom">
+							<h4 class="popup-calc__bottom-title">Вы получите:</h4>
+							<div class="popup-calc__bottom-value">
+								<span>987542345</span>
+								<img src="img/common/mint.svg" width="32" height="32" alt="Image">
+							</div>
+
+							<button class="popup-calc__bottom-btn btn btn__accent">Рассчитать</button>
 						</div>
 					</div>
 				</div>
@@ -2097,7 +2392,7 @@
 		</div>
 	</div> -->
 
-	<script src="js/app.min.js?_v=20231013125950"></script>
+	<script src="js/app.min.js?_v=20231019031855"></script>
 </body>
 
 </html>
