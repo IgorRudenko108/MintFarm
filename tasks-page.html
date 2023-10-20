@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231019031855">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231020025139">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -286,7 +286,7 @@
 				<div class="tasks__inner">
 					<div class="tasks__top">
 						<div class="tasks__top-item tasks__top-item--left">
-							<a class="tasks__top-card tasks__top-card--1" href="#">
+							<a class="tasks__top-card tasks__top-card--1" href="daily-tasks-page.html">
 								<span class="tasks__card-span">
 									<img src="img/tasks__page/!.svg" width="16" height="16" alt="Icon">
 								</span>
@@ -709,7 +709,7 @@
 			</div>
 
 			<div class="game-catalog__bottom-controls tasks__bottom-controls">
-				<a class="game-catalog__button" href="daily-page.html">
+				<a class="game-catalog__button" href="daily-tasks-page.html">
 					<div class="game-catalog__icon-wrapper">
 						<span class="tasks__button-span">
 							<img src="img/tasks__page/!.svg" width="8" height="8" alt="Icon">
@@ -742,7 +742,7 @@
 					<h3 class="tasks__button-title">Достижения</h3>
 				</a>
 
-				<a class="game-catalog__button" href="statistic-page.html">
+				<a class="game-catalog__button" href="#" data-popup="#daily-statistic-popup">
 					<div class="game-catalog__icon-wrapper">
 						<picture><source srcset="img/tasks__page/icon-mobile-4.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/tasks__page/icon-mobile-4.png" width="35" height="35" alt="Icon"></picture>
 					</div>
@@ -2088,9 +2088,244 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
+	<!--------------------------------------------------------------------------->
 
-	<script src="js/app.min.js?_v=20231019031855"></script>
+
+	<div id="daily-tasks-popup" aria-hidden="true" class="daily-tasks-popup popup">
+		<div class="popup__wrapper popup-cabinet-target__wrapper">
+
+			<h2 class="popup-cabinet__title">Ежедневные задания</h2>
+
+			<div class="popup__content-top popup-cabinet__top">
+				<p class="popup-cabinet__top-title">Кошелек</p>
+
+				<a class="popup-cabinet__top-mint" href="#">
+					<span>367+12</span>
+					<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+				</a>
+
+				<a class="popup-cabinet__top-coins" href="#">
+					<div class="header-wallet__body">
+						<span class="header-wallet__value">657</span>
+						<img class="header-wallet__icon" src="img/present__page/coin.svg" alt="Coin">
+					</div>
+				</a>
+
+				<button data-close type="button" class="popup__close cabinet__close">
+					<svg width="15" height="15">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="popup__content popup-slider__content">
+
+				<div class="popup__text">
+					<!-- Оболочка слайдера -->
+					<div class="daily-popup__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="daily-popup__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="daily-popup__slide swiper-slide">
+								<div class="daily-popup__slide-body">
+									<img class="daily-tasks__slide-star" src="img/neighbors__page/star-2.svg" width="38" height="38" alt="Star">
+
+									<div class="daily-tasks__slide-top">
+										<h3 class="daily-tasks__slide-title">Задание номер один</h3>
+
+										<div class="daily-tasks__slide-img">
+											<picture><source srcset="img/tasks__page/item-icon-1.webp" type="image/webp"><img src="img/tasks__page/item-icon-1.png" width="61" height="61" alt="Icon"></picture>
+										</div>
+									</div>
+
+									<p class="daily-tasks__slide-text">
+										Lorem ipsum dolor sit amet, conse ctetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit
+									</p>
+
+									<div class="daily-tasks__slide-reward">
+										Награда:
+
+										<div class="daily-tasks__slide-reward-stars">
+											<img class="daily-tasks__slide-star" src="img/neighbors__page/star-full.svg" width="20" height="20" alt="Star">
+										</div>
+									</div>
+
+									<div class="daily-tasks__slide-progress">
+										<h3 class="daily-tasks__progress-title">Прогресс</h3>
+
+										<div class="daily-tasks__progress-body">
+											<div class="daily-tasks__progress-line" style="width: 80%;"></div>
+											<span class="daily-tasks__progress-value">4/5</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="daily-popup__slide swiper-slide">
+								<div class="daily-popup__slide-body">
+									<img class="daily-tasks__slide-star" src="img/neighbors__page/star-2.svg" width="38" height="38" alt="Star">
+
+									<div class="daily-tasks__slide-top">
+										<h3 class="daily-tasks__slide-title">Задание номер два</h3>
+
+										<div class="daily-tasks__slide-img">
+											<picture><source srcset="img/tasks__page/item-icon-2.webp" type="image/webp"><img src="img/tasks__page/item-icon-2.png" width="61" height="61" alt="Icon"></picture>
+										</div>
+									</div>
+
+									<p class="daily-tasks__slide-text">
+										Lorem ipsum dolor sit amet, conse ctetur adipiscing elitL adipiscing elit
+									</p>
+
+									<div class="daily-tasks__slide-reward">
+										Награда:
+
+										<div class="daily-tasks__slide-reward-stars">
+											<img class="daily-tasks__slide-star" src="img/neighbors__page/star-full.svg" width="20" height="20" alt="Star">
+											<img class="daily-tasks__slide-star" src="img/neighbors__page/star-full.svg" width="20" height="20" alt="Star">
+											<img class="daily-tasks__slide-star" src="img/neighbors__page/star-full.svg" width="20" height="20" alt="Star">
+										</div>
+									</div>
+
+									<div class="daily-tasks__slide-progress">
+										<h3 class="daily-tasks__progress-title">Прогресс</h3>
+
+										<a class="daily-tasks__slide-btn btn btn__accent" href="#">Получить награду</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="daily-popup__slide swiper-slide">
+								<div class="daily-popup__slide-body">
+									<img class="daily-tasks__slide-star" src="img/neighbors__page/star-2.svg" width="38" height="38" alt="Star">
+
+									<div class="daily-tasks__slide-top">
+										<h3 class="daily-tasks__slide-title">Задание номер три</h3>
+
+										<div class="daily-tasks__slide-img">
+											<picture><source srcset="img/tasks__page/item-icon-3.webp" type="image/webp"><img src="img/tasks__page/item-icon-3.png" width="61" height="61" alt="Icon"></picture>
+										</div>
+									</div>
+
+									<p class="daily-tasks__slide-text">
+										Lorem ipsum dolor sit amet, conse ctetur adipiscing elitL adipiscing elit
+									</p>
+
+									<div class="daily-tasks__slide-reward">
+										Награда:
+
+										<div class="daily-tasks__slide-reward-stars">
+											<img class="daily-tasks__slide-star" src="img/neighbors__page/star-full.svg" width="20" height="20" alt="Star">
+											<img class="daily-tasks__slide-star" src="img/neighbors__page/star-full.svg" width="20" height="20" alt="Star">
+										</div>
+									</div>
+
+									<div class="daily-tasks__slide-progress">
+										<h3 class="daily-tasks__progress-title">Прогресс</h3>
+
+										<div class="daily-tasks__progress-body">
+											<div class="daily-tasks__progress-line" style="width: 20%;"></div>
+											<span class="daily-tasks__progress-value">1/5</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination daily-tasks__pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--------------------------------------------------------------------------->
+
+
+	<div id="daily-statistic-popup" aria-hidden="true" class="daily-statistic-popup popup">
+		<div class="popup__wrapper popup-cabinet-target__wrapper">
+
+			<h2 class="popup-cabinet__title">Статистика</h2>
+
+			<div class="popup__content-top popup-cabinet__top">
+				<p class="popup-cabinet__top-title">Кошелек</p>
+
+				<a class="popup-cabinet__top-mint" href="#">
+					<span>367+12</span>
+					<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+				</a>
+
+				<a class="popup-cabinet__top-coins" href="#">
+					<div class="header-wallet__body">
+						<span class="header-wallet__value">657</span>
+						<img class="header-wallet__icon" src="img/present__page/coin.svg" alt="Coin">
+					</div>
+				</a>
+
+				<button data-close type="button" class="popup__close cabinet__close">
+					<svg width="15" height="15">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="popup__content daily-statistic__content">
+
+				<div class="popup__text">
+					<div class="daily-tasks__statistic">
+						<div class="daily-tasks__statistic-inner">
+							<div class="tasks__stat-item">
+								<div class="tasks__stat-img tasks__stat-img--1">
+									<img src="img/tasks__page/stat-info-1.svg" width="20" height="20" alt="Image">
+								</div>
+
+								<div class="tasks__stat-body">
+									<div class="tasks__stat-value">70</div>
+									<div class="tasks__stat-subtitle">Выполненно квестов</div>
+								</div>
+							</div>
+
+							<div class="tasks__stat-item">
+								<div class="tasks__stat-img tasks__stat-img--2">
+									<img src="img/tasks__page/stat-info-2.svg" width="20" height="20" alt="Image">
+								</div>
+
+								<div class="tasks__stat-body">
+									<div class="tasks__stat-value">31</div>
+									<div class="tasks__stat-subtitle">Достижений заработано</div>
+								</div>
+							</div>
+
+							<div class="tasks__stat-item">
+								<div class="tasks__stat-img tasks__stat-img--3">
+									<img src="img/tasks__page/stat-info-3.svg" width="20" height="20" alt="Image">
+								</div>
+
+								<div class="tasks__stat-body">
+									<div class="tasks__stat-value">56</div>
+									<div class="tasks__stat-subtitle">День в игре</div>
+								</div>
+							</div>
+
+							<div class="tasks__stat-item">
+								<div class="tasks__stat-img tasks__stat-img--4">
+									<img src="img/tasks__page/stat-info-4.svg" width="20" height="20" alt="Image">
+								</div>
+
+								<div class="tasks__stat-body">
+									<div class="tasks__stat-value">98</div>
+									<div class="tasks__stat-subtitle">Наград получено</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+
+	<script src="js/app.min.js?_v=20231020025139"></script>
 </body>
 
 </html>

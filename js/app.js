@@ -5046,6 +5046,20 @@
                     }
                 });
             }
+            if (document.querySelector(".daily-popup__slider")) new Swiper(".daily-popup__slider", {
+                modules: [ Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                speed: 800,
+                centeredSlides: true,
+                loop: true,
+                autoHeight: true,
+                pagination: {
+                    el: ".daily-tasks__pagination"
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
