@@ -4535,7 +4535,8 @@ body {
   font-family: Raleway;
   font-weight: 900;
   line-height: 100%;
-  max-width: 80px;
+  max-width: 100px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -9848,9 +9849,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .tasks__progress-bottom {
   height: 2px;
-  width: 100%;
+  width: calc(100% - 32px);
   background-color: #5F5F5F;
   position: relative;
+  margin: 0 auto;
 }
 
 .tasks__content-link {
@@ -14266,6 +14268,10 @@ button.swiper-pagination-bullet {
     width: 140px;
     height: 140px;
     right: 10px;
+  }
+
+  .market__label-price {
+    max-width: 80px;
   }
 
   .game-catalog__text {
