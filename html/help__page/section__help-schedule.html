@@ -6,35 +6,45 @@
 			<div class="help-schedule__row">
 				<div class="help-schedule__row-inner">
 					<div class="help-schedule__item">
-						<img class="help-schedule__item-img" src="img/help__page/icon-1.svg" width="80" height="80" alt="Icon">
+						<img class="help-schedule__item-img" src="img/help__page/top-icon-1.svg" width="90" height="90" alt="Icon">
 
-						<h3 class="help-schedule__item-title">Часы работы</h3>
+						<h3 class="help-schedule__item-title">Поддержка - игра</h3>
 						<p class="help-schedule__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 					</div>
 
 					<div class="help-schedule__item">
-						<img class="help-schedule__item-img" src="img/help__page/icon-1.svg" width="80" height="80" alt="Icon">
+						<img class="help-schedule__item-img" src="img/help__page/top-icon-2.svg" width="90" height="90" alt="Icon">
 
-						<h3 class="help-schedule__item-title">Часы работы</h3>
+						<h3 class="help-schedule__item-title">Поддержка - учетная запись</h3>
 						<p class="help-schedule__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 					</div>
 
 					<div class="help-schedule__item">
-						<img class="help-schedule__item-img" src="img/help__page/icon-1.svg" width="80" height="80" alt="Icon">
+						<img class="help-schedule__item-img" src="img/help__page/top-icon-3.svg" width="90" height="90" alt="Icon">
 
-						<h3 class="help-schedule__item-title">Часы работы</h3>
+						<h3 class="help-schedule__item-title">Поддержка - подарки</h3>
 						<p class="help-schedule__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 					</div>
 				</div>
 
 				<div class="help-schedule__info">
 					<p class="help-schedule__info-text">
-						Для получения ответов на вопросы, пожалуйста, свяжись с нами по электронной почте: <span>"MintFarmSupport@gmail.com"</span>
+						Для получения ответов на вопросы, пожалуйста, свяжись с нами по электронной почте: <a href="#">"MintFarmSupport@gmail.com"</a>
 					</p>
 
 					<p class="help-schedule__info-text">
 						Перед отправкой своего вопроса, мы рекомендуем ознакомиться с разделом "Часто задаваемые вопросы" для возможных уже имеющихся ответов.
 					</p>
+				</div>
+
+				<div class="help-schedule__info-search">
+					<input class="help-schedule__info-search-input" type="text" placeholder="Поиск вопроса">
+
+					<button class="help-schedule__info-search-btn">
+						<svg width="30" height="30">
+							<use xlink:href="img/icons/icons.svg#search"></use>
+						</svg>
+					</button>
 				</div>
 			</div>
 
@@ -42,13 +52,22 @@
 
 				<div class="help-faq__top">
 					<h2 class="help-faq__title">Ответы на часто <br> задаваемые вопросы</h2>
-					<img class="help-faq__deco-image" src="img/help__page/deco-cat.svg" alt="Cat">
+
+					<div class="help-faq__title-content">
+						<img class="help-faq__deco-image" width="93" data-da=".help-faq__title,575.98,2" src="img/help__page/deco-cat.svg" alt="Cat">
+
+						<select class="help-faq__select tasks__select" data-scroll name="form[]" data-class-modif="form">
+							<option value="1">Все</option>
+							<option value="2">Ферма</option>
+							<option value="3">Соседи</option>
+							<option value="4">Игры</option>
+						</select>
+					</div>
 				</div>
 
 				<div class="help-faq__inner">
-					<div class="help-faq__inner-item">
+					<div class="help-faq__inner-item help-faq__inner-item--1">
 						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -60,9 +79,8 @@
 						</p>
 					</div>
 
-					<div class="help-faq__inner-item">
+					<div class="help-faq__inner-item help-faq__inner-item--1">
 						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -74,9 +92,8 @@
 						</p>
 					</div>
 
-					<div class="help-faq__inner-item">
+					<div class="help-faq__inner-item help-faq__inner-item--1">
 						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -88,23 +105,8 @@
 						</p>
 					</div>
 
-					<div class="help-faq__inner-item">
+					<div class="help-faq__inner-item help-faq__inner-item--1">
 						<div class="help-faq__item-number">
-							<span></span>
-						</div>
-
-						<h3 class="help-faq__item-title">
-							Что нужно делать, чтобы выиграть призы?
-						</h3>
-
-						<p class="help-faq__item-text">
-							Для того чтобы выиграть ценные призы, необходимо уделять активное внимание развитию своей фермы, регулярно выполняя ежедневные задачи и активно участвовать в увлекательных играх.
-						</p>
-					</div>
-
-					<div class="help-faq__inner-item">
-						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -116,23 +118,35 @@
 						</p>
 					</div>
 
-					<div class="help-faq__inner-item">
+					<div class="help-faq__inner-item help-faq__inner-item--1">
 						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
-							Что это за игра?
+							Как можно улучшить свою ферму и за что можно улучшать её?
 						</h3>
 
 						<p class="help-faq__item-text">
-							“Mintfarm” - это многопользовательская онлайн-игра, которая позволит создать свою уникальную ферму в компании тысяч других игроков. Здесь ты сможешь вырастить самую великолепную мяту и забрать уникальные награды и призы. Тебе потребуется только интернет-браузер.
+							Ферму можно улучшать, чтобы выращивать больше "мяты". Улучшение фермы также производится за "мяту". После достижения определенного уровня, игрок сможет купить дополнительные грядки и увеличить площадь для выращивания.
 						</p>
 					</div>
 
-					<div class="help-faq__inner-item">
+
+					<div class="help-faq__inner-item help-faq__inner-item--3">
 						<div class="help-faq__item-number">
-							<span></span>
+						</div>
+
+						<h3 class="help-faq__item-title">
+							Что нужно делать, чтобы выиграть призы?
+						</h3>
+
+						<p class="help-faq__item-text">
+							Для того чтобы выиграть ценные призы, необходимо уделять активное внимание развитию своей фермы, регулярно выполняя ежедневные задачи и активно участвовать в увлекательных играх.
+						</p>
+					</div>
+
+					<div class="help-faq__inner-item help-faq__inner-item--3">
+						<div class="help-faq__item-number">
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -144,9 +158,9 @@
 						</p>
 					</div>
 
-					<div class="help-faq__inner-item">
+
+					<div class="help-faq__inner-item help-faq__inner-item--2">
 						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -160,9 +174,8 @@
 						</ol>
 					</div>
 
-					<div class="help-faq__inner-item">
+					<div class="help-faq__inner-item help-faq__inner-item--2">
 						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -175,9 +188,8 @@
 						</p>
 					</div>
 
-					<div class="help-faq__inner-item">
+					<div class="help-faq__inner-item help-faq__inner-item--2">
 						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -192,9 +204,8 @@
 						</ol>
 					</div>
 
-					<div class="help-faq__inner-item">
+					<div class="help-faq__inner-item help-faq__inner-item--2">
 						<div class="help-faq__item-number">
-							<span></span>
 						</div>
 
 						<h3 class="help-faq__item-title">
@@ -206,19 +217,6 @@
 						</p>
 					</div>
 
-					<div class="help-faq__inner-item">
-						<div class="help-faq__item-number">
-							<span></span>
-						</div>
-
-						<h3 class="help-faq__item-title">
-							Как можно улучшить свою ферму и за что можно улучшать её?
-						</h3>
-
-						<p class="help-faq__item-text">
-							Ферму можно улучшать, чтобы выращивать больше "мяты". Улучшение фермы также производится за "мяту". После достижения определенного уровня, игрок сможет купить дополнительные грядки и увеличить площадь для выращивания.
-						</p>
-					</div>
 				</div>
 			</div>
 		</div>
