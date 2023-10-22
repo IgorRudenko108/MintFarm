@@ -10410,6 +10410,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
+  background: -webkit-gradient(linear, left top, right top, from(#CCDFFF), to(#DBF4FF));
+  background: linear-gradient(90deg, #CCDFFF 0%, #DBF4FF 100%);
 }
 
 .saper__top {
@@ -10608,7 +10610,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .saper__left-cat {
   max-height: 370px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .saper__left-cat img {
@@ -10634,6 +10636,11 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: -80px;
+}
+
+.saper__right-cat {
+  position: relative;
+  z-index: 2;
 }
 
 .saper__buster {
