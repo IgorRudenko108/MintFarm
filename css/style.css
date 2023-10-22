@@ -12420,7 +12420,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0;
+  padding: 0 !important;
 }
 
 /**
