@@ -5160,6 +5160,71 @@
                     el: ".daily-tasks__pagination"
                 }
             });
+            if (document.querySelector(".quest__slider")) new Swiper(".quest__slider", {
+                modules: [ Navigation, Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1.22,
+                spaceBetween: 10,
+                speed: 800,
+                centeredSlides: true,
+                loop: true,
+                autoHeight: false,
+                pagination: {
+                    el: ".quest__pagination"
+                },
+                navigation: {
+                    prevEl: ".quest__btn-prev",
+                    nextEl: ".quest__btn-next"
+                },
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 25,
+                        centeredSlides: false
+                    },
+                    1080: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 20,
+                        centeredSlides: true
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                        centeredSlides: true
+                    },
+                    768: {
+                        slidesPerView: 2.7,
+                        spaceBetween: 40,
+                        centeredSlides: true
+                    },
+                    680: {
+                        slidesPerView: 2.3,
+                        spaceBetween: 20,
+                        centeredSlides: true
+                    },
+                    576: {
+                        slidesPerView: 1.9,
+                        spaceBetween: 20,
+                        centeredSlides: true
+                    },
+                    425: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 10,
+                        centeredSlides: true
+                    },
+                    400: {
+                        slidesPerView: 1.4,
+                        spaceBetween: 10,
+                        centeredSlides: true
+                    },
+                    360: {
+                        slidesPerView: 1.3,
+                        spaceBetween: 10,
+                        centeredSlides: true
+                    }
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231022114412">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231022221203">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2505,8 +2505,102 @@
 			</div>
 		</div>
 	</div>
+	<!---------------------------------------------------------------------------------------->
+	<div id="quest-popup" aria-hidden="true" class="quest-popup popup">
+		<div class="popup__wrapper popup-cabinet-target__wrapper">
 
-	<script src="js/app.min.js?_v=20231022114412"></script>
+			<!-- <h2 class="popup-cabinet__title">Тип соседей</h2> -->
+
+			<div class="popup__content-top popup-cabinet__top">
+				<button data-close type="button" class="popup__close cabinet__close">
+					<svg width="15" height="15">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="popup__content popup-quest__content">
+
+				<div class="popup__text">
+					<div class="quest__main-card">
+						<div class="quest__card-top">
+							<div class="quest__card-label quest__card-label--1">Юный фермер</div>
+
+							<picture><source srcset="img/quest__page/card-top-1.webp" type="image/webp"><img class="quest__card-top-img" src="img/quest__page/card-top-1.jpg" alt="Image"></picture>
+						</div>
+
+						<div class="quest__card-title">
+							Задачи
+							<div class="quest__card-fraction">2/4</div>
+						</div>
+
+						<div class="quest__card-body">
+							<div class="quest__card-item quest__card-item--done">
+								<span>
+									<img src="img/tasks__page/check.svg" width="12" height="10" alt="Check">
+								</span>
+
+								Купите семена
+							</div>
+
+							<div class="quest__card-item quest__card-item--done">
+								<span>
+									<img src="img/tasks__page/check.svg" width="12" height="10" alt="Check">
+								</span>
+
+								Засейте первую грядку
+							</div>
+
+							<div class="quest__card-item">
+								<span></span>
+
+								Полейте урожай 10 раз
+							</div>
+
+							<div class="quest__card-item">
+								<span></span>
+
+								Соберите урожай 10 раз
+							</div>
+						</div>
+
+						<div class="quest__card-awards">
+							<p class="quest__card-awards-text">Награды за выполнение квеста:</p>
+							<div class="quest__card-awards-inner">
+								<div class="quest__card-awards-item quest__card-awards-medal">
+									<img src="img/quest__page/award-icon-1.svg" width="25" height="25" alt="Image">
+									<span>15</span>
+								</div>
+
+								<div class="quest__card-awards-item quest__card-awards-mint">
+									<img src="img/quest__page/award-icon-2.svg" width="25" height="25" alt="Image">
+									<span>15</span>
+								</div>
+
+								<div class="quest__card-awards-item quest__card-awards-xp">
+									<img src="img/quest__page/award-icon-3.svg" width="25" height="25" alt="Image">
+									<span>200</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="quest__progress-box--mobile quest__progress-box daily-tasks__progress-box">
+							<h3 class="daily-tasks__progress-title">Прогресс</h3>
+
+							<div class="daily-tasks__progress-body">
+								<div class="daily-tasks__progress-line" style="width: 50%;"></div>
+								<span class="daily-tasks__progress-value">50%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/app.min.js?_v=20231022221203"></script>
 </body>
 
 </html>
