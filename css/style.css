@@ -12281,7 +12281,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   gap: 9px;
   position: relative;
   z-index: 1;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .quest__card-star img {
