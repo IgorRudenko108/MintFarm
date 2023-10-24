@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Home</title>
+	<title>Exchange</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -244,7 +244,7 @@
 									Соседи
 								</a>
 
-								<a class="burger__nav-link" href="kotopas-page.html">
+								<a class="burger__nav-link" href="quest-page.html">
 									<img src="img/header/burger-link-3.svg" width="20" height="20" alt="Icon">
 									Котопас
 								</a>
@@ -279,210 +279,248 @@
 			</div>
 		</header>
 
-		<main class="page landing__page page-color">
-			<section class="main-intro mb">
-				<div class="main-intro__container">
-					<div class="main-intro__inner">
+		<main class="page exchange__page page-color">
+			<div class="exchange__container">
+				<h1 class="exchange__main-title">Обмен валюты</h1>
 
-						<div class="main-intro__content">
-							<h1 class="main-intro__title">Добро пожаловать в <span>MintFarm!</span></h1>
+				<div class="exchange__body">
+					<div class="exchange__inner--pc">
+						<div class="exchange__inner-convert">
+							<h2 class="exchange__inner-title">Конвертация</h2>
 
-							<p class="main-intro__text text" data-da=".main-intro__inner,767.98,4">
-								Присоединяйся к нашей <br>
-								захватывающей кошачьей семье <br>
-								и открой путь к настоящим наградам!
-							</p>
+							<form class="exchange__form" action="#">
+								<div class="exchange__form-item">
+									<input class="exchange__form-input" type="text" placeholder="Введите количество">
+									<img class="exchange__form-input-img" width="23" height="23" src="img/common/mint.svg" alt="Icon">
+								</div>
+
+								<button class="exchange__control-btn">
+									<img src="img/common/change-arrows.svg" width="94" height="94" alt="Icon">
+									<span>или</span>
+								</button>
+
+								<div class="exchange__form-item">
+									<input class="exchange__form-input" type="text" placeholder="Вы получите">
+									<img class="exchange__form-input-img" width="23" height="23" src="img/common/coin-gold.svg" alt="Icon">
+								</div>
+
+								<button class="exchange__btn btn btn__accent-2">Обменять</button>
+							</form>
 						</div>
 
-						<div class="main-intro__picture">
-							<picture><source srcset="img/landing__page/section__landing-intro/main-image.webp" type="image/webp"><img src="img/landing__page/section__landing-intro/main-image.jpg" alt="Main image"></picture>
-						</div>
+						<div class="exchange__inner-history">
+							<h2 class="exchange__inner-title">История</h2>
 
-						<a class="main-intro__btn" href="cabinet-page.html">
-							<svg width="81" height="81">
-								<use xlink:href="img/icons/icons.svg#cat"></use>
-							</svg>
-							<span>НАЧАТЬ ИГРУ</span>
-						</a>
-					</div>
-				</div>
-			</section>
-			<section class="main-steps mb">
-				<div class="main-steps__container">
-					<div class="main-steps__inner">
-						<h2 class="main-steps__title title ">Выращивай! Зарабатывай! Обменивай! Забирай!</h2>
+							<table class="exchange__table">
+								<thead>
+									<tr>
+										<th>Дата</th>
+										<th>Отправлено</th>
+										<th>Получено</th>
+									</tr>
+								</thead>
 
-						<div class="main-steps__list">
-							<a class="main-steps__item main-steps__item--big-vertical" href="#">
-								<picture><source data-srcset="img/landing__page/section__landing-steps/step-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="main-steps__img" data-src="img/landing__page/section__landing-steps/step-1.jpg" alt="Img"></picture>
+								<tbody>
+									<tr>
+										<td>19.10.2023</td>
+										<td>
+											10 000
+											<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+										</td>
+										<td>
+											+10
+											<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+										</td>
+									</tr>
 
-								<div class="main-steps__top">
-									<span class="main-steps__top-label">Шаг 1</span>
-									<span class="main-steps__top-deco">
-										<img src="img/landing__page/section__landing-steps/deco-arrow.svg" width="14" height="24" alt="Arrow">
-									</span>
-								</div>
+									<tr>
+										<td>01.11.2023</td>
+										<td>
+											10 000
+											<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+										</td>
+										<td>
+											+10
+											<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+										</td>
+									</tr>
 
-								<h3 class="main-steps__item-title">Ферма <br> кошачьей мяты:</h3>
-								<p class="main-steps__item-text">Здесь растет мята, необходимая для твоего успеха.</p>
-							</a>
+									<tr>
+										<td>12.11.2023</td>
+										<td>
+											+10
+											<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+										</td>
+										<td>
+											10 000
+											<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+										</td>
+									</tr>
 
-							<a class="main-steps__item main-steps__item--big-horizontal " href="#">
+									<tr>
+										<td>14.11.2023</td>
+										<td>
+											10 000
+											<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+										</td>
+										<td>
+											+10
+											<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+										</td>
+									</tr>
 
-								<div class="main-steps__top">
-									<span class="main-steps__top-label">Шаг 2</span>
-									<span class="main-steps__top-deco">
-										<img src="img/landing__page/section__landing-steps/deco-arrow.svg" width="14" height="24" alt="Arrow">
-									</span>
-								</div>
+									<tr>
+										<td>11.10.2023</td>
+										<td>
+											10 000
+											<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+										</td>
+										<td>
+											+10
+											<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+										</td>
+									</tr>
 
-								<div class="main-steps__body">
-									<div class="main-steps__content">
-										<h3 class="main-steps__content-title">Мини-игры:</h3>
-										<p class="main-steps__content-text">Участвуй, чтобы заработать мяту и увеличить счет.</p>
-									</div>
-
-									<div class="main-steps__image-box">
-										<picture><source srcset="img/landing__page/section__landing-steps/step-2.webp" type="image/webp"><img class="main-steps__image" src="img/landing__page/section__landing-steps/step-2.png" alt="Computer"></picture>
-									</div>
-								</div>
-
-							</a>
-
-							<a class="main-steps__item main-steps__item--small " href="present-page">
-
-								<div class="main-steps__top--small">
-									3. Обмен мяты на голду
-								</div>
-
-								<picture><source srcset="img/landing__page/section__landing-steps/step-3.webp" type="image/webp"><img class="main-steps__img-3" src="img/landing__page/section__landing-steps/step-3.png" alt="Image"></picture>
-
-								<div class="main-steps__bottom">
-									<div class="ain-steps__bottom-text">
-										Собирай мяту, чтобы получить доступ к эксклюзивным подаркам.
-									</div>
-								</div>
-							</a>
-
-							<a class="main-steps__item main-steps__item--small " href="present-page-user.html">
-
-								<div class="main-steps__top--small">
-									4. Забирайте подарки
-								</div>
-
-								<picture><source srcset="img/landing__page/section__landing-steps/step-4.webp" type="image/webp"><img class="main-steps__small-bg" src="img/landing__page/section__landing-steps/step-4.jpg" alt="Image"></picture>
-
-								<div class="main-steps__bottom main-steps__bottom--white">
-									<h3 class="main-steps__bottom-title">Маркет</h3>
-									<div class="main-steps__bottom-text">
-										Заработав достаточно голды, получи увлекательные подарки.
-									</div>
-								</div>
-							</a>
-						</div>
-
-						<a class="main-steps__btn btn btn__accent" href="#">Начать играть</a>
-					</div>
-				</div>
-			</section>
-			<section class="main-game">
-				<div class="main-game__container">
-					<div class="main-game__inner">
-						<h2 class="main-game__title title ">Другие игры</h2>
-
-						<div class="main-game__body">
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--1,479.98,1">Сапер</h3>
-									<p class="main-game__card-text">
-										Исследуй поле в поисках клубков, чтобы увеличить свой запас мяты. Однако будь осторожен: если наткнешься на клетку с собачкой, она может испортить все твои планы.
-										Удачи в раскопках, кот-минер!"
-									</p>
-
-									<a class="main-game__card-link" href="saper-page.html">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--1">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-1.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-1.png" alt="Cat"></picture>
-								</div>
-							</div>
-
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--2,479.98,1">Стрелок</h3>
-									<p class="main-game__card-text">
-										В этой игре твоя стратегия - твоё оружие. Интуитивно выбирай точку для удара и место для блокировки. Здесь каждый ход может решить твою судьбу. Готов к напряженной дуэли интуиций?"
-									</p>
-
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--2">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-2.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-2.png" alt="Cat"></picture>
-								</div>
-							</div>
-
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--3,479.98,1">Рыцарь</h3>
-									<p class="main-game__card-text">
-										В этой игре предстоит выбирать правильные ходы, чтобы освободить принцессу из лап Ястреба. Однако будь бдителен - один неправильный ход и ты окажешься лицом к лицу с злодеем! Сможешь ли ты пройти этот тест и спасти принцессу?"
-									</p>
-
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--3">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-3.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-3.png" alt="Cat"></picture>
-								</div>
-							</div>
-
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--4,479.98,1">Летун</h3>
-									<p class="main-game__card-text">
-										Готов к захватывающему прыжку с котом на парашюте? Нажмите кнопку вовремя, чтобы забрать свой выигрыш набранный котом в полете. Не упустите момент, ведь у тебя всего лишь 9 жизней"
-									</p>
-
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--4">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-4.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-4.png" alt="Cat"></picture>
-								</div>
-							</div>
+									<tr>
+										<td>09.12.2023</td>
+										<td>
+											10 000
+											<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+										</td>
+										<td>
+											+10
+											<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
-				</div>
-			</section>
 
+					<div class="exchange__inner--mobile">
+						<div data-tabs class="tabs">
+							<nav data-tabs-titles class="exchange__tabs-navigation tabs__navigation">
+								<button type="button" class="exchange__tabs-title tabs__title _tab-active">Конвертация</button>
+								<button type="button" class="exchange__tabs-title tabs__title">История</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<div class="exchange__inner-convert">
+										<form class="exchange__form" action="#">
+											<div class="exchange__form-item">
+												<input class="exchange__form-input" type="text" placeholder="Введите количество">
+												<img class="exchange__form-input-img" width="23" height="23" src="img/common/mint.svg" alt="Icon">
+											</div>
+
+											<button class="exchange__control-btn">
+												<img src="img/common/change-arrows.svg" width="94" height="94" alt="Icon">
+												<span>или</span>
+											</button>
+
+											<div class="exchange__form-item">
+												<input class="exchange__form-input" type="text" placeholder="Вы получите">
+												<img class="exchange__form-input-img" width="23" height="23" src="img/common/coin-gold.svg" alt="Icon">
+											</div>
+
+											<button class="exchange__btn btn btn__accent-2">Обменять</button>
+										</form>
+									</div>
+								</div>
+
+								<div class="tabs__body">
+									<div class="exchange__inner-history">
+										<table class="exchange__table">
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Отправлено</th>
+													<th>Получено</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr>
+													<td>19.10.2023</td>
+													<td>
+														10 000
+														<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+													</td>
+													<td>
+														+10
+														<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+													</td>
+												</tr>
+
+												<tr>
+													<td>01.11.2023</td>
+													<td>
+														10 000
+														<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+													</td>
+													<td>
+														+10
+														<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+													</td>
+												</tr>
+
+												<tr>
+													<td>12.11.2023</td>
+													<td>
+														+10
+														<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+													</td>
+													<td>
+														10 000
+														<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+													</td>
+												</tr>
+
+												<tr>
+													<td>14.11.2023</td>
+													<td>
+														10 000
+														<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+													</td>
+													<td>
+														+10
+														<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+													</td>
+												</tr>
+
+												<tr>
+													<td>11.10.2023</td>
+													<td>
+														10 000
+														<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+													</td>
+													<td>
+														+10
+														<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+													</td>
+												</tr>
+
+												<tr>
+													<td>09.12.2023</td>
+													<td>
+														10 000
+														<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+													</td>
+													<td>
+														+10
+														<img src="img/common/coin-gold.svg" width="16" height="16" alt="Icon">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
-		<footer class="footer">
-			<div class="footer__container">
-				<h2 class="footer__text">Footer</h2>
-			</div>
-		</footer>
 	</div>
 
 	<script src="js/app.min.js?_v=20231024211127"></script>
