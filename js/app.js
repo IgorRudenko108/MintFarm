@@ -5093,6 +5093,7 @@
             });
             if (document.querySelector(".personage-info__slider")) {
                 new Swiper(".personage-info__slider", {
+                    modules: [ Navigation ],
                     observer: true,
                     observeParents: true,
                     slidesPerView: 1,
@@ -5100,7 +5101,31 @@
                     speed: 800,
                     centeredSlides: true,
                     autoHeight: true,
-                    allowTouchMove: false
+                    allowTouchMove: false,
+                    initialSlide: 1,
+                    navigation: {
+                        prevEl: ".personage__btn-prev",
+                        nextEl: ".personage__btn-next"
+                    }
+                });
+            }
+            if (document.querySelector(".aside__slider")) {
+                new Swiper(".aside__slider", {
+                    modules: [ Navigation ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    speed: 800,
+                    centeredSlides: true,
+                    autoHeight: true,
+                    allowTouchMove: false,
+                    initialSlide: 1,
+                    allowTouchMove: false,
+                    navigation: {
+                        prevEl: ".personage__btn-prev",
+                        nextEl: ".personage__btn-next"
+                    }
                 });
             }
             if (document.querySelector(".personage__slider")) {
@@ -5113,8 +5138,8 @@
                     speed: 800,
                     centeredSlides: true,
                     autoHeight: false,
-                    grabCursor: true,
                     initialSlide: 1,
+                    allowTouchMove: false,
                     navigation: {
                         prevEl: ".personage__btn-prev",
                         nextEl: ".personage__btn-next"
@@ -5122,9 +5147,6 @@
                     pagination: {
                         el: ".swiper-pagination",
                         type: "fraction"
-                    },
-                    controller: {
-                        control: ".personage-info__slider"
                     },
                     breakpoints: {
                         1200: {
