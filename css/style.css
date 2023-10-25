@@ -8882,6 +8882,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
+  margin-right: auto;
 }
 
 .neighbors__people-body {
