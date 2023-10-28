@@ -14190,12 +14190,6 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
           transform: rotate(180deg);
 }
 
-.kotopas__kotopas__premium-titlemain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 /**
  * Swiper 7.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -18412,13 +18406,6 @@ button.swiper-pagination-bullet {
     width: 25px;
     height: 40px;
   }
-
-  .kotopas__kotopas__premium-titlemain {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 @media (max-width: 61.99875em), (max-height: 900px) {
@@ -19275,7 +19262,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas-container--big {
-    padding: 0 10px 30px;
+    padding: 0 0 30px;
   }
 
   .kotopas__top-content {
