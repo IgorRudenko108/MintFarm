@@ -5119,9 +5119,8 @@
                     speed: 800,
                     centeredSlides: true,
                     autoHeight: true,
-                    allowTouchMove: false,
+                    allowTouchMove: true,
                     initialSlide: 1,
-                    allowTouchMove: false,
                     navigation: {
                         prevEl: ".personage__btn-prev",
                         nextEl: ".personage__btn-next"
@@ -5244,6 +5243,33 @@
                         slidesPerView: 1.3,
                         spaceBetween: 10,
                         centeredSlides: true
+                    }
+                }
+            });
+            if (document.querySelector(".kotopas__popap-slider")) new Swiper(".kotopas__popap-slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                speed: 800,
+                centeredSlides: true,
+                loop: true,
+                autoHeight: false,
+                navigation: {
+                    prevEl: ".kotopas__btn-prev",
+                    nextEl: ".kotopas__btn-next"
+                },
+                breakpoints: {
+                    767: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                        centeredSlides: false
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        centeredSlides: false
                     }
                 }
             });
