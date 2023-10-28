@@ -17291,9 +17291,9 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__body--inner {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
   }
 
   .kotopas__body-cards {
@@ -19318,6 +19318,14 @@ button.swiper-pagination-bullet {
     font-size: 1rem;
   }
 
+  .kotopas__premium-title {
+    margin: 0 auto 10px;
+  }
+
+  .kotopas__premium-img {
+    margin: 0 auto 10px;
+  }
+
   .kotopas__premium-img img {
     width: 70px;
     height: auto;
@@ -20489,12 +20497,16 @@ button.swiper-pagination-bullet {
     padding: 10px;
   }
 
+  .kotopas__premium-title {
+    margin: 0 auto;
+  }
+
   .kotopas__premium-title span {
     display: none;
   }
 
   .kotopas__premium-img {
-    margin: 0 auto 10px;
+    margin: 0 auto;
   }
 
   .kotopas__premium-img img {
