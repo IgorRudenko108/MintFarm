@@ -17436,7 +17436,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-line {
-    height: 230px;
+    height: 230px !important;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
@@ -18468,7 +18468,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
-    height: 300px !important;
+    height: 300px;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line::after {
