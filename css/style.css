@@ -7460,6 +7460,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .personage__slide-image img {
   max-width: 100%;
+  max-height: 360px;
 }
 
 .swiper-slide-active.personage__slide {
@@ -13535,6 +13536,11 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   z-index: 3;
 }
 
+.kotopas__cards-item--lock .kotopas__cards-span--lock img {
+  width: 23px;
+  height: 23px;
+}
+
 .kotopas__cards-span {
   position: absolute;
   top: -10px;
@@ -16580,6 +16586,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 767.98px) and (min-height: 900px) {
   .personage__slide .personage__slide-image {
     max-width: 120px;
+    max-height: 240px;
   }
 }
 
@@ -17320,6 +17327,11 @@ button.swiper-pagination-bullet {
     font-size: 14px;
   }
 
+  .kotopas__premium {
+    gap: 10px;
+    padding: 10px;
+  }
+
   .kotopas__body--inner {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
@@ -17327,7 +17339,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__body-cards {
-    margin: 40px 20px 25px 0;
+    margin: 30px 20px 25px 0;
   }
 
   .kotopas__cards-item {
@@ -17337,7 +17349,7 @@ button.swiper-pagination-bullet {
   .kotopas__cards-item--unlock .kotopas__cards-block {
     margin-bottom: 15px;
     width: 120px;
-    min-height: 120px;
+    min-height: 100px;
     height: auto;
     max-height: 205px;
     overflow: hidden;
@@ -17348,7 +17360,7 @@ button.swiper-pagination-bullet {
             flex-direction: column-reverse;
     padding: 12px 8px 8px;
     background-size: cover;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 15px;
   }
 
   .kotopas__cards-item--unlock .kotopas__cards-title {
@@ -17384,7 +17396,7 @@ button.swiper-pagination-bullet {
   .kotopas__cards-item--lock .kotopas__cards-block {
     margin-bottom: 15px;
     width: 120px;
-    min-height: 120px;
+    min-height: 100px;
     height: auto;
     max-height: 205px;
     overflow: hidden;
@@ -17395,7 +17407,7 @@ button.swiper-pagination-bullet {
             flex-direction: column-reverse;
     padding: 12px 8px 8px;
     background-size: cover;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 15px;
   }
 
   .kotopas__cards-item--lock .kotopas__cards-title {
@@ -17428,6 +17440,7 @@ button.swiper-pagination-bullet {
 
   .kotopas__cards-item--lock .kotopas__cards-btn span {
     font-size: 14px;
+    font-weight: 500;
   }
 
   .kotopas__cards-item--lock .kotopas__cards-span--lock img {
@@ -17435,16 +17448,44 @@ button.swiper-pagination-bullet {
     height: 15px;
   }
 
+  .kotopas__cards-span {
+    width: 15px;
+    height: 15px;
+    top: -9px;
+    right: -3px;
+  }
+
+  .kotopas__cards-span img {
+    width: 8px;
+    height: 8px;
+  }
+
   .kotopas__progress-line {
-    height: 230px !important;
+    height: 185px !important;
+  }
+
+  .kotopas__progress-item--unlock .kotopas__progress-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .kotopas__progress-item--unlock .kotopas__progress-circle img {
+    width: 16px;
+    height: 16px;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
-    height: 230px !important;
+    height: 185px !important;
+  }
+
+  .kotopas__progress-item--lock .kotopas__progress-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
   }
 
   .kotopas__body-bonus {
-    margin: 40px 0 15px 30px;
+    margin: 10px 0 15px 30px;
   }
 
   .kotopas__bonus-block {
@@ -17591,6 +17632,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 575.88px) {
   .kotopas__cards-item--unlock .kotopas__cards-btn span {
     font-size: 14px;
+    font-weight: 500;
   }
 }
 
@@ -18115,6 +18157,10 @@ button.swiper-pagination-bullet {
     padding: 50px 20px 10px;
   }
 
+  .personage__slide-image img {
+    max-height: 300px;
+  }
+
   .personage__btn-prev {
     left: 10px;
   }
@@ -18428,6 +18474,9 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .kotopas__cards-progress {
@@ -18973,6 +19022,10 @@ button.swiper-pagination-bullet {
     max-width: 80px;
   }
 
+  .personage__slide-image img {
+    max-height: 160px;
+  }
+
   .swiper-slide-active.personage__slide {
     max-width: 125px;
     max-width: 140px !important;
@@ -19444,7 +19497,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__deco {
-    margin-top: 0;
+    margin-top: 5px;
   }
 
   .kotopas__deco--1 {
@@ -20595,8 +20648,8 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__premium {
-    gap: 10px;
-    padding: 10px;
+    gap: 5px;
+    padding: 5px;
   }
 
   .kotopas__premium-title {
@@ -20616,8 +20669,20 @@ button.swiper-pagination-bullet {
     height: auto;
   }
 
+  .kotopas__premium-item-bottom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .kotopas__deco {
-    display: none;
+    width: 6px;
+    height: 13px;
+    margin: 0;
+  }
+
+  .kotopas__premium-btn {
+    height: 20px;
   }
 
   .kotopas__premium-item--unlock .kotopas__premium-btn span {
@@ -20634,26 +20699,37 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__body-cards {
-    margin: 25px 15px 25px 0;
+    margin: 30px 15px 25px 0;
   }
 
-  .kotopas__progress-item--unlock .kotopas__progress-circle {
-    width: 30px;
-    height: 30px;
+  .kotopas__cards-item--unlock .kotopas__cards-block {
+    margin-bottom: 10px;
   }
 
-  .kotopas__progress-item--unlock .kotopas__progress-circle img {
-    width: 16px;
-    height: 16px;
+  .kotopas__cards-item--unlock .kotopas__cards-btn {
+    height: 20px;
   }
 
-  .kotopas__progress-item--lock .kotopas__progress-circle {
-    width: 30px;
-    height: 30px;
+  .kotopas__cards-item--lock .kotopas__cards-btn {
+    height: 20px;
+  }
+
+  .kotopas__cards-item--lock .kotopas__cards-span--lock {
+    bottom: -17px;
+    left: -3px;
+  }
+
+  .kotopas__cards-item--lock .kotopas__cards-span--lock img {
+    width: 10px;
+    height: 10px;
   }
 
   .kotopas__body-bonus {
     margin: 0 0 15px 15px;
+  }
+
+  .kotopas__bonus-block {
+    margin-bottom: 10px;
   }
 
   .kotopas__bonus-block span {
@@ -20671,12 +20747,34 @@ button.swiper-pagination-bullet {
     height: 22px;
   }
 
+  .kotopas__cards-btn {
+    height: 20px;
+  }
+
+  .kotopas__bonus-btn {
+    height: 20px;
+  }
+
+  .kotopas__bonus-btn span {
+    font-weight: 500;
+  }
+
+  .kotopas__bonus-span--lock {
+    bottom: -17px;
+    left: -3px;
+  }
+
+  .kotopas__bonus-span--lock img {
+    width: 10px;
+    height: 10px;
+  }
+
   .kotopas__bonus-item {
     min-width: 110px;
   }
 
   .kotopas__premium-item-bottom--mobile {
-    width: 100%;
+    width: calc(100% - 25px);
   }
 
   .popup-kotopas__tetx-box {
