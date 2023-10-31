@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231031224654">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231031232639">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -208,7 +208,178 @@
 		// -- /form-validate ------------------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20231031224654"></script>
+	<div id="popup-error" aria-hidden="true" class="popup-error popup">
+		<div class="popup__wrapper popup-error__wrapper">
+			<div class="popup__content popup-error__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="18" height="18">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text">
+					<div class="popup-error__body">
+						<div class="popup-error__img">
+							<img src="img/common/error.svg" width="93" height="93" alt="Error">
+						</div>
+
+						<div class="popup-error__inner">
+							<h2 class="popup-error__title">Ошибка входа</h2>
+
+							<p class="popup-error__text">Неверно введен адрес электронной <br> почты или пароль</p>
+
+							<a class="popup-error__link" href="recovery-password.html">Забыли пароль? Восстановить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-error-2" aria-hidden="true" class="popup-error popup">
+		<div class="popup__wrapper popup-error__wrapper">
+			<div class="popup__content popup-error__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="18" height="18">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text">
+					<div class="popup-error__body">
+						<div class="popup-error__img">
+							<img src="img/common/error.svg" alt="Error">
+						</div>
+
+						<div class="popup-error__inner">
+							<h2 class="popup-error__title">Ошибка</h2>
+
+							<p class="popup-error__text">Неверно введен адрес электронной почты</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-error-3" aria-hidden="true" class="popup-error popup">
+		<div class="popup__wrapper popup-error__wrapper">
+			<div class="popup__content popup-error__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="18" height="18">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text">
+					<div class="popup-error__body">
+						<div class="popup-error__img">
+							<img src="img/common/error.svg" alt="Error">
+						</div>
+
+						<div class="popup-error__inner">
+							<h2 class="popup-error__title">Ошибка</h2>
+
+							<p class="popup-error__text">Неверно введен пароль</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-recover-password" aria-hidden="true" class="popup-recover-password popup">
+		<div class="popup__wrapper popup-recover-password__wrapper">
+			<div class="popup__content recover-password__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="18" height="18">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text">
+					<div class="popup-recover-password__body">
+						<h2 class="recover-password__title">Введите новый пароль</h2>
+
+						<form action="#" id="recover-password" class="recover-password__form form__body2">
+							<div class="recover-password__item form__item2">
+								<label class="recover-password__label" for="myInput">Новый пароль</label>
+								<div class="recover-password__box">
+									<input class="recover-password__input form__input2 _req2" type="password" value="" id="myInput" placeholder="Новый пароль">
+									<div class="recover-password__show" onclick="myFunction()">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#eye"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<div class="recover-password__item form__item2">
+								<label class="recover-password__label" for="myInput">Подтвердите пароль</label>
+								<div class="recover-password__box">
+									<input class="recover-password__input form__input2 _req2" type="password" value="" id="myInput2" placeholder="Подтвердите пароль">
+									<div class="recover-password__show" onclick="myFunction2()">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#eye"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<a href="#" class="recover-password__button btn btn__accent form__button form__button2">Сохранить</a>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-recover-success" aria-hidden="true" class="popup-recover-success popup">
+		<div class="popup__wrapper popup-recover-success__wrapper">
+			<div class="popup__content recover-success__content">
+
+				<div class="popup__content-top">
+					<a class="page-back" href="sign-in.html">
+						<svg width="6" height="12">
+							<use xlink:href="img/icons/icons.svg#arrow-left"></use>
+						</svg>
+
+						<span>Назад</span>
+					</a>
+
+					<button data-close type="button" class="popup__close">
+						<svg width="18" height="18">
+							<use xlink:href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+
+				<div class="popup__text">
+					<div class="popup-recover-success__body">
+
+						<div class="popup-recover-success__img">
+							<img src="img/common/check.svg" alt="Check">
+						</div>
+
+						<h2 class="recover-password__title">Успешное восстановление пароля</h2>
+
+						<p class="popup-recover-success__text">
+							Ссылка сброса пароля отправлена на указанный адрес эл.почты. Если вы не можете найти письмо в папку «Входящие», убедитесь, что вы указали правильный адрес эл.почты, или проверьте папку со спамом.
+						</p>
+
+						<a class="popup-recover-success__link" href="#">
+							Повторная отправка письма возможна через <span>58</span> сек
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/app.min.js?_v=20231031232639"></script>
 </body>
 
 </html>
