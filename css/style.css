@@ -19566,11 +19566,7 @@ button.swiper-pagination-bullet {
 
   .kotopas__premium-img {
     margin: 0 auto 10px;
-  }
-
-  .kotopas__premium-img img {
-    width: 70px;
-    height: auto;
+    max-width: 70px;
   }
 
   .kotopas__premium-img--1 {
@@ -20754,11 +20750,7 @@ button.swiper-pagination-bullet {
 
   .kotopas__premium-img {
     margin: 0 auto;
-  }
-
-  .kotopas__premium-img img {
-    width: 40px;
-    height: auto;
+    max-width: 40px;
   }
 
   .kotopas__premium-img--1 {
