@@ -6601,7 +6601,7 @@ body {
   visibility: visible;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  z-index: 999;
+  z-index: 151;
 }
 
 .cabinet__skin-images {
@@ -7008,7 +7008,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 151;
   display: none;
 }
 
