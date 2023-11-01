@@ -1765,7 +1765,7 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   top: 0;
   right: 0;
   background-color: #F3F5FC;
-  z-index: 99;
+  z-index: 152;
   opacity: 0;
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);

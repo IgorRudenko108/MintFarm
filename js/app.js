@@ -5111,7 +5111,7 @@
             }
             if (document.querySelector(".aside__slider")) {
                 new Swiper(".aside__slider", {
-                    modules: [ Navigation ],
+                    modules: [ Navigation, Controller ],
                     observer: true,
                     observeParents: true,
                     slidesPerView: 1,
@@ -5121,6 +5121,9 @@
                     autoHeight: true,
                     allowTouchMove: true,
                     initialSlide: 1,
+                    controller: {
+                        control: ".personage-info__slider"
+                    },
                     navigation: {
                         prevEl: ".personage__btn-prev",
                         nextEl: ".personage__btn-next"
@@ -5138,7 +5141,8 @@
                     centeredSlides: true,
                     autoHeight: false,
                     initialSlide: 1,
-                    allowTouchMove: false,
+                    allowTouchMove: true,
+                    grabCursor: true,
                     navigation: {
                         prevEl: ".personage__btn-prev",
                         nextEl: ".personage__btn-next"
@@ -5146,6 +5150,9 @@
                     pagination: {
                         el: ".swiper-pagination",
                         type: "fraction"
+                    },
+                    controller: {
+                        control: ".aside__slider"
                     },
                     breakpoints: {
                         1200: {
