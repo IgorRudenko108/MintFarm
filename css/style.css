@@ -20725,6 +20725,10 @@ button.swiper-pagination-bullet {
     height: 20px;
   }
 
+  .kotopas__cards-item--lock .kotopas__cards-block {
+    margin-bottom: 10px;
+  }
+
   .kotopas__cards-item--lock .kotopas__cards-btn {
     height: 20px;
   }
