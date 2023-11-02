@@ -20063,6 +20063,11 @@ button.swiper-pagination-bullet {
     font-size: 2rem;
   }
 
+  .menu__body {
+    margin-top: 0;
+    padding-top: 64px;
+  }
+
   .menu__bottom {
     padding: 0 15px;
   }
