@@ -17489,7 +17489,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__cards-item--unlock .kotopas__cards-img {
-    width: 44px;
+    width: 44px !important;
     right: -5px;
     bottom: auto;
     top: -3px;
@@ -17535,7 +17535,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__cards-item--lock .kotopas__cards-img {
-    width: 44px;
+    width: 44px !important;
     right: -5px;
     bottom: auto;
     top: -3px;
@@ -17568,7 +17568,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-line {
-    height: 162px;
+    height: 180px;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-circle {
@@ -17582,7 +17582,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
-    height: 162px;
+    height: 180px;
   }
 
   .kotopas__progress-item--lock .kotopas__progress-circle {
@@ -20895,11 +20895,11 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-line {
-    height: 152px;
+    height: 160px;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
-    height: 152px;
+    height: 160px;
   }
 
   .kotopas__body-bonus {
