@@ -17568,7 +17568,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-line {
-    height: 180px;
+    height: 180px !important;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-circle {
@@ -17582,7 +17582,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
-    height: 180px;
+    height: 180px !important;
   }
 
   .kotopas__progress-item--lock .kotopas__progress-circle {
@@ -20895,11 +20895,11 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-line {
-    height: 160px;
+    height: 160px !important;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
-    height: 160px;
+    height: 160px !important;
   }
 
   .kotopas__body-bonus {
