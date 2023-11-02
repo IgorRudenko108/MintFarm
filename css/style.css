@@ -2568,6 +2568,7 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  border-radius: 0 !important;
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */
 }
@@ -13300,7 +13301,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   width: 210px;
   height: auto;
   min-height: 145px;
@@ -13405,6 +13406,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   margin-top: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .kotopas__cards-item--unlock .kotopas__cards-btn:active {
@@ -13425,6 +13428,24 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   letter-spacing: -0.32px;
 }
 
+.kotopas__cards-item--unlock .kotopas__cards-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FEC037;
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  border-radius: 20px;
+  z-index: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
 .no-webp .kotopas__cards-item--lock .kotopas__cards-block{
   background-image: url(../img/kotopas__page/card-bg-2.png); }
 
@@ -13436,7 +13457,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   width: 210px;
   height: auto;
   min-height: 145px;
@@ -16318,9 +16339,9 @@ button.swiper-pagination-bullet {
     background-image: url(../img/kotopas__page/card-bg-1--mobile.png); }
 
   .kotopas__cards-item--unlock .kotopas__cards-block {
-    width: 140px;
+    width: 180px;
     padding: 30px 24px 8px 8px;
-    background-size: 120px 145px;
+    background-size: 180px 145px;
     margin-bottom: 55px;
   }
 
@@ -16329,18 +16350,18 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__cards-item--unlock .kotopas__cards-img {
-    width: 100px;
+    width: 90px;
     height: auto;
-    right: -15px;
+    right: -25px;
   }
 
   .no-webp .kotopas__cards-item--lock .kotopas__cards-block{
     background-image: url(../img/kotopas__page/card-bg-2--mobile.png); }
 
   .kotopas__cards-item--lock .kotopas__cards-block {
-    width: 140px;
+    width: 180px;
     padding: 30px 24px 8px 8px;
-    background-size: 120px 145px;
+    background-size: 180px 145px;
     margin-bottom: 55px;
   }
 
@@ -16349,9 +16370,9 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__cards-item--lock .kotopas__cards-img {
-    width: 100px;
+    width: 90px;
     height: auto;
-    right: -15px;
+    right: -25px;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-circle {
@@ -17395,6 +17416,10 @@ button.swiper-pagination-bullet {
     padding: 20px 10px 10px;
   }
 
+  .kotopas__top {
+    padding-bottom: 10px;
+  }
+
   .kotopas__top-offer-text {
     font-size: 14px;
   }
@@ -17419,7 +17444,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__body-cards {
-    margin: 30px 20px 25px 0;
+    margin: 25px 20px 25px 0;
   }
 
   .kotopas__cards-item {
@@ -17429,7 +17454,7 @@ button.swiper-pagination-bullet {
   .kotopas__cards-item--unlock .kotopas__cards-block {
     margin-bottom: 15px;
     width: 120px;
-    min-height: 100px;
+    min-height: 80px;
     height: auto;
     max-height: 205px;
     overflow: hidden;
@@ -17441,6 +17466,7 @@ button.swiper-pagination-bullet {
     padding: 12px 8px 8px;
     background-size: cover;
     border-radius: 0 15px 15px 15px;
+    margin-bottom: 10px;
   }
 
   .kotopas__cards-item--unlock .kotopas__cards-title {
@@ -17463,10 +17489,10 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__cards-item--unlock .kotopas__cards-img {
-    width: 50px;
+    width: 44px;
     right: -5px;
     bottom: auto;
-    top: -5px;
+    top: -3px;
   }
 
   .kotopas__cards-item--unlock .kotopas__cards-btn {
@@ -17476,7 +17502,7 @@ button.swiper-pagination-bullet {
   .kotopas__cards-item--lock .kotopas__cards-block {
     margin-bottom: 15px;
     width: 120px;
-    min-height: 100px;
+    min-height: 80px;
     height: auto;
     max-height: 205px;
     overflow: hidden;
@@ -17488,6 +17514,7 @@ button.swiper-pagination-bullet {
     padding: 12px 8px 8px;
     background-size: cover;
     border-radius: 0 15px 15px 15px;
+    margin-bottom: 10px;
   }
 
   .kotopas__cards-item--lock .kotopas__cards-title {
@@ -17508,10 +17535,10 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__cards-item--lock .kotopas__cards-img {
-    width: 50px;
+    width: 44px;
     right: -5px;
     bottom: auto;
-    top: -5px;
+    top: -3px;
   }
 
   .kotopas__cards-item--lock .kotopas__cards-btn {
@@ -17541,7 +17568,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-line {
-    height: 185px !important;
+    height: 162px;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-circle {
@@ -17555,7 +17582,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
-    height: 185px !important;
+    height: 162px;
   }
 
   .kotopas__progress-item--lock .kotopas__progress-circle {
@@ -17571,6 +17598,7 @@ button.swiper-pagination-bullet {
   .kotopas__bonus-block {
     padding: 9px 10px 5px;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   .kotopas__bonus-block span {
@@ -17581,9 +17609,24 @@ button.swiper-pagination-bullet {
     border-radius: 10px;
   }
 
+  .kotopas__bonus-inner span {
+    margin-top: 5px;
+  }
+
   .kotopas__bonus-inner p {
-    margin: 8px auto 5px;
+    margin: 5px auto 5px;
     font-size: 14px;
+  }
+
+  .kotopas__bonus-img {
+    width: 30px;
+    height: 30px;
+    margin-top: -13px;
+  }
+
+  .kotopas__bonus-img img {
+    width: 22px;
+    height: 22px;
   }
 
   .kotopas__cards-btn {
@@ -18564,9 +18607,28 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+
+  .kotopas__cards-item--unlock .kotopas__cards-block {
+    margin-bottom: 15px;
+  }
+
+  .kotopas__cards-item--unlock .kotopas__cards-img {
+    width: 70px;
+    right: -15px;
+  }
+
+  .kotopas__cards-item--unlock .kotopas__cards-btn::before {
+    display: none;
+  }
+
+  .kotopas__cards-item--lock .kotopas__cards-block {
+    margin-bottom: 15px;
+  }
+
+  .kotopas__cards-item--lock .kotopas__cards-img {
+    width: 70px;
+    right: -15px;
   }
 
   .kotopas__cards-progress {
@@ -18582,7 +18644,7 @@ button.swiper-pagination-bullet {
 
   .kotopas__progress-line {
     position: relative;
-    height: 300px;
+    height: 260px;
     width: 10px;
     -webkit-transform: none;
         -ms-transform: none;
@@ -18607,7 +18669,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line {
-    height: 300px;
+    height: 260px;
   }
 
   .kotopas__progress-item--unlock .kotopas__progress-line::after {
@@ -20689,7 +20751,7 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__top {
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 
   .kotopas__title-wrapper {
@@ -20811,19 +20873,11 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__body-cards {
-    margin: 30px 15px 25px 0;
-  }
-
-  .kotopas__cards-item--unlock .kotopas__cards-block {
-    margin-bottom: 10px;
+    margin: 25px 15px 25px 0;
   }
 
   .kotopas__cards-item--unlock .kotopas__cards-btn {
     height: 20px;
-  }
-
-  .kotopas__cards-item--lock .kotopas__cards-block {
-    margin-bottom: 10px;
   }
 
   .kotopas__cards-item--lock .kotopas__cards-btn {
@@ -20840,27 +20894,20 @@ button.swiper-pagination-bullet {
     height: 10px;
   }
 
+  .kotopas__progress-line {
+    height: 152px;
+  }
+
+  .kotopas__progress-item--unlock .kotopas__progress-line {
+    height: 152px;
+  }
+
   .kotopas__body-bonus {
     margin: 0 0 15px 15px;
   }
 
-  .kotopas__bonus-block {
-    margin-bottom: 10px;
-  }
-
   .kotopas__bonus-block span {
     font-size: 1rem;
-  }
-
-  .kotopas__bonus-img {
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-  }
-
-  .kotopas__bonus-img img {
-    width: 22px;
-    height: 22px;
   }
 
   .kotopas__cards-btn {
@@ -24229,6 +24276,12 @@ button.swiper-pagination-bullet {
     background-color: #e39c00;
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
+  }
+
+  .kotopas__cards-item--unlock .kotopas__cards-btn:hover::before {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
   }
 
   .kotopas__cards-item--lock .kotopas__cards-info-btn:hover {
