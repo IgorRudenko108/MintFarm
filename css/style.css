@@ -1625,7 +1625,7 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30px;
           flex: 0 0 30px;
-  z-index: 149;
+  z-index: 9999;
   margin-left: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
