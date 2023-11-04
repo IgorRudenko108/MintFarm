@@ -1874,7 +1874,7 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   height: 100%;
   overflow-y: auto;
   background-color: #F3F5FC;
-  margin-top: 97px;
+  margin-top: 100px;
   /* Hide scrollbar for Chrome, Safari and Opera */
   /* Hide scrollbar for IE, Edge and Firefox */
 }
@@ -7439,7 +7439,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0.6;
+  opacity: 0.04;
   scale: 0.6;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -7517,6 +7517,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .personage__btn.swiper-button-disabled {
   pointer-events: none;
+  background-color: #7c7c7c;
 }
 
 .personage__btn-prev {
@@ -14005,6 +14006,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   gap: 10px;
   height: 40px;
   margin-top: auto;
+  max-width: 995px;
+  padding-right: 15px;
 }
 
 .kotopas__controls-link {
@@ -15465,7 +15468,7 @@ button.swiper-pagination-bullet {
 
 @media (max-height: 900px) and (min-width: 991.98px) {
   .menu__body {
-    margin-top: 80px;
+    margin-top: 81px;
   }
 
   .menu__body--small {
@@ -16500,7 +16503,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 991.98px) {
   .menu__body {
     padding: 0 10px 100px;
-    margin-top: 64px;
+    margin-top: 63px;
   }
 
   .menu__body--small {
@@ -17791,6 +17794,7 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
+    max-height: 540px;
   }
 }
 
@@ -20252,7 +20256,7 @@ button.swiper-pagination-bullet {
 
   .menu__body {
     margin-top: 0;
-    padding-top: 64px;
+    padding-top: 63px;
   }
 
   .menu__bottom {
