@@ -5687,7 +5687,9 @@
                             initSliders: false,
                             destroy: true
                         },
-                        992: {},
+                        992: {
+                            init: true
+                        },
                         768: {
                             direction: "vertical",
                             init: false,
@@ -5695,7 +5697,8 @@
                             destroy: true
                         },
                         320: {
-                            direction: "vertical"
+                            direction: "vertical",
+                            init: false
                         }
                     }
                 });
