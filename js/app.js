@@ -5682,23 +5682,23 @@
                     direction: "horizontal",
                     init: true,
                     breakpoints: {
-                        1200: {
-                            init: false,
-                            initSliders: false,
-                            destroy: true
-                        },
-                        992: {
-                            init: true
-                        },
+                        1200: {},
+                        992: {},
                         768: {
                             direction: "vertical",
                             init: false,
-                            initSliders: false,
-                            destroy: true
+                            mousewheel: false,
+                            grabCursor: false,
+                            freeMode: false,
+                            allowTouchMove: false
                         },
                         320: {
                             direction: "vertical",
-                            init: false
+                            init: false,
+                            mousewheel: false,
+                            grabCursor: false,
+                            freeMode: false,
+                            allowTouchMove: false
                         }
                     }
                 });

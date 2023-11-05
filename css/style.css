@@ -18585,7 +18585,7 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 10px;
+    padding: 0 10px 40px;
   }
 
   .kotopas__premium {
