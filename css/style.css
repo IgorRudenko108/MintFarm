@@ -11907,8 +11907,17 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .popup-saper-info__left-img {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  width: 290px;
+  height: 283px;
+}
+
+.popup-saper-info__left-img--pc {
+  width: 189px;
+  height: 225px;
+}
+
+.popup-saper-info__left-img--mobile {
+  display: none;
 }
 
 .popup-saper-info__right {
@@ -18386,7 +18395,18 @@ button.swiper-pagination-bullet {
   }
 
   .popup-saper-info__left-img {
-    height: 185px;
+    width: 185px;
+    height: 181px;
+  }
+
+  .popup-saper-info__left-img--pc {
+    display: none;
+  }
+
+  .popup-saper-info__left-img--mobile {
+    display: block;
+    width: 290px;
+    height: 161px;
   }
 
   .popup-saper-info__right--mobile {
