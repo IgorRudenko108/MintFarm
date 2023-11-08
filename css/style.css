@@ -12435,10 +12435,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .saper__popup-counter {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  min-width: 150px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  min-width: 150px !important;
 }
 
 .popup-saper-info__content .saper__counter {
@@ -18388,7 +18388,7 @@ button.swiper-pagination-bullet {
   }
 
   .popup-saper-info__left-img--mobile {
-    height: 161px;
+    height: 161px !important;
   }
 
   .popup-saper-info__right--mobile {
