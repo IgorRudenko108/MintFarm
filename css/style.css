@@ -11907,7 +11907,6 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .popup-saper-info__left-img {
-  max-width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -18381,14 +18380,13 @@ button.swiper-pagination-bullet {
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .popup-saper-info__left-img {
     height: 185px;
-  }
-
-  .popup-saper-info__left-img--mobile {
-    height: 161px !important;
   }
 
   .popup-saper-info__right--mobile {
