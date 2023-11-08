@@ -1630,7 +1630,7 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30px;
           flex: 0 0 30px;
-  z-index: 9999;
+  z-index: 999;
   margin-left: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -11789,6 +11789,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   padding-right: 0;
 }
 
+.popup-saper-stat__table--mobile {
+  display: none;
+}
+
 .popup-saper-stat__stavka {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11936,6 +11940,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   width: fit-content;
 }
 
+.popup-saper__title-box--mobile {
+  display: none;
+}
+
 .popup-saper-info__subtitle {
   color: #6D87F7;
   font-family: Raleway;
@@ -11970,6 +11978,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
+}
+
+.popup-saper-info__cards--mobile {
+  display: none;
 }
 
 .popup-saper-info__card-item {
@@ -12422,6 +12434,13 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   height: 42px;
 }
 
+.saper__popup-counter {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 150px;
+}
+
 .popup-saper-info__content .saper__counter {
   margin-top: auto;
 }
@@ -12684,6 +12703,61 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .saper__tabs-item[data-popup="#popup-saper-fail"].active {
   background-color: #FF3030;
+}
+
+.popup-saper-stat__table--mobile {
+  margin-bottom: 15px;
+}
+
+.popup-saper-stat__table-item {
+  border-top: 1px solid #9E9E9E;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.popup-saper-stat__table-item:last-child {
+  border-bottom: 1px solid #9E9E9E;
+}
+
+.popup-saper-stat__table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popup-saper-stat__table-left {
+  color: #424242;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.popup-saper-stat__table-right {
+  color: #464646;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.popup-saper-stat__table-right .popup-saper-stat__stavka img {
+  width: 11px;
+  height: 11px;
 }
 
 .quest__slider.swiper {
@@ -18209,6 +18283,10 @@ button.swiper-pagination-bullet {
     border-radius: 10px;
   }
 
+  .saper__tabs {
+    border-radius: 10px !important;
+  }
+
   .saper__tabs-inner {
     padding: 5px !important;
   }
@@ -18255,6 +18333,108 @@ button.swiper-pagination-bullet {
     border-radius: 4px;
   }
 
+  .popup-saper-info__content {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .popup-saper-stat__content-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .popup-saper-stat__play {
+    margin: 0 40px;
+  }
+
+  .popup-saper-stat__close {
+    position: absolute !important;
+    top: 10px;
+    right: 10px;
+  }
+
+  .popup-saper-stat__table {
+    display: none;
+  }
+
+  .popup-saper-stat__table--mobile {
+    display: block;
+  }
+
+  .popup-saper-info__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+
+  .popup-saper-info__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+
+  .popup-saper-info__left-img {
+    height: 185px;
+  }
+
+  .popup-saper-info__left-img--mobile {
+    height: 161px;
+  }
+
+  .popup-saper-info__right--mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .popup-saper__title-box {
+    display: none;
+  }
+
+  .popup-saper__title-box--mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .popup-saper-info__text {
+    text-align: center;
+  }
+
+  .popup-saper-info__cards {
+    display: none;
+  }
+
+  .popup-saper-info__cards--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 12px;
+    height: 100%;
+    margin-top: auto;
+  }
+
+  .popup-saper-info__controls {
+    margin: 0 auto;
+  }
+
   .popup-saper-success__content {
     padding: 30px 8px;
   }
@@ -18276,6 +18456,10 @@ button.swiper-pagination-bullet {
   .popup-success__close {
     width: 100%;
     border-radius: 10px;
+  }
+
+  .popup-saper-info__bottom--2 {
+    margin-top: 15px;
   }
 
   .tabs__layer {
@@ -19503,6 +19687,13 @@ button.swiper-pagination-bullet {
     height: 500px;
   }
 
+  .saper__inner.game-started .saper__balans {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+  }
+
   .game__bottom-controls {
     display: -ms-grid;
     display: grid;
@@ -19924,7 +20115,7 @@ button.swiper-pagination-bullet {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30px;
             flex: 0 0 30px;
-    z-index: 9999;
+    z-index: 999;
     margin-left: 37px;
   }
 
@@ -20629,8 +20820,17 @@ button.swiper-pagination-bullet {
     height: 8px;
   }
 
+  .popup-saper-stat__content {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
   .popup-saper-fail .popup-saper-success__text p {
     font-size: 14px;
+  }
+
+  .popup-saper-info__bottom--2 {
+    margin-top: 20px;
   }
 
   .tabs__layer-btn {
