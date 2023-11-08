@@ -11636,8 +11636,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   bottom: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   cursor: default;
   display: none;
 }
@@ -12550,9 +12550,9 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .saper__bottom-item--prise {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
   display: none;
 }
 
@@ -12668,6 +12668,22 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .saper__main-top-cat--right {
   right: 15px;
+}
+
+.saper__tabs-item[data-popup="#popup-saper-success"].active {
+  background-color: #5741c8;
+}
+
+.saper__tabs-item[data-popup="#popup-saper-success-2"].active {
+  background-color: #FFC600;
+}
+
+.saper__tabs-item[data-popup="#popup-saper-success-3"].active {
+  background-color: #00AF31;
+}
+
+.saper__tabs-item[data-popup="#popup-saper-fail"].active {
+  background-color: #FF3030;
 }
 
 .quest__slider.swiper {
@@ -18178,8 +18194,8 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-top {
-    width: 170px;
-    height: 88px;
+    width: 170px !important;
+    height: 88px !important;
     border-radius: 10px 10px 0 0;
   }
 
@@ -18266,7 +18282,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__inner.game-started {
-    height: 400px;
+    height: 370px;
   }
 
   .game__button-title {
@@ -19381,7 +19397,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__page {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   .saper__top {
@@ -19483,7 +19499,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__inner.game-started .saper__main-body {
-    height: 578px;
+    height: 500px;
   }
 
   .game__bottom-controls {
@@ -21859,7 +21875,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__inner.game-started .saper__main-body {
-    height: 370px;
+    height: 350px !important;
   }
 
   .quest__wrapper.swiper-wrapper {
