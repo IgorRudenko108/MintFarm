@@ -18190,7 +18190,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__body {
-    padding-top: 10px;
+    padding-top: 10px !important;
   }
 
   .saper__main-top {
@@ -18206,10 +18206,11 @@ button.swiper-pagination-bullet {
 
   .saper__bottom-item {
     min-width: 90px;
+    border-radius: 10px;
   }
 
   .saper__tabs-inner {
-    padding: 5px;
+    padding: 5px !important;
   }
 
   .saper-tabs__body--1 .saper__tabs-button {
@@ -21876,6 +21877,10 @@ button.swiper-pagination-bullet {
 
   .saper__inner.game-started .saper__main-body {
     height: 350px !important;
+  }
+
+  .game__button-title {
+    font-size: 8px;
   }
 
   .quest__wrapper.swiper-wrapper {
