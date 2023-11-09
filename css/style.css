@@ -19701,6 +19701,10 @@ button.swiper-pagination-bullet {
     padding-bottom: 100px;
   }
 
+  .saper__inner.game-started {
+    padding-bottom: 0;
+  }
+
   .saper__inner.game-started .saper__main-top {
     margin-bottom: -115px;
     opacity: 0;
@@ -19764,10 +19768,6 @@ button.swiper-pagination-bullet {
     display: flex;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
-  }
-
-  .saper__inner.game-started .saper__inner {
-    padding-bottom: 0;
   }
 
   .game__bottom-controls {
