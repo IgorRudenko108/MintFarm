@@ -18542,7 +18542,6 @@ button.swiper-pagination-bullet {
 
   .saper__main-top-cat {
     height: 76px;
-    z-index: 2;
   }
 
   .saper__main-top-cat--left {
@@ -19791,6 +19790,8 @@ button.swiper-pagination-bullet {
 
   .saper__main-top-cat {
     display: block;
+    z-index: 2;
+    top: 3px;
   }
 
   .exchange__page {
