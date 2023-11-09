@@ -17550,6 +17550,10 @@ button.swiper-pagination-bullet {
         flex-wrap: wrap;
   }
 
+  .saper__bottom-item {
+    height: 36px;
+  }
+
   .saper__stavka {
     width: auto;
   }
@@ -19663,10 +19667,6 @@ button.swiper-pagination-bullet {
 
   .counter__bottom input {
     font-size: 12px;
-  }
-
-  .saper__bottom-item {
-    height: 36px;
   }
 
   .saper__item-title {
