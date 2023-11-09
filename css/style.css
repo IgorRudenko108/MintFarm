@@ -19698,11 +19698,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__inner {
-    padding-bottom: 100px;
-  }
-
-  .saper__inner.game-started {
-    padding-bottom: 0;
+    padding-bottom: 60px;
   }
 
   .saper__inner.game-started .saper__main-top {
