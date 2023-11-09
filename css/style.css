@@ -1829,12 +1829,6 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   pointer-events: all;
 }
 
-.menu__top {
-  padding: 35px 30px 15px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .header__menu-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18549,7 +18543,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-top-cat--right {
-    right: 5px;
+    right: 0px;
   }
 
   .exchange__page {
