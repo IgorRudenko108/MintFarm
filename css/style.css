@@ -160,7 +160,7 @@ body {
 
 @supports (overflow: clip) {
   .wrapper {
-    overflow-x: clip;
+    overflow: clip;
   }
 }
 
@@ -11618,6 +11618,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .saper__tabs-item:active {
@@ -11639,7 +11641,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -o-object-fit: contain;
      object-fit: contain;
   cursor: default;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .saper__tabs-button {
@@ -11668,7 +11673,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .saper__tabs-item.active .saper__item-img {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .popup-saper-stat__content {
@@ -12414,6 +12422,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .saper__balans {
   position: relative;
+  pointer-events: none;
 }
 
 .saper__balans-error {
@@ -12584,15 +12593,24 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .tabs__layer--1.none {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .tabs__layer--2.none {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .tabs__layer--3.none {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .game__bottom-controls {
@@ -12766,6 +12784,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .popup-saper-stat__table-right .popup-saper-stat__stavka img {
   width: 11px;
   height: 11px;
+}
+
+.saper-game__bottom-controls {
+  width: auto;
 }
 
 .quest__slider.swiper {
@@ -18484,8 +18506,12 @@ button.swiper-pagination-bullet {
     border-radius: 10px;
   }
 
-  .saper__inner.game-started {
-    height: 370px;
+  .saper__inner.game-started .saper__main-top {
+    margin-bottom: -90px;
+  }
+
+  .saper__inner.game-started .saper__main-body {
+    min-height: 300px;
   }
 
   .game__button-title {
@@ -19599,10 +19625,6 @@ button.swiper-pagination-bullet {
     font-size: 20px;
   }
 
-  .saper__page {
-    padding-bottom: 100px;
-  }
-
   .saper__top {
     display: none;
   }
@@ -19676,23 +19698,38 @@ button.swiper-pagination-bullet {
   }
 
   .saper__inner.game-started .saper__main-top {
-    display: none;
+    margin-bottom: -115px;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
 
   .saper__inner.game-started .saper__main-top-cat {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
 
   .saper__inner.game-started .saper__tabs {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
   }
 
   .saper__inner.game-started .saper__counter {
-    display: none;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    visibility: hidden;
   }
 
   .saper__inner.game-started .saper__stavka {
-    display: none;
+    height: 0;
+    opacity: 0;
+    width: 0;
+    visibility: hidden;
   }
 
   .saper__inner.game-started .saper__bottom-item--prise {
@@ -19702,7 +19739,10 @@ button.swiper-pagination-bullet {
   }
 
   .saper__inner.game-started .saper__main-body {
-    height: 500px;
+    height: calc(100vh - 210px);
+    min-height: 450px;
+    -webkit-transition: height 0.4s linear;
+    transition: height 0.4s linear;
   }
 
   .saper__inner.game-started .saper__balans {
@@ -19710,6 +19750,16 @@ button.swiper-pagination-bullet {
     width: -moz-fit-content;
     width: fit-content;
     margin-left: auto;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+
+  .saper__inner.game-started .saper__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
 
   .game__bottom-controls {
@@ -22091,10 +22141,6 @@ button.swiper-pagination-bullet {
     position: static;
     margin-left: -50px;
     margin-top: 12px;
-  }
-
-  .saper__inner.game-started .saper__main-body {
-    height: 350px !important;
   }
 
   .game__button-title {
