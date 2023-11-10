@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231109222243">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231110053025">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -753,8 +753,89 @@
 
 	</div>
 
+	<div id="daily-statistic-popup" aria-hidden="true" class="daily-statistic-popup popup">
+		<div class="popup__wrapper popup-cabinet-target__wrapper">
 
-	<script src="js/app.min.js?_v=20231109222243"></script>
+			<h2 class="popup-cabinet__title">Статистика</h2>
+
+			<div class="popup__content-top popup-cabinet__top">
+				<p class="popup-cabinet__top-title">Кошелек</p>
+
+				<a class="popup-cabinet__top-mint" href="#">
+					<span>367+12</span>
+					<img src="img/common/mint.svg" width="20" height="20" alt="Image">
+				</a>
+
+				<a class="popup-cabinet__top-coins" href="#">
+					<div class="header-wallet__body">
+						<span class="header-wallet__value">657</span>
+						<img class="header-wallet__icon" src="img/present__page/coin.svg" alt="Coin">
+					</div>
+				</a>
+
+				<button data-close type="button" class="popup__close cabinet__close">
+					<svg width="15" height="15">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="popup__content daily-statistic__content">
+
+				<div class="popup__text">
+					<div class="daily-tasks__statistic">
+						<div class="daily-tasks__statistic-inner">
+							<div class="tasks__stat-item">
+								<div class="tasks__stat-img tasks__stat-img--1">
+									<img src="img/tasks__page/stat-info-1.svg" width="20" height="20" alt="Image">
+								</div>
+
+								<div class="tasks__stat-body">
+									<div class="tasks__stat-value">70</div>
+									<div class="tasks__stat-subtitle">Выполненно квестов</div>
+								</div>
+							</div>
+
+							<div class="tasks__stat-item">
+								<div class="tasks__stat-img tasks__stat-img--2">
+									<img src="img/tasks__page/stat-info-2.svg" width="20" height="20" alt="Image">
+								</div>
+
+								<div class="tasks__stat-body">
+									<div class="tasks__stat-value">31</div>
+									<div class="tasks__stat-subtitle">Достижений заработано</div>
+								</div>
+							</div>
+
+							<div class="tasks__stat-item">
+								<div class="tasks__stat-img tasks__stat-img--3">
+									<img src="img/tasks__page/stat-info-3.svg" width="20" height="20" alt="Image">
+								</div>
+
+								<div class="tasks__stat-body">
+									<div class="tasks__stat-value">56</div>
+									<div class="tasks__stat-subtitle">День в игре</div>
+								</div>
+							</div>
+
+							<div class="tasks__stat-item">
+								<div class="tasks__stat-img tasks__stat-img--4">
+									<img src="img/tasks__page/stat-info-4.svg" width="20" height="20" alt="Image">
+								</div>
+
+								<div class="tasks__stat-body">
+									<div class="tasks__stat-value">98</div>
+									<div class="tasks__stat-subtitle">Наград получено</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20231110053025"></script>
 </body>
 
 </html>

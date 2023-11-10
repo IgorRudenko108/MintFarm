@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231109222243">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231110053025">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1015,7 +1015,8 @@
 			</div>
 
 			<div class="neighbors__bottom-controls">
-				<button data-popup="#popup-statistic" class="game-catalog__button">
+				<!-- <button data-popup="#popup-statistic" class="game-catalog__button"> -->
+				<button data-popup="#popup-neighbors-success" class="game-catalog__button">
 					<div class="game-catalog__icon-wrapper">
 						<picture><source srcset="img/neighbors__page/control-icon-1.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/neighbors__page/control-icon-1.png" width="35" height="35" alt="Icon"></picture>
 					</div>
@@ -1374,9 +1375,59 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="popup-neighbors-success" aria-hidden="true" class="popup-neighbors-success popup">
+		<div class="popup__wrapper popup-saper-stat__wrapper">
+			<div class="popup__content popup-saper-success__content popup-neighbors-success__content">
+
+				<div class="popup__text">
+					<div class="popup-saper-success__body">
+						<h2 class="popup-saper-success__title">Ваши соседи принесли вам!</h2>
+
+						<div class="popup-saper-success__img-box">
+							<div class="popup-saper-success__bg-box"></div>
+							<picture><source srcset="img/neighbors__page/mint-box.webp" type="image/webp"><img class="popup-saper-success__img" src="img/neighbors__page/mint-box.png" width="182" height="162" alt="Image"></picture>
+						</div>
+
+						<div class="popup-saper-success__text">
+							<p>Заработано</p>
+							<span>Мята 226</span>
+						</div>
+
+						<button data-close type="button" class="popup-neighbors__close popup-success__close popup-success__close--1 popup__close">
+							Забрать мяту
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!----------------------------------------------------------->
 
-	<script src="js/app.min.js?_v=20231109222243"></script>
+	<script>
+		let popupNeighbors = document.querySelector('.popup-neighbors-success');
+		let popupWrapper = document.querySelector('html');
+		let popupBtnClose = document.querySelector('.popup-neighbors__close');
+
+		function popupTimeout() {
+			popupNeighbors.classList.add('popup_show');
+			popupWrapper.classList.add('popup-show');
+			popupWrapper.classList.add('lock');
+		}
+
+		setTimeout(popupTimeout, 3000);
+
+		if (popupBtnClose) {
+			popupBtnClose.addEventListener('click', function() {
+				popupNeighbors.classList.remove('popup_show');
+				popupWrapper.classList.remove('popup-show');
+				popupWrapper.classList.remove('lock');
+			})
+		}
+	</script>
+
+	<script src="js/app.min.js?_v=20231110053025"></script>
+
 </body>
 
-</html>
+</html

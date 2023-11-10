@@ -420,6 +420,7 @@ body::after {
   visibility: visible;
   overflow: auto;
   pointer-events: auto;
+  opacity: 1;
 }
 
 .popup_show .popup__content {
@@ -9579,6 +9580,21 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   text-transform: none;
 }
 
+.no-webp .popup-neighbors-success .popup-saper-success__content::after{
+  background-image: url(../img/neighbors__page/mint-box-bg.jpg); }
+
+.popup-neighbors-success .popup-saper-success__content::before {
+  border-radius: 15px;
+  background: #6D87F7;
+  -webkit-filter: blur(12.5px);
+          filter: blur(12.5px);
+}
+
+.popup-neighbors-success .popup-saper-success__img {
+  width: 200px;
+  height: 213px;
+}
+
 .tasks__page {
   padding: 20px 0;
 }
@@ -10209,7 +10225,6 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
           justify-content: space-between;
   gap: 20px;
   position: relative;
-  cursor: pointer;
 }
 
 .daily-tasks__item.done {
@@ -10237,20 +10252,14 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   color: #fff;
 }
 
-.daily-tasks__item.done:active {
-  background-color: #6D87F7;
+.daily-tasks__item.done .daily-tasks__text-box:active .daily-tasks__item-title {
+  text-decoration: underline;
+  color: #fec54a;
 }
 
-.daily-tasks__item.done:focus-visible {
-  background-color: #6D87F7;
-}
-
-.daily-tasks__item:active {
-  background-color: #d4d2f8;
-}
-
-.daily-tasks__item:focus-visible {
-  background-color: #d4d2f8;
+.daily-tasks__item.done .daily-tasks__text-box:focus-visible .daily-tasks__item-title {
+  text-decoration: underline;
+  color: #fec54a;
 }
 
 .daily-tasks__item-left {
@@ -10280,6 +10289,16 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
+  cursor: pointer;
+}
+
+.daily-tasks__text-box:active .daily-tasks__item-title {
+  color: #6D87F7;
+  text-decoration: underline;
+}
+
+.daily-tasks__text-box:focus-visible .daily-tasks__item-title {
+  background-color: #d4d2f8;
 }
 
 .daily-tasks__item-title {
@@ -10288,6 +10307,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   font-size: 20px;
   font-weight: 600;
   line-height: normal;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .daily-tasks__item-text {
@@ -12302,6 +12323,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 10px;
 }
 
 .popup-saper-success__title {
@@ -20496,7 +20518,7 @@ button.swiper-pagination-bullet {
   }
 
   .personage__title {
-    font-size: 0.5rem;
+    font-size: 1.125rem;
   }
 
   .personage__title {
@@ -24513,15 +24535,15 @@ button.swiper-pagination-bullet {
     }
 }
 
-@supports (font-size: clamp( 0.5rem , -2.4998325943rem  +  6.2498139936vw , 3.125rem )) {
+@supports (font-size: clamp( 1.125rem , -1.1605867385rem  +  4.7617630428vw , 3.125rem )) {
     .personage__title {
-      font-size: clamp( 0.5rem , -2.4998325943rem  +  6.2498139936vw , 3.125rem );
+      font-size: clamp( 1.125rem , -1.1605867385rem  +  4.7617630428vw , 3.125rem );
     }
 }
 
-@supports not (font-size: clamp( 0.5rem , -2.4998325943rem  +  6.2498139936vw , 3.125rem )) {
+@supports not (font-size: clamp( 1.125rem , -1.1605867385rem  +  4.7617630428vw , 3.125rem )) {
     .personage__title {
-      font-size: calc(0.5rem + 2.625 * (100vw - 47.99875rem) / 42.00125);
+      font-size: calc(1.125rem + 2 * (100vw - 47.99875rem) / 42.00125);
     }
 }
 
@@ -25731,14 +25753,18 @@ button.swiper-pagination-bullet {
     transition: background-color 0.2s ease-in-out;
   }
 
-  .daily-tasks__item.done:hover {
-    background-color: #6D87F7;
+  .daily-tasks__item.done .daily-tasks__text-box:hover .daily-tasks__item-title {
+    text-decoration: underline;
+    color: #fec54a;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
-  .daily-tasks__item:hover {
-    background-color: #d4d2f8;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+  .daily-tasks__text-box:hover .daily-tasks__item-title {
+    color: #6D87F7;
+    text-decoration: underline;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .daily-tasks__progress-btn:hover {
@@ -26106,7 +26132,6 @@ button.swiper-pagination-bullet {
   }
 
   .personage__title {
-    font-size: 34px;
     gap: 10px;
     height: 30px;
     overflow: hidden;
@@ -26155,6 +26180,8 @@ button.swiper-pagination-bullet {
 }
 
 .webp .popup-calc__body{ background-image: url(../img/neighbors__page/popup-calc-bg.webp); }
+
+.webp .popup-neighbors-success .popup-saper-success__content::after{ background-image: url(../img/neighbors__page/mint-box-bg.webp); }
 
 .webp .saper__page{ background-image: url(../img/saper__page/main-bg.webp); }
 
