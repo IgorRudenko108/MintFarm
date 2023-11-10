@@ -19760,6 +19760,7 @@ button.swiper-pagination-bullet {
     height: 0;
     width: 0;
     visibility: hidden;
+    min-width: 0;
   }
 
   .saper__inner.game-started .saper__stavka {
