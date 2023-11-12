@@ -15104,7 +15104,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .no-webp .knight__page{
-  background-image: url(../../img/knight__page/knight-bg.jpg); }
+  background-image: url(../img/knight__page/knight-bg.jpg); }
 
 .knight__page {
   background-position: center;
@@ -26562,7 +26562,7 @@ button.swiper-pagination-bullet {
 
 .webp .kotopas__cards-item--lock .kotopas__cards-block{ background-image: url(../img/kotopas__page/card-bg-2.webp); }
 
-.webp .knight__page{ background-image: url(../../img/knight__page/knight-bg.webp); }
+.webp .knight__page{ background-image: url(../img/knight__page/knight-bg.webp); }
 
 @media (max-width: 1199.98px){
 
