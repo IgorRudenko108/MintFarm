@@ -2061,8 +2061,8 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   height: 60px;
   display: block;
   max-width: 105px;
-  -webkit-transition: background-color 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .header-wallet:active {
@@ -2383,13 +2383,27 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
 }
 
 .burger__stat-mint {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(212, 252, 121, 0.6)), to(rgba(150, 230, 161, 0.6)));
-  background: linear-gradient(90deg, rgba(212, 252, 121, 0.6) 0%, rgba(150, 230, 161, 0.6) 100%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: -webkit-gradient(linear, left top, right top, from(var(--c1, rgba(212, 252, 121, 0.6))), color-stop(51%, var(--c2, rgba(150, 230, 161, 0.6))), to(var(--c1, rgba(212, 252, 121, 0.6)))) var(--x, 0)/200%;
+  background: linear-gradient(90deg, var(--c1, rgba(212, 252, 121, 0.6)), var(--c2, rgba(150, 230, 161, 0.6)) 51%, var(--c1, rgba(212, 252, 121, 0.6))) var(--x, 0)/200%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  --c1: rgba(212, 252, 121, 0.60);
+  --c2: rgba(150, 230, 161, 0.60);
 }
 
 .burger__stat-energy {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 231, 233)), to(rgb(244, 186, 194)));
-  background: linear-gradient(90deg, rgb(255, 231, 233) 0%, rgb(244, 186, 194) 100%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: -webkit-gradient(linear, left top, right top, from(var(--c1, rgb(255, 231, 233))), color-stop(51%, var(--c2, rgb(244, 186, 194))), to(var(--c1, rgb(255, 231, 233)))) var(--x, 0)/200%;
+  background: linear-gradient(90deg, var(--c1, rgb(255, 231, 233)), var(--c2, rgb(244, 186, 194)) 51%, var(--c1, rgb(255, 231, 233))) var(--x, 0)/200%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  --c1: rgba(255, 231, 233, 1);
+  --c2: rgba(244, 186, 194, 1);
 }
 
 .burger__game-top {
@@ -10733,23 +10747,32 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  -webkit-transition: background 0.1s ease-in-out;
-  transition: background 0.1s ease-in-out;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .saper__controls-link:nth-child(1) {
-  background: -webkit-gradient(linear, left top, right top, from(#FF9A9E), color-stop(99%, #FAD0C4), to(#FAD0C4));
-  background: linear-gradient(90deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--c1, #FF9A9E)), color-stop(51%, var(--c2, #FAD0C4)), to(var(--c1, #FF9A9E))) var(--x, 0)/200%;
+  background: linear-gradient(90deg, var(--c1, #FF9A9E), var(--c2, #FAD0C4) 51%, var(--c1, #FF9A9E)) var(--x, 0)/200%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  --c1: #FF9A9E;
+  --c2: #FAD0C4;
 }
 
 .saper__controls-link:nth-child(2) {
-  background: -webkit-gradient(linear, left top, right top, from(#D4FC79), to(#96E6A1));
-  background: linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--c1, #D4FC79)), color-stop(51%, var(--c2, #96E6A1)), to(var(--c1, #D4FC79))) var(--x, 0)/200%;
+  background: linear-gradient(90deg, var(--c1, #D4FC79), var(--c2, #96E6A1) 51%, var(--c1, #D4FC79)) var(--x, 0)/200%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  --c1: #D4FC79;
+  --c2: #96E6A1;
 }
 
 .saper__controls-link:nth-child(3) {
-  background: -webkit-gradient(linear, left top, right top, from(#A18CD1), to(#FBC2EB));
-  background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+  background: -webkit-gradient(linear, left top, right top, from(var(--c1, #A18CD1)), color-stop(51%, var(--c2, #FBC2EB)), to(var(--c1, #A18CD1))) var(--x, 0)/200%;
+  background: linear-gradient(90deg, var(--c1, #A18CD1), var(--c2, #FBC2EB) 51%, var(--c1, #A18CD1)) var(--x, 0)/200%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  --c1: #A18CD1;
+  --c2: #FBC2EB;
 }
 
 .saper__controls-icon {
@@ -10876,8 +10899,6 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .saper__buster-item {
   border-radius: 20px;
-  background: -webkit-gradient(linear, left top, right top, from(#F6D365), to(#FDA085));
-  background: linear-gradient(90deg, #F6D365 0%, #FDA085 100%);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border: 8px solid #fff;
@@ -10892,8 +10913,12 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
           justify-content: center;
   height: 100px;
   width: 200px;
-  -webkit-transition: border-color 0.1s ease-in-out;
-  transition: border-color 0.1s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: -webkit-gradient(linear, left top, right top, from(var(--c1, #F6D365)), color-stop(51%, var(--c2, #FDA085)), to(var(--c1, #F6D365))) var(--x, 0)/200%;
+  background: linear-gradient(90deg, var(--c1, #F6D365), var(--c2, #FDA085) 51%, var(--c1, #F6D365)) var(--x, 0)/200%;
+  --c1: #F6D365;
+  --c2: #FDA085;
 }
 
 .saper__buster-item span {
@@ -25166,8 +25191,8 @@ button.swiper-pagination-bullet {
 
   .header-wallet:hover {
     background-color: #e29b00;
-    -webkit-transition: background-color 0.1s ease-in-out;
-    transition: background-color 0.1s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
   }
 
   .header-wallet:hover .header-wallet__title {
@@ -25229,9 +25254,11 @@ button.swiper-pagination-bullet {
   }
 
   .burger__stat-mint:hover {
-    background: #95bd96;
-    -webkit-transition: background 0.1s ease-in-out;
-    transition: background 0.1s ease-in-out;
+    background-position: 100% 0;
+    moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    --x: 100%;
   }
 
   .burger__stat-mint:hover span {
@@ -25257,9 +25284,11 @@ button.swiper-pagination-bullet {
   }
 
   .burger__stat-energy:hover {
-    background: #d5a3a9;
-    -webkit-transition: background 0.1s ease-in-out;
-    transition: background 0.1s ease-in-out;
+    background-position: 100% 0;
+    moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    --x: 100%;
   }
 
   .burger__stat-energy:hover span {
@@ -25788,30 +25817,35 @@ button.swiper-pagination-bullet {
   }
 
   .saper__controls-link:nth-child(1):hover {
-    background: -webkit-gradient(linear, left top, right top, from(#FAD0C4), color-stop(99%, #e69b86), to(#FF9A9E));
-    background: linear-gradient(90deg, #FAD0C4 0%, #e69b86 99%, #FF9A9E 100%);
-    -webkit-transition: background 0.1s ease-in-out;
-    transition: background 0.1s ease-in-out;
+    background-position: 100% 0;
+    moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    --x: 100%;
   }
 
   .saper__controls-link:nth-child(2):hover {
-    background: -webkit-gradient(linear, left top, right top, from(#96E6A1), to(#D4FC79));
-    background: linear-gradient(90deg, #96E6A1 0%, #D4FC79 100%);
-    -webkit-transition: background 0.1s ease-in-out;
-    transition: background 0.1s ease-in-out;
+    background-position: 100% 0;
+    moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    --x: 100%;
   }
 
   .saper__controls-link:nth-child(3):hover {
-    background: -webkit-gradient(linear, left top, right top, from(#FBC2EB), to(#A18CD1));
-    background: linear-gradient(90deg, #FBC2EB 0%, #A18CD1 100%);
-    -webkit-transition: background 0.1s ease-in-out;
-    transition: background 0.1s ease-in-out;
+    background-position: 100% 0;
+    moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    --x: 100%;
   }
 
   .saper__buster-item:hover {
-    border-color: #6D87F7;
-    -webkit-transition: border-color 0.1s ease-in-out;
-    transition: border-color 0.1s ease-in-out;
+    background-position: 100% 0;
+    moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    --x: 100%;
   }
 
   .counter__button:hover {
