@@ -15103,6 +15103,254 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   max-width: 350px;
 }
 
+.no-webp .knight__page{
+  background-image: url(../../img/knight__page/knight-bg.jpg); }
+
+.knight__page {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2E3A61;
+  background-size: contain;
+}
+
+.knight__container {
+  position: relative;
+}
+
+.knight__inner {
+  height: calc(100vh - 155px);
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.knight__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  bottom: 30px;
+}
+
+.knight__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.knight__content-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+  padding: 13px 11px;
+  border-radius: 15px;
+  background-color: #8A65B0;
+}
+
+.knight__content-controls-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2D2D2D;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.knight__content-controls-btn:active {
+  background-color: #FEC037;
+}
+
+.knight__content-controls-btn:focus-visible {
+  background-color: #FEC037;
+}
+
+.knight__content-controls-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.knight__cadrs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 140px;
+}
+
+.knight__cadrs-item {
+  border-radius: 10px;
+  background-color: #8A65B0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px;
+  width: 100%;
+  min-height: 70px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.knight__cadrs-item:active {
+  background-color: #FEC037;
+}
+
+.knight__cadrs-item:focus-visible {
+  background-color: #FEC037;
+}
+
+.knight__cadrs-item .knight__cadrs-img--2,
+.knight__cadrs-item .knight__cadrs-img--3 {
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.knight__cadrs-item p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.knight__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 206px 1fr;
+  grid-template-columns: 1fr 206px 1fr;
+  height: 100%;
+}
+
+.knight-main__btn {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+      -ms-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 900;
+  line-height: normal;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  rotate: -7deg;
+  width: 180px;
+  height: 180px;
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(131, 92, 171, 0.4));
+          filter: drop-shadow(2px 2px 4px rgba(131, 92, 171, 0.4));
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: -webkit-gradient(linear, left top, right top, from(var(--c1, #8E6AB2)), color-stop(51%, var(--c2, #764BA2)), to(var(--c1, #8E6AB2))) var(--x, 0)/200%;
+  background: linear-gradient(90deg, var(--c1, #8E6AB2), var(--c2, #764BA2) 51%, var(--c1, #8E6AB2)) var(--x, 0)/200%;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  --c1: #8E6AB2;
+  --c2: #764BA2;
+}
+
+.knight-main__btn::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  top: -5px;
+  left: -5px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #8761AE;
+  z-index: -1;
+}
+
+.knight-main__btn svg {
+  width: 63px;
+  height: 63px;
+  margin-bottom: 10px;
+  fill: #fff;
+}
+
+.knight-main__btn p {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.knight-main__btn span {
+  font-size: 20px;
+}
+
+.knight__body-cat {
+  margin: auto 0 0 auto;
+}
+
 /**
  * Swiper 7.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -16948,6 +17196,10 @@ button.swiper-pagination-bullet {
 
   .saper__main-subtitle {
     padding-right: 0;
+  }
+
+  .knight__page {
+    background-size: cover;
   }
 }
 
@@ -26121,6 +26373,33 @@ button.swiper-pagination-bullet {
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
   }
+
+  .knight__content-controls-btn:hover {
+    background-color: #FEC037;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .knight__cadrs-item:hover {
+    background-color: #FEC037;
+    color: #2D2D2D;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .knight__cadrs-item:hover p {
+    color: #2D2D2D;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .knight-main__btn:hover {
+    background-position: 100% 0;
+    moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    --x: 100%;
+  }
 }
 
 @media (any-hover: none) {
@@ -26225,6 +26504,38 @@ button.swiper-pagination-bullet {
   .personage__column {
     gap: 12px;
   }
+
+  .knight__page {
+    padding-bottom: 10px;
+  }
+
+  .knight__inner {
+    height: calc(100vh - 115px);
+    padding-top: 15px;
+  }
+}
+
+@media (max-height: 47.99875em) {
+  .knight__content-controls {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .knight__cadrs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+    min-height: 70px;
+  }
+
+  .knight__cadrs-item {
+    width: 140px;
+    min-height: 70px;
+  }
 }
 
 .webp .popup-calc__body{ background-image: url(../img/neighbors__page/popup-calc-bg.webp); }
@@ -26250,6 +26561,8 @@ button.swiper-pagination-bullet {
 .webp .kotopas__cards-item--unlock .kotopas__cards-block{ background-image: url(../img/kotopas__page/card-bg-1.webp); }
 
 .webp .kotopas__cards-item--lock .kotopas__cards-block{ background-image: url(../img/kotopas__page/card-bg-2.webp); }
+
+.webp .knight__page{ background-image: url(../../img/knight__page/knight-bg.webp); }
 
 @media (max-width: 1199.98px){
 
