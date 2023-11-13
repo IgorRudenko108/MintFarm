@@ -11290,7 +11290,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset, -5px -5px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 0px 4px 0px rgba(109, 135, 247, 0.4);
           box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset, -5px -5px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 0px 4px 0px rgba(109, 135, 247, 0.4);
   z-index: 1;
-  min-height: 250px;
+  min-height: 160px;
 }
 
 .counter {
@@ -22488,6 +22488,16 @@ button.swiper-pagination-bullet {
   .saper__tabs-title {
     min-width: 90px;
     padding: 0;
+  }
+
+  .saper-tabs__body--1 .saper__tabs-button {
+    width: 16px;
+    height: 16px;
+  }
+
+  .saper-tabs__body--1 .saper__tabs-button svg {
+    width: 8px;
+    height: 8px;
   }
 
   .popup-saper-fail .popup-saper-success__title {
