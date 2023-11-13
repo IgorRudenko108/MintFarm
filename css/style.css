@@ -16663,6 +16663,14 @@ button.swiper-pagination-bullet {
     height: 365px;
   }
 
+  .saper__tabs-inner {
+    padding: 8px;
+  }
+
+  .saper-tabs__body--1 .saper__tabs-item {
+    border-radius: 10px;
+  }
+
   .tabs__layer-btn {
     width: 150px;
     height: 150px;
