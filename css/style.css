@@ -10637,7 +10637,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .saper__top {
-  padding: 15px 0 30px;
+  padding: 15px 0;
 }
 
 .saper__link-back {
@@ -10838,7 +10838,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .saper__left-cat {
-  max-height: 370px;
+  max-height: 315px;
   position: relative;
   z-index: 2;
   margin-top: auto;
@@ -10870,7 +10870,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .saper__right-cat {
-  max-height: 370px;
+  max-height: 315px;
   position: relative;
   z-index: 2;
   margin-top: auto;
@@ -11282,7 +11282,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .saper__main-body {
   position: relative;
   width: 100%;
-  height: 578px;
+  height: 530px;
   background-color: #8299FF;
   border-radius: 20px;
   background-color: #8299FF;
@@ -12312,6 +12312,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .popup-saper-fail .popup-saper-success__text span {
   color: #FF3030;
+  display: block;
+  width: 100%;
 }
 
 .popup-saper-fail .popup-saper__deco-bone--1 {
@@ -12415,6 +12417,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .popup-saper-success__text span {
+  display: block;
+  width: 100%;
   color: #fff;
   text-align: center;
   font-size: 32px;
@@ -12648,6 +12652,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   width: -moz-fit-content !important;
   width: fit-content !important;
   display: none;
+  min-width: 136px !important;
 }
 
 .tabs__layer--1.none {
@@ -16624,6 +16629,56 @@ button.swiper-pagination-bullet {
     width: 60px;
     height: 60px;
   }
+
+  .saper__top {
+    display: none;
+  }
+
+  .saper__body {
+    padding-top: 15px;
+  }
+
+  .saper__left-cat {
+    display: none;
+  }
+
+  .saper__right-cat {
+    display: none;
+  }
+
+  .saper__main-top {
+    width: 320px;
+    height: 120px;
+  }
+
+  .saper__main-subtitle {
+    font-size: 8px;
+  }
+
+  .saper__main-title {
+    font-size: 65px;
+  }
+
+  .saper__main-body {
+    height: 365px;
+  }
+
+  .tabs__layer-btn {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tabs__layer-btn svg {
+    width: 65px;
+    height: 65px;
+    -webkit-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+
+  .saper__main-top-cat {
+    display: block;
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -17396,10 +17451,6 @@ button.swiper-pagination-bullet {
     max-width: 103px;
   }
 
-  .saper__top {
-    padding-bottom: 15px;
-  }
-
   .saper__body {
     -ms-grid-columns: 150px 1fr 150px;
     grid-template-columns: 150px 1fr 150px;
@@ -17856,7 +17907,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-body {
-    height: calc(100dvh - 410px);
+    height: calc(100dvh - 410px) !important;
   }
 
   .saper__bottom {
@@ -18627,7 +18678,7 @@ button.swiper-pagination-bullet {
 
   .saper__main-body {
     border-radius: 10px;
-    height: calc(100dvh - 370px);
+    height: calc(100dvh - 370px) !important;
   }
 
   .saper__bottom-item {
@@ -20046,6 +20097,7 @@ button.swiper-pagination-bullet {
     width: 0;
     visibility: hidden;
     min-width: 0;
+    padding: 0;
   }
 
   .saper__inner.game-started .saper__stavka {
@@ -20457,7 +20509,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 61.99875em) and (max-width: 575.98px) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100dvh - 195px);
+    height: auto;
   }
 }
 
@@ -22470,7 +22522,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-body {
-    height: calc(100dvh - 360px);
+    height: calc(100dvh - 360px) !important;
   }
 
   .saper__bottom {
@@ -26562,6 +26614,19 @@ button.swiper-pagination-bullet {
 
   .tabs__layer-control span {
     font-size: 24px;
+  }
+
+  .tabs__layer-btn {
+    width: 75px;
+    height: 75px;
+  }
+
+  .tabs__layer-btn svg {
+    width: 35px;
+    height: 35px;
+    -webkit-transform: translateX(2px);
+        -ms-transform: translateX(2px);
+            transform: translateX(2px);
   }
 }
 
