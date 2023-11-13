@@ -20491,25 +20491,25 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 61.99875em) and (max-width: 61.99875em) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100dvh - 230px);
+    height: calc(100dvh - 230px) !important;
   }
 }
 
 @media (max-width: 61.99875em) and (max-width: 840px) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100dvh - 215px);
+    height: calc(100dvh - 215px) !important;
   }
 }
 
 @media (max-width: 61.99875em) and (max-width: 47.99875em) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100dvh - 210px);
+    height: calc(100dvh - 210px) !important;
   }
 }
 
 @media (max-width: 61.99875em) and (max-width: 575.98px) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100dvh - 195px);
+    height: calc(100dvh - 195px) !important;
   }
 }
 
