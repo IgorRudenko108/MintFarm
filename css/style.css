@@ -20089,7 +20089,7 @@ button.swiper-pagination-bullet {
   .saper__main-top-cat {
     display: block;
     z-index: 2;
-    top: 3px;
+    top: 0px;
   }
 
   .exchange__page {
@@ -20461,7 +20461,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 61.99875em) and (max-width: 29.99875em) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100vh - 185px);
+    height: calc(100vh - 270px);
   }
 }
 
