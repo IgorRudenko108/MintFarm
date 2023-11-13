@@ -11290,7 +11290,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset, -5px -5px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 0px 4px 0px rgba(109, 135, 247, 0.4);
           box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset, -5px -5px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 0px 4px 0px rgba(109, 135, 247, 0.4);
   z-index: 1;
-  min-height: 160px;
+  min-height: 250px;
 }
 
 .counter {
@@ -20463,7 +20463,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 61.99875em) and (max-width: 29.99875em) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100vh - 270px);
+    height: calc(100vh - 185px);
   }
 }
 
