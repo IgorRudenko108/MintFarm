@@ -17856,7 +17856,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-body {
-    height: calc(100vh - 410px);
+    height: calc(100dvh - 410px);
   }
 
   .saper__bottom {
@@ -18627,7 +18627,7 @@ button.swiper-pagination-bullet {
 
   .saper__main-body {
     border-radius: 10px;
-    height: calc(100vh - 375px);
+    height: calc(100dvh - 375px);
   }
 
   .saper__bottom-item {
@@ -19983,7 +19983,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-body {
-    height: calc(100vh - 375px);
+    height: calc(100dvh - 375px);
   }
 
   .counter__bottom input {
@@ -20439,31 +20439,31 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 61.99875em) and (max-width: 61.99875em) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100vh - 230px);
+    height: calc(100dvh - 230px);
   }
 }
 
 @media (max-width: 61.99875em) and (max-width: 840px) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100vh - 215px);
+    height: calc(100dvh - 215px);
   }
 }
 
 @media (max-width: 61.99875em) and (max-width: 47.99875em) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100vh - 210px);
+    height: calc(100dvh - 210px);
   }
 }
 
 @media (max-width: 61.99875em) and (max-width: 575.98px) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100vh - 195px);
+    height: calc(100dvh - 195px);
   }
 }
 
 @media (max-width: 61.99875em) and (max-width: 29.99875em) {
   .saper__inner.game-started .saper__main-body {
-    height: calc(100vh - 185px);
+    height: calc(100dvh - 185px);
   }
 }
 
@@ -21211,7 +21211,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-body {
-    height: calc(100vh - 410px);
+    height: calc(100dvh - 410px);
   }
 
   .saper__tabs-inner {
@@ -22480,7 +22480,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-body {
-    height: calc(100vh - 365px);
+    height: calc(100dvh - 365px);
   }
 
   .saper__bottom {
