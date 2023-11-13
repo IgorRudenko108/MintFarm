@@ -11292,6 +11292,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset, -5px -5px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 0px 4px 0px rgba(109, 135, 247, 0.4);
           box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset, -5px -5px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 0px 4px 0px rgba(109, 135, 247, 0.4);
   z-index: 1;
+  min-height: 160px;
 }
 
 .counter {
@@ -12847,6 +12848,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .saper-game__bottom-controls {
   width: auto;
+  position: static;
+  margin: 0 10px 10px;
 }
 
 .quest__slider.swiper {
@@ -15110,7 +15113,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #2E3A61;
-  background-size: contain;
+  background-size: cover;
 }
 
 .knight__container {
@@ -17854,12 +17857,17 @@ button.swiper-pagination-bullet {
     height: 45px;
   }
 
+  .saper__main-body {
+    height: calc(100vh - 410px);
+  }
+
   .saper__bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 15px;
   }
 
   .saper__bottom-item {
@@ -18621,7 +18629,7 @@ button.swiper-pagination-bullet {
 
   .saper__main-body {
     border-radius: 10px;
-    height: 350px;
+    height: calc(100vh - 375px);
   }
 
   .saper__bottom-item {
@@ -18824,10 +18832,6 @@ button.swiper-pagination-bullet {
 
   .saper__inner.game-started .saper__main-top {
     margin-bottom: -90px !important;
-  }
-
-  .saper__inner.game-started .saper__main-body {
-    min-height: 300px !important;
   }
 
   .game__button-title {
@@ -19976,6 +19980,10 @@ button.swiper-pagination-bullet {
     font-size: 0.3125rem;
   }
 
+  .saper__main-body {
+    height: calc(100vh - 375px);
+  }
+
   .counter__bottom input {
     font-size: 12px;
   }
@@ -20008,22 +20016,19 @@ button.swiper-pagination-bullet {
             transform: translateX(5px);
   }
 
-  .saper__inner {
-    padding-bottom: 60px;
-  }
-
   .saper__inner.game-started .saper__main-top {
     margin-bottom: -115px;
     opacity: 0;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
   }
 
   .saper__inner.game-started .saper__main-top-cat {
+    z-index: 1;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    -webkit-transition: opacity 1s linear, visibility 1s linear;
+    transition: opacity 1s linear, visibility 1s linear;
   }
 
   .saper__inner.game-started .saper__tabs {
@@ -20055,10 +20060,8 @@ button.swiper-pagination-bullet {
   }
 
   .saper__inner.game-started .saper__main-body {
-    height: calc(100vh - 210px);
-    min-height: 450px;
-    -webkit-transition: height 0.4s linear;
-    transition: height 0.4s linear;
+    -webkit-transition: height 1s linear;
+    transition: height 1s linear;
   }
 
   .saper__inner.game-started .saper__balans {
@@ -20429,6 +20432,36 @@ button.swiper-pagination-bullet {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 36px;
             flex: 0 0 36px;
+  }
+}
+
+@media (max-width: 61.99875em) and (max-width: 61.99875em) {
+  .saper__inner.game-started .saper__main-body {
+    height: calc(100vh - 230px);
+  }
+}
+
+@media (max-width: 61.99875em) and (max-width: 840px) {
+  .saper__inner.game-started .saper__main-body {
+    height: calc(100vh - 215px);
+  }
+}
+
+@media (max-width: 61.99875em) and (max-width: 47.99875em) {
+  .saper__inner.game-started .saper__main-body {
+    height: calc(100vh - 210px);
+  }
+}
+
+@media (max-width: 61.99875em) and (max-width: 575.98px) {
+  .saper__inner.game-started .saper__main-body {
+    height: calc(100vh - 195px);
+  }
+}
+
+@media (max-width: 61.99875em) and (max-width: 29.99875em) {
+  .saper__inner.game-started .saper__main-body {
+    height: calc(100vh - 185px);
   }
 }
 
@@ -21172,7 +21205,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-body {
-    height: 500px;
+    height: calc(100vh - 410px);
   }
 
   .saper__tabs-inner {
@@ -22441,7 +22474,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__main-body {
-    height: 300px;
+    height: calc(100vh - 365px);
   }
 
   .saper__bottom {
@@ -22449,6 +22482,7 @@ button.swiper-pagination-bullet {
        -moz-column-gap: 5px;
             column-gap: 5px;
     row-gap: 8px;
+    margin-bottom: 10px;
   }
 
   .saper__stavka {
@@ -26512,6 +26546,16 @@ button.swiper-pagination-bullet {
   .knight__inner {
     height: calc(100vh - 115px);
     padding-top: 15px;
+  }
+}
+
+@media (max-height: 575px) {
+  .tabs__layer-control {
+    gap: 8px;
+  }
+
+  .tabs__layer-control span {
+    font-size: 24px;
   }
 }
 
