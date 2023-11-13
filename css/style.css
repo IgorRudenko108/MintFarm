@@ -906,7 +906,7 @@ body::after {
 }
 
 .popup-cabinet-target__content {
-  padding: 0;
+  padding: 0 !important;
   max-width: 500px;
   border-radius: 10px;
 }
@@ -952,7 +952,7 @@ body::after {
 
 .popup-cabinet__top-coins {
   height: 36px;
-  padding: 0 15px;
+  padding: 0 15px 0 5px;
   border-radius: 5px;
   background-color: #FEC037;
   display: -webkit-box;
@@ -2112,8 +2112,6 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
-  text-overflow: ellipsis;
-  overflow: hidden;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
@@ -19710,6 +19708,10 @@ button.swiper-pagination-bullet {
             flex-direction: column;
   }
 
+  .cabinet__user-info {
+    padding: 15px;
+  }
+
   .parsonage__body {
     margin-bottom: 0.9375rem;
   }
@@ -20806,6 +20808,10 @@ button.swiper-pagination-bullet {
 
   .cabinet__skin-images {
     margin: auto auto 12px auto;
+  }
+
+  .cabinet__user-info {
+    padding: 10px;
   }
 
   .parsonage__page {
