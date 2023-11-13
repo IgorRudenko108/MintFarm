@@ -20509,7 +20509,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 61.99875em) and (max-width: 575.98px) {
   .saper__inner.game-started .saper__main-body {
-    height: auto;
+    height: calc(100dvh - 195px);
   }
 }
 
