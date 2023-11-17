@@ -17770,6 +17770,14 @@ button.swiper-pagination-bullet {
     width: 14px;
     height: 14px;
   }
+
+  .shooter__content-info {
+    gap: 10px;
+  }
+
+  .shooter__content-info-title {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -19315,8 +19323,9 @@ button.swiper-pagination-bullet {
     display: grid;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 7px;
   }
 
   .shooter__content {
@@ -19331,9 +19340,9 @@ button.swiper-pagination-bullet {
   .shooter__bottom--2 {
     -ms-grid-columns: 1fr minmax(90px, 120px);
     grid-template-columns: 1fr minmax(90px, 120px);
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    -ms-grid-rows: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 7px;
   }
 
   .shooter__bottom--2 .shooter__bottom-item {
@@ -19372,6 +19381,21 @@ button.swiper-pagination-bullet {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .shooter__bottom-timer img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .shooter__bottom-timer span {
+    font-size: 16px;
+  }
+
+  .shooter__bottom-progress {
+    border-radius: 10px;
   }
 
   .shooter__inner.shooter-started .shooter__bottom--2 {
@@ -20626,7 +20650,7 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__inner {
-    gap: 10px;
+    gap: 7px;
   }
 
   .shooter__raund--mobile {
@@ -20658,6 +20682,10 @@ button.swiper-pagination-bullet {
     right: 8%;
   }
 
+  .shooter__content-middle {
+    margin-bottom: 10px;
+  }
+
   .shooter__judge {
     width: 60px;
     height: 75px;
@@ -20676,7 +20704,7 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__bottom-item {
-    border-radius: 15px;
+    border-radius: 10px;
   }
 
   .shooter__bottom-item--2,
@@ -20711,8 +20739,8 @@ button.swiper-pagination-bullet {
   .shooter__inner.shooter-started .shooter__content {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 1fr auto;
+    grid-template-rows: 1fr auto;
   }
 
   .shooter__inner.shooter-started .shooter__content-middle {
@@ -28743,10 +28771,6 @@ button.swiper-pagination-bullet {
     border-radius: 10px;
   }
 
-  .shooter__content-info-title {
-    font-size: 32px;
-  }
-
   .shooter__content-info-text {
     font-size: 12px;
   }
@@ -28754,10 +28778,6 @@ button.swiper-pagination-bullet {
   .shooter__content-info-bottom,
   .shooter__content-info-bottom span {
     font-size: 12px;
-  }
-
-  .shooter__content-info {
-    gap: 10px;
   }
 }
 
