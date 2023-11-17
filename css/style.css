@@ -20636,7 +20636,7 @@ button.swiper-pagination-bullet {
   .shooter__content {
     -ms-grid-columns: 1fr 120px 1fr;
     grid-template-columns: 1fr 120px 1fr;
-    gap: 0;
+    gap: 0 !important;
   }
 
   .shooter__live {
