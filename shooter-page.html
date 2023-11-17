@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Shooter</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231117194746">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<a href="index.html" class="header__logo logo">
+						<svg width="22" height="22">
+							<use xlink:href="img/icons/icons.svg#cat"></use>
+						</svg>
+						<span>MintFarm</span>
+					</a>
+
+					<ul class="header__nav-list--pc">
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="game-catalog-page.html">Игры</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="help-page-user.html">Помощь</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="news-page-user.html">Новости</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="present-page-user.html">Маркет</a>
+						</li>
+					</ul>
+
+					<div class="lang-dropdown" data-da=".menu__body,479.98,2">
+
+						<div class="lang-dropdown__btn">
+							<span class="lang-dropdown__active">RU</span>
+							<img class="lang-dropdown__btn-img" src="img/common/lang.svg" alt="Icon">
+						</div>
+
+						<div class="dropdown-list">
+							<a class="lang-link active" href="#">
+								<span class="lang-link__name">RU</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">EN</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">ES</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">ID</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">PH</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="header__user-data">
+						<a class="header-wallet header-wallet--pc" href="#">
+							<div class="header-wallet__title">Кошелек</div>
+							<div class="header-wallet__body">
+								<span class="header-wallet__value">657</span>
+								<img class="header-wallet__icon" src="img/present__page/coin.svg" alt="Coin">
+							</div>
+						</a>
+
+						<a class="header-user" href="cabinet-page.html">
+							<div class="header-user__body header-user__body--pc">
+								<div class="header-user__name">Samurai</div>
+								<div class="header-user__info">
+									<span class="header-user__lvl">LVL</span>
+									<span class="header-user__lvl-value user-data">17</span>
+									<span class="header-user__xp user-data">1013/7800xp</span>
+								</div>
+							</div>
+
+							<div class="header-user__avatar">
+								<picture><source srcset="img/present__page/avatar-1.webp" type="image/webp"><img class="header-user__avatar-img" src="img/present__page/avatar-1.jpg" alt="Avatar"></picture>
+							</div>
+						</a>
+					</div>
+
+					<button type="button" class="menu__icon icon-menu icon-menu--pc"><span></span></button>
+
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<div class="burger__body-top">
+								<a class="burger__user" href="cabinet-page.html">
+									<div class="burger__user-info">
+										<div class="burger__user-name">Samurai</div>
+										<p class="burger__user-lvl">LVL 17 1013/7800xp</p>
+									</div>
+
+									<div class="burger__user-img">
+										<picture><source srcset="img/header/user-ava.webp" type="image/webp"><img src="img/header/user-ava.png" alt="Image"></picture>
+									</div>
+								</a>
+
+								<div class="burger__stat-info">
+									<a href="#" class="burger__stat-item burger__stat-money">
+										<img class="burger__stat-icon" src="img/header/burger-coin-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">657</span>
+									</a>
+
+									<a href="#" class="burger__stat-item burger__stat-mint">
+										<img class="burger__stat-icon" src="img/header/burger-mint-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">367</span>
+									</a>
+
+									<a href="#" class="burger__stat-item burger__stat-energy">
+										<img class="burger__stat-icon" src="img/header/burger-energy-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">10%</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="burger__game-block">
+								<div class="burger__game-top">
+									<a href="game-catalog-page.html" class="burger__block-title">
+										<img class="burger__block-title-icon" src="img/header/title-icon-1.svg" width="20" height="20" alt="Icon">
+										Игры
+									</a>
+
+									<div data-spollers class="spollers burger__game-spoller">
+										<details class="spollers__item">
+											<summary class="spollers__title">
+												<img class="burger__block-title-icon" src="img/header/title-icon-1.svg" width="17" height="17" alt="Icon">
+												Игры
+											</summary>
+											<div class="spollers__body">
+												<a class="spollers__body-item burger__game-body-item" href="game-catalog-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
+													Ферма
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="knight-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-2.svg" width="22" height="22" alt="Icon">
+													Рыцарь
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="shooter-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
+													Стрелок
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="saper-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-4.svg" width="22" height="22" alt="Icon">
+													Сапер
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="#">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-5.svg" width="22" height="22" alt="Icon">
+													Летун
+												</a>
+											</div>
+										</details>
+									</div>
+								</div>
+
+								<div class="burger__game-body">
+									<a class="burger__game-body-item" href="game-catalog-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
+										Ферма
+									</a>
+
+									<a class="burger__game-body-item" href="knight-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-2.svg" width="22" height="22" alt="Icon">
+										Рыцарь
+									</a>
+
+									<a class="burger__game-body-item" href="shooter-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
+										Стрелок
+									</a>
+
+									<a class="burger__game-body-item" href="saper-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-4.svg" width="22" height="22" alt="Icon">
+										Сапер
+									</a>
+
+									<a class="burger__game-body-item" href="#">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-5.svg" width="22" height="22" alt="Icon">
+										Летун
+									</a>
+								</div>
+
+								<div class="burger__market">
+									<a href="exchange-page.html" class="burger__market-title">
+										<img class="burger__market-title-icon" src="img/header/title-icon-2.svg" width="20" height="20" alt="Icon">
+										Маркет
+									</a>
+
+									<div class="burger__market-body">
+										<div class="burger__market-item">
+											<img src="img/header/burger-mint-1.svg" alt="Icon">
+
+											<div class="burger__market-input-wrapper">
+												<input class="burger__market-input" type="number">
+											</div>
+										</div>
+
+										<img class="burger__market-exchange" src="img/header/exchange.svg" width="25" height="25" alt="Icon">
+
+										<div class="burger__market-item">
+											<div class="burger__market-input-wrapper">
+												<input class="burger__market-input" type="number">
+											</div>
+
+											<img src="img/header/burger-coin-2.svg" alt="Icon">
+										</div>
+									</div>
+
+									<button class="burger__market-btn">Обменять</button>
+								</div>
+							</div>
+
+							<hr class="burger__line">
+
+							<div class="burger__nav">
+								<a class="burger__nav-link" href="present-page-user.html">
+									<img src="img/header/burger-link-1.svg" width="20" height="20" alt="Icon">
+									Подарки
+								</a>
+
+								<a class="burger__nav-link" href="neighbors-page.html">
+									<img src="img/header/burger-link-2.svg" width="20" height="20" alt="Icon">
+									Соседи
+								</a>
+
+								<a class="burger__nav-link" href="kotopas-page.html">
+									<img src="img/header/burger-link-3.svg" width="20" height="20" alt="Icon">
+									Котопас
+								</a>
+
+								<a class="burger__nav-link" href="tasks-page.html">
+									<img src="img/header/burger-link-4.svg" width="20" height="20" alt="Icon">
+									Задачи
+								</a>
+							</div>
+
+							<hr class="burger__line">
+
+							<div class="burger__online">
+								<img src="img/header/burger-people.svg" width="20" height="20" alt="Icon">
+								<span>Онлайн: 9678 чел.</span>
+							</div>
+
+							<div class="burger__bottom">
+								<a class="burger__bottom-link" href="settings-page.html">
+									<img src="img/header/burger-settings.svg" width="15" height="15" alt="Icon">
+									<span>Настройки</span>
+								</a>
+
+								<a class="burger__bottom-link" href="help-page-user.html">
+									<img src="img/header/burger-help.svg" width="15" height="15" alt="Icon">
+									<span>Помощь</span>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page shooter__page page-color">
+			<div class="shooter__container">
+				<div class="shooter__inner">
+					<div class="shooter__content-top">
+						<button class="shooter__music--mobile mute">
+							<img src="img/saper__page/icon-3.svg" width="14" height="14" alt="Icon">
+						</button>
+
+						<div class="saper__controls-box shooter__controls-box">
+							<div class="saper__controls">
+								<a class="saper__controls-link" data-popup="#popup-saper-info-1" href="#">
+									<img class="saper__controls-icon" src="img/saper__page/icon-1.svg" alt="Icon">
+								</a>
+
+								<a class="saper__controls-link" data-popup="#popup-saper-stat" href="#">
+									<img class="saper__controls-icon" src="img/saper__page/icon-2.svg" alt="Icon">
+								</a>
+
+								<a class="saper__controls-link shooter__music--pc" href="#">
+									<img class="saper__controls-icon" src="img/saper__page/icon-3.svg" alt="Icon">
+								</a>
+							</div>
+						</div>
+
+						<div class="shooter__title-box">
+
+							<div class="shooter__title-wrapper">
+								<div class="shooter__title-body">
+									<picture><source srcset="img/shooter__page/gun-left.webp" type="image/webp"><img class="shooter__title-gun shooter__title-gun--left" width="107" height="auto" src="img/shooter__page/gun-left.png" alt="Image"></picture>
+
+									<h2 class="shooter__subtitle">MintFarm</h2>
+									<h1 class="shooter__title">Стрелок</h1>
+
+									<picture><source srcset="img/shooter__page/gun-right.webp" type="image/webp"><img class="shooter__title-gun shooter__title-gun--right" width="107" height="auto" src="img/shooter__page/gun-right.png" alt="Image"></picture>
+
+								</div>
+
+								<div class="shooter__raund">
+									<span>1</span>
+									<p>Раунд</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="saper__buster shooter__buster">
+							<a class="saper__buster-item shooter__buster-item" href="#">
+								<span>Бустер 1</span>
+							</a>
+
+							<a class="saper__buster-item shooter__buster-item" href="#">
+								<span>Бустер 2</span>
+							</a>
+
+							<a class="saper__buster-item shooter__buster-item" href="#">
+								<span>Бустер 2</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="shooter__vs-wrapper">
+						<div class="shooter__vs-box">
+							<div class="shooter__vs-name shooter__vs-name--left">Antony</div>
+
+							<picture><source srcset="img/shooter__page/vs.webp" type="image/webp"><img class="shooter__vs-image" width="72" height="100" src="img/shooter__page/vs.png" alt="Image"></picture>
+
+							<div class="shooter__vs-name shooter__vs-name--right">Jhony</div>
+						</div>
+
+						<div class="shooter__raund--mobile">
+							<span>1</span>
+							<p>Раунд</p>
+						</div>
+					</div>
+
+					<div class="shooter__body">
+						<div class="shooter__content">
+							<div class="shooter__content-left shooter__content-item">
+								<div class="shooter__live">
+									<h3 class="shooter__live-title">Лайв игры</h3>
+
+									<div class="shooter__live-box">
+										<a class="shooter__live-item" href="#">
+											<h3 class="shooter__live-item-title">Ben</h3>
+											<picture><source srcset="img/shooter__page/live-1.webp" type="image/webp"><img class="shooter__live-item-img" src="img/shooter__page/live-1.png" width="auto" height="70" alt="Image"></picture>
+											<div class="shooter__live-mint">
+												+ <span>10</span>
+												<img class="shooter__live-item-icon" src="img/common/mint.svg" width="10" height="10" alt="Image">
+											</div>
+										</a>
+
+										<a class="shooter__live-item" href="#">
+											<h3 class="shooter__live-item-title">Melissa Brown</h3>
+											<picture><source srcset="img/shooter__page/live-2.webp" type="image/webp"><img class="shooter__live-item-img" src="img/shooter__page/live-2.png" width="auto" height="70" alt="Image"></picture>
+											<div class="shooter__live-mint">
+												+ <span>10</span>
+												<img class="shooter__live-item-icon" src="img/common/mint.svg" width="10" height="10" alt="Image">
+											</div>
+										</a>
+
+										<a class="shooter__live-item" href="#">
+											<h3 class="shooter__live-item-title">Peter Morgan</h3>
+											<picture><source srcset="img/shooter__page/live-3.webp" type="image/webp"><img class="shooter__live-item-img" src="img/shooter__page/live-3.png" width="auto" height="70" alt="Image"></picture>
+											<div class="shooter__live-mint">
+												+ <span>10</span>
+												<img class="shooter__live-item-icon" src="img/common/mint.svg" width="10" height="10" alt="Image">
+											</div>
+										</a>
+									</div>
+
+									<div class="shooter__health shooter__health--left">
+										<button class="shooter__health-item shooter__health-item--full"></button>
+										<button class="shooter__health-item shooter__health-item--full"></button>
+										<button class="shooter__health-item shooter__health-item--full"></button>
+									</div>
+								</div>
+
+								<div class="shooter__cat shooter__cat-left">
+									<picture><source srcset="img/shooter__page/gun-main.webp" type="image/webp"><img class="shooter__main-gun" src="img/shooter__page/gun-main.png" width="123" height="48" alt="Image"></picture>
+
+									<div class="shooter__selfdefence shooter__selfdefence--1 shooter__selfdefence-absolute--head">
+										<svg width="13" height="18">
+											<use xlink:href="img/icons/icons.svg#defence"></use>
+										</svg>
+									</div>
+
+									<div class="shooter__selfdefence shooter__selfdefence--2 shooter__selfdefence-absolute--tors">
+										<svg width="13" height="18">
+											<use xlink:href="img/icons/icons.svg#defence"></use>
+										</svg>
+									</div>
+
+									<div class="shooter__selfdefence shooter__selfdefence--3 shooter__selfdefence-absolute--arm">
+										<svg width="13" height="18">
+											<use xlink:href="img/icons/icons.svg#defence"></use>
+										</svg>
+									</div>
+
+									<div class="shooter__selfdefence shooter__selfdefence--4 shooter__selfdefence-absolute--foot">
+										<svg width="13" height="18">
+											<use xlink:href="img/icons/icons.svg#defence"></use>
+										</svg>
+									</div>
+
+									<picture><source srcset="img/shooter__page/cat-1.webp" type="image/webp"><img class="shooter__cat-img" src="img/shooter__page/cat-1.png" width="auto" height="310" alt="Image"></picture>
+								</div>
+							</div>
+
+							<div class="shooter__content-middle">
+								<picture><source srcset="img/shooter__page/cat-judge.webp" type="image/webp"><img class="shooter__judge" src="img/shooter__page/cat-judge.png" width="132" height="160" alt="Image"></picture>
+
+								<div class="shooter__content-info-wrapper">
+									<div class="shooter__content-info shooter__content-info--1">
+										<div class="shooter__content-info-top">
+											<h3 class="shooter__content-info-title">Атакуй!</h3>
+											<p class="shooter__content-info-text">
+												Выбери две цели, по которым совершить выстрел
+											</p>
+										</div>
+
+										<div class="shooter__content-info-bottom">
+											Выбрано: <span>Голова и Тело</span>
+										</div>
+									</div>
+
+									<div class="shooter__content-info shooter__content-info--2">
+										<div class="shooter__content-info-top">
+											<h3 class="shooter__content-info-title">Попадание!</h3>
+											<p class="shooter__content-info-text">
+												Antony попадает в голову Jhony. Jhony успешно защитил тело.
+											</p>
+										</div>
+
+										<div class="shooter__content-info-bottom">
+											<span>Успешная атака Antony!</span>
+										</div>
+									</div>
+								</div>
+
+								<a class="shooter-main__btn" href="#">
+									<svg width="63" height="63">
+										<use xlink:href="img/icons/icons.svg#cat"></use>
+									</svg>
+									<span>НАЧАТЬ ИГРУ</span>
+								</a>
+							</div>
+
+							<div class="shooter__content-right shooter__content-item">
+								<div class="shooter__cat shooter__cat-right">
+									<div class="shooter__target shooter__target--1">
+										<img class="shooter__target-success" src="img/shooter__page/shoot.svg" width="48" height="48" alt="Icon">
+
+										<img class="shooter__target-defence" src="img/shooter__page/defence.svg" width="40" height="40" alt="Icon">
+
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#target"></use>
+										</svg>
+									</div>
+
+									<div class="shooter__target shooter__target--2">
+										<img class="shooter__target-success" src="img/shooter__page/shoot.svg" width="48" height="48" alt="Icon">
+
+										<img class="shooter__target-defence" src="img/shooter__page/defence.svg" width="40" height="40" alt="Icon">
+
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#target"></use>
+										</svg>
+									</div>
+
+									<div class="shooter__target shooter__target--3">
+										<img class="shooter__target-success" src="img/shooter__page/shoot.svg" width="48" height="48" alt="Icon">
+
+										<img class="shooter__target-defence" src="img/shooter__page/defence.svg" width="40" height="40" alt="Icon">
+
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#target"></use>
+										</svg>
+									</div>
+
+									<div class="shooter__target shooter__target--4">
+										<img class="shooter__target-success" src="img/shooter__page/shoot.svg" width="48" height="48" alt="Icon">
+
+										<img class="shooter__target-defence" src="img/shooter__page/defence.svg" width="40" height="40" alt="Icon">
+
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#target"></use>
+										</svg>
+									</div>
+
+									<picture><source srcset="img/shooter__page/cat-2.webp" type="image/webp"><img class="shooter__cat-img" src="img/shooter__page/cat-2.png" width="auto" height="310" alt="Image"></picture>
+								</div>
+
+								<div class="shooter__health shooter__health--right">
+									<button class="shooter__health-item shooter__health-item--none"></button>
+									<button class="shooter__health-item shooter__health-item--full"></button>
+									<button class="shooter__health-item shooter__health-item--full"></button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="shooter__bottom-wrapper">
+						<div class="shooter__bottom shooter__bottom--1">
+							<div class="shooter__bottom-item saper__bottom-item shooter__bottom-item--1 saper__counter counter" data-counter>
+								<div class="counter__button counter__button_minus">-</div>
+								<div class="counter__input-box">
+									<div class="saper__item-title">Ставка</div>
+
+									<div class="counter__bottom">
+										<input type="text" placeholder="" value="1">
+										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									</div>
+								</div>
+								<div class="counter__button counter__button_plus">+</div>
+							</div>
+
+							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
+								<div class="saper__item-title">Поднять ставку</div>
+
+								<div class="saper__stavka-value saper__item-value">
+									+ 10
+									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+								</div>
+							</button>
+
+							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--3">
+								<div class="saper__item-title">Поднять ставку</div>
+
+								<div class="saper__stavka-value saper__item-value">
+									+ 20
+									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+								</div>
+							</button>
+
+							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--4">
+								<div class="saper__item-title">Поднять ставку</div>
+
+								<div class="saper__stavka-value saper__item-value">
+									+ 30
+									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+								</div>
+							</button>
+
+							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--5">
+								<div class="saper__item-title">Поднять ставку</div>
+
+								<div class="saper__stavka-value saper__item-value">
+									+ 50
+									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+								</div>
+							</button>
+
+							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--6">
+								<div class="saper__item-title">Поднять ставку</div>
+
+								<div class="saper__stavka-value saper__item-value">
+									+ 100
+									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+								</div>
+							</button>
+
+							<div class="shooter__bottom-item saper__bottom-item shooter__bottom-item--7 saper__balans">
+								<div class="saper__item-title">Баланс</div>
+
+								<div class="saper__item-value">
+									350
+									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+								</div>
+
+								<div class="saper__balans-error">Выше вашего баланса</div>
+							</div>
+						</div>
+
+						<div class="shooter__bottom shooter__bottom--2">
+							<div class="shooter__bottom--left">
+								<button class="saper__bottom-item shooter__bottom-item shooter__bottom-item--accent">
+									<div class="saper__item-title">Умножить 2х</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										+ 10
+										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									</div>
+								</button>
+
+								<div class="shooter__fight-status shooter__bottom-item">Атакует</div>
+							</div>
+
+							<div class="shooter__bottom--middle">
+								<div class="shooter__bottom-timer">
+									<img src="img/shooter__page/timer.svg" width="28" height="28" alt="Icon">
+									<span>10 s.</span>
+								</div>
+								<div class="shooter__bottom-progress" style="width: 85%"></div>
+							</div>
+
+							<div class="shooter__bottom--right">
+								<div class="shooter__fight-status shooter__bottom-item">Защищается</div>
+
+								<div class="saper__bottom-item shooter__bottom-item saper__balans shooter__balans">
+									<div class="saper__item-title">Баланс</div>
+
+									<div class="saper__item-value">
+										350
+										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									</div>
+
+									<div class="saper__balans-error">Выше вашего баланса</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="game__bottom-controls saper-game__bottom-controls shooter-game__bottom-controls">
+				<button data-popup="#popup-saper-info-1" class="game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-1.svg" alt="Icon">
+					</div>
+
+					<h3 class="game__button-title">О игре</h3>
+				</button>
+
+				<button class="game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-4.svg" alt="Icon">
+					</div>
+
+					<h3 class="game__button-title">Бустеры</h3>
+				</button>
+
+				<button data-popup="#popup-saper-stat" class="game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-2.svg" alt="Icon">
+					</div>
+
+					<h3 class="game__button-title">Статистика</h3>
+				</button>
+
+				<!-- <button class="game__bottom-controls-btn shooter__music--pc">
+						<div class="game__icon-wrapper">
+							<img class="game__button-icon" src="img/saper__page/icon-3.svg" alt="Icon">
+						</div>
+
+						<h3 class="game__button-title">Звук</h3>
+					</button> -->
+
+			</div>
+		</main>
+
+	</div>
+
+	<script>
+		// -- shooter-target ----------------------------------------------
+		let targets = document.querySelectorAll(".shooter__target");
+
+		targets.forEach(item => {
+			item.addEventListener('click', function(e) {
+				item.classList.toggle('active')
+			})
+		});
+		// -- /shooter-target ----------------------------------------------
+
+		// -- shooter-defence ----------------------------------------------
+		let defence = document.querySelectorAll(".shooter__selfdefence");
+
+		defence.forEach(item => {
+			item.addEventListener('click', function(e) {
+				item.classList.toggle('active')
+			})
+		});
+		// -- /shooter-defence ----------------------------------------------
+
+		// -- shooter__game-started ----------------------------------------------
+		let shooterStart = document.querySelector(".shooter-main__btn");
+		let shooterBody = document.querySelector(".shooter__inner");
+
+		if (shooterStart) {
+			shooterStart.addEventListener('click', function(e) {
+				shooterBody.classList.add('shooter-started')
+			})
+		}
+		// -- /shooter__game-started ----------------------------------------------
+
+		// -- shooter__music--pc ----------------------------------------------
+		const shooterMuteBtn1 = document.querySelector('.shooter__music--pc')
+
+		if (shooterMuteBtn1) {
+			shooterMuteBtn1.addEventListener('click', (e) => {
+				shooterMuteBtn1.classList.toggle('mute');
+			})
+		}
+		// -- /shooter__music--pc ----------------------------------------------
+
+		// -- shooter__music--mobile ----------------------------------------------
+		const shooterMuteBtn2 = document.querySelector('.shooter__music--mobile')
+
+		if (shooterMuteBtn2) {
+			shooterMuteBtn2.addEventListener('click', (e) => {
+				shooterMuteBtn2.classList.toggle('mute');
+			})
+		}
+		// -- /shooter__music--mobile ----------------------------------------------
+	</script>
+
+	<script src="js/app.min.js?_v=20231117194746"></script>
+
+</body>
+
+</html>

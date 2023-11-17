@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231113232642">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231117194746">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -155,7 +155,7 @@
 													Рыцарь
 												</a>
 
-												<a class="spollers__body-item burger__game-body-item" href="#">
+												<a class="spollers__body-item burger__game-body-item" href="shooter-page.html">
 													<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
 													Стрелок
 												</a>
@@ -185,7 +185,7 @@
 										Рыцарь
 									</a>
 
-									<a class="burger__game-body-item" href="#">
+									<a class="burger__game-body-item" href="shooter-page.html">
 										<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
 										Стрелок
 									</a>
@@ -304,7 +304,7 @@
 										<img class="saper__controls-icon" src="img/saper__page/icon-2.svg" alt="Icon">
 									</a>
 
-									<a class="saper__controls-link" href="#">
+									<a class="saper__controls-link saper__music--pc" href="#">
 										<img class="saper__controls-icon" src="img/saper__page/icon-3.svg" alt="Icon">
 									</a>
 								</div>
@@ -2343,8 +2343,8 @@
 					<h3 class="game__button-title">Статистика</h3>
 				</button>
 
-				<button class="game__bottom-controls-btn">
-					<div class="game__icon-wrapper">
+				<button class="game__bottom-controls-btn saper__music--mobile">
+					<div class="game__icon-wrapper saper__music--mobile-wrapper">
 						<img class="game__button-icon" src="img/saper__page/icon-3.svg" alt="Icon">
 					</div>
 
@@ -2945,6 +2945,17 @@
 
 	<script>
 		// -- saper-card-open ----------------------------------------------
+		let items = document.querySelectorAll(".saper__tabs-item");
+
+		items.forEach(item => {
+			item.addEventListener('click', function(e) {
+				item.classList.add('active')
+			})
+		});
+		// -- /saper-card-open ----------------------------------------------
+
+
+		// -- saper-card-open ----------------------------------------------
 
 		let layerBtn = document.querySelectorAll(".tabs__layer-control");
 
@@ -2956,7 +2967,7 @@
 		if (layerBtn) {
 			layerBtn.forEach(item => {
 				item.addEventListener('click', function(e) {
-					gameContainer.classList.add('game-started')
+					gameContainer.classList.add('saper-started')
 				})
 			});
 		}
@@ -2979,9 +2990,41 @@
 			});
 		}
 		// -- /saper-card-open ----------------------------------------------
+
+		// -- shooter__game-started ----------------------------------------------
+		let shooterStart = document.querySelector(".shooter-main__btn");
+		let shooterBody = document.querySelector(".shooter__inner");
+
+		if (shooterStart) {
+			shooterStart.addEventListener('click', function(e) {
+				gameContainer.classList.add('shooter-started')
+			})
+		}
+		// -- /shooter__game-started ----------------------------------------------
+
+		// -- saper__music--pc ----------------------------------------------
+		const saperMuteBtn1 = document.querySelector('.saper__music--pc')
+
+		if (saperMuteBtn1) {
+			saperMuteBtn1.addEventListener('click', (e) => {
+				saperMuteBtn1.classList.toggle('mute');
+			})
+		}
+		// -- /saper__music--pc ----------------------------------------------
+
+		// -- saper__music--mobile ----------------------------------------------
+		const saperMuteBtn2 = document.querySelector('.saper__music--mobile')
+		const saperMuteBtnWrapper = document.querySelector('.saper__music--mobile-wrapper')
+
+		if (saperMuteBtn2) {
+			saperMuteBtn2.addEventListener('click', (e) => {
+				saperMuteBtnWrapper.classList.toggle('mute');
+			})
+		}
+		// -- /saper__music--mobile ----------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20231113232642"></script>
+	<script src="js/app.min.js?_v=20231117194746"></script>
 </body>
 
 </html>

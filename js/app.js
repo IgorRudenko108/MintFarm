@@ -5875,12 +5875,6 @@
                 }
             }));
         }));
-        let items = document.querySelectorAll(".saper__tabs-item");
-        items.forEach((item => {
-            item.addEventListener("click", (function(e) {
-                item.classList.add("active");
-            }));
-        }));
         window["FLS"] = false;
         isWebp();
         menuInit();
