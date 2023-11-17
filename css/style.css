@@ -20671,8 +20671,8 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__health-item {
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
   }
 
   .shooter__bottom-item {
