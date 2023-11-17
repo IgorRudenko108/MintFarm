@@ -19383,13 +19383,13 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__music--mobile {
-    width: 27px;
-    height: 27px;
+    width: 27px !important;
+    height: 27px !important;
   }
 
   .shooter__music--mobile img {
-    width: 14px;
-    height: 14px;
+    width: 14px !important;
+    height: 14px !important;
   }
 }
 
