@@ -19205,9 +19205,9 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__health-item {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 5px !important;
   }
 
   .shooter__bottom--2 {
@@ -19291,8 +19291,8 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__title-box {
-    margin: 0 auto;
-    padding: 0 35px;
+    margin: 0 auto !important;
+    padding: 0 35px !important;
   }
 
   .shooter__title-wrapper {
