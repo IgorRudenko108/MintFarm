@@ -20849,7 +20849,7 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 360px) and (max-height: 47.99875em) {
+@media (max-width: 375px) and (max-height: 47.99875em) {
   .shooter__cat-img {
     min-width: 80px;
     width: 80px;
