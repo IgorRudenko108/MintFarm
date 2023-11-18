@@ -15657,8 +15657,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   background-color: #FEC037;
   -webkit-filter: drop-shadow(0px 0px 10px rgba(254, 192, 55, 0.4));
           filter: drop-shadow(0px 0px 10px rgba(254, 192, 55, 0.4));
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.1 0.5s ease-in-out;
+  transition: background-color 0.1 0.5s ease-in-out;
 }
 
 .shooter-main__btn::before {
@@ -15670,8 +15670,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   border-radius: 50%;
   border: 1px solid #FEC037;
   z-index: -1;
-  -webkit-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
+  -webkit-transition: border 0.1 0.5s ease-in-out;
+  transition: border 0.1 0.5s ease-in-out;
 }
 
 .shooter-main__btn svg {
@@ -15752,8 +15752,8 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   gap: 3px;
   width: 120px;
   height: 120px;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.1 0.5s ease-in-out;
+  transition: background-color 0.1 0.5s ease-in-out;
 }
 
 .shooter__live-item-title {
@@ -15826,16 +15826,16 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   width: 20px;
   height: 20px;
   fill: #6D87F7;
-  -webkit-transition: fill 0.1s ease-in-out;
-  transition: fill 0.1s ease-in-out;
+  -webkit-transition: fill 0.1 0.5s ease-in-out;
+  transition: fill 0.1 0.5s ease-in-out;
 }
 
 .shooter__selfdefence svg {
   width: 13px;
   height: 18px;
   fill: #6D87F7;
-  -webkit-transition: fill 0.1s ease-in-out;
-  transition: fill 0.1s ease-in-out;
+  -webkit-transition: fill 0.1 0.5s ease-in-out;
+  transition: fill 0.1 0.5s ease-in-out;
 }
 
 .shooter__target.active,
@@ -16189,8 +16189,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .shooter__main-gun {
   position: absolute;
-  right: -80px;
+  right: -35%;
   top: 15%;
+  width: 123px;
+  height: 48px;
   opacity: 0;
   visibility: hidden;
 }
@@ -16200,37 +16202,42 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   display: none;
 }
 
+.shooter__inner.shooter-started .shooter__main-gun {
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
+}
+
 .shooter__inner.shooter-started .shooter__health {
   opacity: 1;
   visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
   width: auto;
   height: auto;
 }
 
 .shooter__inner.shooter-started .shooter__health--left {
   margin-left: 0;
-  -webkit-transition: margin 1s linear;
-  transition: margin 1s linear;
+  -webkit-transition: margin 1.5s linear;
+  transition: margin 1.5s linear;
 }
 
 .shooter__inner.shooter-started .shooter__health--right {
   margin-right: 0;
   margin-left: auto;
-  -webkit-transition: margin 1s linear;
-  transition: margin 1s linear;
+  -webkit-transition: margin 1.5s linear;
+  transition: margin 1.5s linear;
 }
 
 .shooter__inner.shooter-started .shooter__target,
 .shooter__inner.shooter-started .shooter__selfdefence {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 1s linear;
-  transition: opacity 1s linear;
+  -webkit-transition: opacity 1.5s linear;
+  transition: opacity 1.5s linear;
 }
 
 .shooter__inner.shooter-started .shooter-main__btn {
@@ -16260,14 +16267,14 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .shooter__inner.shooter-started .shooter__raund {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
 }
 
 .shooter__inner.shooter-started .shooter__vs-box {
   margin-top: -15px;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
 }
 
 .shooter-game__bottom-controls {
@@ -17762,6 +17769,11 @@ button.swiper-pagination-bullet {
   .shooter__content-info-title {
     font-size: 32px;
   }
+
+  .shooter__main-gun {
+    width: 90px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -18876,6 +18888,12 @@ button.swiper-pagination-bullet {
     margin-left: auto;
   }
 
+  .shooter__main-gun {
+    width: 80px;
+    height: 30px;
+    right: -30%;
+  }
+
   .shooter__bottom-item--6 {
     display: none;
   }
@@ -19294,8 +19312,8 @@ button.swiper-pagination-bullet {
   .shooter__vs-box {
     gap: 12px;
     margin-top: 0;
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: all 1.5s linear;
+    transition: all 1.5s linear;
   }
 
   .shooter__bottom-wrapper {
@@ -19384,7 +19402,6 @@ button.swiper-pagination-bullet {
 
   .shooter__inner.shooter-started .shooter__bottom--2 {
     height: auto;
-    gap: 7px;
   }
 
   .shooter__balans {
@@ -20761,8 +20778,8 @@ button.swiper-pagination-bullet {
     opacity: 0;
     visibility: hidden;
     height: 0;
-    -webkit-transition: height 1s, opacity 0.6s, visibility 0.6s;
-    transition: height 1s, opacity 0.6s, visibility 0.6s;
+    -webkit-transition: height 1.5s, opacity 0.6s, visibility 0.6s;
+    transition: height 1.5s, opacity 0.6s, visibility 0.6s;
   }
 
   .shooter__music--pc {
@@ -20835,6 +20852,14 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 575px) {
+  .shooter__main-gun {
+    width: 50px;
+    height: 20px;
+    right: -30%;
+  }
+}
+
 @media (max-width: 424.98px) {
   .present-main__banner-image img {
     width: 100px;
@@ -20855,8 +20880,6 @@ button.swiper-pagination-bullet {
     visibility: hidden;
     width: 0;
     height: 0;
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
   }
 
   .shooter-main__btn {
@@ -20949,29 +20972,13 @@ button.swiper-pagination-bullet {
     height: 55px;
     opacity: 1;
     visibility: visible;
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: all 1.5s linear;
+    transition: all 1.5s linear;
   }
 
   .shooter__inner.shooter-started .shooter__content-info-top::before {
     top: -30px;
     border-width: 0 3px 32px 3px;
-  }
-
-  .shooter__inner.shooter-started .shooter__selfdefence-absolute--head {
-    left: 24%;
-  }
-
-  .shooter__inner.shooter-started .shooter__selfdefence-absolute--tors {
-    right: 55%;
-  }
-
-  .shooter__inner.shooter-started .shooter__selfdefence-absolute--arm {
-    right: 22%;
-  }
-
-  .shooter__inner.shooter-started .shooter__selfdefence-absolute--foot {
-    right: 46%;
   }
 }
 
@@ -22256,8 +22263,8 @@ button.swiper-pagination-bullet {
             justify-content: center;
     border-radius: 50%;
     background-color: #3E3F41;
-    -webkit-transition: background-color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.1 0.5s ease-in-out;
+    transition: background-color 0.1 0.5s ease-in-out;
     position: relative;
     width: 45px;
     height: 45px;
@@ -23458,6 +23465,10 @@ button.swiper-pagination-bullet {
     font-size: 1.125rem;
   }
 
+  .shooter__main-gun {
+    right: -35%;
+  }
+
   .shooter__inner.shooter-started .shooter__raund {
     display: none;
   }
@@ -23468,8 +23479,8 @@ button.swiper-pagination-bullet {
     display: flex;
     opacity: 1;
     visibility: visible;
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: all 1.5s linear;
+    transition: all 1.5s linear;
   }
 }
 
@@ -24866,6 +24877,12 @@ button.swiper-pagination-bullet {
 
   .shooter__cat-right {
     margin-left: -10px;
+  }
+
+  .shooter__main-gun {
+    width: 34px;
+    height: 14px;
+    right: -15%;
   }
 
   .shooter__inner.shooter-started .shooter__judge {
@@ -28668,20 +28685,20 @@ button.swiper-pagination-bullet {
 
   .shooter-main__btn:hover {
     background-color: #e79f00;
-    -webkit-transition: background-color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.1 0.5s ease-in-out;
+    transition: background-color 0.1 0.5s ease-in-out;
   }
 
   .shooter-main__btn:hover::before {
     border: 1px solid #e79f00;
-    -webkit-transition: border 0.2s ease-in-out;
-    transition: border 0.2s ease-in-out;
+    -webkit-transition: border 0.1 0.5s ease-in-out;
+    transition: border 0.1 0.5s ease-in-out;
   }
 
   .shooter__live-item:hover {
     background-color: #FEC037;
-    -webkit-transition: background-color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.1 0.5s ease-in-out;
+    transition: background-color 0.1 0.5s ease-in-out;
   }
 
   .shooter__live-item:active {
@@ -28695,14 +28712,14 @@ button.swiper-pagination-bullet {
   .shooter__target:hover svg,
   .shooter__selfdefence:hover svg {
     fill: #FEC037;
-    -webkit-transition: fill 0.1s ease-in-out;
-    transition: fill 0.1s ease-in-out;
+    -webkit-transition: fill 0.1 0.5s ease-in-out;
+    transition: fill 0.1 0.5s ease-in-out;
   }
 
   .shooter__music--mobile:hover {
     background-color: #282828;
-    -webkit-transition: background-color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.1 0.5s ease-in-out;
+    transition: background-color 0.1 0.5s ease-in-out;
   }
 }
 
@@ -28865,11 +28882,6 @@ button.swiper-pagination-bullet {
   .shooter__buster-item span {
     font-size: 14px;
     rotate: -5deg;
-  }
-
-  .shooter__main-gun {
-    width: 90px;
-    height: 40px;
   }
 
   .shooter__health {
