@@ -15416,6 +15416,28 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge and Firefox */
+}
+
+.shooter__over-layer::-webkit-scrollbar {
+  display: none;
+}
+
+.shooter__over-layer {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html.shooter__html-main,
+body.shooter__body-main {
+  scrollbar-gutter: initial !important;
+}
+
+.shooter__body {
+  margin: auto 0;
 }
 
 .shooter__page {
@@ -17426,7 +17448,7 @@ button.swiper-pagination-bullet {
 
 @media (max-height: 900px) and (min-width: 575.98px) {
   .shooter__inner {
-    height: calc(100dvh - 133px);
+    height: calc(100dvh - 61px);
   }
 
   .shooter__health-item {
@@ -19408,6 +19430,10 @@ button.swiper-pagination-bullet {
 
   .shooter__inner.shooter-started .shooter__bottom--2 {
     height: auto;
+  }
+
+  .shooter__inner.shooter-started .shooter__vs-box {
+    margin-top: -5px;
   }
 
   .shooter__balans {
