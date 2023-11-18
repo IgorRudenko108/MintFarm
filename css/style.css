@@ -20770,7 +20770,7 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__music--mobile {
-    position: absolute;
+    position: absolute !important;
     top: 0;
     right: 0;
   }
@@ -20883,8 +20883,8 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__title-gun {
-    width: 35px;
-    height: 30px;
+    width: 35px !important;
+    height: 30px !important;
   }
 
   .shooter__title {
@@ -20914,7 +20914,7 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__inner.shooter-started .shooter__raund--mobile {
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   .shooter__inner.shooter-started .shooter__cat-right {
@@ -20946,15 +20946,6 @@ button.swiper-pagination-bullet {
 
   .shooter__inner.shooter-started .shooter__content-info-bottom span {
     font-size: 12px;
-  }
-
-  .shooter__inner.shooter-started .shooter__cat-img {
-    max-width: 80px !important;
-  }
-
-  .shooter__inner.shooter-started .shooter__cat-img {
-    min-width: 80px;
-    width: 80px;
   }
 
   .shooter__inner.shooter-started .shooter__judge {
