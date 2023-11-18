@@ -19344,7 +19344,7 @@ button.swiper-pagination-bullet {
     grid-template-columns: 1fr minmax(90px, 120px);
     -ms-grid-rows: auto 1fr;
     grid-template-rows: auto 1fr;
-    gap: 7px;
+    gap: 7px !important;
   }
 
   .shooter__bottom--2 .shooter__bottom-item {
