@@ -15408,14 +15408,19 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   margin: auto 0 0 auto;
 }
 
-.no-webp .shooter__page{
+.no-webp .shooter__over-layer{
   background-image: url(../img/shooter__page/shooter-bg.jpg); }
 
-.shooter__page {
+.shooter__over-layer {
+  overflow-y: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.shooter__page {
   position: relative;
+  background-color: transparent;
 }
 
 .shooter__inner {
@@ -16280,6 +16285,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .shooter-game__bottom-controls {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
+  margin: 0;
 }
 
 .shooter__music--mobile {
@@ -22161,7 +22167,7 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__inner {
-    height: calc(100dvh - 133px);
+    height: calc(100dvh - 61px);
     padding: 10px 0;
   }
 
@@ -28976,7 +28982,7 @@ button.swiper-pagination-bullet {
 
 .webp .knight__page{ background-image: url(../img/knight__page/knight-bg.webp); }
 
-.webp .shooter__page{ background-image: url(../img/shooter__page/shooter-bg.webp); }
+.webp .shooter__over-layer{ background-image: url(../img/shooter__page/shooter-bg.webp); }
 
 .webp .shooter__health-item--full{ background-image: url(../img/shooter__page/health-full.webp); }
 
