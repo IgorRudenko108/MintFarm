@@ -12295,7 +12295,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .popup-saper-info__left {
   max-width: 287px;
-  width: auto;
+  width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -12379,7 +12379,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .popup-saper-info__cards--mobile {
@@ -16634,6 +16634,207 @@ body.shooter__body-main {
   display: block;
 }
 
+.popup-shooter-success__content {
+  border-radius: 15px;
+  max-width: 724px;
+  position: relative;
+}
+
+.popup-shooter-success__content::before {
+  content: "";
+  position: absolute;
+  border-radius: 15px;
+  background: #5398FF;
+  -webkit-filter: blur(17.5px);
+          filter: blur(17.5px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.no-webp .popup-shooter-success__content::after{
+  background-image: url(../img/shooter__page/win-bg.png); }
+
+.popup-shooter-success__content::after {
+  content: "";
+  border-radius: 15px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.popup-shooter-success__img {
+  width: 400px;
+  height: auto;
+}
+
+.popup-win__close {
+  background: #FEC037;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(254, 192, 55, 0.2);
+          box-shadow: 0px 4px 4px 0px rgba(254, 192, 55, 0.2);
+  border-color: #FEC037;
+  color: #fff;
+}
+
+.popup-win__close .popup-success__close-icon--1 {
+  stroke: #fff;
+}
+
+.popup-shooter-fail__controls {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.no-webp .popup-shooter-fail__content::after{
+  background-image: url(../img/shooter__page/fail-bg.png); }
+
+.popup-shooter-fail__img {
+  width: 175px;
+  height: 160px;
+}
+
+.popup-shooter__fail-text {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.popup-shooter-info__left-img--1 {
+  width: 223px;
+  height: 323px;
+}
+
+.popup-shooter-info__left-img--2 {
+  width: 244px;
+  height: 309px;
+}
+
+.popup-shooter-info__left-img--3 {
+  width: 250px;
+  height: 300px;
+}
+
+.popup-shooter-info__card-img {
+  width: 123px;
+  height: 50px;
+}
+
+.popup__shooter-info__card-target {
+  fill: #FFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 78px;
+  height: 78px;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.popup__shooter-info__card-target svg {
+  fill: #6D87F7;
+  -webkit-transition: fill 0.1s ease-in-out;
+  transition: fill 0.1s ease-in-out;
+  width: 53px;
+  height: 53px;
+}
+
+.popup-shooter-info__card-item {
+  width: 65px;
+  height: 25px;
+}
+
+.popup-shooter-info__cards--mobile {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup-shooter-info-3 .popup-shooter-info__cards--mobile {
+  width: 100%;
+}
+
+.shooter__bottom--popup {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  background-color: #3E3F41;
+  height: 42px;
+}
+
+.shooter__bottom-timer--popup {
+  position: absolute;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  z-index: 1;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.shooter__bottom-timer--popup img {
+  width: 28px;
+  height: 28px;
+}
+
+.shooter__bottom-timer--popup span {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.shooter__bottom-progress--popup {
+  background-color: #FEC037;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 /**
  * Swiper 7.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -19750,6 +19951,19 @@ button.swiper-pagination-bullet {
     width: 14px !important;
     height: 14px !important;
   }
+
+  .shooter__bottom-timer--popup img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .shooter__bottom-timer--popup span {
+    font-size: 16px;
+  }
+
+  .shooter__bottom-progress--popup {
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -21120,6 +21334,47 @@ button.swiper-pagination-bullet {
     position: absolute !important;
     top: 0;
     right: 0;
+  }
+
+  .popup-shooter-success__content {
+    padding: 30px 8px;
+  }
+
+  .popup-shooter-fail__controls button {
+    padding: 10px;
+  }
+
+  .popup-shooter-info__left-img--1 {
+    width: 140px;
+    height: 200px;
+  }
+
+  .popup-shooter-info__left-img--2 {
+    width: 145px;
+    height: 200px;
+  }
+
+  .popup-shooter-info__left-img--3 {
+    width: 130px;
+    height: 165px;
+  }
+
+  .shooter__bottom--popup {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .shooter__order-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .shooter__order-3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
@@ -23819,6 +24074,24 @@ button.swiper-pagination-bullet {
     -webkit-transition: all 1.5s linear;
     transition: all 1.5s linear;
   }
+
+  .popup-shooter-success__img {
+    width: 300px;
+  }
+
+  .popup-shooter-success__bg-box {
+    opacity: 0;
+  }
+
+  .popup__shooter-info__card-target {
+    width: 60px;
+    height: 60px;
+  }
+
+  .popup__shooter-info__card-target svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 47.99875em) and (max-width: 575.98px) {
@@ -25212,6 +25485,18 @@ button.swiper-pagination-bullet {
   .shooter__inner.shooter-started .shooter__judge {
     width: 45px;
     height: 55px;
+  }
+
+  .popup-shooter-success__img {
+    width: 250px;
+  }
+
+  .no-webp .popup-shooter-fail__content::after{
+    background-image: url(../img/shooter__page/fail-bg--mobile.png); }
+
+  .popup-shooter-fail__img {
+    width: 160px;
+    height: 150px;
   }
 }
 
@@ -29026,6 +29311,18 @@ button.swiper-pagination-bullet {
     -webkit-transition: background-color 0.1 0.5s ease-in-out;
     transition: background-color 0.1 0.5s ease-in-out;
   }
+
+  .popup__shooter-info__card-target:hover {
+    background-color: #FEC037;
+    -webkit-transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+  }
+
+  .popup__shooter-info__card-target:hover svg {
+    fill: #fff;
+    -webkit-transition: fill 0.1s ease-in-out;
+    transition: fill 0.1s ease-in-out;
+  }
 }
 
 @media (any-hover: none) {
@@ -29289,6 +29586,10 @@ button.swiper-pagination-bullet {
 
 .webp .shooter__health-item--none{ background-image: url(../img/shooter__page/health-none.webp); }
 
+.webp .popup-shooter-success__content::after{ background-image: url(../img/shooter__page/win-bg.webp); }
+
+.webp .popup-shooter-fail__content::after{ background-image: url(../img/shooter__page/fail-bg.webp); }
+
 @media (max-width: 1199.98px){
 
   .webp .kotopas__cards-item--unlock .kotopas__cards-block{ background-image: url(../img/kotopas__page/card-bg-1--mobile.webp); }
@@ -29302,4 +29603,9 @@ button.swiper-pagination-bullet {
 @media (max-width: 61.99875em){
 
   .webp .kotopas__body--inner{ background-image: url(../img/kotopas__page/main-bg-2.webp); }
+}
+
+@media (max-width: 29.99875em){
+
+  .webp .popup-shooter-fail__content::after{ background-image: url(../img/shooter__page/fail-bg--mobile.webp); }
 }

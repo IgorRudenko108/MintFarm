@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231119192148">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231119232224">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -289,7 +289,7 @@
 
 						<div class="saper__controls-box shooter__controls-box">
 							<div class="saper__controls">
-								<a class="saper__controls-link" data-popup="#popup-saper-info-1" href="#">
+								<a class="saper__controls-link" data-popup="#popup-shooter-info-1" href="#">
 									<img class="saper__controls-icon" src="img/saper__page/icon-1.svg" alt="Icon">
 								</a>
 
@@ -633,7 +633,7 @@
 					</div>
 
 					<div class="game__bottom-controls saper-game__bottom-controls shooter-game__bottom-controls">
-						<button data-popup="#popup-saper-info-1" class="game__bottom-controls-btn">
+						<button data-popup="#popup-shooter-info-1" class="game__bottom-controls-btn">
 							<div class="game__icon-wrapper">
 								<img class="game__button-icon" src="img/saper__page/icon-1.svg" alt="Icon">
 							</div>
@@ -662,10 +662,603 @@
 
 
 			</div>
-
-
 		</main>
 
+	</div>
+
+	<div id="popup-shooter-success" aria-hidden="true" class="popup-shooter-success popup">
+		<div class="popup__wrapper popup-saper-stat__wrapper">
+			<div class="popup__content popup-shooter-success__content">
+
+				<div class="popup__text">
+					<div class="popup-saper-success__body">
+						<h2 class="popup-saper-success__title">Победа!</h2>
+
+						<div class="popup-saper-success__img-box">
+							<div class="popup-saper-success__bg-box popup-shooter-success__bg-box"></div>
+							<picture><source srcset="img/shooter__page/guns-popup.webp" type="image/webp"><img class="popup-saper-success__img popup-shooter-success__img" src="img/shooter__page/guns-popup.png" width="400" height="auto" alt="Image"></picture>
+						</div>
+
+						<div class="popup-saper-success__text">
+							<p>Вы выиграли</p>
+							<span>999999 мяты</span>
+						</div>
+
+						<button data-close type="button" class="popup-win__close popup-success__close popup-success__close--1 popup__close">
+							Забрать приз
+							<svg class="popup-success__close-icon--1" width="20" height="20">
+								<use xlink:href="img/icons/icons.svg#fireworks"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-shooter-fail" aria-hidden="true" class="popup-shooter-fail popup">
+		<div class="popup__wrapper popup-saper-stat__wrapper">
+			<div class="popup__content popup-shooter-success__content popup-shooter-fail__content">
+
+				<div class="popup__text">
+					<div class="popup-saper-success__body">
+						<h2 class="popup-saper-success__title">Неудача!</h2>
+						<p class="popup-shooter__fail-text">Не унывай! Попробуй еще раз!</p>
+
+						<div class="popup-saper-success__img-box">
+							<div class="popup-saper-success__bg-box popup-shooter-success__bg-box"></div>
+							<picture><source srcset="img/shooter__page/heart-popup.webp" type="image/webp"><img class="popup-saper-success__img popup-shooter-fail__img" src="img/shooter__page/heart-popup.png" width="175" height="160" alt="Image"></picture>
+						</div>
+
+						<div class="popup-saper-success__text">
+							<p>Вы могли выиграть</p>
+							<span>999999 мяты</span>
+						</div>
+
+						<div class="popup-shooter-fail__controls">
+							<button data-close type="button" class="popup-success__close popup-success__close--1 popup__close">
+								Выход
+							</button>
+
+							<button data-close type="button" class="popup-win__close popup-success__close popup-success__close--1 popup__close">
+								Еще попытка
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-saper-stat" aria-hidden="true" class="popup-saper-stat popup">
+		<div class="popup__wrapper popup-saper-stat__wrapper">
+			<div class="popup__content popup-saper-stat__content">
+
+				<div class="popup-saper-stat__content-top popup__content-top">
+					<div class="popup-saper-stat__play">
+						Всего игр сыграно: <span>9000</span>
+					</div>
+
+					<div class="popup-saper-stat__title title">Статистика</div>
+
+					<button data-close type="button" class="popup-saper-stat__close popup__close">
+						<svg width="18" height="18">
+							<use xlink:href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+
+				<div class="popup__text">
+					<div class="popup-saper-stat__body">
+						<table class="popup-saper-stat__table">
+							<thead>
+								<tr>
+									<th>Дата</th>
+									<th>Ставка</th>
+									<th>Результат</th>
+									<th class="popup-saper-stat__centr">Коэффициент</th>
+									<th>ID</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>20.01.2022 10:10</td>
+
+									<td class="popup-saper-stat__stavka">
+										100
+										<img src="img/common/mint.svg" alt="Icon">
+									</td>
+
+									<td class="popup-saper-stat__result">Победа</td>
+
+									<td class="popup-saper-stat__centr">Х2</td>
+
+									<td>1</td>
+								</tr>
+
+								<tr>
+									<td>20.01.2022 16:15</td>
+
+									<td class="popup-saper-stat__stavka">
+										100
+										<img src="img/common/mint.svg" alt="Icon">
+									</td>
+
+									<td class="popup-saper-stat__result-2">Поражение</td>
+
+									<td class="popup-saper-stat__centr">Х5</td>
+
+									<td>2</td>
+								</tr>
+
+								<tr>
+									<td>20.01.2022 18:20</td>
+
+									<td class="popup-saper-stat__stavka">
+										100
+										<img src="img/common/mint.svg" alt="Icon">
+									</td>
+
+									<td class="popup-saper-stat__result-2">Победа</td>
+
+									<td class="popup-saper-stat__centr">Х5</td>
+
+									<td>3</td>
+								</tr>
+
+								<tr>
+									<td>20.01.2022 19:20</td>
+
+									<td class="popup-saper-stat__stavka">
+										100
+										<img src="img/common/mint.svg" alt="Icon">
+									</td>
+
+									<td class="popup-saper-stat__result">Победа</td>
+
+									<td class="popup-saper-stat__centr">Х5</td>
+
+									<td>4</td>
+								</tr>
+
+								<tr>
+									<td>20.01.2022 20:30</td>
+
+									<td class="popup-saper-stat__stavka">
+										100
+										<img src="img/common/mint.svg" alt="Icon">
+									</td>
+
+									<td class="popup-saper-stat__result-2">Поражение</td>
+
+									<td class="popup-saper-stat__centr">Х2</td>
+
+									<td>5</td>
+								</tr>
+
+								<tr>
+									<td>20.01.2022 21:20</td>
+
+									<td class="popup-saper-stat__stavka">
+										100
+										<img src="img/common/mint.svg" alt="Icon">
+									</td>
+
+									<td class="popup-saper-stat__result-2">Поражение</td>
+
+									<td class="popup-saper-stat__centr">Х2</td>
+
+									<td>6</td>
+								</tr>
+
+								<tr>
+									<td>20.01.2022 22:10</td>
+
+									<td class="popup-saper-stat__stavka">
+										100
+										<img src="img/common/mint.svg" alt="Icon">
+									</td>
+
+									<td class="popup-saper-stat__result">Победа</td>
+
+									<td class="popup-saper-stat__centr">Х2</td>
+
+									<td>7</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="popup-saper-stat__table--mobile">
+							<div class="popup-saper-stat__table-item">
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">ID</div>
+									<div class="popup-saper-stat__table-right">1</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Дата</div>
+									<div class="popup-saper-stat__table-right">20.01.2022 10:10</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Ставка</div>
+									<div class="popup-saper-stat__table-right">
+										<div class="popup-saper-stat__stavka">
+											100
+											<img src="img/common/mint.svg" width="11" height="11" alt="Icon">
+										</div>
+									</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Результат</div>
+									<div class="popup-saper-stat__table-right">
+										<div class="popup-saper-stat__result">Победа</div>
+									</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Коэффициент</div>
+									<div class="popup-saper-stat__table-right">Х2</div>
+								</div>
+							</div>
+
+							<div class="popup-saper-stat__table-item">
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">ID</div>
+									<div class="popup-saper-stat__table-right">2</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Дата</div>
+									<div class="popup-saper-stat__table-right">20.01.2022 10:10</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Ставка</div>
+									<div class="popup-saper-stat__table-right">
+										<div class="popup-saper-stat__stavka">
+											100
+											<img src="img/common/mint.svg" width="11" height="11" alt="Icon">
+										</div>
+									</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Результат</div>
+									<div class="popup-saper-stat__table-right">
+										<div class="popup-saper-stat__result-2">Поражение</div>
+									</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Коэффициент</div>
+									<div class="popup-saper-stat__table-right">Х5</div>
+								</div>
+							</div>
+
+							<div class="popup-saper-stat__table-item">
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">ID</div>
+									<div class="popup-saper-stat__table-right">3</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Дата</div>
+									<div class="popup-saper-stat__table-right">20.01.2022 10:10</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Ставка</div>
+									<div class="popup-saper-stat__table-right">
+										<div class="popup-saper-stat__stavka">
+											100
+											<img src="img/common/mint.svg" width="11" height="11" alt="Icon">
+										</div>
+									</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Результат</div>
+									<div class="popup-saper-stat__table-right">
+										<div class="popup-saper-stat__result">Победа</div>
+									</div>
+								</div>
+
+								<div class="popup-saper-stat__table-row">
+									<div class="popup-saper-stat__table-left">Коэффициент</div>
+									<div class="popup-saper-stat__table-right">Х5</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="popup-saper-stat__bottom">
+							<a class="popup-saper-stat__btn popup-saper-stat__btn-prev" href="#">
+								<svg width="15" height="15">
+									<use xlink:href="img/icons/icons.svg#arrow-left"></use>
+								</svg>
+							</a>
+
+							<a class="popup-saper-stat__btn active" href="#">1</a>
+
+							<a class="popup-saper-stat__btn popup-saper-stat__btn-next" href="#">
+								<svg width="15" height="15">
+									<use xlink:href="img/icons/icons.svg#arrow-left"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-shooter-info-1" aria-hidden="true" class="popup-shooter-info-1 popup">
+		<div class="popup__wrapper popup-saper-stat__wrapper">
+			<div class="popup__content popup-saper-info__content">
+
+				<div class="popup-saper-info__content-top popup__content-top">
+					<button data-close type="button" class="popup-saper-stat__close popup__close">
+						<svg width="18" height="18">
+							<use xlink:href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+
+				<div class="popup__text">
+					<div class="popup-saper-info__body">
+
+						<div class="popup-saper__title-box popup-saper__title-box--mobile">
+							<h2 class="popup-saper-info__title">Правила атаки</h2>
+						</div>
+
+						<div class="popup-saper-info__left">
+							<picture><source srcset="img/shooter__page/popup-info-1.webp" type="image/webp"><img class="popup-shooter-info__left-img--1" width="223" height="323" src="img/shooter__page/popup-info-1.png" alt="Image"></picture>
+
+							<div class="popup-saper-info__cards popup-saper-info__cards--mobile popup-shooter-info__cards--mobile">
+								<picture><source srcset="img/shooter__page/gun-main.webp" type="image/webp"><img class="popup-shooter-info__card-item" src="img/shooter__page/gun-main.png" width="65" height="25" alt="Image"></picture>
+
+
+								<a class="popup__shooter-info__card-target" href="#">
+									<svg width="40" height="40">
+										<use xlink:href="img/icons/icons.svg#target"></use>
+									</svg>
+								</a>
+
+								<a class="popup__shooter-info__card-target" href="#">
+									<svg width="40" height="40">
+										<use xlink:href="img/icons/icons.svg#target"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="popup-saper-info__right">
+							<div class="popup-saper__title-box">
+								<h2 class="popup-saper-info__title">Правила атаки</h2>
+							</div>
+
+							<p class="popup-saper-info__text">
+								Игра Стрелок -дружеская дуэль между двумя игроками. Шансы на победу равны. Выбирай область и проводи мощную атаку!
+							</p>
+
+							<div class="popup-saper-info__cards">
+								<picture><source srcset="img/shooter__page/gun-main.webp" type="image/webp"><img class="popup-shooter-info__card-img" src="img/shooter__page/gun-main.png" width="123" height="50" alt="Image"></picture>
+
+								<a class="popup__shooter-info__card-target" href="#">
+									<svg width="53" height="53">
+										<use xlink:href="img/icons/icons.svg#target"></use>
+									</svg>
+								</a>
+
+								<a class="popup__shooter-info__card-target" href="#">
+									<svg width="53" height="53">
+										<use xlink:href="img/icons/icons.svg#target"></use>
+									</svg>
+								</a>
+
+							</div>
+
+							<div class="popup-saper-info__bottom">
+								<div class="popup-saper-info__controls">
+									<a class="popup-saper-stat__btn active" href="#">1</a>
+									<a class="popup-saper-stat__btn" data-popup="#popup-shooter-info-2" href="#">2</a>
+									<a class="popup-saper-stat__btn" data-popup="#popup-shooter-info-3" href="#">3</a>
+								</div>
+
+								<a class="popup-saper-info__link" data-popup="#popup-shooter-info-2" href="#">
+									Далее
+									<svg width="10" height="10">
+										<use xlink:href="img/icons/icons.svg#arrow-left"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-shooter-info-2" aria-hidden="true" class="popup-shooter-info-2 popup">
+		<div class="popup__wrapper popup-saper-stat__wrapper">
+			<div class="popup__content popup-saper-info__content">
+
+				<div class="popup-saper-info__content-top popup__content-top">
+					<button data-close type="button" class="popup-saper-stat__close popup__close">
+						<svg width="18" height="18">
+							<use xlink:href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+
+				<div class="popup__text">
+					<div class="popup-saper-info__body">
+
+						<div class="popup-saper__title-box popup-saper__title-box--mobile">
+							<h2 class="popup-saper-info__title">Грамотная защита</h2>
+						</div>
+
+						<div class="popup-saper-info__left">
+							<picture><source srcset="img/shooter__page/popup-info-2.webp" type="image/webp"><img class="popup-shooter-info__left-img--2" width="244" height="309" src="img/shooter__page/popup-info-2.png" alt="Image"></picture>
+
+							<div class="popup-saper-info__cards popup-saper-info__cards--mobile popup-shooter-info__cards--mobile">
+								<a class="popup__shooter-info__card-target" href="#">
+									<svg width="40" height="40">
+										<use xlink:href="img/icons/icons.svg#defence"></use>
+									</svg>
+								</a>
+
+								<a class="popup__shooter-info__card-target" href="#">
+									<svg width="40" height="40">
+										<use xlink:href="img/icons/icons.svg#defence"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="popup-saper-info__right">
+							<div class="popup-saper__title-box">
+								<h2 class="popup-saper-info__title">Грамотная защита</h2>
+							</div>
+
+							<p class="popup-saper-info__text">
+								Однако не стоит забывать про грамотную защиту. Шансы одолеть вашего противника, такие же как и у противника одолеть вас. Выбирайте область защиты решительно и мудро.
+							</p>
+
+							<div class="popup-saper-info__cards">
+								<a class="popup__shooter-info__card-target" href="#">
+									<svg width="53" height="53">
+										<use xlink:href="img/icons/icons.svg#defence"></use>
+									</svg>
+								</a>
+
+								<a class="popup__shooter-info__card-target" href="#">
+									<svg width="53" height="53">
+										<use xlink:href="img/icons/icons.svg#defence"></use>
+									</svg>
+								</a>
+
+							</div>
+
+							<div class="popup-saper-info__bottom">
+								<div class="popup-saper-info__controls">
+									<a class="popup-saper-stat__btn" data-popup="#popup-shooter-info-1" href="#">1</a>
+									<a class="popup-saper-stat__btn active" href="#">2</a>
+									<a class="popup-saper-stat__btn" data-popup="#popup-shooter-info-3" href="#">3</a>
+								</div>
+
+								<a class="popup-saper-info__link" data-popup="#popup-shooter-info-3" href="#">
+									Далее
+									<svg width="10" height="10">
+										<use xlink:href="img/icons/icons.svg#arrow-left"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-shooter-info-3" aria-hidden="true" class="popup-shooter-info-3 popup">
+		<div class="popup__wrapper popup-saper-stat__wrapper">
+			<div class="popup__content popup-saper-info__content">
+
+				<div class="popup-saper-info__content-top popup__content-top">
+					<button data-close type="button" class="popup-saper-stat__close popup__close">
+						<svg width="18" height="18">
+							<use xlink:href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+
+				<div class="popup__text">
+					<div class="popup-saper-info__body">
+
+						<div class="popup-saper__title-box popup-saper__title-box--mobile">
+							<h2 class="popup-saper-info__title">Таймер хода</h2>
+						</div>
+
+						<div class="popup-saper-info__left">
+							<picture><source srcset="img/shooter__page/cat-judge.webp" type="image/webp"><img class="popup-shooter-info__left-img--3" width="250" height="300" src="img/shooter__page/cat-judge.png" alt="Image"></picture>
+
+							<div class="popup-saper-info__cards popup-saper-info__cards--mobile popup-shooter-info__cards--mobile">
+								<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
+									<div class="saper__item-title">Умножить 2х</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										10
+										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									</div>
+								</button>
+
+								<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
+									<div class="saper__item-title">Умножить 2х</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										10
+										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									</div>
+								</button>
+							</div>
+						</div>
+
+						<div class="popup-saper-info__right">
+							<div class="popup-saper__title-box">
+								<h2 class="popup-saper-info__title">Таймер хода</h2>
+							</div>
+
+							<p class="popup-saper-info__text shooter__order-2">
+								Помните - у вас есть 10 секунд на ход, и 3 попытки увеличить вашу ставку в 2 раза!
+							</p>
+
+							<div class="popup-saper-info__cards">
+								<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
+									<div class="saper__item-title">Умножить 2х</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										10
+										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									</div>
+								</button>
+
+								<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
+									<div class="saper__item-title">Умножить 2х</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										10
+										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									</div>
+								</button>
+							</div>
+
+							<div class="shooter__bottom--popup">
+								<div class="shooter__bottom-timer--popup">
+									<img src="img/shooter__page/timer.svg" width="28" height="28" alt="Icon">
+									<span>10 s.</span>
+								</div>
+								<div class="shooter__bottom-progress--popup" style="width: 85%"></div>
+							</div>
+
+							<div class="popup-saper-info__bottom shooter__order-3">
+								<div class="popup-saper-info__controls">
+									<a class="popup-saper-stat__btn" data-popup="#popup-shooter-info-1" href="#">1</a>
+									<a class="popup-saper-stat__btn" data-popup="#popup-shooter-info-2" href="#">2</a>
+									<a class="popup-saper-stat__btn active" href="#">3</a>
+								</div>
+
+								<a class="popup-saper-info__link" data-popup="#popup-close" href="#">
+									Понятно
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script>
@@ -721,7 +1314,7 @@
 		// -- /shooter__music--mobile ----------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20231119192148"></script>
+	<script src="js/app.min.js?_v=20231119232224"></script>
 
 </body>
 
