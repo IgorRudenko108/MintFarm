@@ -18199,13 +18199,13 @@ button.swiper-pagination-bullet {
   }
 
   .shooter-main__btn {
-    width: 130px;
-    height: 130px;
+    width: 130px !important;
+    height: 130px !important;
   }
 
   .shooter-main__btn::before {
-    width: 140px;
-    height: 140px;
+    width: 140px !important;
+    height: 140px !important;
   }
 
   .shooter__title-box {
@@ -18235,7 +18235,7 @@ button.swiper-pagination-bullet {
   }
 
   .shooter__title {
-    font-size: 50px;
+    font-size: 50px !important;
   }
 
   .shooter__content-left {
@@ -29452,6 +29452,10 @@ button.swiper-pagination-bullet {
   .shooter__live-item-img {
     position: absolute;
     left: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     height: 30px;
   }
 
