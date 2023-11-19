@@ -5714,6 +5714,36 @@
                     }
                 });
             }
+            if (document.querySelector(".cabinet-age__slider")) new Swiper(".cabinet-age__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: "18",
+                speed: 800,
+                centeredSlides: false,
+                loop: false,
+                autoHeight: false,
+                navigation: {
+                    prevEl: ".cabinet__age-btn--prev",
+                    nextEl: ".cabinet__age-btn--next"
+                }
+            });
+            if (document.querySelector(".cabinet-age__popup-slider")) new Swiper(".cabinet-age__popup-slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: "8",
+                speed: 800,
+                centeredSlides: false,
+                loop: false,
+                autoHeight: false,
+                navigation: {
+                    prevEl: ".cabinet__age-popup-btn--prev",
+                    nextEl: ".cabinet__age-popup-btn--next"
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
