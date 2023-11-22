@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scrollbar-initial">
 
 <head>
 	<title>Knight</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231120002344">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231122191248">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper knight__wrapper">
 		<header class="header">
 			<div class="header__container">
 				<div class="header__inner">
@@ -282,6 +282,10 @@
 		<main class="page knight__page page-color">
 			<div class="knight__container">
 				<div class="knight__inner">
+					<button class="knight__music--mobile">
+						<img src="img/saper__page/icon-3.svg" width="14" height="14" alt="Icon">
+					</button>
+
 					<div class="knight__content-top">
 						<div class="knight__content-controls">
 							<a class="knight__content-controls-btn" href="#">
@@ -292,7 +296,7 @@
 								<img src="img/saper__page/icon-2.svg" width="20" height="20" alt="Icon">
 							</a>
 
-							<a class="knight__content-controls-btn" href="#">
+							<a class="knight__content-controls-btn knight__music--pc" href="#">
 								<img src="img/saper__page/icon-3.svg" width="20" height="20" alt="Icon">
 							</a>
 						</div>
@@ -317,7 +321,7 @@
 
 					<div class="knight__body">
 						<div class="knight__body-cat">
-							<picture><source srcset="img/landing__page/section__landing-game/cat-3.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-3.png" width="auto" height="330" alt="Image"></picture>
+							<picture><source srcset="img/landing__page/section__landing-game/cat-3.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-3.png" width="auto" height="auto" alt="Image"></picture>
 						</div>
 
 						<a class="knight-main__btn" href="cabinet-page.html">
@@ -327,24 +331,29 @@
 							<p>войти в подземелье</p>
 							<span>НАЧАТЬ ИГРУ</span>
 						</a>
+
+						<div class="knight__coefficient">
+							<p class="knight__coefficient-text">Коэффициент до</p>
+							<div class="knight__coefficient-value"><span>x</span>100</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="knight__bottom">
-					<div class="saper__bottom-item saper__counter counter" data-counter>
+					<div class="knight__bottom-item--half knight__bottom-item shooter__bottom-item saper__bottom-item saper__counter counter" data-counter>
 						<div class="counter__button counter__button_minus">-</div>
 						<div class="counter__input-box">
 							<div class="saper__item-title">Ставка</div>
 
 							<div class="counter__bottom">
-								<input type="text" placeholder="" value="1">
+								<input type="text" placeholder="" value="10">
 								<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
 							</div>
 						</div>
 						<div class="counter__button counter__button_plus">+</div>
 					</div>
 
-					<button class="saper__bottom-item">
+					<button class="knight__bottom-item shooter__bottom-item saper__bottom-item">
 						<div class="saper__item-title">Поднять ставку</div>
 
 						<div class="saper__stavka-value saper__item-value">
@@ -353,16 +362,7 @@
 						</div>
 					</button>
 
-					<button class="saper__bottom-item">
-						<div class="saper__item-title">Поднять ставку</div>
-
-						<div class="saper__stavka-value saper__item-value">
-							+ 20
-							<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
-						</div>
-					</button>
-
-					<button class="saper__bottom-item">
+					<button class="knight__bottom-item shooter__bottom-item saper__bottom-item">
 						<div class="saper__item-title">Поднять ставку</div>
 
 						<div class="saper__stavka-value saper__item-value">
@@ -371,7 +371,7 @@
 						</div>
 					</button>
 
-					<button class="saper__bottom-item">
+					<button class="knight__bottom-item shooter__bottom-item saper__bottom-item">
 						<div class="saper__item-title">Поднять ставку</div>
 
 						<div class="saper__stavka-value saper__item-value">
@@ -380,7 +380,7 @@
 						</div>
 					</button>
 
-					<button class="saper__bottom-item">
+					<button class="knight__bottom-item--pc shooter__bottom-item saper__bottom-item">
 						<div class="saper__item-title">Поднять ставку</div>
 
 						<div class="saper__stavka-value saper__item-value">
@@ -389,58 +389,102 @@
 						</div>
 					</button>
 
-					<div class="saper__bottom-item saper__balans">
-						<div class="saper__item-title">Баланс</div>
+					<div class="knight__dogs-count--pc">
+						<p class="knight__dogs-count-text">Выберите количество псов</p>
 
-						<div class="saper__item-value">
-							350
-							<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+						<div data-tabs class="tabs knight__dogs-count-body">
+							<nav data-tabs-titles class="tabs__navigation knight__dogs-count-inner">
+								<button type="button" class="tabs__title knight__dogs-count-item _tab-active">1</button>
+								<button type="button" class="tabs__title knight__dogs-count-item">2</button>
+								<button type="button" class="tabs__title knight__dogs-count-item">3</button>
+								<button type="button" class="tabs__title knight__dogs-count-item">4</button>
+								<button type="button" class="tabs__title knight__dogs-count-item">5</button>
+								<button type="button" class="tabs__title knight__dogs-count-item">6</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+								</div>
+								<div class="tabs__body">
+								</div>
+								<div class="tabs__body">
+								</div>
+								<div class="tabs__body">
+								</div>
+								<div class="tabs__body">
+								</div>
+								<div class="tabs__body">
+								</div>
+							</div>
 						</div>
+					</div>
 
-						<div class="saper__balans-error">Выше вашего баланса</div>
+					<div class="knight__bottom-item--half knight__dogs-count--mobile shooter__bottom-item saper__bottom-item saper__counter counter" data-counter>
+						<div class="counter__button counter__button_minus">-</div>
+						<div class="counter__input-box">
+							<div class="saper__item-title">Количество псов</div>
+
+							<div class="counter__bottom">
+								<input type="text" placeholder="" value="1">
+							</div>
+						</div>
+						<div class="counter__button counter__button_plus">+</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- <div class="game__bottom-controls saper-game__bottom-controls">
-					<button data-popup="#popup-saper-info-1" class="game__bottom-controls-btn">
-						<div class="game__icon-wrapper">
-							<img class="game__button-icon" src="img/saper__page/icon-1.svg" alt="Icon">
-						</div>
+			<div class="game__bottom-controls knight-game__bottom-controls">
+				<button data-popup="#popup-saper-info-1" class="knight__bottom-controls-btn game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-1.svg" alt="Icon">
+					</div>
 
-						<h3 class="game__button-title">О игре</h3>
-					</button>
+					<h3 class="game__button-title">О игре</h3>
+				</button>
 
-					<button class="game__bottom-controls-btn">
-						<div class="game__icon-wrapper">
-							<img class="game__button-icon" src="img/saper__page/icon-4.svg" alt="Icon">
-						</div>
+				<button class="knight__bottom-controls-btn game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-4.svg" alt="Icon">
+					</div>
 
-						<h3 class="game__button-title">Бустеры</h3>
-					</button>
+					<h3 class="game__button-title">Бустеры</h3>
+				</button>
 
-					<button data-popup="#popup-saper-stat" class="game__bottom-controls-btn">
-						<div class="game__icon-wrapper">
-							<img class="game__button-icon" src="img/saper__page/icon-2.svg" alt="Icon">
-						</div>
+				<button data-popup="#popup-saper-stat" class="knight__bottom-controls-btn game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-2.svg" alt="Icon">
+					</div>
 
-						<h3 class="game__button-title">Статистика</h3>
-					</button>
+					<h3 class="game__button-title">Статистика</h3>
+				</button>
 
-					<button class="game__bottom-controls-btn">
-						<div class="game__icon-wrapper">
-							<img class="game__button-icon" src="img/saper__page/icon-3.svg" alt="Icon">
-						</div>
-
-						<h3 class="game__button-title">Звук</h3>
-					</button>
-					
-				</div> -->
+			</div>
 		</main>
 
 	</div>
 
-	<script src="js/app.min.js?_v=20231120002344"></script>
+	<script>
+		// -- knight__music--pc ----------------------------------------------
+		const knightMuteBtn1 = document.querySelector('.knight__music--pc')
+
+		if (knightMuteBtn1) {
+			knightMuteBtn1.addEventListener('click', (e) => {
+				knightMuteBtn1.classList.toggle('mute');
+			})
+		}
+		// -- /knight__music--pc ----------------------------------------------
+
+		// -- knight__music--mobile ----------------------------------------------
+		const knightMuteBtn2 = document.querySelector('.knight__music--mobile')
+
+		if (knightMuteBtn2) {
+			knightMuteBtn2.addEventListener('click', (e) => {
+				knightMuteBtn2.classList.toggle('mute');
+			})
+		}
+		// -- /knight__music--mobile ----------------------------------------------
+	</script>
+
+	<script src="js/app.min.js?_v=20231122191248"></script>
 </body>
 
 </html>
