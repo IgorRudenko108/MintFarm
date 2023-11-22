@@ -24402,7 +24402,8 @@ button.swiper-pagination-bullet {
   }
 
   .knight__page {
-    background-image: none;
+    background-image: none !important;
+    background: #3B3B3B;
   }
 
   .knight__page::after {
