@@ -15856,9 +15856,9 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .knight__bottom-item--half {
   -ms-grid-column-span: 3;
   grid-column: span 3;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -webkit-box-ordinal-group: 1 !important;
+      -ms-flex-order: 0 !important;
+          order: 0 !important;
 }
 
 .knight__dogs-count--mobile {
@@ -24468,9 +24468,6 @@ button.swiper-pagination-bullet {
   .knight__bottom-item {
     -ms-grid-column-span: 2;
     grid-column: span 2;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
     min-width: auto;
     height: 36px;
     border-radius: 10px;
