@@ -15634,6 +15634,12 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   position: relative;
 }
 
+.knight__body-center {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .knight-main__btn {
   position: absolute;
   top: 50%;
@@ -15853,12 +15859,20 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   background-color: #6D87F7;
 }
 
-.knight__bottom-item--half {
+.knight__bottom-item--half-left {
   -ms-grid-column-span: 3;
   grid-column: span 3;
   -webkit-box-ordinal-group: 1 !important;
       -ms-flex-order: 0 !important;
           order: 0 !important;
+}
+
+.knight__bottom-item--half-right {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+  -webkit-box-ordinal-group: 2 !important;
+      -ms-flex-order: 1 !important;
+          order: 1 !important;
 }
 
 .knight__dogs-count--mobile {
@@ -24471,6 +24485,9 @@ button.swiper-pagination-bullet {
     min-width: auto;
     height: 36px;
     border-radius: 10px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .knight__dogs-count--mobile {
