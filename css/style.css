@@ -15820,6 +15820,39 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   line-height: 50%;
 }
 
+.knight__bottom-item {
+  border-radius: 15px;
+  background: #1C1C1C;
+  padding: 3px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 42px;
+  min-width: 150px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.knight__bottom-item:active {
+  background-color: #6D87F7;
+}
+
+.knight__bottom-item:focus-visible {
+  background-color: #6D87F7;
+}
+
 .knight__bottom-item--half {
   -ms-grid-column-span: 3;
   grid-column: span 3;
@@ -19647,6 +19680,10 @@ button.swiper-pagination-bullet {
     max-width: 250px;
   }
 
+  .knight__bottom-item {
+    width: 100%;
+  }
+
   .shooter__content {
     -ms-grid-columns: 1fr 270px 1fr;
     grid-template-columns: 1fr 270px 1fr;
@@ -21535,6 +21572,11 @@ button.swiper-pagination-bullet {
 
   .knight__body-cat {
     margin: auto auto 0 5px;
+  }
+
+  .knight__bottom-item {
+    min-width: 90px;
+    border-radius: 10px;
   }
 
   .knight__music--pc {
@@ -24383,7 +24425,7 @@ button.swiper-pagination-bullet {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
-    height: calc(100vh - 112px);
+    height: calc(100vh - 227px);
   }
 
   .knight__bottom {
@@ -24429,6 +24471,8 @@ button.swiper-pagination-bullet {
         -ms-flex-order: 2;
             order: 2;
     min-width: auto;
+    height: 36px;
+    border-radius: 10px;
   }
 
   .knight__dogs-count--mobile {
@@ -29948,6 +29992,12 @@ button.swiper-pagination-bullet {
 
   .knight__dogs-count-item:hover {
     background-color: #4d6dff;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .knight__bottom-item:hover {
+    background-color: #6D87F7;
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
   }
