@@ -19302,6 +19302,10 @@ button.swiper-pagination-bullet {
   .knight-main__btn span {
     font-size: 12px;
   }
+
+  .knight__inner {
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 1440px) and (max-height: 575px) {
