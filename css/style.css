@@ -19133,15 +19133,15 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (min-width: 1440px) and (max-height: 900px) {
-  .knight__inner {
-    height: calc(100vh - 147px);
-  }
-}
-
 @media (min-width: 1440px) and (min-height: 900px) {
   .knight__inner {
     height: calc(100vh - 170px);
+  }
+}
+
+@media (min-width: 1440px) and (max-height: 900px) {
+  .knight__inner {
+    height: calc(100vh - 147px);
   }
 }
 
@@ -19230,12 +19230,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 1440px) and (max-height: 575px) {
-  .knight__body-cat {
-    height: 130px;
-  }
-}
-
 @media (max-width: 1440px) and (max-height: 767.98px) {
   .knight-main__btn {
     width: 112px;
@@ -19261,38 +19255,11 @@ button.swiper-pagination-bullet {
   .knight-main__btn span {
     font-size: 12px;
   }
+}
 
-  .knight__inner {
-    height: calc(100vh - 227px);
-  }
-
-  .knight-main__btn {
-    width: 112px;
-    height: 112px;
-  }
-
-  .knight-main__btn::before {
-    content: "";
-    width: 122px;
-    height: 122px;
-  }
-
-  .knight-main__btn p {
-    font-size: 8px;
-  }
-
-  .knight-main__btn svg {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 4px;
-  }
-
-  .knight-main__btn span {
-    font-size: 12px;
-  }
-
-  .knight__inner {
-    height: calc(100vh - 227px);
+@media (max-width: 1440px) and (max-height: 575px) {
+  .knight__body-cat {
+    height: 130px;
   }
 }
 
@@ -19814,7 +19781,13 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 991.98px) and (max-height: 900px) {
   .knight__inner {
-    height: calc(100vh - 134px);
+    height: calc(100vh - 130px);
+  }
+}
+
+@media (max-width: 991.98px) and (min-height: 767.98px) {
+  .knight__inner {
+    height: calc(100vh - 130px);
   }
 }
 
@@ -20315,6 +20288,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 680px) and (min-height: 767.98px) {
+  .knight__inner {
+    height: calc(100vh - 215px);
+  }
+}
+
 @media (max-width: 680px) and (max-height: 767.98px) {
   .knight__inner {
     height: calc(100vh - 215px);
@@ -20322,12 +20301,6 @@ button.swiper-pagination-bullet {
 
   .knight__body-cat {
     height: 130px;
-  }
-}
-
-@media (max-width: 680px) and (min-height: 767.98px) {
-  .knight__inner {
-    height: calc(100vh - 215px);
   }
 }
 
@@ -23132,7 +23105,7 @@ button.swiper-pagination-bullet {
   }
 
   .knight__inner {
-    height: calc(100vh - 112px);
+    height: calc(100vh - 130px);
   }
 
   .knight-main__btn svg {
@@ -24522,6 +24495,9 @@ button.swiper-pagination-bullet {
     background-color: #1C1C1C;
     margin: 5px 10px 5px;
     width: auto;
+    padding: 6px;
+    z-index: 149;
+    border-radius: 15px;
   }
 
   .shooter__raund {
