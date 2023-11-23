@@ -25983,7 +25983,7 @@ button.swiper-pagination-bullet {
   }
 
   .knight__inner {
-    height: calc(100dvh - 380px);
+    height: calc(100dvh - 300px);
   }
 
   .shooter__vs-name {
