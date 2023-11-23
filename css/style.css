@@ -21597,8 +21597,8 @@ button.swiper-pagination-bullet {
   }
 
   .knight__body {
-    -ms-grid-columns: 1fr 130px 1fr;
-    grid-template-columns: 1fr 130px 1fr;
+    -ms-grid-columns: 1fr 130px 1fr !important;
+    grid-template-columns: 1fr 130px 1fr !important;
   }
 
   .knight__body-cat {
@@ -21864,6 +21864,13 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 425px) {
+  .knight__body {
+    -ms-grid-columns: 1fr 100px 1fr !important;
+    grid-template-columns: 1fr 100px 1fr !important;
+  }
+}
+
 @media (max-width: 424.98px) {
   .present-main__banner-image img {
     width: 100px;
@@ -21983,13 +21990,6 @@ button.swiper-pagination-bullet {
   .shooter__inner.shooter-started .shooter__content-info-top::before {
     top: -30px;
     border-width: 0 3px 32px 3px;
-  }
-}
-
-@media (max-width: 360px) {
-  .knight__body {
-    -ms-grid-columns: 1fr 100px 1fr;
-    grid-template-columns: 1fr 100px 1fr;
   }
 }
 
