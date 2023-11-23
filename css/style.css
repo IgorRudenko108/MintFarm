@@ -24477,6 +24477,10 @@ button.swiper-pagination-bullet {
     border-radius: 15px;
   }
 
+  .knight__inner {
+    height: calc(100dvh - 215px);
+  }
+
   .shooter__raund {
     display: none;
   }
@@ -25980,10 +25984,6 @@ button.swiper-pagination-bullet {
   .knight-main__btn svg {
     width: 30px;
     height: 30px;
-  }
-
-  .knight__inner {
-    height: calc(100dvh - 200px);
   }
 
   .shooter__vs-name {
