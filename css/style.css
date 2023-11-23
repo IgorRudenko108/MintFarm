@@ -15924,10 +15924,6 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   color: #CACACA;
 }
 
-.knight__container {
-  height: 100dvh;
-}
-
 .no-webp .shooter__over-layer{
   background-image: url(../img/shooter__page/shooter-bg.jpg); }
 
