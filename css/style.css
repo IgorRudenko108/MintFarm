@@ -19320,6 +19320,10 @@ button.swiper-pagination-bullet {
   .knight__body-cat {
     height: 130px;
   }
+
+  .knight__inner {
+    height: calc(100dvh - 270px);
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -21853,12 +21857,6 @@ button.swiper-pagination-bullet {
   .kotopas__bonus-btn--unlock span {
     font-size: 14px;
     font-weight: 500;
-  }
-}
-
-@media (max-width: 575.98px) and (max-height: 680px) {
-  .knight__inner {
-    height: calc(100dvh - 270px);
   }
 }
 
