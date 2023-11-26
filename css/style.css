@@ -12828,6 +12828,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   max-width: 100%;
   background-color: transparent;
   border-radius: 0;
+  margin-bottom: auto;
 }
 
 .knight-game__info-value--white {
@@ -12875,7 +12876,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .no-webp .popup-saper-success__wrapper{
-  background-image: url(../../img/saper__page/popup-success-bg.jpg); }
+  background-image: url(../img/saper__page/popup-success-bg.jpg); }
 
 .popup-saper-success__wrapper {
   background-repeat: no-repeat;
@@ -12885,6 +12886,11 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .saper-popup__prise-title {
   margin-top: 20px;
+}
+
+.popup-saper-success__body {
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .quest__slider.swiper {
@@ -15644,7 +15650,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .popup-knight-info__card-img--number {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .popup-knight-info__left-img--mobule {
@@ -15714,7 +15720,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .no-webp .knight-game__page{
-  background-image: url(../../img/knight-game__page/knight-game-bg.jpg); }
+  background-image: url(../img/knight-game__page/knight-game-bg.jpg); }
 
 .knight-game__page {
   background-repeat: no-repeat;
@@ -15787,7 +15793,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .no-webp .knight-game__row-floor{
-  background-image: url(../../img/knight-game__page/floor.png); }
+  background-image: url(../img/knight-game__page/floor.png); }
 
 .knight-game__row-floor {
   position: absolute;
@@ -15870,7 +15876,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .no-webp .knight-game__door-item::before{
-  background-image: url(../../img/knight-game__page/door-frame.png); }
+  background-image: url(../img/knight-game__page/door-frame.png); }
 
 .knight-game__door-item::before {
   content: "";
@@ -15909,7 +15915,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .no-webp .knight-game__door-item:hover::after{
-  background-image: url(../../img/knight-game__page/door-frame-hover.png); }
+  background-image: url(../img/knight-game__page/door-frame-hover.png); }
 
 .knight-game__door-item:hover::after {
   opacity: 1;
@@ -15983,7 +15989,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .no-webp .knight-game__stairs{
-  background-image: url(../../img/knight-game__page/stairs.png); }
+  background-image: url(../img/knight-game__page/stairs.png); }
 
 .knight-game__stairs {
   background-repeat: repeat-y;
@@ -31469,7 +31475,7 @@ button.swiper-pagination-bullet {
 
 .webp .saper__main-top{ background-image: url(../img/saper__page/bang-bg.webp); }
 
-.webp .popup-saper-success__wrapper{ background-image: url(../../img/saper__page/popup-success-bg.webp); }
+.webp .popup-saper-success__wrapper{ background-image: url(../img/saper__page/popup-success-bg.webp); }
 
 .webp .kotopas__body--inner{ background-image: url(../img/kotopas__page/main-bg.webp); }
 
@@ -31481,15 +31487,15 @@ button.swiper-pagination-bullet {
 
 .webp .knight__page{ background-image: url(../img/knight__page/knight-bg.webp); }
 
-.webp .knight-game__page{ background-image: url(../../img/knight-game__page/knight-game-bg.webp); }
+.webp .knight-game__page{ background-image: url(../img/knight-game__page/knight-game-bg.webp); }
 
-.webp .knight-game__row-floor{ background-image: url(../../img/knight-game__page/floor.webp); }
+.webp .knight-game__row-floor{ background-image: url(../img/knight-game__page/floor.webp); }
 
-.webp .knight-game__door-item::before{ background-image: url(../../img/knight-game__page/door-frame.webp); }
+.webp .knight-game__door-item::before{ background-image: url(../img/knight-game__page/door-frame.webp); }
 
-.webp .knight-game__door-item:hover::after{ background-image: url(../../img/knight-game__page/door-frame-hover.webp); }
+.webp .knight-game__door-item:hover::after{ background-image: url(../img/knight-game__page/door-frame-hover.webp); }
 
-.webp .knight-game__stairs{ background-image: url(../../img/knight-game__page/stairs.webp); }
+.webp .knight-game__stairs{ background-image: url(../img/knight-game__page/stairs.webp); }
 
 .webp .shooter__over-layer{ background-image: url(../img/shooter__page/shooter-bg.webp); }
 
