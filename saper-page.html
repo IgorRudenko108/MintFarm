@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231123035459">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231126042254">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="popup-bg--dark">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -279,7 +279,7 @@
 			</div>
 		</header>
 
-		<main class="page saper__page page-color">
+		<main class="page saper__page">
 			<div class="saper__container">
 				<div class="saper__inner tabs" data-tabs>
 					<div class="saper__top">
@@ -2622,29 +2622,31 @@
 	</div>
 
 	<div id="popup-saper-success" aria-hidden="true" class="popup-saper-success popup">
-		<div class="popup__wrapper popup-saper-stat__wrapper">
+		<div class="popup__wrapper popup-saper-success__wrapper">
 			<div class="popup__content popup-saper-success__content">
 
 				<div class="popup__text">
 					<div class="popup-saper-success__body">
-						<h2 class="popup-saper-success__title">Поздравляем! <br> Вы нашли клубок с мятой</h2>
 
 						<div class="popup-saper-success__img-box">
-							<div class="popup-saper-success__bg-box"></div>
-							<picture><source srcset="img/saper__page/mint-ball.webp" type="image/webp"><img class="popup-saper-success__img" src="img/saper__page/mint-ball.png" width="182" height="162" alt="Image"></picture>
+							<picture><source srcset="img/saper__page/success-1.webp" type="image/webp"><img class="popup-saper-success__img popup-saper-success__img--pc" src="img/saper__page/success-1.png" alt="Image"></picture>
+							<picture><source srcset="img/saper__page/success-1--mobile.webp" type="image/webp"><img class="popup-saper-success__img popup-saper-success__img--mobile" src="img/saper__page/success-1--mobile.png" alt="Image"></picture>
 						</div>
 
-						<div class="popup-saper-success__text">
-							<p>В котором было</p>
-							<span>999999 мяты</span>
+						<div class="knight-game__info-value--white saper-popup__prise-title">
+							+200
+							<img src="img/common/mint.svg" width="48" height="48" alt="Image">
 						</div>
 
-						<button data-close type="button" class="popup-success__close popup-success__close--1 popup__close">
-							Забрать!
-							<svg class="popup-success__close-icon--1" width="20" height="20">
-								<use xlink:href="img/icons/icons.svg#fireworks"></use>
-							</svg>
-						</button>
+						<div class="saper__popup-bottom-controls">
+							<a class="btn btn__accent-2 popup-knight__btn-gray" href="#">
+								Забрать
+							</a>
+
+							<a class="btn btn__accent-2 popup-knight__btn-yellow" href="#">
+								Далее
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -2652,28 +2654,26 @@
 	</div>
 
 	<div id="popup-saper-success-2" aria-hidden="true" class="popup-saper-success-2 popup">
-		<div class="popup__wrapper popup-saper-stat__wrapper">
+		<div class="popup__wrapper">
 			<div class="popup__content popup-saper-success__content">
 
 				<div class="popup__text">
 					<div class="popup-saper-success__body">
-						<h2 class="popup-saper-success__title">Вы нашли приз!</h2>
 
 						<div class="popup-saper-success__img-box">
-							<div class="popup-saper-success__bg-box"></div>
-							<picture><source srcset="img/saper__page/success-img-2.webp" type="image/webp"><img class="popup-saper-success__img" src="img/saper__page/success-img-2.png" width="236" height="176" alt="Image"></picture>
+							<picture><source srcset="img/saper__page/success-2.webp" type="image/webp"><img class="popup-saper-success__img popup-saper-success__img--pc" src="img/saper__page/success-2.png" alt="Image"></picture>
+							<picture><source srcset="img/saper__page/success-2--mobile.webp" type="image/webp"><img class="popup-saper-success__img popup-saper-success__img--mobile" src="img/saper__page/success-2--mobile.png" alt="Image"></picture>
 						</div>
 
-						<div class="popup-saper-success__text">
-							<span>Энергия 2шт.</span>
+						<div class="knight-game__info-value--white saper-popup__prise-title">
+							Ботинки
 						</div>
 
-						<button data-close type="button" class="popup-success__close popup-success__close--2 popup__close">
-							Забрать приз
-							<svg class="popup-success__close-icon--1" width="20" height="20">
-								<use xlink:href="img/icons/icons.svg#fireworks"></use>
-							</svg>
-						</button>
+						<div class="saper__popup-bottom-controls saper__popup-bottom-controls--center">
+							<a class="btn btn__accent-2" href="#">
+								Далее
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -2681,28 +2681,26 @@
 	</div>
 
 	<div id="popup-saper-success-3" aria-hidden="true" class="popup-saper-success-3 popup">
-		<div class="popup__wrapper popup-saper-stat__wrapper">
+		<div class="popup__wrapper">
 			<div class="popup__content popup-saper-success__content">
 
 				<div class="popup__text">
 					<div class="popup-saper-success__body">
-						<h2 class="popup-saper-success__title">Вы нашли приз!</h2>
 
 						<div class="popup-saper-success__img-box">
-							<div class="popup-saper-success__bg-box"></div>
-							<picture><source srcset="img/saper__page/success-img-3.webp" type="image/webp"><img class="popup-saper-success__img" src="img/saper__page/success-img-3.png" width="236" height="176" alt="Image"></picture>
+							<picture><source srcset="img/saper__page/success-3.webp" type="image/webp"><img class="popup-saper-success__img popup-saper-success__img--pc" src="img/saper__page/success-3.png" alt="Image"></picture>
+							<picture><source srcset="img/saper__page/success-3--mobile.webp" type="image/webp"><img class="popup-saper-success__img popup-saper-success__img--mobile" src="img/saper__page/success-3--mobile.png" alt="Image"></picture>
 						</div>
 
-						<div class="popup-saper-success__text">
-							<span>Бусетр «ботинки»</span>
+						<div class="knight-game__info-value--white saper-popup__prise-title">
+							Энергия 2 шт.
 						</div>
 
-						<button data-close type="button" class="popup-success__close popup-success__close--1 popup__close">
-							Забрать приз
-							<svg class="popup-success__close-icon--1" width="20" height="20">
-								<use xlink:href="img/icons/icons.svg#fireworks"></use>
-							</svg>
-						</button>
+						<div class="saper__popup-bottom-controls saper__popup-bottom-controls--center">
+							<a class="btn btn__accent-2" href="#">
+								Далее
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -2710,37 +2708,36 @@
 	</div>
 
 	<div id="popup-saper-fail" aria-hidden="true" class="popup-saper-fail popup">
-		<div class="popup__wrapper popup-saper-stat__wrapper">
-			<div class="popup__content popup-saper-success__content">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-knight__princess-content">
 
-				<div class="popup__text">
-					<div class="popup-saper-success__body">
-						<h2 class="popup-saper-success__title">
-							Вы наткнулись на собаку!
+				<div class="popup__text popup-knight__body">
+					<div class="popup-knight__princess-top">
+						<h2 class="knight-game__popup-title knight-game__popup-title--red">Поражение</h2>
+						<picture><source srcset="img/saper__page/success-title-deco.webp" type="image/webp"><img class="knight-game__popup-deco saper__popup-deco-top" width="95" height="auto" src="img/saper__page/success-title-deco.png" alt="Image"></picture>
+					</div>
 
-							<picture><source srcset="img/saper__page/success-title-deco.webp" type="image/webp"><img class="popup-saper-success__title-deco" src="img/saper__page/success-title-deco.png" width="92" height="72" alt="Image"></picture>
-						</h2>
+					<div class="knight-game__princess-img">
+						<picture><source srcset="img/saper__page/success-img-fail.webp" type="image/webp"><img src="img/saper__page/success-img-fail.png" alt="Image"></picture>
+					</div>
 
-						<div class="popup-saper-success__img-box">
-							<div class="popup-saper-success__bg-box"></div>
-							<picture><source srcset="img/saper__page/success-img-fail.webp" type="image/webp"><img class="popup-saper-success__img" src="img/saper__page/success-img-fail.png" width="154" height="164" alt="Image"></picture>
+					<div class="knight-game__info-block">
+						<div class="knight-game__info-value knight-game__info-value--princess knight-game__info-value--red">
+							-200
+							<img src="img/common/mint.svg" width="48" height="48" alt="Image">
 						</div>
 
-						<div class="popup-saper-success__text">
+						<p class="knight-game__info-text">Вы попали на собаку</p>
+					</div>
 
-							<picture><source srcset="img/saper__page/deco-bone-1.webp" type="image/webp"><img class="popup-saper__deco-bone--1" src="img/saper__page/deco-bone-1.png" width="81" height="79" alt="Image"></picture>
+					<div class="knight-game__info-controls saper__popup-controls">
+						<a class="knight-game__info-btn btn btn__accent-2 popup-knight__btn-gray popup-knight__popup-close" href="#">
+							Закрыть
+						</a>
 
-							<p>Вы проиграли</p>
-							<span>999999 мяты</span>
-
-							<picture><source srcset="img/saper__page/deco-bone-2.webp" type="image/webp"><img class="popup-saper__deco-bone--2" src="img/saper__page/deco-bone-2.png" width="59" height="58" alt="Image"></picture>
-
-						</div>
-
-						<button data-close type="button" class="popup-success__close popup-success__close--fail popup__close">
-							Понятно
-							<img src="img/saper__page/sad-face.svg" width="20" height="20" alt="Image">
-						</button>
+						<a class="knight-game__info-btn btn btn__accent-2" href="saper-page.html">
+							Попробовать еще
+						</a>
 					</div>
 				</div>
 			</div>
@@ -3024,7 +3021,7 @@
 		// -- /saper__music--mobile ----------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20231123035459"></script>
+	<script src="js/app.min.js?_v=20231126042254"></script>
 </body>
 
 </html>

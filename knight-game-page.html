@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru" class="scrollbar-initial">
+
+<head>
+	<title>Knight game</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231126042254">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="popup-bg--dark">
+	<div class="wrapper knight-game__wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<a href="index.html" class="header__logo logo">
+						<svg width="22" height="22">
+							<use xlink:href="img/icons/icons.svg#cat"></use>
+						</svg>
+						<span>MintFarm</span>
+					</a>
+
+					<ul class="header__nav-list--pc">
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="game-catalog-page.html">Игры</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="help-page-user.html">Помощь</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="news-page-user.html">Новости</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="present-page-user.html">Маркет</a>
+						</li>
+					</ul>
+
+					<div class="lang-dropdown" data-da=".menu__body,479.98,2">
+
+						<div class="lang-dropdown__btn">
+							<span class="lang-dropdown__active">RU</span>
+							<img class="lang-dropdown__btn-img" src="img/common/lang.svg" alt="Icon">
+						</div>
+
+						<div class="dropdown-list">
+							<a class="lang-link active" href="#">
+								<span class="lang-link__name">RU</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">EN</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">ES</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">ID</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">PH</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="header__user-data">
+						<a class="header-wallet header-wallet--pc" href="#">
+							<div class="header-wallet__title">Кошелек</div>
+							<div class="header-wallet__body">
+								<span class="header-wallet__value">657</span>
+								<img class="header-wallet__icon" src="img/present__page/coin.svg" alt="Coin">
+							</div>
+						</a>
+
+						<a class="header-user" href="cabinet-page.html">
+							<div class="header-user__body header-user__body--pc">
+								<div class="header-user__name">Samurai</div>
+								<div class="header-user__info">
+									<span class="header-user__lvl">LVL</span>
+									<span class="header-user__lvl-value user-data">17</span>
+									<span class="header-user__xp user-data">1013/7800xp</span>
+								</div>
+							</div>
+
+							<div class="header-user__avatar">
+								<picture><source srcset="img/present__page/avatar-1.webp" type="image/webp"><img class="header-user__avatar-img" src="img/present__page/avatar-1.jpg" alt="Avatar"></picture>
+							</div>
+						</a>
+					</div>
+
+					<button type="button" class="menu__icon icon-menu icon-menu--pc"><span></span></button>
+
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<div class="burger__body-top">
+								<a class="burger__user" href="cabinet-page.html">
+									<div class="burger__user-info">
+										<div class="burger__user-name">Samurai</div>
+										<p class="burger__user-lvl">LVL 17 1013/7800xp</p>
+									</div>
+
+									<div class="burger__user-img">
+										<picture><source srcset="img/header/user-ava.webp" type="image/webp"><img src="img/header/user-ava.png" alt="Image"></picture>
+									</div>
+								</a>
+
+								<div class="burger__stat-info">
+									<a href="#" class="burger__stat-item burger__stat-money">
+										<img class="burger__stat-icon" src="img/header/burger-coin-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">657</span>
+									</a>
+
+									<a href="#" class="burger__stat-item burger__stat-mint">
+										<img class="burger__stat-icon" src="img/header/burger-mint-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">367</span>
+									</a>
+
+									<a href="#" class="burger__stat-item burger__stat-energy">
+										<img class="burger__stat-icon" src="img/header/burger-energy-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">10%</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="burger__game-block">
+								<div class="burger__game-top">
+									<a href="game-catalog-page.html" class="burger__block-title">
+										<img class="burger__block-title-icon" src="img/header/title-icon-1.svg" width="20" height="20" alt="Icon">
+										Игры
+									</a>
+
+									<div data-spollers class="spollers burger__game-spoller">
+										<details class="spollers__item">
+											<summary class="spollers__title">
+												<img class="burger__block-title-icon" src="img/header/title-icon-1.svg" width="17" height="17" alt="Icon">
+												Игры
+											</summary>
+											<div class="spollers__body">
+												<a class="spollers__body-item burger__game-body-item" href="game-catalog-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
+													Ферма
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="knight-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-2.svg" width="22" height="22" alt="Icon">
+													Рыцарь
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="shooter-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
+													Стрелок
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="saper-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-4.svg" width="22" height="22" alt="Icon">
+													Сапёр
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="#">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-5.svg" width="22" height="22" alt="Icon">
+													Летун
+												</a>
+											</div>
+										</details>
+									</div>
+								</div>
+
+								<div class="burger__game-body">
+									<a class="burger__game-body-item" href="game-catalog-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
+										Ферма
+									</a>
+
+									<a class="burger__game-body-item" href="knight-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-2.svg" width="22" height="22" alt="Icon">
+										Рыцарь
+									</a>
+
+									<a class="burger__game-body-item" href="shooter-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
+										Стрелок
+									</a>
+
+									<a class="burger__game-body-item" href="saper-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-4.svg" width="22" height="22" alt="Icon">
+										Сапёр
+									</a>
+
+									<a class="burger__game-body-item" href="#">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-5.svg" width="22" height="22" alt="Icon">
+										Летун
+									</a>
+								</div>
+
+								<div class="burger__market">
+									<a href="exchange-page.html" class="burger__market-title">
+										<img class="burger__market-title-icon" src="img/header/title-icon-2.svg" width="20" height="20" alt="Icon">
+										Маркет
+									</a>
+
+									<div class="burger__market-body">
+										<div class="burger__market-item">
+											<img src="img/header/burger-mint-1.svg" alt="Icon">
+
+											<div class="burger__market-input-wrapper">
+												<input class="burger__market-input" type="number">
+											</div>
+										</div>
+
+										<img class="burger__market-exchange" src="img/header/exchange.svg" width="25" height="25" alt="Icon">
+
+										<div class="burger__market-item">
+											<div class="burger__market-input-wrapper">
+												<input class="burger__market-input" type="number">
+											</div>
+
+											<img src="img/header/burger-coin-2.svg" alt="Icon">
+										</div>
+									</div>
+
+									<button class="burger__market-btn">Обменять</button>
+								</div>
+							</div>
+
+							<hr class="burger__line">
+
+							<div class="burger__nav">
+								<a class="burger__nav-link" href="present-page-user.html">
+									<img src="img/header/burger-link-1.svg" width="20" height="20" alt="Icon">
+									Подарки
+								</a>
+
+								<a class="burger__nav-link" href="neighbors-page.html">
+									<img src="img/header/burger-link-2.svg" width="20" height="20" alt="Icon">
+									Соседи
+								</a>
+
+								<a class="burger__nav-link" href="kotopas-page.html">
+									<img src="img/header/burger-link-3.svg" width="20" height="20" alt="Icon">
+									Котопас
+								</a>
+
+								<a class="burger__nav-link" href="tasks-page.html">
+									<img src="img/header/burger-link-4.svg" width="20" height="20" alt="Icon">
+									Задачи
+								</a>
+							</div>
+
+							<hr class="burger__line">
+
+							<div class="burger__online">
+								<img src="img/header/burger-people.svg" width="20" height="20" alt="Icon">
+								<span>Онлайн: 9678 чел.</span>
+							</div>
+
+							<div class="burger__bottom">
+								<a class="burger__bottom-link" href="settings-page.html">
+									<img src="img/header/burger-settings.svg" width="15" height="15" alt="Icon">
+									<span>Настройки</span>
+								</a>
+
+								<a class="burger__bottom-link" href="help-page-user.html">
+									<img src="img/header/burger-help.svg" width="15" height="15" alt="Icon">
+									<span>Помощь</span>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page knight-game__page">
+			<div class="knight-game__body">
+				<div class="knight-game__row">
+					<div class="knight-game__row-floor"></div>
+
+					<div class="knight-game__row-inner knight-game__row-inner--1">
+						<picture><source srcset="img/knight-game__page/knight-1.webp" type="image/webp"><img class="knight-game__hero" width="auto" height="92" src="img/knight-game__page/knight-1.png" alt="Image"></picture>
+
+						<div class="knight-game__door-item knight-game__door-item--1 knight-game__door-princess">
+							<picture><source srcset="img/knight-game__page/door.webp" type="image/webp"><img class="knight-game__door" src="img/knight-game__page/door.png" alt="Image"></picture>
+							<picture><source srcset="img/knight-game__page/princess.webp" type="image/webp"><img class="knight-game__princess" src="img/knight-game__page/princess.png" width="auto" height="88" alt="Image"></picture>
+						</div>
+
+						<div class="knight-game__wall-art knight-game__wall-art--1">
+							<picture><source srcset="img/knight-game__page/picture-1.webp" type="image/webp"><img class="knight-game__picture" src="img/knight-game__page/picture-1.png" alt="Image"></picture>
+						</div>
+
+						<div class="knight-game__door-item knight-game__door-item--2 knight-game__door-dog">
+							<picture><source srcset="img/knight-game__page/door.webp" type="image/webp"><img class="knight-game__door" src="img/knight-game__page/door.png" alt="Image"></picture>
+							<picture><source srcset="img/knight-game__page/dog.webp" type="image/webp"><img class="knight-game__dog" src="img/knight-game__page/dog.png" width="auto" height="115" alt="Image"></picture>
+						</div>
+					</div>
+				</div>
+
+				<div class="knight-game__row">
+					<div class="knight-game__row-floor"></div>
+
+					<div class="knight-game__row-inner knight-game__row-inner--2">
+						<div class="knight-game__door-item knight-game__door-item--3 knight-game__door-prise">
+							<picture><source srcset="img/knight-game__page/door.webp" type="image/webp"><img class="knight-game__door" src="img/knight-game__page/door.png" alt="Image"></picture>
+							<picture><source srcset="img/knight-game__page/mint-box.webp" type="image/webp"><img class="knight-game__mint-box" src="img/knight-game__page/mint-box.png" width="auto" height="100" alt="Image"></picture>
+						</div>
+
+						<div class="knight-game__wall-art knight-game__wall-art--2">
+							<picture><source srcset="img/knight-game__page/picture-2.webp" type="image/webp"><img class="knight-game__picture" src="img/knight-game__page/picture-2.png" alt="Image"></picture>
+						</div>
+
+						<div class="knight-game__inner-item">
+							<div class="knight-game__stairs"></div>
+
+							<div class="knight-game__door-item knight-game__door-item--4 knight-game__door-dog">
+								<picture><source srcset="img/knight-game__page/door.webp" type="image/webp"><img class="knight-game__door" src="img/knight-game__page/door.png" alt="Image"></picture>
+								<picture><source srcset="img/knight-game__page/dog.webp" type="image/webp"><img class="knight-game__dog" src="img/knight-game__page/dog.png" width="auto" height="115" alt="Image"></picture>
+							</div>
+						</div>
+
+						<div class="knight-game__wall-art knight-game__wall-art--3">
+							<picture><source srcset="img/knight-game__page/picture-3.webp" type="image/webp"><img class="knight-game__picture" src="img/knight-game__page/picture-3.png" alt="Image"></picture>
+						</div>
+					</div>
+				</div>
+
+				<div class="knight-game__row">
+					<div class="knight-game__row-floor"></div>
+
+					<div class="knight-game__row-inner knight-game__row-inner--3">
+						<div class="knight-game__door-item knight-game__door-item--5 knight-game__door-dog">
+							<picture><source srcset="img/knight-game__page/door.webp" type="image/webp"><img class="knight-game__door" src="img/knight-game__page/door.png" alt="Image"></picture>
+							<picture><source srcset="img/knight-game__page/dog.webp" type="image/webp"><img class="knight-game__dog" src="img/knight-game__page/dog.png" width="auto" height="115" alt="Image"></picture>
+
+						</div>
+
+						<div class="knight-game__wall-art knight-game__wall-art--4">
+							<picture><source srcset="img/knight-game__page/picture-4.webp" type="image/webp"><img class="knight-game__picture" src="img/knight-game__page/picture-4.png" alt="Image"></picture>
+						</div>
+
+						<div class="knight-game__door-item knight-game__door-item--6 knight-game__door-prise">
+							<picture><source srcset="img/knight-game__page/door.webp" type="image/webp"><img class="knight-game__door" src="img/knight-game__page/door.png" alt="Image"></picture>
+							<picture><source srcset="img/knight-game__page/mint-box.webp" type="image/webp"><img class="knight-game__mint-box" src="img/knight-game__page/mint-box.png" alt="Image"></picture>
+						</div>
+
+						<div class="knight-game__wall-art knight-game__wall-art--5">
+							<picture><source srcset="img/knight-game__page/picture-5.webp" type="image/webp"><img class="knight-game__picture" src="img/knight-game__page/picture-5.png" alt="Image"></picture>
+						</div>
+
+						<div class="knight-game__inner-item">
+							<div class="knight-game__door-item knight-game__door-item--7 knight-game__door-dog">
+								<picture><source srcset="img/knight-game__page/door.webp" type="image/webp"><img class="knight-game__door" src="img/knight-game__page/door.png" alt="Image"></picture>
+								<picture><source srcset="img/knight-game__page/dog.webp" type="image/webp"><img class="knight-game__dog" src="img/knight-game__page/dog.png" width="auto" height="115" alt="Image"></picture>
+							</div>
+
+							<div class="knight-game__stairs"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="knight-game__row-level">
+					<div class="knight-game__row-content">
+						<div class="knight-game__mobile-max">
+							<p class="knight-game__mobile-max-text">макс</p>
+							<div class="knight-game__mobile-max-value">
+								<span>x</span>100
+							</div>
+						</div>
+
+						<div class="knight-level__slider swiper">
+							<div class="knight-level__wrapper swiper-wrapper">
+								<div class="knight-level__slide swiper-slide">
+									<div class="knight-level__box">
+										<p class="knight-level__title">1 уровень</p>
+
+										<div class="knight-level__value"><span>x</span>2,5</div>
+									</div>
+								</div>
+
+								<div class="knight-level__slide swiper-slide">
+									<div class="knight-level__box knight-level__box--active">
+										<p class="knight-level__title">2 уровень</p>
+
+										<div class="knight-level__value"><span>x</span>5</div>
+									</div>
+
+									<a class="knight-level__bonus" href="#">
+										<div class="knight-level__item-title">Забрать</div>
+
+										<div class="knight-level__item-value">
+											200
+											<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+										</div>
+									</a>
+								</div>
+
+								<div class="knight-level__slide swiper-slide">
+									<div class="knight-level__box">
+										<p class="knight-level__title">3 уровень</p>
+
+										<div class="knight-level__value"><span>x</span>10</div>
+									</div>
+								</div>
+
+								<div class="knight-level__slide swiper-slide">
+									<div class="knight-level__box">
+										<p class="knight-level__title">4 уровень</p>
+
+										<div class="knight-level__value"><span>x</span>20</div>
+									</div>
+								</div>
+
+								<div class="knight-level__slide swiper-slide">
+									<div class="knight-level__box">
+										<p class="knight-level__title">5 уровень</p>
+
+										<div class="knight-level__value"><span>x</span>30</div>
+									</div>
+								</div>
+
+								<div class="knight-level__slide swiper-slide">
+									<div class="knight-level__box">
+										<p class="knight-level__title">6 уровень</p>
+
+										<div class="knight-level__value"><span>x</span>50</div>
+									</div>
+								</div>
+
+								<div class="knight-level__slide swiper-slide">
+									<div class="knight-level__box">
+										<p class="knight-level__title">7 уровень</p>
+
+										<div class="knight-level__value"><span>x</span>70</div>
+									</div>
+								</div>
+
+								<div class="knight-level__slide swiper-slide">
+									<div class="knight-level__box">
+										<p class="knight-level__title">8 уровень</p>
+
+										<div class="knight-maxlevel__value"><span>x</span>100</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+	</div>
+
+
+	<div id="popup-knight__princess" aria-hidden="true" class="popup-knight__princess popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-knight__princess-content">
+
+				<div class="popup__text popup-knight__body">
+					<div class="popup-knight__princess-top">
+						<picture><source srcset="img/knight-game__page/popup-knight__deco-1.webp" type="image/webp"><img class="knight-game__popup-deco knight-game__popup-deco--1" width="75" height="auto" src="img/knight-game__page/popup-knight__deco-1.png" alt="Image"></picture>
+						<h2 class="knight-game__popup-title">Вы спасли принцессу</h2>
+						<picture><source srcset="img/knight-game__page/popup-knight__deco-1.webp" type="image/webp"><img class="knight-game__popup-deco knight-game__popup-deco--1" width="75" height="auto" src="img/knight-game__page/popup-knight__deco-1.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__princess-img">
+						<picture><source srcset="img/knight-game__page/popup-princess-img.webp" type="image/webp"><img src="img/knight-game__page/popup-princess-img.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__info-block">
+						<div class="knight-game__info-value knight-game__info-value--princess">
+							<span>x</span>5
+						</div>
+						<p class="knight-game__info-text">Коэффициент увеличился</p>
+					</div>
+
+					<div class="knight-game__info-controls">
+						<a class="knight-game__info-btn btn btn__accent-2 popup-knight__btn-gray popup-knight__popup-close" href="#">
+							Забрать 200
+							<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+						</a>
+
+						<a class="knight-game__info-btn btn btn__accent-2 popup-knight__popup-close" href="#">
+							Играть дальше
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-knight__dog" aria-hidden="true" class="popup-knight__dog popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-knight__princess-content">
+
+				<div class="popup__text popup-knight__body">
+					<div class="popup-knight__princess-top">
+						<picture><source srcset="img/knight-game__page/popup-knight__deco-2.webp" type="image/webp"><img class="knight-game__popup-deco knight-game__popup-deco--1" width="75" height="auto" src="img/knight-game__page/popup-knight__deco-2.png" alt="Image"></picture>
+						<h2 class="knight-game__popup-title knight-game__popup-title--red">Поражение</h2>
+						<picture><source srcset="img/knight-game__page/popup-knight__deco-2.webp" type="image/webp"><img class="knight-game__popup-deco knight-game__popup-deco--1" width="75" height="auto" src="img/knight-game__page/popup-knight__deco-2.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__princess-img">
+						<picture><source srcset="img/knight-game__page/popup-dog-img.webp" type="image/webp"><img src="img/knight-game__page/popup-dog-img.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__info-block">
+						<div class="knight-game__info-value knight-game__info-value--princess knight-game__info-value--red">
+							-200
+							<img src="img/common/mint.svg" width="48" height="48" alt="Image">
+						</div>
+
+						<p class="knight-game__info-text">Вы попали на собаку</p>
+					</div>
+
+					<div class="knight-game__info-controls">
+						<a class="knight-game__info-btn btn btn__accent-2 popup-knight__btn-gray popup-knight__popup-close" href="#">
+							Закрыть
+						</a>
+
+						<a class="knight-game__info-btn btn btn__accent-2" href="knight-game-page.html">
+							Попробовать еще
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-knight__prise" aria-hidden="true" class="popup-knight__prise popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-knight__princess-content">
+
+				<div class="popup__text popup-knight__body">
+					<div class="popup-knight__princess-top">
+						<picture><source srcset="img/knight-game__page/popup-knight__deco-3.webp" type="image/webp"><img class="knight-game__popup-deco knight-game__popup-deco--1" width="75" height="auto" src="img/knight-game__page/popup-knight__deco-3.png" alt="Image"></picture>
+						<h2 class="knight-game__popup-title knight-game__popup-title--green">Поздравляем!</h2>
+						<picture><source srcset="img/knight-game__page/popup-knight__deco-3.webp" type="image/webp"><img class="knight-game__popup-deco knight-game__popup-deco--1" width="75" height="auto" src="img/knight-game__page/popup-knight__deco-3.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__princess-img">
+						<picture><source srcset="img/knight-game__page/popup-prise-img.webp" type="image/webp"><img src="img/knight-game__page/popup-prise-img.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__info-block">
+						<div class="knight-game__info-value knight-game__info-value--princess knight-game__info-value--green">
+							+200
+							<img src="img/common/mint.svg" width="48" height="48" alt="Image">
+						</div>
+
+						<p class="knight-game__info-text">Вы забрали сокровища!</p>
+					</div>
+
+					<div class="knight-game__info-controls">
+						<a class="knight-game__info-btn btn btn__accent-2 popup-knight__popup-close" href="#">
+							Отлично
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// -- door-princess ----------------------------------------------
+		let doorPrincess = document.querySelectorAll(".knight-game__door-princess");
+		let popupDelay1 = document.querySelector('.popup-knight__princess');
+		let popupDelayWrapper1 = document.querySelector('html');
+		let popupDelayBtnClose1 = document.querySelectorAll('.popup-knight__popup-close');
+
+		doorPrincess.forEach(item => {
+			item.addEventListener('click', function(e) {
+				item.classList.add('active')
+
+				setTimeout(popupKnight1, 1500);
+			})
+		});
+
+		function popupKnight1() {
+			popupDelay1.classList.add('popup_show');
+			popupDelayWrapper1.classList.add('popup-show');
+			popupDelayWrapper1.classList.add('lock');
+		}
+
+		if (popupDelayBtnClose1) {
+			popupDelayBtnClose1.forEach(item => {
+				item.addEventListener('click', function(e) {
+					popupDelay1.classList.remove('popup_show');
+					popupDelayWrapper1.classList.remove('popup-show');
+					popupDelayWrapper1.classList.remove('lock');
+				})
+			});
+		}
+		// -- /door-princess ----------------------------------------------
+	</script>
+
+	<script>
+		// -- door-dog ----------------------------------------------
+		let doorDog = document.querySelectorAll(".knight-game__door-dog");
+		let popupDelay2 = document.querySelector('.popup-knight__dog');
+		let popupDelayWrapper2 = document.querySelector('html');
+		let popupDelayBtnClose2 = document.querySelectorAll('.popup-knight__popup-close');
+
+		doorDog.forEach(item => {
+			item.addEventListener('click', function(e) {
+				item.classList.add('active')
+
+				setTimeout(popupKnight2, 1500);
+			})
+		});
+
+		function popupKnight2() {
+			popupDelay2.classList.add('popup_show');
+			popupDelayWrapper2.classList.add('popup-show');
+			popupDelayWrapper2.classList.add('lock');
+		}
+
+		if (popupDelayBtnClose2) {
+			popupDelayBtnClose2.forEach(item => {
+				item.addEventListener('click', function(e) {
+					popupDelay2.classList.remove('popup_show');
+					popupDelayWrapper2.classList.remove('popup-show');
+					popupDelayWrapper2.classList.remove('lock');
+				})
+			});
+		}
+		// -- /door-dog ----------------------------------------------
+	</script>
+
+	<script>
+		// -- door-prise ----------------------------------------------
+		let doorPrise = document.querySelectorAll(".knight-game__door-prise");
+		let popupDelay3 = document.querySelector('.popup-knight__prise');
+		let popupDelayWrapper3 = document.querySelector('html');
+		let popupDelayBtnClose3 = document.querySelectorAll('.popup-knight__popup-close');
+
+		doorPrise.forEach(item => {
+			item.addEventListener('click', function(e) {
+				item.classList.add('active')
+
+				setTimeout(popupKnight3, 1500);
+			})
+		});
+
+		function popupKnight3() {
+			popupDelay3.classList.add('popup_show');
+			popupDelayWrapper3.classList.add('popup-show');
+			popupDelayWrapper3.classList.add('lock');
+		}
+
+		if (popupDelayBtnClose3) {
+			popupDelayBtnClose3.forEach(item => {
+				item.addEventListener('click', function(e) {
+					popupDelay3.classList.remove('popup_show');
+					popupDelayWrapper3.classList.remove('popup-show');
+					popupDelayWrapper3.classList.remove('lock');
+				})
+			});
+		}
+		// -- /door-prise ----------------------------------------------
+	</script>
+
+	<script src="js/app.min.js?_v=20231126042254"></script>
+</body>
+
+</html>
