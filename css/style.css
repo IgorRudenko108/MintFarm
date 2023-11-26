@@ -19058,12 +19058,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (min-width: 991.98px) and (max-height: 900px) {
-  .menu__body {
-    margin-top: 77px;
-  }
-}
-
 @media (min-width: 991.98px) {
   .exchange__inner .tabs__content {
     width: 100%;
@@ -29916,6 +29910,12 @@ button.swiper-pagination-bullet {
       font-size: calc(1.25rem + 0.75 * (100vw - 35.99875rem) / 26);
     }
 }
+}
+
+@media (min-width: 991.98px) and (max-height: 900px) and (max-width: 1440px) {
+  .menu__body {
+    margin-top: 77px;
+  }
 }
 
 @media (max-height: 767.98px) and (max-width: 1366px) and (min-width: 991.98px) {
