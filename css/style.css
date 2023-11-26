@@ -12828,7 +12828,6 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   max-width: 100%;
   background-color: transparent;
   border-radius: 0;
-  margin-bottom: auto;
 }
 
 .knight-game__info-value--white {
@@ -12885,7 +12884,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .saper-popup__prise-title {
-  margin-top: 20px;
+  margin-top: -5%;
 }
 
 .popup-saper-success__body {
@@ -15815,14 +15814,15 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .knight-game__princess {
   position: absolute;
   bottom: 0;
+  left: 50%;
   max-width: 100%;
   margin-top: auto;
   z-index: 3;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  -webkit-transform: scale(0) translateX(-50%);
+      -ms-transform: scale(0) translateX(-50%);
+          transform: scale(0) translateX(-50%);
   width: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -15831,14 +15831,15 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .knight-game__dog {
   position: absolute;
   bottom: 0;
+  left: 50%;
   max-width: 100%;
   margin-top: auto;
   z-index: 3;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  -webkit-transform: scale(0) translateX(-50%);
+      -ms-transform: scale(0) translateX(-50%);
+          transform: scale(0) translateX(-50%);
   width: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -15847,14 +15848,15 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .knight-game__mint-box {
   position: absolute;
   bottom: 0;
+  left: 50%;
   max-width: 100%;
   margin-top: auto;
   z-index: 3;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  -webkit-transform: scale(0) translateX(-50%);
+      -ms-transform: scale(0) translateX(-50%);
+          transform: scale(0) translateX(-50%);
   width: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -15927,9 +15929,9 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   width: 97%;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-transform: skewY(2deg) scale(0.98);
-      -ms-transform: skewY(2deg) scale(0.98);
-          transform: skewY(2deg) scale(0.98);
+  -webkit-transform: skewY(2deg) scale(0.98) translateX(-50%);
+      -ms-transform: skewY(2deg) scale(0.98) translateX(-50%);
+          transform: skewY(2deg) scale(0.98) translateX(-50%);
 }
 
 .knight-game__door-item.active {
@@ -15956,9 +15958,10 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 .knight-game__door-item.active .knight-game__princess {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  left: 50%;
+  -webkit-transform: scale(1) translateX(-50%);
+      -ms-transform: scale(1) translateX(-50%);
+          transform: scale(1) translateX(-50%);
   width: auto;
   -webkit-transition: all 0.6s linear;
   transition: all 0.6s linear;
@@ -15972,6 +15975,12 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   will-change: transform;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .knight-game__wall-art {
@@ -21908,6 +21917,10 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .saper-popup__prise-title {
+    margin-top: 15px;
   }
 
   .exchange__page {
