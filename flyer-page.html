@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scrollbar-initial">
 
 <head>
-	<title>Home</title>
+	<title>Flyer</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper flyer__wrapper">
 		<header class="header">
 			<div class="header__container">
 				<div class="header__inner">
@@ -279,211 +279,151 @@
 			</div>
 		</header>
 
-		<main class="page landing__page page-color">
-			<section class="main-intro mb">
-				<div class="main-intro__container">
-					<div class="main-intro__inner">
+		<main class="page flyer__page">
+			<button class="flyer__music--mobile knight__music--mobile">
+				<img src="img/saper__page/icon-3.svg" width="14" height="14" alt="Icon">
+			</button>
 
-						<div class="main-intro__content">
-							<h1 class="main-intro__title">Добро пожаловать в <span>MintFarm!</span></h1>
+			<div class="flyer__content-top">
+				<div class="flyer__content-controls knight__content-controls">
+					<a class="flyer__content-controls-btn knight__content-controls-btn" data-popup="#popup-flyer-info-1" href="#">
+						<img src="img/saper__page/icon-1.svg" width="20" height="20" alt="Icon">
+					</a>
 
-							<p class="main-intro__text text" data-da=".main-intro__inner,767.98,4">
-								Присоединяйся к нашей <br>
-								захватывающей кошачьей семье <br>
-								и открой путь к настоящим наградам!
-							</p>
-						</div>
+					<a class="flyer__content-controls-btn knight__content-controls-btn" data-popup="#popup-saper-stat" href="#">
+						<img src="img/saper__page/icon-2.svg" width="20" height="20" alt="Icon">
+					</a>
 
-						<div class="main-intro__picture">
-							<picture><source srcset="img/landing__page/section__landing-intro/main-image.webp" type="image/webp"><img src="img/landing__page/section__landing-intro/main-image.jpg" alt="Main image"></picture>
-						</div>
-
-						<a class="main-intro__btn" href="cabinet-page.html">
-							<svg width="81" height="81">
-								<use xlink:href="img/icons/icons.svg#cat"></use>
-							</svg>
-							<span>НАЧАТЬ ИГРУ</span>
-						</a>
-					</div>
+					<a class="flyer__content-controls-btn knight__content-controls-btn knight__music--pc" href="#">
+						<img src="img/saper__page/icon-3.svg" width="20" height="20" alt="Icon">
+					</a>
 				</div>
-			</section>
-			<section class="main-steps mb">
-				<div class="main-steps__container">
-					<div class="main-steps__inner">
-						<h2 class="main-steps__title title ">Выращивай! Зарабатывай! Обменивай! Забирай!</h2>
 
-						<div class="main-steps__list">
-							<a class="main-steps__item main-steps__item--big-vertical" href="#">
-								<picture><source data-srcset="img/landing__page/section__landing-steps/step-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="main-steps__img" data-src="img/landing__page/section__landing-steps/step-1.jpg" alt="Img"></picture>
-
-								<div class="main-steps__top">
-									<span class="main-steps__top-label">Шаг 1</span>
-									<span class="main-steps__top-deco">
-										<img src="img/landing__page/section__landing-steps/deco-arrow.svg" width="14" height="24" alt="Arrow">
-									</span>
-								</div>
-
-								<h3 class="main-steps__item-title">Ферма <br> кошачьей мяты:</h3>
-								<p class="main-steps__item-text">Здесь растет мята, необходимая для твоего успеха.</p>
-							</a>
-
-							<a class="main-steps__item main-steps__item--big-horizontal " href="#">
-
-								<div class="main-steps__top">
-									<span class="main-steps__top-label">Шаг 2</span>
-									<span class="main-steps__top-deco">
-										<img src="img/landing__page/section__landing-steps/deco-arrow.svg" width="14" height="24" alt="Arrow">
-									</span>
-								</div>
-
-								<div class="main-steps__body">
-									<div class="main-steps__content">
-										<h3 class="main-steps__content-title">Мини-игры:</h3>
-										<p class="main-steps__content-text">Участвуй, чтобы заработать мяту и увеличить счет.</p>
-									</div>
-
-									<div class="main-steps__image-box">
-										<picture><source srcset="img/landing__page/section__landing-steps/step-2.webp" type="image/webp"><img class="main-steps__image" src="img/landing__page/section__landing-steps/step-2.png" alt="Computer"></picture>
-									</div>
-								</div>
-
-							</a>
-
-							<a class="main-steps__item main-steps__item--small " href="present-page">
-
-								<div class="main-steps__top--small">
-									3. Обмен мяты на голду
-								</div>
-
-								<picture><source srcset="img/landing__page/section__landing-steps/step-3.webp" type="image/webp"><img class="main-steps__img-3" src="img/landing__page/section__landing-steps/step-3.png" alt="Image"></picture>
-
-								<div class="main-steps__bottom">
-									<div class="ain-steps__bottom-text">
-										Собирай мяту, чтобы получить доступ к эксклюзивным подаркам.
-									</div>
-								</div>
-							</a>
-
-							<a class="main-steps__item main-steps__item--small " href="present-page-user.html">
-
-								<div class="main-steps__top--small">
-									4. Забирайте подарки
-								</div>
-
-								<picture><source srcset="img/landing__page/section__landing-steps/step-4.webp" type="image/webp"><img class="main-steps__small-bg" src="img/landing__page/section__landing-steps/step-4.jpg" alt="Image"></picture>
-
-								<div class="main-steps__bottom main-steps__bottom--white">
-									<h3 class="main-steps__bottom-title">Маркет</h3>
-									<div class="main-steps__bottom-text">
-										Заработав достаточно голды, получи увлекательные подарки.
-									</div>
-								</div>
-							</a>
-						</div>
-
-						<a class="main-steps__btn btn btn__accent" href="#">Начать играть</a>
-					</div>
+				<div class="flyer__title-box">
+					<picture><source srcset="img/flyer__page/flyer-title.webp" type="image/webp"><img class="flyer__cat" src="img/flyer__page/flyer-title.png" width="292" height="182" alt="Image"></picture>
 				</div>
-			</section>
-			<section class="main-game">
-				<div class="main-game__container">
-					<div class="main-game__inner">
-						<h2 class="main-game__title title ">Другие игры</h2>
-
-						<div class="main-game__body">
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--1,479.98,1">Сапёр</h3>
-									<p class="main-game__card-text">
-										Исследуй поле в поисках клубков, чтобы увеличить свой запас мяты. Однако будь осторожен: если наткнешься на клетку с собачкой, она может испортить все твои планы.
-										Удачи в раскопках, кот-минер!"
-									</p>
-
-									<a class="main-game__card-link" href="saper-page.html">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--1">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-1.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-1.png" alt="Cat"></picture>
-								</div>
-							</div>
-
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--2,479.98,1">Стрелок</h3>
-									<p class="main-game__card-text">
-										В этой игре твоя стратегия - твоё оружие. Интуитивно выбирай точку для удара и место для блокировки. Здесь каждый ход может решить твою судьбу. Готов к напряженной дуэли интуиций?"
-									</p>
-
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--2">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-2.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-2.png" alt="Cat"></picture>
-								</div>
-							</div>
-
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--3,479.98,1">Рыцарь</h3>
-									<p class="main-game__card-text">
-										В этой игре предстоит выбирать правильные ходы, чтобы освободить принцессу из лап Ястреба. Однако будь бдителен - один неправильный ход и ты окажешься лицом к лицу с злодеем! Сможешь ли ты пройти этот тест и спасти принцессу?"
-									</p>
-
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--3">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-3.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-3.png" alt="Cat"></picture>
-								</div>
-							</div>
-
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--4,479.98,1">Летун</h3>
-									<p class="main-game__card-text">
-										Готов к захватывающему прыжку с котом на парашюте? Нажмите кнопку вовремя, чтобы забрать свой выигрыш набранный котом в полете. Не упустите момент, ведь у тебя всего лишь 9 жизней"
-									</p>
-
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--4">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-4.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-4.png" alt="Cat"></picture>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</main>
-
-		<footer class="footer">
-			<div class="footer__container">
-				<h2 class="footer__text">Footer</h2>
 			</div>
-		</footer>
+
+			<div class="flyer__body">
+				<a class="flyer-main__btn knight-main__btn" href="#">
+					<svg width="63" height="63">
+						<use xlink:href="img/icons/icons.svg#cat"></use>
+					</svg>
+					<span>НАЧАТЬ ИГРУ</span>
+				</a>
+			</div>
+
+			<div class="flyer__bottom">
+				<div class="flyer__bottom-buttons">
+					<div class="flyer__counter saper__counter counter" data-counter>
+						<div class="counter__button counter__button_minus">-</div>
+						<div class="counter__input-box">
+							<div class="saper__item-title">Ставка</div>
+
+							<div class="counter__bottom">
+								<input type="text" placeholder="" value="10">
+								<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+							</div>
+						</div>
+						<div class="counter__button counter__button_plus">+</div>
+					</div>
+
+					<button class="flyer__bet-btn">
+						+10
+						<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+					</button>
+
+					<button class="flyer__bet-btn">
+						+20
+						<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+					</button>
+
+					<button class="flyer__bet-btn">
+						+40
+						<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+					</button>
+
+					<button class="flyer__bet-btn">
+						+50
+						<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+					</button>
+				</div>
+
+				<div class="flyer__bottom-cards">
+					<button class="flyer__cards-item">
+						<picture><source srcset="img/flyer__page/backpack.webp" type="image/webp"><img class="flyer__cards-img" src="img/flyer__page/backpack.png" width="38" height="38" alt="Image"></picture>
+						<p class="flyer__cards-text">
+							Запасной парашют
+						</p>
+					</button>
+
+					<button class="flyer__cards-item">
+						<picture><source srcset="img/flyer__page/backpack.webp" type="image/webp"><img class="flyer__cards-img" src="img/flyer__page/backpack.png" width="38" height="38" alt="Image"></picture>
+						<p class="flyer__cards-text">
+							Запасной парашют
+						</p>
+					</button>
+
+					<button class="flyer__cards-item">
+						<picture><source srcset="img/flyer__page/backpack.webp" type="image/webp"><img class="flyer__cards-img" src="img/flyer__page/backpack.png" width="38" height="38" alt="Image"></picture>
+						<p class="flyer__cards-text">
+							Запасной парашют
+						</p>
+					</button>
+				</div>
+			</div>
+
+			<div class="knight-game__bottom-controls">
+				<button data-popup="#popup-knight-info-1" class="knight__bottom-controls-btn game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-1.svg" alt="Icon">
+					</div>
+
+					<h3 class="game__button-title">О игре</h3>
+				</button>
+
+				<button class="knight__bottom-controls-btn game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-4.svg" alt="Icon">
+					</div>
+
+					<h3 class="game__button-title">Бустеры</h3>
+				</button>
+
+				<button data-popup="#popup-saper-stat" class="knight__bottom-controls-btn game__bottom-controls-btn">
+					<div class="game__icon-wrapper">
+						<img class="game__button-icon" src="img/saper__page/icon-2.svg" alt="Icon">
+					</div>
+
+					<h3 class="game__button-title">Статистика</h3>
+				</button>
+
+			</div>
+		</main>
 	</div>
+
+
+	<script>
+		// -- knight__music--pc ----------------------------------------------
+		const knightMuteBtn1 = document.querySelector('.knight__music--pc')
+
+		if (knightMuteBtn1) {
+			knightMuteBtn1.addEventListener('click', (e) => {
+				knightMuteBtn1.classList.toggle('mute');
+			})
+		}
+		// -- /knight__music--pc ----------------------------------------------
+
+		// -- knight__music--mobile ----------------------------------------------
+		const knightMuteBtn2 = document.querySelector('.knight__music--mobile')
+
+		if (knightMuteBtn2) {
+			knightMuteBtn2.addEventListener('click', (e) => {
+				knightMuteBtn2.classList.toggle('mute');
+			})
+		}
+		// -- /knight__music--mobile ----------------------------------------------
+	</script>
 
 	<script src="js/app.min.js?_v=20231129151428"></script>
 </body>
