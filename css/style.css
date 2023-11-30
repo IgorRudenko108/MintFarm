@@ -1654,7 +1654,7 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30px;
           flex: 0 0 30px;
-  z-index: 999;
+  z-index: 153;
   margin-left: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1807,21 +1807,6 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
   border-radius: 0 0 0 10px;
   max-width: 100vw;
   margin-top: -25px;
-  pointer-events: none;
-  overflow-y: auto;
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  /* Hide scrollbar for IE, Edge and Firefox */
-}
-
-.header__menu::-webkit-scrollbar {
-  display: none;
-}
-
-.header__menu {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
 }
 
 .menu-open .header__menu {
@@ -17310,11 +17295,11 @@ body.shooter__body-main {
 }
 
 .knight-level__bonus:active {
-  background-color: #05a743;
+  background-color: #6D87F7;
 }
 
 .knight-level__bonus:focus-visible {
-  background-color: #05a743;
+  background-color: #6D87F7;
 }
 
 .knight-level__item-title {
@@ -17399,6 +17384,7 @@ body.shooter__body-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
 }
 
 .popup-knight__princess-top {
@@ -17416,13 +17402,13 @@ body.shooter__body-main {
 }
 
 .knight-game__popup-title {
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  text-shadow: 0px 0px 6px #FFF;
+  text-shadow: 0px 0px 6px #fff;
   font-family: Raleway;
   font-style: normal;
   font-weight: 900;
-  line-height: 80%;
+  line-height: 100%;
 }
 
 .knight-game__popup-title--red {
@@ -17545,6 +17531,94 @@ body.shooter__body-main {
   min-width: 140px;
 }
 
+.knight-game__energy-img {
+  max-width: 376px;
+  margin-top: 20px;
+}
+
+.knight-game__energy-img img {
+  max-width: 100%;
+}
+
+.knight__battery-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.knight-game__info-controls--center {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  max-width: 500px;
+}
+
+.knight-game__info-controls--center .knight-game__info-btn {
+  width: 100%;
+  padding: 15px;
+}
+
+.knight-game__battery-info-block {
+  margin-top: -5%;
+}
+
+.knight-game__battery-popup-title {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.knight-game__battery-info-text {
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.popup-battery__close {
+  display: none;
+}
+
+.countdown {
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.countdown__dots {
+  color: #6D87F7;
+  margin: 0 5px;
+}
+
+.countdown-time {
+  color: #6D87F7;
+}
+
+.countdown-text {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
 .no-webp .flyer__wrapper{
   background-image: url(../img/flyer__page/flyer-main-bg.jpg); }
 
@@ -17625,6 +17699,7 @@ body.shooter__body-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 10px 0;
 }
 
 .flyer__content-controls {
@@ -17723,10 +17798,13 @@ body.shooter__body-main {
 .flyer__bet-btn {
   -ms-grid-column-span: 1;
   grid-column: span 1;
-  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -17774,6 +17852,25 @@ body.shooter__body-main {
 .flyer__bet-mint {
   width: 16px;
   height: 16px;
+}
+
+.flyer__bet-btn-text {
+  color: #ECECEC;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  display: none;
+}
+
+.flyer__bet-btn-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
 }
 
 .flyer__bottom-cards {
@@ -17850,6 +17947,89 @@ body.shooter__body-main {
   position: static;
   translate: 0 0;
   margin: auto;
+}
+
+.flyer-game__bottom-controls {
+  display: none;
+}
+
+.flyer__bottom-controls-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.flyer__bottom-controls-btn .game__button-title {
+  color: #ECECEC;
+}
+
+.flyer__bottom-controls-btn:hover .game__icon-wrapper {
+  background-color: #FEC037;
+}
+
+.flyer__music--mobile {
+  display: none;
+}
+
+.popup-flyer-info__content {
+  background-color: #5FBCFF;
+}
+
+.popup-flyer-info__content .popup-saper-info__title,
+.popup-flyer-info__content .popup-saper-info__text {
+  color: #fff;
+}
+
+.popup-flyer-info__content .popup-flyer-stat__btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.popup-flyer-info__content .popup-flyer-stat__btn.active {
+  background-color: #fff;
+  color: #5FBCFF;
+}
+
+.popup-flyer-stat__close {
+  background-color: #fff;
+}
+
+.popup-flyer-stat__close svg {
+  fill: #5FBCFF;
+}
+
+.popup-saper-info__link {
+  color: #fff;
+}
+
+.popup-saper-info__link svg {
+  fill: #fff;
+}
+
+.popup-flyer__button {
+  color: #fff;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding: 18px 50px;
+  border-radius: 10px;
+  background: #FEC037;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35px;
+  text-align: center;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 
 /**
@@ -18947,6 +19127,10 @@ button.swiper-pagination-bullet {
 
   .knight-game__info-value--green img {
     width: 3rem;
+  }
+
+  .popup-flyer__button {
+    font-size: 1.25rem;
   }
 }
 
@@ -20052,12 +20236,28 @@ button.swiper-pagination-bullet {
     font-size: 4.125rem;
   }
 
+  .knight-game__battery-popup-title {
+    font-size: 3.75rem;
+  }
+
+  .knight-game__battery-info-text {
+    font-size: 1.5rem;
+  }
+
+  .countdown {
+    font-size: 6.875rem;
+  }
+
   .flyer__page {
     padding-top: 3.125rem;
   }
 
   .flyer__page {
     padding-bottom: 2.5rem;
+  }
+
+  .flyer__cat {
+    width: 18.25rem;
   }
 }
 
@@ -21090,6 +21290,77 @@ button.swiper-pagination-bullet {
 
   .shooter__bottom-item--4 {
     display: none;
+  }
+
+  .flyer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .flyer__bottom-buttons {
+    max-width: 100%;
+    row-gap: 5px;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .flyer__counter {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+
+  .flyer__bet-btn::before {
+    border-radius: 15px;
+  }
+
+  .flyer__bet-btn-text {
+    display: block;
+  }
+
+  .flyer__bet-btn--mobile {
+    display: none;
+  }
+
+  .flyer__bottom-cards {
+    display: none;
+  }
+
+  .flyer-game__bottom-controls {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin: 5px 0 0;
+    width: auto;
+    padding: 6px;
+    z-index: 149;
+    border-radius: 15px;
+  }
+
+  .flyer-game__bottom-controls::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: #02182B;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(122, 106, 158, 0.2);
+            box-shadow: 0px 4px 4px 0px rgba(122, 106, 158, 0.2);
+    border-radius: 15px;
+    z-index: -1;
   }
 }
 
@@ -22809,8 +23080,58 @@ button.swiper-pagination-bullet {
     height: 25px;
   }
 
+  .knight-game__row-content {
+    padding: 0;
+  }
+
   .knight-game__info-block {
     margin-top: -25%;
+  }
+
+  .knight-game__info-btn--mobile-none {
+    display: none;
+  }
+
+  .knight-game__info-controls--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+
+  .knight-game__battery-popup-title {
+    margin-top: 40px;
+  }
+
+  .popup-battery__close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .flyer__content-top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .flyer__content-controls {
+    display: none;
+  }
+
+  .flyer__music--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 71px;
+  }
+
+  .popup-flyer__button {
+    margin: 10px auto 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 
@@ -24487,7 +24808,7 @@ button.swiper-pagination-bullet {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30px;
             flex: 0 0 30px;
-    z-index: 999;
+    z-index: 153;
     margin-left: 37px;
   }
 
@@ -25762,8 +26083,16 @@ button.swiper-pagination-bullet {
     margin-bottom: 15px;
   }
 
-  .flyer__content-top {
-    display: none;
+  .knight-game__energy-img {
+    margin: 20px 50px 0;
+  }
+
+  .knight__battery-box {
+    margin-bottom: 25px;
+  }
+
+  .popup-flyer__button {
+    padding: 16px;
   }
 }
 
@@ -26259,6 +26588,26 @@ button.swiper-pagination-bullet {
 
   .knight-game__info-value--green img {
     width: 2.25rem;
+  }
+
+  .knight-game__battery-popup-title {
+    font-size: 2rem;
+  }
+
+  .knight-game__battery-info-text {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    font-size: 3.4375rem;
+  }
+
+  .flyer__cat {
+    width: 13.0625rem;
+  }
+
+  .popup-flyer__button {
+    font-size: 1rem;
   }
 }
 
@@ -27307,6 +27656,10 @@ button.swiper-pagination-bullet {
     margin: 15px auto;
   }
 
+  .knight-level__slide {
+    max-width: none;
+  }
+
   .knight-game__mobile-max {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -28236,6 +28589,54 @@ button.swiper-pagination-bullet {
       font-size: calc(3rem + 1.125 * (100vw - 35.99875rem) / 54.00125);
     }
 }
+
+@supports (font-size: clamp( 2rem , 0.8334008472rem  +  3.2406657253vw , 3.75rem )) {
+    .knight-game__battery-popup-title {
+      font-size: clamp( 2rem , 0.8334008472rem  +  3.2406657253vw , 3.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 2rem , 0.8334008472rem  +  3.2406657253vw , 3.75rem )) {
+    .knight-game__battery-popup-title {
+      font-size: calc(2rem + 1.75 * (100vw - 35.99875rem) / 54.00125);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.6666859563rem  +  0.925904493vw , 1.5rem )) {
+    .knight-game__battery-info-text {
+      font-size: clamp( 1rem , 0.6666859563rem  +  0.925904493vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.6666859563rem  +  0.925904493vw , 1.5rem )) {
+    .knight-game__battery-info-text {
+      font-size: calc(1rem + 0.5 * (100vw - 35.99875rem) / 54.00125);
+    }
+}
+
+@supports (font-size: clamp( 3.4375rem , 1.1459659499rem  +  6.365593389vw , 6.875rem )) {
+    .countdown {
+      font-size: clamp( 3.4375rem , 1.1459659499rem  +  6.365593389vw , 6.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 3.4375rem , 1.1459659499rem  +  6.365593389vw , 6.875rem )) {
+    .countdown {
+      font-size: calc(3.4375rem + 3.4375 * (100vw - 35.99875rem) / 54.00125);
+    }
+}
+
+@supports (width: clamp( 13.0625rem , 9.6043667971rem  +  9.6062591144vw , 18.25rem )) {
+    .flyer__cat {
+      width: clamp( 13.0625rem , 9.6043667971rem  +  9.6062591144vw , 18.25rem );
+    }
+}
+
+@supports not (width: clamp( 13.0625rem , 9.6043667971rem  +  9.6062591144vw , 18.25rem )) {
+    .flyer__cat {
+      width: calc(13.0625rem + 5.1875 * (100vw - 35.99875rem) / 54.00125);
+    }
+}
 }
 
 @media (min-width: 35.99875em) and (max-width: 74.99875em) {
@@ -28428,6 +28829,18 @@ button.swiper-pagination-bullet {
 @supports not (width: clamp( 2.25rem , 1.5577163462rem  +  1.9230769231vw , 3rem )) {
     .knight-game__info-value--green img {
       width: calc(2.25rem + 0.75 * (100vw - 35.99875rem) / 39);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.7692387821rem  +  0.641025641vw , 1.25rem )) {
+    .popup-flyer__button {
+      font-size: clamp( 1rem , 0.7692387821rem  +  0.641025641vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7692387821rem  +  0.641025641vw , 1.25rem )) {
+    .popup-flyer__button {
+      font-size: calc(1rem + 0.25 * (100vw - 35.99875rem) / 39);
     }
 }
 }
@@ -31576,15 +31989,15 @@ button.swiper-pagination-bullet {
     transition: background-color 0.1 0.5s ease-in-out;
   }
 
-  .knight__bottom-controls-btn:hover:hover .game__button-title {
+  .knight__bottom-controls-btn:hover .game__button-title {
     color: #FEC037;
   }
 
-  .knight__bottom-controls-btn:hover:hover .game__icon-wrapper {
+  .knight__bottom-controls-btn:hover .game__icon-wrapper {
     background-color: #FEC037;
   }
 
-  .knight__bottom-controls-btn:hover:hover svg {
+  .knight__bottom-controls-btn:hover svg {
     fill: #1C1C1C;
   }
 
@@ -31623,6 +32036,25 @@ button.swiper-pagination-bullet {
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
+  }
+
+  .flyer__bottom-controls-btn:hover .game__button-title {
+    color: #FEC037;
+  }
+
+  .flyer__bottom-controls-btn:hover svg {
+    fill: #1C1C1C;
+  }
+
+  .popup-flyer-info__content .popup-flyer-stat__btn:hover {
+    background-color: #fff;
+    color: #5FBCFF;
+  }
+
+  .popup-flyer__button:hover {
+    background: #FFB000;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
   }
 }
 

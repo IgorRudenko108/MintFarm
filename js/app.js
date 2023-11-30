@@ -5747,7 +5747,7 @@
             if (document.querySelector(".knight-level__slider")) new Swiper(".knight-level__slider", {
                 observer: true,
                 observeParents: true,
-                slidesPerView: 3.5,
+                slidesPerView: 3,
                 spaceBetween: 10,
                 speed: 800,
                 centeredSlides: false,
@@ -5755,8 +5755,11 @@
                 grabCursor: true,
                 breakpoints: {
                     320: {
-                        slidesPerView: 3.5,
+                        slidesPerView: 3,
                         centeredSlides: false
+                    },
+                    479.98: {
+                        slidesPerView: 3.5
                     },
                     575.98: {
                         slidesPerView: 4
