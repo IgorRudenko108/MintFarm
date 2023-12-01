@@ -12139,6 +12139,11 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.popup-saper-stat__table tr {
+  border-bottom: 1px solid #9E9E9E;
 }
 
 .popup-saper-stat__table th {
@@ -12149,6 +12154,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   font-weight: 800;
   line-height: normal;
   text-align: left;
+  padding: 5px;
 }
 
 .popup-saper-stat__table td {
@@ -12156,20 +12162,30 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
-  padding: 14px 10px;
-  border-bottom: 1px solid #9E9E9E;
+  padding: 14px 5px;
 }
 
-.popup-saper-stat__table td:first-child {
-  padding-left: 0;
-}
-
-.popup-saper-stat__table td:last-child {
-  padding-right: 0;
-}
-
-.popup-saper-stat__table--mobile {
+.popup-saper-stat__table td .popup-saper-stat__mobile--th {
   display: none;
+}
+
+.popup-saper-stat__table td img {
+  width: 13;
+  height: 13px;
+}
+
+.popup-saper-stat__table .popup-saper-stat__mobile--td {
+  display: none;
+}
+
+.popup-saper-stat__stavka-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
 }
 
 .popup-saper-stat__stavka {
@@ -17626,6 +17642,30 @@ body.shooter__body-main {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.no-webp .flyer__wrapper::before{
+  background-image: url(../img/flyer__page/sky-layer.png); }
+
+.flyer__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: repeat-y;
+  opacity: 0;
+}
+
+.flyer__header {
+  z-index: 3;
 }
 
 .flyer__page {
@@ -17644,6 +17684,7 @@ body.shooter__body-main {
   width: 100%;
   padding: 0 10px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .flyer__container {
@@ -18030,6 +18071,101 @@ body.shooter__body-main {
   text-align: center;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
+}
+
+.flyer__plane {
+  top: 90px;
+  right: -50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+
+.flyer__personage {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(180deg) scale(0);
+      -ms-transform: translateX(-50%) rotate(180deg) scale(0);
+          transform: translateX(-50%) rotate(180deg) scale(0);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.flyer__personage-img {
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.flyer__wrapper.flyer-started .flyer__content-controls,
+.flyer__wrapper.flyer-started .flyer__bottom-buttons {
+  opacity: 0;
+  visibility: hidden;
+  translate: -100%;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.flyer__wrapper.flyer-started .flyer__cat,
+.flyer__wrapper.flyer-started .flyer__bottom-cards {
+  opacity: 0;
+  visibility: hidden;
+  translate: 100%;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.flyer__wrapper.flyer-started .flyer-main__btn {
+  scale: 3;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.flyer__wrapper.flyer-started::before {
+  opacity: 1;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.flyer__wrapper.flyer-started .flyer-game__bottom-controls {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.flyer__wrapper.flyer-started .flyer__music--mobile {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.flyer__wrapper.flyer-started .flyer__plane {
+  right: 100%;
+  opacity: 1;
+  -webkit-transition: right 6s linear, opacity 0.8s linear;
+  transition: right 6s linear, opacity 0.8s linear;
+}
+
+.flyer__wrapper.flyer-started .flyer__personage {
+  top: 50%;
+  -webkit-transform: translateX(-50%) rotate(180deg) scale(1);
+      -ms-transform: translateX(-50%) rotate(180deg) scale(1);
+          transform: translateX(-50%) rotate(180deg) scale(1);
+  -webkit-transition: top 4s linear 3s, scale 2s linear 3s;
+  transition: top 4s linear 3s, scale 2s linear 3s;
 }
 
 /**
@@ -19176,6 +19312,24 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (min-width: 575.98px) {
+  .popup-saper-stat__table th:first-child {
+    padding-left: 0;
+  }
+
+  .popup-saper-stat__table th:last-child {
+    padding-right: 0;
+  }
+
+  .popup-saper-stat__table td:first-child {
+    padding-left: 0;
+  }
+
+  .popup-saper-stat__table td:last-child {
+    padding-right: 0;
+  }
+}
+
 @media (max-height: 900px) and (min-width: 575.98px) {
   .shooter__inner {
     height: calc(100dvh - 61px);
@@ -20259,6 +20413,14 @@ button.swiper-pagination-bullet {
   .flyer__cat {
     width: 18.25rem;
   }
+
+  .flyer__plane-img {
+    width: 28.125rem;
+  }
+
+  .flyer__personage {
+    height: 9.375rem;
+  }
 }
 
 @media (max-height: 900px) and (min-width: 1440px) {
@@ -21292,6 +21454,12 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .flyer__content-top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .flyer__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -21300,6 +21468,10 @@ button.swiper-pagination-bullet {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+  }
+
+  .flyer__content-controls {
+    display: none;
   }
 
   .flyer__bottom-buttons {
@@ -21361,6 +21533,48 @@ button.swiper-pagination-bullet {
             box-shadow: 0px 4px 4px 0px rgba(122, 106, 158, 0.2);
     border-radius: 15px;
     z-index: -1;
+  }
+
+  .flyer__music--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    background-color: #282828;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    right: 10px;
+    top: 71px;
+    width: 45px;
+    height: 45px;
+    z-index: 1;
+  }
+
+  .flyer__music--mobile img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .flyer__music--mobile::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+        -ms-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg);
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    display: none;
   }
 }
 
@@ -22348,10 +22562,63 @@ button.swiper-pagination-bullet {
   }
 
   .popup-saper-stat__table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .popup-saper-stat__table thead {
     display: none;
   }
 
-  .popup-saper-stat__table--mobile {
+  .popup-saper-stat__table tbody {
+    width: 100%;
+  }
+
+  .popup-saper-stat__table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 5px;
+  }
+
+  .popup-saper-stat__table td {
+    border-bottom: none;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+
+  .popup-saper-stat__table td .popup-saper-stat__mobile--th {
+    display: inline-block;
+    color: #000;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .popup-saper-stat__table td img {
+    width: 11px;
+    height: 11px;
+  }
+
+  .popup-saper-stat__table .popup-saper-stat__mobile--td {
     display: block;
   }
 
@@ -23107,23 +23374,6 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .flyer__content-top {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .flyer__content-controls {
-    display: none;
-  }
-
-  .flyer__music--mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 71px;
   }
 
   .popup-flyer__button {
@@ -26609,6 +26859,14 @@ button.swiper-pagination-bullet {
   .popup-flyer__button {
     font-size: 1rem;
   }
+
+  .flyer__plane-img {
+    width: 15.625rem;
+  }
+
+  .flyer__personage {
+    height: 7.5rem;
+  }
 }
 
 @media (max-width: 29.99875em) {
@@ -28635,6 +28893,30 @@ button.swiper-pagination-bullet {
 @supports not (width: clamp( 13.0625rem , 9.6043667971rem  +  9.6062591144vw , 18.25rem )) {
     .flyer__cat {
       width: calc(13.0625rem + 5.1875 * (100vw - 35.99875rem) / 54.00125);
+    }
+}
+
+@supports (width: clamp( 15.625rem , 7.2921489086rem  +  23.1476123238vw , 28.125rem )) {
+    .flyer__plane-img {
+      width: clamp( 15.625rem , 7.2921489086rem  +  23.1476123238vw , 28.125rem );
+    }
+}
+
+@supports not (width: clamp( 15.625rem , 7.2921489086rem  +  23.1476123238vw , 28.125rem )) {
+    .flyer__plane-img {
+      width: calc(15.625rem + 12.5 * (100vw - 35.99875rem) / 54.00125);
+    }
+}
+
+@supports (height: clamp( 7.5rem , 6.2500723363rem  +  3.4721418486vw , 9.375rem )) {
+    .flyer__personage {
+      height: clamp( 7.5rem , 6.2500723363rem  +  3.4721418486vw , 9.375rem );
+    }
+}
+
+@supports not (height: clamp( 7.5rem , 6.2500723363rem  +  3.4721418486vw , 9.375rem )) {
+    .flyer__personage {
+      height: calc(7.5rem + 1.875 * (100vw - 35.99875rem) / 54.00125);
     }
 }
 }
@@ -32334,6 +32616,8 @@ button.swiper-pagination-bullet {
 .webp .knight-game__stairs{ background-image: url(../img/knight-game__page/stairs.webp); }
 
 .webp .flyer__wrapper{ background-image: url(../img/flyer__page/flyer-main-bg.webp); }
+
+.webp .flyer__wrapper::before{ background-image: url(../img/flyer__page/sky-layer.webp); }
 
 @media (max-width: 1199.98px){
 
