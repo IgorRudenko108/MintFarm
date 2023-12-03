@@ -18104,7 +18104,6 @@ body.shooter__body-main {
 }
 
 .flyer__personage-img {
-  max-width: 100%;
   max-height: 100%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -21351,7 +21350,8 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 1440px) and (max-height: 768px) {
-  .popup__fly {
+  .popup__fly,
+  .popup__fly--fail {
     padding-top: 7vh;
   }
 
@@ -21397,6 +21397,10 @@ button.swiper-pagination-bullet {
 
   .flyer__plane-img {
     width: 250px;
+  }
+
+  .flyer__height-item {
+    padding: 5px 15px;
   }
 }
 
@@ -27702,7 +27706,7 @@ button.swiper-pagination-bullet {
   }
 
   .flyer__personage {
-    height: 7.5rem;
+    height: 6.875rem;
   }
 
   .flyer__personage::before {
@@ -29789,15 +29793,15 @@ button.swiper-pagination-bullet {
     }
 }
 
-@supports (height: clamp( 7.5rem , 6.2500723363rem  +  3.4721418486vw , 9.375rem )) {
+@supports (height: clamp( 6.875rem , 5.2084297817rem  +  4.6295224648vw , 9.375rem )) {
     .flyer__personage {
-      height: clamp( 7.5rem , 6.2500723363rem  +  3.4721418486vw , 9.375rem );
+      height: clamp( 6.875rem , 5.2084297817rem  +  4.6295224648vw , 9.375rem );
     }
 }
 
-@supports not (height: clamp( 7.5rem , 6.2500723363rem  +  3.4721418486vw , 9.375rem )) {
+@supports not (height: clamp( 6.875rem , 5.2084297817rem  +  4.6295224648vw , 9.375rem )) {
     .flyer__personage {
-      height: calc(7.5rem + 1.875 * (100vw - 35.99875rem) / 54.00125);
+      height: calc(6.875rem + 2.5 * (100vw - 35.99875rem) / 54.00125);
     }
 }
 
