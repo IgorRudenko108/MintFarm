@@ -18632,7 +18632,7 @@ body.shooter__body-main {
 
   100% {
     opacity: 0;
-    height: 50%;
+    height: 10%;
   }
 }
 
@@ -18644,7 +18644,7 @@ body.shooter__body-main {
 
   100% {
     opacity: 0;
-    height: 50%;
+    height: 10%;
   }
 }
 
@@ -24310,7 +24310,7 @@ button.swiper-pagination-bullet {
   }
 
   .flyer__koef {
-    left: -35%;
+    left: 35%;
   }
 
   .flyer__wrapper.fly-started .flyer__height-btn {
@@ -28962,7 +28962,7 @@ button.swiper-pagination-bullet {
   }
 
   .flyer__koef {
-    left: -30%;
+    left: 31%;
   }
 
   .flyer__koef-box {
