@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231201075707">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231203044655">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -279,8 +279,105 @@
 			</div>
 		</header>
 
+		<div class="popup__fly">
+
+			<div class="popup__fly-success-x">
+				<span>x</span>5
+			</div>
+
+			<div class="popup__fly-success-title">Вы раскрыли парашют!</div>
+
+			<p class="popup__fly-success-text">Вы выиграли</p>
+
+			<div class="fly__info-value">
+				+200
+				<img class="fly__info-mint" src="img/common/mint.svg" width="48" height="48" alt="Image">
+			</div>
+
+			<div class="fly__popup-bottom-controls">
+
+				<a class="btn btn__accent-2 popup-knight__btn-gray" data-popup="#popup-knight__prise" href="#">
+					Забрать
+				</a>
+
+				<a class="btn btn__accent-2 popup-knight__btn-yellow fly__popup-close" href="flyer-page.html">
+					Выиграть ещё
+				</a>
+
+
+			</div>
+		</div>
+
+		<div class="popup__fly--fail">
+
+			<picture><source srcset="img/flyer__page/fail.webp" type="image/webp"><img class="fly__fail-img" src="img/flyer__page/fail.png" width="238" height="auto" alt="Image"></picture>
+
+			<div class="popup__fly-success-title popup__fly-fail-title">Парашют не раскрылся</div>
+
+			<p class="popup__fly-success-text">Вы проиграли</p>
+
+			<div class="fly__info-value fly__info-value--fail">
+				-200
+				<img class="fly__info-mint" src="img/common/mint.svg" width="48" height="48" alt="Image">
+			</div>
+
+			<div class="fly__popup-bottom-controls">
+				<a class="btn btn__accent-2 fly__popup-close fly__popup-close--red" href="flyer-page.html">
+					Закрыть
+				</a>
+
+				<a class="btn btn__accent-2 fly__popup-close fly__popup-close--white" href="flyer-page.html">
+					Попробовать еще
+				</a>
+			</div>
+		</div>
+
+		<div class="flyer__sky-overlay">
+			<div class="flyer__sky-overlay-inner">
+				<div class="flyer__sky-overlay-item">
+					<picture><source srcset="img/flyer__page/sky-layer.webp" type="image/webp"><img class="flyer__sky-overlay-img" src="img/flyer__page/sky-layer.png" alt="Image"></picture>
+				</div>
+
+				<div class="flyer__sky-overlay-item">
+					<picture><source srcset="img/flyer__page/sky-layer.webp" type="image/webp"><img class="flyer__sky-overlay-img" src="img/flyer__page/sky-layer.png" alt="Image"></picture>
+				</div>
+			</div>
+		</div>
+
+		<button class="flyer__height-btn">Раскрыть парашют</button>
+
+		<div class="flyer__height-counter flyer__left-counter">
+			<div class="flyer__height-body">
+				<div class="flyer__height-item">5</div>
+				<div class="flyer__height-item">10</div>
+				<div class="flyer__height-item">15</div>
+				<div class="flyer__height-item flyer__height-item--active">20</div>
+				<div class="flyer__height-item">25</div>
+				<div class="flyer__height-item">30</div>
+				<div class="flyer__height-item">35</div>
+			</div>
+		</div>
+
+		<div class="flyer__height-counter flyer__right-counter">
+			<div class="flyer__height-body">
+				<div class="flyer__height-item">10</div>
+				<div class="flyer__height-item">20</div>
+				<div class="flyer__height-item">30</div>
+				<div class="flyer__height-item flyer__height-item--active">40</div>
+				<div class="flyer__height-item">50</div>
+				<div class="flyer__height-item">60</div>
+				<div class="flyer__height-item">70</div>
+			</div>
+		</div>
+
 		<div class="flyer__personage">
 			<picture><source srcset="img/flyer__page/flyer-cat.webp" type="image/webp"><img class="flyer__personage-img" src="img/flyer__page/flyer-cat.png" width="auto" height="150" alt="Icon"></picture>
+		</div>
+
+		<div class="flyer__city"></div>
+
+		<div class="flyer__city-2">
+			<picture><source srcset="img/flyer__page/trash.webp" type="image/webp"><img class="flyer__trash" src="img/flyer__page/trash.png" width="150" height="auto" alt="Icon"></picture>
 		</div>
 
 		<div class="flyer__plane">
@@ -877,6 +974,40 @@
 		</div>
 	</div>
 
+	<div id="popup-knight__prise" aria-hidden="true" class="popup-knight__prise popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-knight__princess-content">
+
+				<div class="popup__text popup-knight__body">
+					<div class="popup-knight__princess-top">
+						<picture><source srcset="img/knight-game__page/popup-knight__deco-3.webp" type="image/webp"><img class="knight-game__popup-deco knight-game__popup-deco--1" width="75" height="auto" src="img/knight-game__page/popup-knight__deco-3.png" alt="Image"></picture>
+						<h2 class="knight-game__popup-title knight-game__popup-title--green">Поздравляем!</h2>
+						<picture><source srcset="img/knight-game__page/popup-knight__deco-3.webp" type="image/webp"><img class="knight-game__popup-deco knight-game__popup-deco--1" width="75" height="auto" src="img/knight-game__page/popup-knight__deco-3.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__princess-img">
+						<picture><source srcset="img/knight-game__page/popup-prise-img.webp" type="image/webp"><img src="img/knight-game__page/popup-prise-img.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__info-block">
+						<div class="knight-game__info-value knight-game__info-value--princess knight-game__info-value--green">
+							+200
+							<img src="img/common/mint.svg" width="48" height="48" alt="Image">
+						</div>
+
+						<p class="knight-game__info-text">Вы забрали сокровища!</p>
+					</div>
+
+					<div class="knight-game__info-controls">
+						<a class="knight-game__info-btn btn btn__accent-2 popup-knight__popup-close" href="#">
+							Отлично
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<script>
 		// -- knight__music--pc ----------------------------------------------
@@ -902,16 +1033,50 @@
 		// -- flyer__game-started ----------------------------------------------
 		let flyerStart = document.querySelector(".flyer-main__btn");
 		let flyerBody = document.querySelector(".flyer__wrapper");
+		let flyBtnSuccessClose = document.querySelector(".fly__popup-close");
+
+
+		function failureTimeout() {
+			if (flyerBody.closest('.fly-end')) {
+				return
+			} else {
+				flyerBody.classList.add('fly-fail');
+
+				flyBtnSuccessClose.addEventListener('click', function(e) {
+					flyerBody.classList.remove('fly-fail')
+				})
+			}
+		}
 
 		if (flyerStart) {
 			flyerStart.addEventListener('click', function(e) {
-				flyerBody.classList.add('flyer-started')
+				flyerBody.classList.add('fly-started')
+				flyerBody.classList.remove('fly-end');
+
+				setTimeout(failureTimeout, 15000);
 			})
+
 		}
 		// -- /flyer__game-started ----------------------------------------------
+
+		// -- flyer__fly-end ----------------------------------------------
+		let flyEnd = document.querySelector(".flyer__height-btn");
+		let flyerBodyEnd = document.querySelector(".flyer__wrapper");
+
+		if (flyEnd) {
+			flyEnd.addEventListener('click', function(e) {
+				flyerBodyEnd.classList.add('fly-end')
+			})
+
+			flyBtnSuccessClose.addEventListener('click', function(e) {
+				flyerBody.classList.remove('fly-end')
+			})
+		}
+
+		// -- /flyer__fly-end ----------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20231201075707"></script>
+	<script src="js/app.min.js?_v=20231203044655"></script>
 </body>
 
 </html>
