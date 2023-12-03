@@ -17645,6 +17645,7 @@ body.shooter__body-main {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  overflow: clip;
 }
 
 .flyer__header {
@@ -18409,6 +18410,74 @@ body.shooter__body-main {
           box-shadow: none;
 }
 
+.flyer__koef {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translateX(-100%) translateY(50%);
+      -ms-transform: translateX(-100%) translateY(50%);
+          transform: translateX(-100%) translateY(50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.flyer__koef-title {
+  color: #FCFCFC;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 2px;
+}
+
+.flyer__koef-box {
+  color: #fff;
+  font-weight: 400;
+  line-height: normal;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: 36px;
+  padding: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flyer__koef-box::after {
+  content: "";
+  position: absolute;
+  right: -31px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 18px 25px 18px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
+}
+
+.flyer__koef-box span {
+  font-size: 20px;
+}
+
 .flyer__wrapper.fly-started .flyer__sky-overlay {
   opacity: 1;
   visibility: visible;
@@ -18526,6 +18595,13 @@ body.shooter__body-main {
   opacity: 1;
   -webkit-transition: bottom 1.5s linear 8s, opacity 1.5s linear 8s, background 0.2s ease-in-out 0s;
   transition: bottom 1.5s linear 8s, opacity 1.5s linear 8s, background 0.2s ease-in-out 0s;
+}
+
+.flyer__wrapper.fly-started .flyer__koef {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 2s ease-in-out 8s;
+  transition: all 2s ease-in-out 8s;
 }
 
 .flyer__wrapper.fly-end .fly-fail {
@@ -18664,6 +18740,13 @@ body.shooter__body-main {
   top: 0;
   -webkit-transition: top 2s linear 7s;
   transition: top 2s linear 7s;
+}
+
+.flyer__wrapper.fly-end .flyer__koef {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s ease-in-out 1s;
+  transition: all 1s ease-in-out 1s;
 }
 
 .flyer__wrapper.fly-fail .popup__fly--fail {
@@ -18843,6 +18926,13 @@ body.shooter__body-main {
   100% {
     rotate: 0deg;
   }
+}
+
+.flyer__wrapper.fly-fail .flyer__koef {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s ease-in-out 1s;
+  transition: all 1s ease-in-out 1s;
 }
 
 .flyer__wrapper.fly-end .fly-fail {
@@ -21111,6 +21201,10 @@ button.swiper-pagination-bullet {
     height: 9.375rem;
   }
 
+  .flyer__personage {
+    width: 7.8125rem;
+  }
+
   .flyer__personage::before {
     width: 28.125rem;
   }
@@ -21149,6 +21243,10 @@ button.swiper-pagination-bullet {
 
   .fly__fail-img {
     width: 14.875rem;
+  }
+
+  .flyer__koef-box {
+    font-size: 1.5625rem;
   }
 }
 
@@ -21863,6 +21961,14 @@ button.swiper-pagination-bullet {
 
   .knight-level__bonus {
     min-width: 90px;
+  }
+
+  .flyer__koef-title {
+    font-size: rem(14);
+  }
+
+  .flyer__koef-box span {
+    font-size: rem(16);
   }
 }
 
@@ -25785,6 +25891,23 @@ button.swiper-pagination-bullet {
     width: 36px;
     height: 36px;
   }
+
+  .flyer__koef-title {
+    font-size: 12px;
+  }
+
+  .flyer__koef-box {
+    height: 30px;
+  }
+
+  .flyer__koef-box::after {
+    right: -23px;
+    border-width: 0 15px 15px 15px;
+  }
+
+  .flyer__koef-box span {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 61.99875em), (max-height: 900px) {
@@ -27185,6 +27308,27 @@ button.swiper-pagination-bullet {
   .fly__popup-bottom-controls {
     gap: 10px;
   }
+
+  .flyer__koef-title {
+    font-size: 10px;
+  }
+
+  .flyer__koef-box {
+    height: 25px;
+  }
+
+  .flyer__koef-box {
+    font-size: 1rem;
+  }
+
+  .flyer__koef-box::after {
+    right: -18px;
+    border-width: 0 12px 11px 12px;
+  }
+
+  .flyer__koef-box span {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 47.99875em) and (max-width: 575.98px) {
@@ -27707,6 +27851,10 @@ button.swiper-pagination-bullet {
 
   .flyer__personage {
     height: 6.875rem;
+  }
+
+  .flyer__personage {
+    width: 5.9375rem;
   }
 
   .flyer__personage::before {
@@ -28808,6 +28956,15 @@ button.swiper-pagination-bullet {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .flyer__koef-box {
+    height: 22px;
+  }
+
+  .flyer__koef-box::after {
+    right: -15px;
+    border-width: 0 10px 10px 10px;
+  }
 }
 
 @media (max-width: 29.99875em) and (any-hover: hover) {
@@ -29802,6 +29959,18 @@ button.swiper-pagination-bullet {
 @supports not (height: clamp( 6.875rem , 5.2084297817rem  +  4.6295224648vw , 9.375rem )) {
     .flyer__personage {
       height: calc(6.875rem + 2.5 * (100vw - 35.99875rem) / 54.00125);
+    }
+}
+
+@supports (width: clamp( 5.9375rem , 4.6875723363rem  +  3.4721418486vw , 7.8125rem )) {
+    .flyer__personage {
+      width: clamp( 5.9375rem , 4.6875723363rem  +  3.4721418486vw , 7.8125rem );
+    }
+}
+
+@supports not (width: clamp( 5.9375rem , 4.6875723363rem  +  3.4721418486vw , 7.8125rem )) {
+    .flyer__personage {
+      width: calc(5.9375rem + 1.875 * (100vw - 35.99875rem) / 54.00125);
     }
 }
 
@@ -31744,6 +31913,18 @@ button.swiper-pagination-bullet {
 @supports not (padding-top: clamp( 0.625rem , -2.2319834231rem  +  5.9522038035vw , 3.125rem )) {
     .knight__inner {
       padding-top: calc(0.625rem + 2.5 * (100vw - 47.99875rem) / 42.00125);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.3571787298rem  +  1.3392458558vw , 1.5625rem )) {
+    .flyer__koef-box {
+      font-size: clamp( 1rem , 0.3571787298rem  +  1.3392458558vw , 1.5625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.3571787298rem  +  1.3392458558vw , 1.5625rem )) {
+    .flyer__koef-box {
+      font-size: calc(1rem + 0.5625 * (100vw - 47.99875rem) / 42.00125);
     }
 }
 }
