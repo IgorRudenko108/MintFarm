@@ -18415,7 +18415,7 @@ body.shooter__body-main {
 .flyer__koef {
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 43%;
   -webkit-transform: translateX(-100%) translateY(50%);
       -ms-transform: translateX(-100%) translateY(50%);
           transform: translateX(-100%) translateY(50%);
@@ -21450,7 +21450,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 1440px) and (max-height: 768px) {
   .popup__fly,
   .popup__fly--fail {
-    padding-top: 7vh;
+    padding-top: 13vh;
   }
 
   .popup__fly-success-x {
@@ -21961,6 +21961,10 @@ button.swiper-pagination-bullet {
 
   .knight-level__bonus {
     min-width: 90px;
+  }
+
+  .flyer__koef {
+    left: 40%;
   }
 
   .flyer__koef-title {
@@ -24303,6 +24307,10 @@ button.swiper-pagination-bullet {
 
   .fly__popup-bottom-controls a {
     width: 100%;
+  }
+
+  .flyer__koef {
+    left: -35%;
   }
 
   .flyer__wrapper.fly-started .flyer__height-btn {
@@ -28951,6 +28959,10 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .flyer__koef {
+    left: -30%;
   }
 
   .flyer__koef-box {
