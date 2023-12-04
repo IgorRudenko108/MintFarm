@@ -18380,11 +18380,12 @@ body.shooter__body-main {
 
 .flyer__trash {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 2;
 }
 
 .fly__popup-close--red {
@@ -18483,8 +18484,9 @@ body.shooter__body-main {
 .flyer__wrapper.fly-started .flyer__sky-overlay {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all 2s linear 5s;
-  transition: all 2s linear 5s;
+  -webkit-transition: opacity 2s linear 5s;
+  transition: opacity 2s linear 5s;
+  will-change: opacity;
 }
 
 @-webkit-keyframes marquee-infinite {
@@ -18632,7 +18634,8 @@ body.shooter__body-main {
 
   100% {
     opacity: 0;
-    height: 10%;
+    height: 0;
+    bottom: 0;
   }
 }
 
@@ -18644,7 +18647,8 @@ body.shooter__body-main {
 
   100% {
     opacity: 0;
-    height: 10%;
+    height: 0;
+    bottom: 0;
   }
 }
 
@@ -18663,37 +18667,45 @@ body.shooter__body-main {
 
 @-webkit-keyframes fly-bound {
   0% {
-    rotate: 0deg;
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
   }
 
   30% {
-    rotate: 5deg;
+    -webkit-transform: translateX(-50%) rotate(5deg);
+            transform: translateX(-50%) rotate(5deg);
   }
 
   70% {
-    rotate: -5deg;
+    -webkit-transform: translateX(-50%) rotate(-5deg);
+            transform: translateX(-50%) rotate(-5deg);
   }
 
   100% {
-    rotate: 0deg;
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
   }
 }
 
 @keyframes fly-bound {
   0% {
-    rotate: 0deg;
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
   }
 
   30% {
-    rotate: 5deg;
+    -webkit-transform: translateX(-50%) rotate(5deg);
+            transform: translateX(-50%) rotate(5deg);
   }
 
   70% {
-    rotate: -5deg;
+    -webkit-transform: translateX(-50%) rotate(-5deg);
+            transform: translateX(-50%) rotate(-5deg);
   }
 
   100% {
-    rotate: 0deg;
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
   }
 }
 
@@ -18766,12 +18778,19 @@ body.shooter__body-main {
   transition: bottom 2s linear 4s, opacity 1s linear 3s, visibility 1s linear 3s;
 }
 
-.flyer__wrapper.fly-fail .flyer__height-counter,
+.flyer__wrapper.fly-fail .flyer__height-counter {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 2s linear, visibility 2s linear;
+  transition: opacity 2s linear, visibility 2s linear;
+}
+
 .flyer__wrapper.fly-fail .flyer__height-btn {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
+  -webkit-transition: opacity 2s linear, visibility 2s linear;
+  transition: opacity 2s linear, visibility 2s linear;
+  pointer-events: none;
 }
 
 .flyer__wrapper.fly-fail .flyer__sky-overlay {
@@ -18840,28 +18859,32 @@ body.shooter__body-main {
 @-webkit-keyframes arrival-fail {
   0% {
     opacity: 1;
-    scale: 1;
+    -webkit-transform: translateX(-50%) rotate(180deg) scale(1);
+            transform: translateX(-50%) rotate(180deg) scale(1);
     top: 50%;
   }
 
   100% {
-    scale: 0.7;
+    -webkit-transform: translateX(-50%) rotate(180deg) scale(0.7);
+            transform: translateX(-50%) rotate(180deg) scale(0.7);
     opacity: 0;
-    top: 77%;
+    top: 75%;
   }
 }
 
 @keyframes arrival-fail {
   0% {
     opacity: 1;
-    scale: 1;
+    -webkit-transform: translateX(-50%) rotate(180deg) scale(1);
+            transform: translateX(-50%) rotate(180deg) scale(1);
     top: 50%;
   }
 
   100% {
-    scale: 0.7;
+    -webkit-transform: translateX(-50%) rotate(180deg) scale(0.7);
+            transform: translateX(-50%) rotate(180deg) scale(0.7);
     opacity: 0;
-    top: 77%;
+    top: 75%;
   }
 }
 
@@ -33552,6 +33575,14 @@ button.swiper-pagination-bullet {
 
   .flyer__wrapper.fly-started .flyer__height-btn:focus-visible {
     background: #FFB000;
+  }
+
+  .flyer__wrapper.fly-fail .flyer__height-btn:hover {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 2s linear, visibility 2s linear;
+    transition: opacity 2s linear, visibility 2s linear;
+    pointer-events: none;
   }
 }
 
