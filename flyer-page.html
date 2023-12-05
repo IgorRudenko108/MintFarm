@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231204224715">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231205013026">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 						</li>
 
 						<li class="header__nav-item">
-							<a class="header__nav-link" href="news-page-user.html">Новости</a>
+							<a class="header__nav-link" href="waiting-page.html">Новости</a>
 						</li>
 
 						<li class="header__nav-item">
@@ -1100,18 +1100,12 @@
 		// -- flyer__game-started ----------------------------------------------
 		let flyerStart = document.querySelector(".flyer-main__btn");
 		let flyerBody = document.querySelector(".flyer__wrapper");
-		// let flyBtnSuccessClose = document.querySelector(".fly__popup-close");
-
 
 		function failureTimeout() {
 			if (flyerBody.closest('.fly-end')) {
 				return
 			} else {
 				flyerBody.classList.add('fly-fail');
-
-				// flyBtnSuccessClose.addEventListener('click', function(e) {
-				// 	flyerBody.classList.remove('fly-fail')
-				// })
 			}
 		}
 
@@ -1134,16 +1128,67 @@
 			flyEnd.addEventListener('click', function(e) {
 				flyerBodyEnd.classList.add('fly-end')
 			})
-
-			// flyBtnSuccessClose.addEventListener('click', function(e) {
-			// 	flyerBody.classList.remove('fly-end')
-			// })
 		}
 
 		// -- /flyer__fly-end ----------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20231204224715"></script>
+	<script>
+		function getTimeRemaining(endtime) {
+			let t = Date.parse(endtime) - Date.parse(new Date);
+			let seconds = Math.floor(t / 1e3 % 60);
+			let minutes = Math.floor(t / 1e3 / 60 % 60);
+			let hours = Math.floor(t / (1e3 * 60 * 60) % 24);
+			return {
+				total: t,
+				hours,
+				minutes,
+				seconds
+			};
+		}
+
+		function initializeClock(id, endtime) {
+			let clock = document.getElementById(id);
+			let hoursSpan = clock.querySelector(".hours");
+			let minutesSpan = clock.querySelector(".minutes");
+			let secondsSpan = clock.querySelector(".seconds");
+
+			function updateClock() {
+				let t = getTimeRemaining(endtime);
+				hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+				minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+				secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+				if (t.total <= 0) clearInterval(timeinterval);
+			}
+			updateClock();
+			let timeinterval = setInterval(updateClock, 1e3);
+		}
+		let deadline = new Date(Date.parse(new Date) + 15 * 24 * 60 * 60 * 1e3);
+		initializeClock("countdown", deadline);
+		const formBtn = document.querySelectorAll(".form__btn");
+		const formBody = document.querySelectorAll(".form__body");
+		const formSuccess = document.querySelectorAll(".form__success");
+		let formBtnArray = [];
+		formBtn.forEach((el => {
+			formBtnArray.push(el);
+		}));
+		let formBodyArray = [];
+		formBody.forEach((elem => {
+			formBodyArray.push(elem);
+		}));
+		let formSuccessArray = [];
+		formSuccess.forEach((elem => {
+			formSuccessArray.push(elem);
+		}));
+		for (let i = 0; i < formBtnArray.length; i++)
+			if (formBtn) formBtnArray[i].addEventListener("click", (function(e) {
+				e.preventDefault();
+				formBodyArray[i].classList.add("form__close");
+				formSuccessArray[i].classList.add("success__open");
+			}));
+	</script>
+
+	<script src="js/app.min.js?_v=20231205013026"></script>
 </body>
 
 </html>

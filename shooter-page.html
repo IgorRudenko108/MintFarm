@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231204224715">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231205013026">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -671,15 +671,15 @@
 			<div class="popup__content popup-shooter-success__content">
 
 				<div class="popup__text">
-					<div class="popup-saper-success__body">
-						<h2 class="popup-saper-success__title">Победа!</h2>
+					<div class="popup-neighbors-success__body">
+						<h2 class="popup-neighbors-success__title">Победа!</h2>
 
-						<div class="popup-saper-success__img-box">
+						<div class="popup-neighbors-success__img-box">
 							<div class="popup-saper-success__bg-box popup-shooter-success__bg-box"></div>
 							<picture><source srcset="img/shooter__page/guns-popup.webp" type="image/webp"><img class="popup-saper-success__img popup-shooter-success__img" src="img/shooter__page/guns-popup.png" width="400" height="auto" alt="Image"></picture>
 						</div>
 
-						<div class="popup-saper-success__text">
+						<div class="popup-neighbors-success__text">
 							<p>Вы выиграли</p>
 							<span>999999 мяты</span>
 						</div>
@@ -701,16 +701,16 @@
 			<div class="popup__content popup-shooter-success__content popup-shooter-fail__content">
 
 				<div class="popup__text">
-					<div class="popup-saper-success__body">
-						<h2 class="popup-saper-success__title">Неудача!</h2>
+					<div class="popup-neighbors-success__body">
+						<h2 class="popup-neighbors-success__title">Неудача!</h2>
 						<p class="popup-shooter__fail-text">Не унывай! Попробуй еще раз!</p>
 
-						<div class="popup-saper-success__img-box">
-							<div class="popup-saper-success__bg-box popup-shooter-success__bg-box"></div>
-							<picture><source srcset="img/shooter__page/heart-popup.webp" type="image/webp"><img class="popup-saper-success__img popup-shooter-fail__img" src="img/shooter__page/heart-popup.png" width="175" height="160" alt="Image"></picture>
+						<div class="popup-neighbors-success__img-box">
+							<div class="popup-neighbors-success__bg-box popup-shooter-success__bg-box"></div>
+							<picture><source srcset="img/shooter__page/heart-popup.webp" type="image/webp"><img class="popup-neighbors-success__img popup-shooter-fail__img" src="img/shooter__page/heart-popup.png" width="175" height="160" alt="Image"></picture>
 						</div>
 
-						<div class="popup-saper-success__text">
+						<div class="popup-neighbors-success__text">
 							<p>Вы могли выиграть</p>
 							<span>999999 мяты</span>
 						</div>
@@ -1403,7 +1403,62 @@
 		// -- /shooter__music--mobile ----------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20231204224715"></script>
+	<script>
+		function getTimeRemaining(endtime) {
+			let t = Date.parse(endtime) - Date.parse(new Date);
+			let seconds = Math.floor(t / 1e3 % 60);
+			let minutes = Math.floor(t / 1e3 / 60 % 60);
+			let hours = Math.floor(t / (1e3 * 60 * 60) % 24);
+			return {
+				total: t,
+				hours,
+				minutes,
+				seconds
+			};
+		}
+
+		function initializeClock(id, endtime) {
+			let clock = document.getElementById(id);
+			let hoursSpan = clock.querySelector(".hours");
+			let minutesSpan = clock.querySelector(".minutes");
+			let secondsSpan = clock.querySelector(".seconds");
+
+			function updateClock() {
+				let t = getTimeRemaining(endtime);
+				hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+				minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+				secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+				if (t.total <= 0) clearInterval(timeinterval);
+			}
+			updateClock();
+			let timeinterval = setInterval(updateClock, 1e3);
+		}
+		let deadline = new Date(Date.parse(new Date) + 15 * 24 * 60 * 60 * 1e3);
+		initializeClock("countdown", deadline);
+		const formBtn = document.querySelectorAll(".form__btn");
+		const formBody = document.querySelectorAll(".form__body");
+		const formSuccess = document.querySelectorAll(".form__success");
+		let formBtnArray = [];
+		formBtn.forEach((el => {
+			formBtnArray.push(el);
+		}));
+		let formBodyArray = [];
+		formBody.forEach((elem => {
+			formBodyArray.push(elem);
+		}));
+		let formSuccessArray = [];
+		formSuccess.forEach((elem => {
+			formSuccessArray.push(elem);
+		}));
+		for (let i = 0; i < formBtnArray.length; i++)
+			if (formBtn) formBtnArray[i].addEventListener("click", (function(e) {
+				e.preventDefault();
+				formBodyArray[i].classList.add("form__close");
+				formSuccessArray[i].classList.add("success__open");
+			}));
+	</script>
+
+	<script src="js/app.min.js?_v=20231205013026"></script>
 
 </body>
 
