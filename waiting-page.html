@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231205013026">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231206044731">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,28 +14,97 @@
 
 <body>
 	<div class="wrapper waiting__wrapper">
-		<!-- <div id="countdown" class="countdown">
+		<svg class="waiting__deco waiting__deco--left" width="36" height="36">
+			<use xlink:href="img/icons/icons.svg#cat"></use>
+		</svg>
+
+		<svg class="waiting__deco waiting__deco--right" width="36" height="36">
+			<use xlink:href="img/icons/icons.svg#cat"></use>
+		</svg>
+
+		<div id="countdown" class="waiting__countdown countdown">
+			<div class="countdown__item">
+				<div class="countdown-number">
+					<span class="days countdown-time"></span>
+				</div>
+
+				<span class="countdown-text">Дней</span>
+			</div>
+
+			<p class="countdown__dots">:</p>
+
+			<div class="countdown__item">
 				<div class="countdown-number">
 					<span class="hours countdown-time"></span>
 				</div>
 
-				<p class="countdown__dots">:</p>
+				<span class="countdown-text">Часов</span>
+			</div>
 
+			<p class="countdown__dots countdown__dots--mobile">:</p>
+
+			<div class="countdown__item countdown__item--mobile">
 				<div class="countdown-number">
 					<span class="minutes countdown-time"></span>
 				</div>
 
-				<p class="countdown__dots">:</p>
+				<span class="countdown-text">минут</span>
+			</div>
 
-				<div class="countdown-number">
-					<span class="seconds countdown-time"></span>
-				</div>
-			</div> -->
+		</div>
+
+		<div class="waiting__bottom">
+			<div class="waiting__logo">CAT Farm</div>
+			<div class="waiting__label">скоро</div>
+		</div>
 	</div>
 
 
+	<script>
+		function getTimeRemaining(endtime) {
+			let t = Date.parse(endtime) - Date.parse(new Date());
+			// let seconds = Math.floor((t / 1000) % 60);
+			let minutes = Math.floor((t / 1000 / 60) % 60);
+			let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+			var days = Math.floor(t / (1000 * 60 * 60 * 24));
+			return {
+				'total': t,
+				'days': days,
+				'hours': hours,
+				'minutes': minutes,
+				// 'seconds': seconds
+			};
+		}
 
-	<script src="js/app.min.js?_v=20231205013026"></script>
+		function initializeClock(id, endtime) {
+			let clock = document.getElementById(id);
+			let daysSpan = clock.querySelector('.days');
+			let hoursSpan = clock.querySelector('.hours');
+			let minutesSpan = clock.querySelector('.minutes');
+			// let secondsSpan = clock.querySelector('.seconds');
+
+			function updateClock() {
+				let t = getTimeRemaining(endtime);
+
+				daysSpan.innerHTML = t.days;
+				hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+				minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+				// secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+				if (t.total <= 0) {
+					clearInterval(timeinterval);
+				}
+			}
+
+			updateClock();
+			let timeinterval = setInterval(updateClock, 1000);
+		}
+
+		let deadline = new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000); // for endless timer
+		initializeClock('countdown', deadline);
+	</script>
+
+	<script src="js/app.min.js?_v=20231206044731"></script>
 </body>
 
 </html>

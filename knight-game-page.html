@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231205013026">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231206044731">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -461,6 +461,7 @@
 	</div>
 
 
+
 	<div id="popup-knight__princess" aria-hidden="true" class="popup-knight__princess popup">
 		<div class="popup__wrapper">
 			<div class="popup__content popup-knight__princess-content">
@@ -563,6 +564,65 @@
 					<div class="knight-game__info-controls">
 						<a class="knight-game__info-btn btn btn__accent-2 popup-knight__popup-close" href="#">
 							Отлично
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-energy-level" aria-hidden="true" class="popup-energy-level popup">
+		<div class="popup__wrapper">
+
+			<button data-close="" type="button" class="popup-saper-stat__close popup-battery__close popup__close">
+				<svg width="18" height="18">
+					<use xlink:href="img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+
+			<div class="popup__content popup-knight__princess-content">
+				<div class="popup__text popup-knight__body">
+					<div class="popup-knight__princess-top">
+						<h2 class="knight-game__battery-popup-title">Не хватает энергии!</h2>
+					</div>
+
+					<div class="knight-game__energy-img">
+						<picture><source srcset="img/knight-game__page/popup-energy-img.webp" type="image/webp"><img src="img/knight-game__page/popup-energy-img.png" alt="Image"></picture>
+					</div>
+
+					<div class="knight-game__battery-info-block">
+						<div id="countdown" class="countdown">
+							<div class="countdown-number">
+								<span class="hours countdown-time"></span>
+							</div>
+
+							<p class="countdown__dots">:</p>
+
+							<div class="countdown-number">
+								<span class="minutes countdown-time"></span>
+							</div>
+
+							<p class="countdown__dots">:</p>
+
+							<div class="countdown-number">
+								<span class="seconds countdown-time"></span>
+							</div>
+						</div>
+
+						<p class="knight-game__battery-info-text">Осталось до восполнения</p>
+
+						<div class="knight__battery-box battery-box">
+							<picture><source srcset="img/knight-game__page/battery-lvl-7.webp" type="image/webp"><img class="battery-img" src="img/knight-game__page/battery-lvl-7.png" width="113" height="52" alt="Image"></picture>
+						</div>
+					</div>
+
+					<div class="knight-game__info-controls knight-game__info-controls--mobile knight-game__info-controls--center ">
+						<a class="knight-game__info-btn btn btn__accent-2 popup-knight__btn-gray knight-game__info-btn--mobile-none" href="#">
+							Закрыть
+						</a>
+
+						<a class="knight-game__info-btn btn btn__accent-2" href="#">
+							Восполнить за X голды
 						</a>
 					</div>
 				</div>
@@ -691,7 +751,7 @@
 			}));
 	</script>
 
-	<script src="js/app.min.js?_v=20231205013026"></script>
+	<script src="js/app.min.js?_v=20231206044731"></script>
 </body>
 
 </html>
