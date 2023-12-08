@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scrollbar-initial">
 
 <head>
-	<title>Home</title>
+	<title>Plant</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -13,8 +13,8 @@
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
+	<div class="wrapper plant__wrapper">
+		<header class="plant__header header">
 			<div class="header__container">
 				<div class="header__inner">
 					<a href="index.html" class="header__logo logo">
@@ -34,7 +34,7 @@
 						</li>
 
 						<li class="header__nav-item">
-							<a class="header__nav-link" href="news-page-user.html">Новости</a>
+							<a class="header__nav-link" href="waiting-page.html">Новости</a>
 						</li>
 
 						<li class="header__nav-item">
@@ -279,210 +279,100 @@
 			</div>
 		</header>
 
-		<main class="page landing__page page-color">
-			<section class="main-intro mb">
-				<div class="main-intro__container">
-					<div class="main-intro__inner">
+		<main class="page plant__page">
+			<div class="plant__container">
+				<div class="plant__body">
+					<div class="plant__content">
+						<h1 class="plant__content-title">Построй завод и получай больше мяты</h1>
 
-						<div class="main-intro__content">
-							<h1 class="main-intro__title">Добро пожаловать в <span>CatFarm!</span></h1>
-
-							<p class="main-intro__text text" data-da=".main-intro__inner,767.98,4">
-								Присоединяйся к нашей <br>
-								захватывающей кошачьей семье <br>
-								и открой путь к настоящим наградам!
-							</p>
-						</div>
-
-						<div class="main-intro__picture">
-							<picture><source srcset="img/landing__page/section__landing-intro/main-image.webp" type="image/webp"><img src="img/landing__page/section__landing-intro/main-image.jpg" alt="Main image"></picture>
-						</div>
-
-						<a class="main-intro__btn" href="cabinet-page.html">
-							<svg width="81" height="81">
-								<use xlink:href="img/icons/icons.svg#cat"></use>
-							</svg>
-							<span>НАЧАТЬ ИГРУ</span>
-						</a>
+						<p class="plant__content-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
-				</div>
-			</section>
-			<section class="main-steps mb">
-				<div class="main-steps__container">
-					<div class="main-steps__inner">
-						<h2 class="main-steps__title title ">Выращивай! Зарабатывай! Обменивай! Забирай!</h2>
 
-						<div class="main-steps__list">
-							<a class="main-steps__item main-steps__item--big-vertical" href="#">
-								<picture><source data-srcset="img/landing__page/section__landing-steps/step-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="main-steps__img" data-src="img/landing__page/section__landing-steps/step-1.jpg" alt="Img"></picture>
+					<div class="plant__cards plant__cards--1">
+						<div class="plant__card-item">
 
-								<div class="main-steps__top">
-									<span class="main-steps__top-label">Шаг 1</span>
-									<span class="main-steps__top-deco">
-										<img src="img/landing__page/section__landing-steps/deco-arrow.svg" width="14" height="24" alt="Arrow">
-									</span>
+							<div class="plant__card-top">
+								<h2 class="plant__card-title">Строить новый завод</h2>
+
+								<div class="plant__card-arrow">
+									<img src="img/plant__page/card-arrow.svg" alt="Icon">
+								</div>
+							</div>
+
+							<div class="plant__card-body">
+								<div class="plant__card-body--left">
+									<p class="plant__card-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									</p>
+
+									<a href="#" class="plant__card-link">Перейти</a>
 								</div>
 
-								<h3 class="main-steps__item-title">Ферма <br> кошачьей мяты:</h3>
-								<p class="main-steps__item-text">Здесь растет мята, необходимая для твоего успеха.</p>
-							</a>
-
-							<a class="main-steps__item main-steps__item--big-horizontal " href="#">
-
-								<div class="main-steps__top">
-									<span class="main-steps__top-label">Шаг 2</span>
-									<span class="main-steps__top-deco">
-										<img src="img/landing__page/section__landing-steps/deco-arrow.svg" width="14" height="24" alt="Arrow">
-									</span>
+								<div class="plant__card-body--right">
+									<picture><source srcset="img/plant__page/cat-1.webp" type="image/webp"><img src="img/plant__page/cat-1.png" alt="Icon"></picture>
 								</div>
-
-								<div class="main-steps__body">
-									<div class="main-steps__content">
-										<h3 class="main-steps__content-title">Мини-игры:</h3>
-										<p class="main-steps__content-text">Участвуй, чтобы заработать мяту и увеличить счет.</p>
-									</div>
-
-									<div class="main-steps__image-box">
-										<picture><source srcset="img/landing__page/section__landing-steps/step-2.webp" type="image/webp"><img class="main-steps__image" src="img/landing__page/section__landing-steps/step-2.png" alt="Computer"></picture>
-									</div>
-								</div>
-
-							</a>
-
-							<a class="main-steps__item main-steps__item--small " href="present-page">
-
-								<div class="main-steps__top--small">
-									3. Обмен мяты на голду
-								</div>
-
-								<picture><source srcset="img/landing__page/section__landing-steps/step-3.webp" type="image/webp"><img class="main-steps__img-3" src="img/landing__page/section__landing-steps/step-3.png" alt="Image"></picture>
-
-								<div class="main-steps__bottom">
-									<div class="ain-steps__bottom-text">
-										Собирай мяту, чтобы получить доступ к эксклюзивным подаркам.
-									</div>
-								</div>
-							</a>
-
-							<a class="main-steps__item main-steps__item--small " href="present-page-user.html">
-
-								<div class="main-steps__top--small">
-									4. Забирайте подарки
-								</div>
-
-								<picture><source srcset="img/landing__page/section__landing-steps/step-4.webp" type="image/webp"><img class="main-steps__small-bg" src="img/landing__page/section__landing-steps/step-4.jpg" alt="Image"></picture>
-
-								<div class="main-steps__bottom main-steps__bottom--white">
-									<h3 class="main-steps__bottom-title">Маркет</h3>
-									<div class="main-steps__bottom-text">
-										Заработав достаточно голды, получи увлекательные подарки.
-									</div>
-								</div>
-							</a>
+							</div>
 						</div>
-
-						<a class="main-steps__btn btn btn__accent" href="#">Начать играть</a>
 					</div>
-				</div>
-			</section>
-			<section class="main-game">
-				<div class="main-game__container">
-					<div class="main-game__inner">
-						<h2 class="main-game__title title ">Другие игры</h2>
 
-						<div class="main-game__body">
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--1,479.98,1">Сапёр</h3>
-									<p class="main-game__card-text">
-										Исследуй поле в поисках клубков, чтобы увеличить свой запас мяты. Однако будь осторожен: если наткнешься на клетку с собачкой, она может испортить все твои планы.
-										Удачи в раскопках, кот-минер!"
-									</p>
+					<div class="plant__cards plant__cards--2">
+						<div class="plant__card-item">
 
-									<a class="main-game__card-link" href="saper-page.html">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
+							<div class="plant__card-top">
+								<h2 class="plant__card-title">Мои заводы</h2>
 
-								<div class="main-game__img-box main-game__img-box--1">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-1.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-1.png" alt="Cat"></picture>
+								<div class="plant__card-arrow">
+									<img src="img/plant__page/card-arrow.svg" alt="Icon">
 								</div>
 							</div>
 
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--2,479.98,1">Стрелок</h3>
-									<p class="main-game__card-text">
-										В этой игре твоя стратегия - твоё оружие. Интуитивно выбирай точку для удара и место для блокировки. Здесь каждый ход может решить твою судьбу. Готов к напряженной дуэли интуиций?"
+							<div class="plant__card-body">
+								<div class="plant__card-body--left">
+									<p class="plant__card-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									</p>
 
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
+									<a href="#" class="plant__card-link">Перейти</a>
 								</div>
 
-								<div class="main-game__img-box main-game__img-box--2">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-2.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-2.png" alt="Cat"></picture>
+								<div class="plant__card-body--right">
+									<picture><source srcset="img/plant__page/cat-2.webp" type="image/webp"><img src="img/plant__page/cat-2.png" alt="Icon"></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="plant__cards plant__cards--3">
+						<div class="plant__card-item">
+
+							<div class="plant__card-top">
+								<h2 class="plant__card-title">Статистика</h2>
+
+								<div class="plant__card-arrow">
+									<img src="img/plant__page/card-arrow.svg" alt="Icon">
 								</div>
 							</div>
 
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--3,479.98,1">Рыцарь</h3>
-									<p class="main-game__card-text">
-										В этой игре предстоит выбирать правильные ходы, чтобы освободить принцессу из лап Ястреба. Однако будь бдителен - один неправильный ход и ты окажешься лицом к лицу с злодеем! Сможешь ли ты пройти этот тест и спасти принцессу?"
+							<div class="plant__card-body">
+								<div class="plant__card-body--left">
+									<p class="plant__card-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									</p>
 
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
+									<a href="#" class="plant__card-link">Перейти</a>
 								</div>
 
-								<div class="main-game__img-box main-game__img-box--3">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-3.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-3.png" alt="Cat"></picture>
-								</div>
-							</div>
-
-							<div class="main-game__card ">
-								<div class="main-game__card-content">
-									<h3 class="main-game__card-title" data-da=".main-game__img-box--4,479.98,1">Летун</h3>
-									<p class="main-game__card-text">
-										Готов к захватывающему прыжку с котом на парашюте? Нажмите кнопку вовремя, чтобы забрать свой выигрыш набранный котом в полете. Не упустите момент, ведь у тебя всего лишь 9 жизней"
-									</p>
-
-									<a class="main-game__card-link" href="#">
-										Попробовать
-										<svg width="31" height="6">
-											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-										</svg>
-									</a>
-								</div>
-
-								<div class="main-game__img-box main-game__img-box--4">
-									<picture><source srcset="img/landing__page/section__landing-game/cat-4.webp" type="image/webp"><img src="img/landing__page/section__landing-game/cat-4.png" alt="Cat"></picture>
+								<div class="plant__card-body--right">
+									<picture><source srcset="img/plant__page/cat-3.webp" type="image/webp"><img src="img/plant__page/cat-3.png" alt="Icon"></picture>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-
-		</main>
-
-		<footer class="footer">
-			<div class="footer__container">
-				<h2 class="footer__text">Footer</h2>
 			</div>
-		</footer>
+		</main>
 	</div>
 
 	<script src="js/app.min.js?_v=20231208130300"></script>
