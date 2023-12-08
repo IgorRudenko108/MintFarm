@@ -21558,12 +21558,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (min-width: 1440px) {
-  .knight-game__body {
-    height: calc(100dvh - 100px);
-  }
-}
-
 @media (max-width: 1919.98px), (max-height: 1024px) {
   .cabinet__body {
     padding: 10px 0;
@@ -26202,10 +26196,6 @@ button.swiper-pagination-bullet {
 
   .knight__bottom-item--pc {
     display: none;
-  }
-
-  .knight-game__body {
-    height: calc(100dvh - 61px);
   }
 
   .knight-level__slide {
@@ -34243,10 +34233,6 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateX(2px);
         -ms-transform: translateX(2px);
             transform: translateX(2px);
-  }
-
-  .knight-game__body {
-    height: 100%;
   }
 }
 
