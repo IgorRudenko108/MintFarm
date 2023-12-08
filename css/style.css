@@ -16979,7 +16979,7 @@ body.shooter__body-main {
   -ms-grid-rows: (1fr)[4];
   grid-template-rows: repeat(4, 1fr);
   width: 100vw;
-  height: calc(100dvh - 100px);
+  height: 100vh;
 }
 
 .knight-game__row {
@@ -21551,10 +21551,6 @@ button.swiper-pagination-bullet {
   .knight__inner {
     height: calc(100dvh - 147px);
   }
-
-  .knight-game__body {
-    height: 100%;
-  }
 }
 
 @media (max-width: 1919.98px), (max-height: 1024px) {
@@ -21613,10 +21609,6 @@ button.swiper-pagination-bullet {
     height: calc(100dvh - 81px);
   }
 
-  .knight-game__body {
-    height: calc(100dvh - 81px);
-  }
-
   .knight-game__row-content {
     padding: 0 0 0 10px;
   }
@@ -21647,10 +21639,6 @@ button.swiper-pagination-bullet {
 
   .knight__body-cat {
     height: 170px;
-  }
-
-  .knight-game__body {
-    height: calc(100dvh - 61px);
   }
 }
 
@@ -21702,10 +21690,6 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 1440px) and (max-height: 640px) {
-  .knight-game__body {
-    height: calc(100dvh - 61px);
-  }
-
   .knight-level__bonus {
     height: 35px;
   }
@@ -26196,10 +26180,6 @@ button.swiper-pagination-bullet {
 
   .knight__bottom-item--pc {
     display: none;
-  }
-
-  .knight-game__body {
-    height: calc(100dvh - 61px);
   }
 
   .knight-level__slide {
