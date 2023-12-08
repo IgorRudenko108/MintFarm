@@ -16719,15 +16719,24 @@ body.shooter__body-main {
 }
 
 .knight__dogs-count-item:active {
-  background-color: #6d87f7 !important;
+  background-color: #6d87f7;
 }
 
 .knight__dogs-count-item:focus-visible {
-  background-color: #6d87f7 !important;
+  background-color: #6d87f7;
 }
 
 .knight__dogs-count-item._tab-active {
   background-color: #6D87F7;
+  pointer-events: none;
+}
+
+.knight__dogs-count-item._tab-active:active {
+  background-color: #6d87f7 !important;
+}
+
+.knight__dogs-count-item._tab-active:focus-visible {
+  background-color: #6d87f7 !important;
 }
 
 .knight__coefficient {
@@ -33909,6 +33918,12 @@ button.swiper-pagination-bullet {
 
   .knight__dogs-count-item:hover {
     background-color: #242424;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .knight__dogs-count-item._tab-active:hover {
+    background-color: #6d87f7;
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
   }
