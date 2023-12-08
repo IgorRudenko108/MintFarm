@@ -17263,7 +17263,7 @@ body.shooter__body-main {
 }
 
 .knight-game__row-content {
-  margin: 30px auto;
+  margin: 30px auto 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21703,12 +21703,21 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1440px) and (max-height: 640px) {
   .knight-game__body {
-    height: 100%;
+    height: calc(100dvh - 61px);
   }
 
   .knight-level__bonus {
-    font-size: 12px;
-    height: 30px;
+    height: 35px;
+  }
+
+  .knight-level__item-value {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 575.98px) {
+  .knight-game__body {
+    height: 100%;
   }
 }
 
