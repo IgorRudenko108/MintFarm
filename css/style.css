@@ -16979,6 +16979,7 @@ body.shooter__body-main {
   -ms-grid-rows: (1fr)[4];
   grid-template-rows: repeat(4, 1fr);
   width: 100vw;
+  height: calc(100dvh - 100px);
   height: 100vh;
 }
 
@@ -21551,6 +21552,22 @@ button.swiper-pagination-bullet {
   .knight__inner {
     height: calc(100dvh - 147px);
   }
+
+  .knight-game__body {
+    height: calc(100dvh - 81px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .knight-game__body {
+    height: calc(100dvh - 100px);
+  }
+}
+
+@media (min-width: 1440px) and (max-height: 575px) {
+  .knight-game__body {
+    height: 100%;
+  }
 }
 
 @media (max-width: 1919.98px), (max-height: 1024px) {
@@ -21618,6 +21635,9 @@ button.swiper-pagination-bullet {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+
+  .no-webp .flyer__city{
+    background-image: url(../img/flyer__page/flyer-city--pc.png) !important; }
 }
 
 @media (max-width: 1440.98px) {
@@ -21640,18 +21660,22 @@ button.swiper-pagination-bullet {
   .knight__body-cat {
     height: 170px;
   }
+
+  .knight-game__body {
+    height: calc(100dvh - 61px);
+  }
 }
 
 @media (max-width: 1440px) and (max-height: 767.98px) {
   .knight-main__btn {
-    width: 112px;
-    height: 112px;
+    width: 112px !important;
+    height: 112px !important;
   }
 
   .knight-main__btn::before {
     content: "";
-    width: 122px;
-    height: 122px;
+    width: 122px !important;
+    height: 122px !important;
   }
 
   .knight-main__btn p {
@@ -21690,6 +21714,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 1440px) and (max-height: 640px) {
+  .knight-game__body {
+    height: calc(100dvh - 61px);
+  }
+
   .knight-level__bonus {
     height: 35px;
   }
@@ -21776,7 +21804,7 @@ button.swiper-pagination-bullet {
   }
 
   .flyer__plane-img {
-    width: 250px;
+    width: 250px !important;
   }
 
   .flyer__height-item {
@@ -26180,6 +26208,10 @@ button.swiper-pagination-bullet {
 
   .knight__bottom-item--pc {
     display: none;
+  }
+
+  .knight-game__body {
+    height: calc(100dvh - 61px);
   }
 
   .knight-level__slide {
@@ -34218,6 +34250,10 @@ button.swiper-pagination-bullet {
         -ms-transform: translateX(2px);
             transform: translateX(2px);
   }
+
+  .knight-game__body {
+    height: 100%;
+  }
 }
 
 @media (max-height: 47.99875em) {
@@ -34298,6 +34334,11 @@ button.swiper-pagination-bullet {
 .webp .flyer__city-2{ background-image: url(../img/flyer__page/flyer-city-2.webp); }
 
 .webp .waiting__wrapper{ background-image: url(../img/waiting__page/waiting-bg.webp); }
+
+@media (max-width: 1440px){
+
+  .webp .flyer__city{ background-image: url(../img/flyer__page/flyer-city--pc.webp) !important; }
+}
 
 @media (max-width: 1199.98px){
 
