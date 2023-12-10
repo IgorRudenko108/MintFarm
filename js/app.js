@@ -5778,6 +5778,41 @@
                     }
                 }
             });
+            if (document.querySelector(".plant-build__slider")) new Swiper(".plant-build__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                speed: 800,
+                centeredSlides: false,
+                autoHeight: false,
+                grabCursor: true,
+                navigation: {
+                    prevEl: ".plant-build__slider-prev",
+                    nextEl: ".plant-build__slider-next"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1
+                    },
+                    479.98: {
+                        slidesPerView: 1.5
+                    },
+                    575.98: {
+                        slidesPerView: 2
+                    },
+                    767.98: {
+                        slidesPerView: 2.5
+                    },
+                    991.98: {
+                        slidesPerView: 3
+                    },
+                    1199.98: {
+                        slidesPerView: 4
+                    }
+                }
+            });
             if (document.querySelector(".plant-my__slider")) new Swiper(".plant-my__slider", {
                 observer: true,
                 observeParents: true,

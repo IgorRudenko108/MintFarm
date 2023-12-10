@@ -30980,6 +30980,10 @@ button.swiper-pagination-bullet {
     margin: 15px auto;
   }
 
+  .knight-level__slide {
+    max-width: none;
+  }
+
   .knight-game__mobile-max {
     display: -webkit-box;
     display: -ms-flexbox;
