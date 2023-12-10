@@ -5821,7 +5821,7 @@
                 speed: 800,
                 centeredSlides: false,
                 autoHeight: false,
-                grabCursor: true,
+                grabCursor: false,
                 initSliders: true,
                 allowTouchMove: true,
                 init: true,
