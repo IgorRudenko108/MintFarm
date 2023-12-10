@@ -19796,7 +19796,7 @@ body.shooter__body-main {
   max-height: 233px;
 }
 
-.plant-common__bottom-img > img {
+.plant-common__bottom-img .plant-common__bottom-cat {
   max-width: 100%;
   max-height: 100%;
 }
@@ -22923,7 +22923,7 @@ button.swiper-pagination-bullet {
   }
 
   .knight-main__btn p {
-    font-size: 8px;
+    font-size: 8px !important;
   }
 
   .knight-main__btn svg {
@@ -22933,7 +22933,7 @@ button.swiper-pagination-bullet {
   }
 
   .knight-main__btn span {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   .knight__inner {
@@ -30978,10 +30978,6 @@ button.swiper-pagination-bullet {
 
   .knight-game__row-content {
     margin: 15px auto;
-  }
-
-  .knight-level__slide {
-    max-width: none;
   }
 
   .knight-game__mobile-max {

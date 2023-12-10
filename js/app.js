@@ -5745,6 +5745,39 @@
                     nextEl: ".cabinet__age-popup-btn--next"
                 }
             });
+            if (document.querySelector(".knight-level__slider")) new Swiper(".knight-level__slider", {
+                observer: true,
+                observeParents: true,
+                slidesPerView: 3.5,
+                spaceBetween: 10,
+                speed: 800,
+                centeredSlides: false,
+                autoHeight: false,
+                grabCursor: true,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 3.5,
+                        centeredSlides: false
+                    },
+                    575.98: {
+                        slidesPerView: 4
+                    },
+                    767.98: {
+                        slidesPerView: 5
+                    },
+                    991.98: {
+                        slidesPerView: 6,
+                        spaceBetween: 15
+                    },
+                    1199.98: {
+                        slidesPerView: 7
+                    },
+                    1440: {
+                        spaceBetween: 35,
+                        slidesPerView: 8
+                    }
+                }
+            });
             if (document.querySelector(".plant-my__slider")) new Swiper(".plant-my__slider", {
                 observer: true,
                 observeParents: true,
