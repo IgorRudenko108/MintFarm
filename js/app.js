@@ -5661,6 +5661,7 @@
                 centeredSlides: true,
                 loop: true,
                 autoHeight: false,
+                clickable: false,
                 navigation: {
                     prevEl: ".kotopas__btn-prev",
                     nextEl: ".kotopas__btn-next"
@@ -5744,39 +5745,44 @@
                     nextEl: ".cabinet__age-popup-btn--next"
                 }
             });
-            if (document.querySelector(".knight-level__slider")) new Swiper(".knight-level__slider", {
+            if (document.querySelector(".plant-my__slider")) new Swiper(".plant-my__slider", {
                 observer: true,
                 observeParents: true,
-                slidesPerView: 3,
-                spaceBetween: 10,
+                slidesPerView: 1.5,
+                spaceBetween: 0,
                 speed: 800,
                 centeredSlides: false,
                 autoHeight: false,
                 grabCursor: true,
+                initSliders: true,
+                allowTouchMove: true,
+                init: true,
+                destroy: false,
                 breakpoints: {
-                    320: {
-                        slidesPerView: 3,
-                        centeredSlides: false
-                    },
-                    479.98: {
-                        slidesPerView: 3.5
-                    },
-                    575.98: {
-                        slidesPerView: 4
-                    },
-                    767.98: {
-                        slidesPerView: 5
+                    1199.98: {
+                        slidesPerView: 4.3
                     },
                     991.98: {
-                        slidesPerView: 6,
-                        spaceBetween: 15
+                        grabCursor: false,
+                        initSliders: false,
+                        allowTouchMove: false,
+                        init: false,
+                        destroy: true,
+                        slidesPerView: 3.2
                     },
-                    1199.98: {
-                        slidesPerView: 7
+                    768: {
+                        slidesPerView: 2.1
                     },
-                    1440: {
-                        spaceBetween: 35,
-                        slidesPerView: 8
+                    575.98: {
+                        slidesPerView: 1.8
+                    },
+                    320: {
+                        grabCursor: true,
+                        initSliders: true,
+                        allowTouchMove: true,
+                        init: true,
+                        destroy: false,
+                        slidesPerView: 1.5
                     }
                 }
             });

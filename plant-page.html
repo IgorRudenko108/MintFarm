@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231208222638">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231210092215">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper plant__wrapper">
-		<header class="plant__header header">
+		<header class="game__header header">
 			<div class="header__container">
 				<div class="header__inner">
 					<a href="index.html" class="header__logo logo">
@@ -283,20 +283,26 @@
 			<div class="plant__container">
 				<div class="plant__body">
 					<div class="plant__content">
-						<h1 class="plant__content-title">Построй завод и получай больше мяты</h1>
+						<div class="plant__content-inner">
+							<h1 class="plant__content-title">Построй завод и получай больше мяты</h1>
 
-						<p class="plant__content-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
+							<p class="plant__content-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+
+							<button class="btn btn__accent-2 fly__popup-close--white plant__main-btn">
+								Вперед
+							</button>
+						</div>
 					</div>
 
-					<div class="plant__cards plant__cards--1">
-						<div class="plant__card-item">
+					<div class="plant__cards">
+						<div class="plant__card-item plant__card-item--1">
 
 							<div class="plant__card-top">
 								<h2 class="plant__card-title">Строить новый завод</h2>
 
-								<div class="plant__card-arrow">
+								<div class="plant__card-arrow" width="25" height="25">
 									<img src="img/plant__page/card-arrow.svg" alt="Icon">
 								</div>
 							</div>
@@ -307,23 +313,21 @@
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									</p>
 
-									<a href="#" class="plant__card-link">Перейти</a>
+									<a href="plant-build-page.html" class="plant__card-link">Перейти</a>
 								</div>
 
 								<div class="plant__card-body--right">
-									<picture><source srcset="img/plant__page/cat-1.webp" type="image/webp"><img src="img/plant__page/cat-1.png" alt="Icon"></picture>
+									<picture><source srcset="img/plant__page/cat-1.webp" type="image/webp"><img class="plant__card-body-img" src="img/plant__page/cat-1.png" alt="Icon"></picture>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="plant__cards plant__cards--2">
-						<div class="plant__card-item">
+						<div class="plant__card-item plant__card-item--2">
 
 							<div class="plant__card-top">
 								<h2 class="plant__card-title">Мои заводы</h2>
 
-								<div class="plant__card-arrow">
+								<div class="plant__card-arrow" width="25" height="25">
 									<img src="img/plant__page/card-arrow.svg" alt="Icon">
 								</div>
 							</div>
@@ -334,23 +338,21 @@
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									</p>
 
-									<a href="#" class="plant__card-link">Перейти</a>
+									<a href="plant-my-page.html" class="plant__card-link">Перейти</a>
 								</div>
 
 								<div class="plant__card-body--right">
-									<picture><source srcset="img/plant__page/cat-2.webp" type="image/webp"><img src="img/plant__page/cat-2.png" alt="Icon"></picture>
+									<picture><source srcset="img/plant__page/cat-2.webp" type="image/webp"><img class="plant__card-body-img" src="img/plant__page/cat-2.png" alt="Icon"></picture>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="plant__cards plant__cards--3">
-						<div class="plant__card-item">
+						<div class="plant__card-item plant__card-item--3">
 
 							<div class="plant__card-top">
 								<h2 class="plant__card-title">Статистика</h2>
 
-								<div class="plant__card-arrow">
+								<div class="plant__card-arrow" width="25" height="25">
 									<img src="img/plant__page/card-arrow.svg" alt="Icon">
 								</div>
 							</div>
@@ -361,11 +363,11 @@
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									</p>
 
-									<a href="#" class="plant__card-link">Перейти</a>
+									<a href="plant-stat-page.html" class="plant__card-link">Перейти</a>
 								</div>
 
 								<div class="plant__card-body--right">
-									<picture><source srcset="img/plant__page/cat-3.webp" type="image/webp"><img src="img/plant__page/cat-3.png" alt="Icon"></picture>
+									<picture><source srcset="img/plant__page/cat-3.webp" type="image/webp"><img class="plant__card-body-img" src="img/plant__page/cat-3.png" alt="Icon"></picture>
 								</div>
 							</div>
 						</div>
@@ -375,7 +377,18 @@
 		</main>
 	</div>
 
-	<script src="js/app.min.js?_v=20231208222638"></script>
+	<script>
+		let plantMobileBtn = document.querySelector(".plant__main-btn");
+		let plantMobile = document.querySelector(".plant__body");
+
+		if (plantMobileBtn) {
+			plantMobileBtn.addEventListener('click', function(e) {
+				plantMobile.classList.add('plant-mobile')
+			})
+		}
+	</script>
+
+	<script src="js/app.min.js?_v=20231210092215"></script>
 </body>
 
 </html>
