@@ -5822,10 +5822,10 @@
                 centeredSlides: false,
                 autoHeight: false,
                 grabCursor: false,
-                initSliders: true,
-                allowTouchMove: true,
-                init: true,
-                destroy: false,
+                initSliders: false,
+                allowTouchMove: false,
+                init: false,
+                destroy: true,
                 breakpoints: {
                     1199.98: {
                         slidesPerView: 4.3
