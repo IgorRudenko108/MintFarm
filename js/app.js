@@ -5822,12 +5822,17 @@
                 centeredSlides: false,
                 autoHeight: false,
                 grabCursor: false,
-                initSliders: false,
-                allowTouchMove: false,
-                init: false,
-                destroy: true,
+                initSliders: true,
+                allowTouchMove: true,
+                init: true,
+                destroy: false,
                 breakpoints: {
                     1199.98: {
+                        grabCursor: false,
+                        initSliders: false,
+                        allowTouchMove: false,
+                        init: false,
+                        destroy: true,
                         slidesPerView: 4.3
                     },
                     991.98: {
@@ -5839,9 +5844,19 @@
                         slidesPerView: 3.2
                     },
                     768: {
+                        grabCursor: true,
+                        initSliders: true,
+                        allowTouchMove: true,
+                        init: true,
+                        destroy: false,
                         slidesPerView: 2.1
                     },
                     575.98: {
+                        grabCursor: true,
+                        initSliders: true,
+                        allowTouchMove: true,
+                        init: true,
+                        destroy: false,
                         slidesPerView: 1.8
                     },
                     320: {

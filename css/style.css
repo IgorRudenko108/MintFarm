@@ -20052,13 +20052,21 @@ body.shooter__body-main {
   margin-bottom: 15px;
 }
 
-.plane__aside-label {
+.plane__aside-label-box {
   width: 50px;
   height: 50px;
   margin: 0 auto 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.plane__aside-label {
+  max-width: 100%;
+}
+
+.plane__aside-img-box {
+  width: 100%;
 }
 
 .plane__aside-img {
@@ -29300,11 +29308,11 @@ button.swiper-pagination-bullet {
     text-align: left;
   }
 
-  .plane__aside-label {
+  .plane__aside-label-box {
     display: none !important;
   }
 
-  .plane__aside-img {
+  .plane__aside-img-box {
     -ms-grid-row-span: 2;
     grid-row: span 2;
     -ms-grid-column-span: 1;
