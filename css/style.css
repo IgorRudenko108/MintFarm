@@ -19312,17 +19312,43 @@ body.shooter__body-main {
 }
 
 .plant__card-item:hover .plant__card-arrow {
-  rotate: 0deg;
-  -webkit-transition: rotate 0.2s ease-in-out;
-  transition: rotate 0.2s ease-in-out;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .plant__card-item:active .plant__card-arrow {
-  rotate: 0deg;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .plant__card-item:focus-visible .plant__card-arrow {
-  rotate: 0deg;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.plant__card-arrow {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.plant__card-arrow:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.plant__card-arrow:active {
+  opacity: 0.8;
+}
+
+.plant__card-arrow:focus-visible {
+  opacity: 0.8;
 }
 
 .plant__card-top {
@@ -19367,9 +19393,11 @@ body.shooter__body-main {
           justify-content: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  rotate: -45deg;
-  -webkit-transition: rotate 0.2s ease-in-out;
-  transition: rotate 0.2s ease-in-out;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   z-index: 1;
 }
 
@@ -19804,11 +19832,11 @@ body.shooter__body-main {
 .plant-build__slider-btn {
   position: absolute;
   top: 50%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20px;
-          flex: 0 0 20px;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -19822,8 +19850,8 @@ body.shooter__body-main {
 }
 
 .plant-build__slider-btn img {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .plant-build__slider-prev {

@@ -5814,6 +5814,7 @@
                 }
             });
             if (document.querySelector(".plant-my__slider")) new Swiper(".plant-my__slider", {
+                modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
                 slidesPerView: 1.5,
@@ -5827,6 +5828,10 @@
                 allowTouchMove: true,
                 init: true,
                 destroy: false,
+                navigation: {
+                    prevEl: ".plant-build__slider-prev",
+                    nextEl: ".plant-build__slider-next"
+                },
                 breakpoints: {
                     1199.98: {
                         grabCursor: false,
