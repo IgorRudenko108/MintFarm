@@ -19792,8 +19792,7 @@ body.shooter__body-main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  max-width: 206px;
-  max-height: 233px;
+  max-width: 140px;
 }
 
 .plant-common__bottom-img .plant-common__bottom-cat {
@@ -23411,8 +23410,7 @@ button.swiper-pagination-bullet {
   }
 
   .plant-common__bottom-img {
-    max-width: 170px;
-    max-height: 197px;
+    max-width: 140px;
   }
 
   .plant-common__bottom {
@@ -24215,8 +24213,7 @@ button.swiper-pagination-bullet {
   }
 
   .plant-common__bottom-img {
-    max-width: 120px;
-    max-height: 147px;
+    max-width: 140px;
   }
 
   .plant-common__bottom {
