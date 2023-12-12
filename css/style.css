@@ -19797,9 +19797,7 @@ body.shooter__body-main {
 }
 
 .plant-common__bottom-img .plant-common__bottom-cat {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 100%;
   max-height: 100%;
 }
 
