@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231210181149">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231212031624">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -643,7 +643,7 @@
 
 								<a class="plant-check__popup-link" href="#">Info</a>
 
-								<a class="popup-plant-info__btn btn btn__accent-2" href="#">Построить</a>
+								<a class="popup-plant-info__btn btn btn__accent-2" href="#" data-popup="#popup-robbery">Построить</a>
 							</div>
 						</div>
 					</div>
@@ -652,7 +652,36 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20231210181149"></script>
+	<div id="popup-robbery" aria-hidden="true" class="popup-robbery popup">
+		<div class="popup__wrapper popup-robbery__wrapper">
+			<div class="popup__content popup-robbery__content">
+
+				<picture><source srcset="img/plant-build__page/rob-alarm.webp" type="image/webp"><img class="popup-robbery__alarm" src="img/plant-build__page/rob-alarm.png" width="104" height="104" alt="Image"></picture>
+
+				<div class="popup__text">
+					<div class="popup-robbery__body">
+						<h2 class="popup-robbery__title">Вас обворовали!</h2>
+						<p class="popup-robbery__text">Разграблен Большой завод № 29</p>
+
+						<div class="popup-robbery__pictute-box">
+							<picture><source srcset="img/plant-build__page/robbery.webp" type="image/webp"><img src="img/plant-build__page/robbery.png" alt="Image"></picture>
+						</div>
+
+						<div class="popup-robbery__bottom">
+							<p class="popup-robbery__bottom-text">
+								Было украдено
+								<span>40 мяты</span>
+							</p>
+
+							<button class="popup-robbery__btn btn btn__accent-2" data-close>Понятно</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20231212031624"></script>
 </body>
 
 </html>

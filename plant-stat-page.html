@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ru" class="scrollbar-initial">
+
+<head>
+	<title>Plant Statistic</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231212031624">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper plant__wrapper">
+		<header class="game__header header">
+			<div class="header__container">
+				<div class="header__inner">
+					<a href="index.html" class="header__logo logo">
+						<svg width="22" height="22">
+							<use xlink:href="img/icons/icons.svg#cat"></use>
+						</svg>
+						<span>CatFarm</span>
+					</a>
+
+					<ul class="header__nav-list--pc">
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="game-catalog-page.html">Игры</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="help-page-user.html">Помощь</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="waiting-page.html">Новости</a>
+						</li>
+
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="present-page-user.html">Маркет</a>
+						</li>
+					</ul>
+
+					<div class="lang-dropdown" data-da=".menu__body,479.98,2">
+
+						<div class="lang-dropdown__btn">
+							<span class="lang-dropdown__active">RU</span>
+							<img class="lang-dropdown__btn-img" src="img/common/lang.svg" alt="Icon">
+						</div>
+
+						<div class="dropdown-list">
+							<a class="lang-link active" href="#">
+								<span class="lang-link__name">RU</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">EN</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">ES</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">ID</span>
+							</a>
+
+							<a class="lang-link" href="#">
+								<span class="lang-link__name">PH</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="header__user-data">
+						<a class="header-wallet header-wallet--pc" href="#">
+							<div class="header-wallet__title">Кошелек</div>
+							<div class="header-wallet__body">
+								<span class="header-wallet__value">657</span>
+								<img class="header-wallet__icon" src="img/present__page/coin.svg" alt="Coin">
+							</div>
+						</a>
+
+						<a class="header-user" href="cabinet-page.html">
+							<div class="header-user__body header-user__body--pc">
+								<div class="header-user__name">Samurai</div>
+								<div class="header-user__info">
+									<span class="header-user__lvl">LVL</span>
+									<span class="header-user__lvl-value user-data">17</span>
+									<span class="header-user__xp user-data">1013/7800xp</span>
+								</div>
+							</div>
+
+							<div class="header-user__avatar">
+								<picture><source srcset="img/present__page/avatar-1.webp" type="image/webp"><img class="header-user__avatar-img" src="img/present__page/avatar-1.jpg" alt="Avatar"></picture>
+							</div>
+						</a>
+					</div>
+
+					<button type="button" class="menu__icon icon-menu icon-menu--pc"><span></span></button>
+
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<div class="burger__body-top">
+								<a class="burger__user" href="cabinet-page.html">
+									<div class="burger__user-info">
+										<div class="burger__user-name">Samurai</div>
+										<p class="burger__user-lvl">LVL 17 1013/7800xp</p>
+									</div>
+
+									<div class="burger__user-img">
+										<picture><source srcset="img/header/user-ava.webp" type="image/webp"><img src="img/header/user-ava.png" alt="Image"></picture>
+									</div>
+								</a>
+
+								<div class="burger__stat-info">
+									<a href="#" class="burger__stat-item burger__stat-money">
+										<img class="burger__stat-icon" src="img/header/burger-coin-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">657</span>
+									</a>
+
+									<a href="#" class="burger__stat-item burger__stat-mint">
+										<img class="burger__stat-icon" src="img/header/burger-mint-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">367</span>
+									</a>
+
+									<a href="#" class="burger__stat-item burger__stat-energy">
+										<img class="burger__stat-icon" src="img/header/burger-energy-1.svg" height="23" alt="Icon">
+										<span class="burger__stat-text">10%</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="burger__game-block">
+								<div class="burger__game-top">
+									<a href="game-catalog-page.html" class="burger__block-title">
+										<img class="burger__block-title-icon" src="img/header/title-icon-1.svg" width="20" height="20" alt="Icon">
+										Игры
+									</a>
+
+									<div data-spollers class="spollers burger__game-spoller">
+										<details class="spollers__item">
+											<summary class="spollers__title">
+												<img class="burger__block-title-icon" src="img/header/title-icon-1.svg" width="17" height="17" alt="Icon">
+												Игры
+											</summary>
+											<div class="spollers__body">
+												<a class="spollers__body-item burger__game-body-item" href="plant-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
+													Ферма
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="knight-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-2.svg" width="22" height="22" alt="Icon">
+													Рыцарь
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="shooter-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
+													Стрелок
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="saper-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-4.svg" width="22" height="22" alt="Icon">
+													Сапёр
+												</a>
+
+												<a class="spollers__body-item burger__game-body-item" href="flyer-page.html">
+													<img class="burger__game-body-item-icon" src="img/header/burger-game-5.svg" width="22" height="22" alt="Icon">
+													Летун
+												</a>
+											</div>
+										</details>
+									</div>
+								</div>
+
+								<div class="burger__game-body">
+									<a class="burger__game-body-item" href="plant-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-1.svg" width="22" height="22" alt="Icon">
+										Ферма
+									</a>
+
+									<a class="burger__game-body-item" href="knight-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-2.svg" width="22" height="22" alt="Icon">
+										Рыцарь
+									</a>
+
+									<a class="burger__game-body-item" href="shooter-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-3.svg" width="22" height="22" alt="Icon">
+										Стрелок
+									</a>
+
+									<a class="burger__game-body-item" href="saper-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-4.svg" width="22" height="22" alt="Icon">
+										Сапёр
+									</a>
+
+									<a class="burger__game-body-item" href="flyer-page.html">
+										<img class="burger__game-body-item-icon" src="img/header/burger-game-5.svg" width="22" height="22" alt="Icon">
+										Летун
+									</a>
+								</div>
+
+								<div class="burger__market">
+									<a href="exchange-page.html" class="burger__market-title">
+										<img class="burger__market-title-icon" src="img/header/title-icon-2.svg" width="20" height="20" alt="Icon">
+										Маркет
+									</a>
+
+									<div class="burger__market-body">
+										<div class="burger__market-item">
+											<img src="img/header/burger-mint-1.svg" alt="Icon">
+
+											<div class="burger__market-input-wrapper">
+												<input class="burger__market-input" type="number">
+											</div>
+										</div>
+
+										<img class="burger__market-exchange" src="img/header/exchange.svg" width="25" height="25" alt="Icon">
+
+										<div class="burger__market-item">
+											<div class="burger__market-input-wrapper">
+												<input class="burger__market-input" type="number">
+											</div>
+
+											<img src="img/header/burger-coin-2.svg" alt="Icon">
+										</div>
+									</div>
+
+									<button class="burger__market-btn">Обменять</button>
+								</div>
+							</div>
+
+							<hr class="burger__line">
+
+							<div class="burger__nav">
+								<a class="burger__nav-link" href="present-page-user.html">
+									<img src="img/header/burger-link-1.svg" width="20" height="20" alt="Icon">
+									Подарки
+								</a>
+
+								<a class="burger__nav-link" href="neighbors-page.html">
+									<img src="img/header/burger-link-2.svg" width="20" height="20" alt="Icon">
+									Соседи
+								</a>
+
+								<a class="burger__nav-link" href="kotopas-page.html">
+									<img src="img/header/burger-link-3.svg" width="20" height="20" alt="Icon">
+									Котопас
+								</a>
+
+								<a class="burger__nav-link" href="tasks-page.html">
+									<img src="img/header/burger-link-4.svg" width="20" height="20" alt="Icon">
+									Задачи
+								</a>
+							</div>
+
+							<hr class="burger__line">
+
+							<div class="burger__online">
+								<img src="img/header/burger-people.svg" width="20" height="20" alt="Icon">
+								<span>Онлайн: 9678 чел.</span>
+							</div>
+
+							<div class="burger__bottom">
+								<a class="burger__bottom-link" href="settings-page.html">
+									<img src="img/header/burger-settings.svg" width="15" height="15" alt="Icon">
+									<span>Настройки</span>
+								</a>
+
+								<a class="burger__bottom-link" href="help-page-user.html">
+									<img src="img/header/burger-help.svg" width="15" height="15" alt="Icon">
+									<span>Помощь</span>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page plant-build__page">
+			<div class="plant-build__container">
+				<div class="plant-common__body">
+					<div class="plant-wrapper plant-stat__main-wrapper">
+						<div class="plant-common__main plant-stat__main">
+							<div class="plant-common__title-box plant-stat__title-box">
+								<h1 class="plant-common__title plant-stat__title">Статистика</h1>
+
+								<select class="help-faq__select tasks__select" data-scroll name="form[]" data-class-modif="form">
+									<option value="1">Все</option>
+									<option value="2">Ферма</option>
+									<option value="3">Соседи</option>
+									<option value="4">Игры</option>
+								</select>
+							</div>
+
+							<div class="plant-stat__slider swiper">
+								<div class="plant-stat__wrapper swiper-wrapper">
+
+									<div class="plant-stat__slide swiper-slide">
+										<div class="plant-stat__slide-inner">
+
+											<div class="plant-stat__slide-item plant-stat__item--1">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Доход</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>+1300</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--2">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Завод построен</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>0</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--3">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Обворовали</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Большой завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>-80</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--4">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Завод закрылся</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>0</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--1">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Доход</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>+1300</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--1">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Доход</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>+1300</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--3">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Обворовали</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Большой завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>-80</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--2">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Завод построен</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>0</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--2">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Завод построен</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>0</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="plant-stat__slide swiper-slide">
+										<div class="plant-stat__slide-inner">
+
+											<div class="plant-stat__slide-item plant-stat__item--1">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Доход</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>+1300</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--2">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Завод построен</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>0</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--3">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Обворовали</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Большой завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>-80</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--4">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Завод закрылся</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>0</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--1">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Доход</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>+1300</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--1">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Доход</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>+1300</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--3">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Обворовали</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Большой завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>-80</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--2">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Завод построен</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>0</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+
+											<div class="plant-stat__slide-item plant-stat__item--2">
+												<div class="plant-stat__slide-item-top">
+													<div class="plant-stat__item-left">
+														<div class="plant-stat__date">
+															<span>20.01.2023</span>
+															<span>16:15</span>
+														</div>
+
+														<h2 class="plant-stat__item-title">Завод построен</h2>
+													</div>
+
+													<div class="plant-stat__item-right"></div>
+												</div>
+
+												<div class="plant-stat__slide-item-bottom">
+													<h3 class="plant-stat__bottom-subtitle">Средний завод</h3>
+
+													<div class="plant-stat__bottom-total">
+														<span>0</span>
+														<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-pagination plant-stat__slider-pagination"></div>
+
+							</div>
+
+						</div>
+
+						<aside class="plane__aside-stat">
+							<div class="plane__aside-stat--mobile"></div>
+
+							<div class="plane__aside-stat-wrapper">
+								<div class="plane__stat-circle">
+									<div class="false-For-Bottom-Text">
+										<div class="mypiechart">
+											<canvas id="myCanvas" width="190" height="190"></canvas>
+										</div>
+									</div>
+
+									<div class="plane__stat-total" data-da=".plane__aside-stat--mobile,767.98,0">
+										<p class="plane__total-title">Всего:</p>
+										<div class="plane__total-value">
+											<span>1200</span>
+											<img src="img/common/mint.svg" width="16" height="16" alt="Image">
+										</div>
+									</div>
+								</div>
+
+								<div class="plane__aside-stat-body">
+									<div class="plane__aside-stat-item">
+										Завод построен
+
+										<span class="plane__aside-stat-value">15</span>
+									</div>
+
+									<div class="plane__aside-stat-item">
+										Собран урожай
+
+										<span class="plane__aside-stat-value">15</span>
+									</div>
+
+									<div class="plane__aside-stat-item">
+										Обворовали
+
+										<span class="plane__aside-stat-value">15</span>
+									</div>
+
+									<div class="plane__aside-stat-item">
+										Завод закрылся
+
+										<span class="plane__aside-stat-value">15</span>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>
+
+					<div class="plant-common__bottom">
+						<div class="plant-common__bottom-img">
+							<picture><source srcset="img/plant-build__page/cat-big-3.webp" type="image/webp"><img class="plant-common__bottom-cat" src="img/plant-build__page/cat-big-3.png" alt="Image"></picture>
+						</div>
+
+						<div class="plant__card-item plant__card-item--1">
+
+							<div class="plant__card-top">
+								<a class="plant__card-title" href="plant-build-page.html">Строить <span>новый завод</span></a>
+
+								<div class="plant__card-arrow" width="25" height="25">
+									<img src="img/plant__page/card-arrow.svg" alt="Icon">
+								</div>
+							</div>
+
+							<div class="plant__card-body">
+								<div class="plant__card-body--left">
+									<p class="plant__card-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									</p>
+
+									<a href="plant-build-page.html" class="plant__card-link">Перейти</a>
+								</div>
+
+								<div class="plant__card-body--right">
+									<picture><source srcset="img/plant__page/cat-1.webp" type="image/webp"><img class="plant__card-body-img" src="img/plant__page/cat-1.png" alt="Icon"></picture>
+								</div>
+							</div>
+						</div>
+
+						<div class="plant__card-item plant__card-item--2">
+
+							<div class="plant__card-top">
+								<a class="plant__card-title" href="plant-my-page.html">Мои заводы</a>
+
+								<a class="plant__card-arrow" width="25" height="25">
+									<img src="img/plant__page/card-arrow.svg" alt="Icon">
+								</a>
+							</div>
+
+							<div class="plant__card-body">
+								<div class="plant__card-body--left">
+									<p class="plant__card-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									</p>
+
+									<a href="plant-stat-page.html" class="plant__card-link">Перейти</a>
+								</div>
+
+								<div class="plant__card-body--right">
+									<picture><source srcset="img/plant__page/cat-2.webp" type="image/webp"><img class="plant__card-body-img" src="img/plant__page/cat-2.png" alt="Icon"></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script>
+		function generatePieGraph(t, e) {
+			! function() {
+				var t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+				window.requestAnimationFrame = t
+			}();
+			var o, i, n = e.hasOwnProperty("pie") ? e.pie : "normal",
+				r = e.values,
+				a = e.colors,
+				l = !!e.hasOwnProperty("animation") && e.animation,
+				s = e.hasOwnProperty("animationSpeed") ? e.animationSpeed : 20,
+				f = !!e.hasOwnProperty("fillTextData") && e.fillTextData,
+				h = e.hasOwnProperty("fillTextColor") ? e.fillTextColor : "#fff",
+				P = e.hasOwnProperty("fillTextPosition") ? e.fillTextPosition : "horizontal",
+				u = e.hasOwnProperty("fillTextAlign") ? e.fillTextAlign : 1.85,
+				c = e.hasOwnProperty("doughnutHoleSize") ? e.doughnutHoleSize : null,
+				d = e.hasOwnProperty("doughnutHoleColor") ? e.doughnutHoleColor : "#fff",
+				m = e.hasOwnProperty("offset") ? e.offset : null,
+				p = null,
+				g = L(e, "strokeStartEndPoints") ? e.isStrokePie.strokeStartEndPoints : "No",
+				v = !!L(e, "overlayStroke") && e.isStrokePie.overlayStroke,
+				k = L(e, "overlayStrokeColor") ? e.isStrokePie.overlayStrokeColor : "#eee",
+				M = !L(e, "strokeAnimation") || e.isStrokePie.strokeAnimation,
+				S = L(e, "strokeAnimationSpeed") ? e.isStrokePie.strokeAnimationSpeed : 10,
+				y = L(e, "stroke") ? e.isStrokePie.stroke : 20,
+				w = L(e, "fontSize") ? e.isStrokePie.fontSize : "60px",
+				I = L(e, "textAlignement") ? e.isStrokePie.textAlignement : "center",
+				A = L(e, "fontFamily") ? e.isStrokePie.fontFamily : "Arial",
+				T = L(e, "fontWeight") ? e.isStrokePie.fontWeight : "bold",
+				x = document.getElementById(t),
+				b = x.getContext("2d"),
+				O = x.width / 2,
+				C = x.height / 2,
+				F = O,
+				z = 0,
+				q = [],
+				H = (o = 0, r.map(t => {
+					o += t
+				}), o),
+				E = 0,
+				R = 0;
+			if (r.length > 1)
+				for (var W = 0; W < r.length; W++) {
+					var Y = 0 == W ? 0 : E;
+					E = r[W] * (100 / H) + Y, q.push([Math.round(Y), Math.round(E), a[W]])
+				}
+
+			function j() {
+				q.forEach(function(t, e) {
+					var o = t[0] / 100 * Math.PI * 2,
+						i = null != m ? (t[1] - m / 10) / 100 * Math.PI * 2 : t[1] / 100 * Math.PI * 2,
+						n = ((o = "Top" == p ? o - Math.PI / 2 : o) + (i = "Top" == p ? i - Math.PI / 2 : i)) / 2;
+					offsetX = 0 == m || null == m ? 0 : Math.cos(n) * m, offsetY = 0 == m || null == m ? 0 : Math.sin(n) * m, b.beginPath(), b.moveTo(O + offsetX, C + offsetY), b.arc(O + offsetX, C + offsetY, F, o, i), b.fillStyle = t[2], b.fill(), b.fillStyle = d, b.beginPath(), b.moveTo(O, C), b.arc(O, C, c / 100 * C, 0, 2 * Math.PI), b.closePath(), b.fill()
+				})
+			}
+
+			function X(t) {
+				return t / 100 * (2 * Math.PI)
+			}
+
+			function B(t, e, o, i, n, r, a) {
+				b.beginPath(), b.arc(t, e, o, i, n, !1), b.strokeStyle = r, b.lineWidth = a, b.stroke()
+			}
+
+			function D(t, e) {
+				b.clearRect(0, 0, x.width, x.height), 1 == e && (b.beginPath(), b.arc(O, C, F - y, X(0) - Math.PI / 2, X(100) - Math.PI / 2), b.strokeStyle = k, b.lineWidth = y, b.stroke()), b.font = T + " " + w + " " + A, b.textAlign = I, b.textBaseline = "middle", "Yes" == g && B(O, C, F - y / 2, X(0) - Math.PI / 2, X(.1) - Math.PI / 2, a[0], y), B(O, C, F - y, X(0) - Math.PI / 2, X(t) - Math.PI / 2, a[0], y), "Yes" == g && B(O, C, F - y / 2, X(t - .1) - Math.PI / 2, X(t) - Math.PI / 2, a[0], y), b.fillText(t + "%", O, C)
+			}
+
+			function L(t, e) {
+				if ("object" == typeof t && null !== t) {
+					if (t.hasOwnProperty(e)) return !0;
+					for (var o in t)
+						if (t.hasOwnProperty(o) && L(t[o], e)) return !0
+				}
+				return !1
+			}! function e() {
+				1 == r.length && "stroke" == n ? function() {
+					var t = 0;
+					if (1 == M && 0 == v) var e = setInterval(function() {
+						D(++t, v), t >= r[0] && clearInterval(e)
+					}, S);
+					else if (1 == v) {
+						if (0 == M && D(r[0], v), 1 == M) var e = setInterval(function() {
+							D(++t, v), t >= r[0] && clearInterval(e)
+						}, S)
+					} else D(r[0], v)
+				}() : 1 == l && "normal" == n ? (b.clearRect(0, 0, x.width, x.height), j(), o = z / 100 * Math.PI * 2, b.globalCompositeOperation = "destination-in", b.beginPath(), b.moveTo(O, C), b.arc(O, C, F, 0, o), b.fill(), b.globalCompositeOperation = "source-over", z++ < 100 && setTimeout(function() {
+					requestAnimationFrame(e)
+				}, s)) : (j(), b.beginPath(), b.arc(O, C, F + 5, 0, 2 * Math.PI, !1), b.lineWidth = 30, b.strokeStyle = d, b.stroke());
+				var o;
+				if (101 == z) {
+					if (1 == f && "inner" == P)
+						for (var c = 0; c < r.length; c++) {
+							i = r[c] / H * Math.PI * 2;
+							var m = C / u,
+								g = "Top" == p ? O + m * Math.cos(R + i / 2 - Math.PI / 2) : O + m * Math.cos(R + i / 2),
+								k = "Top" == p ? C + m * Math.sin(R + i / 2 - Math.PI / 2) : C + m * Math.sin(R + i / 2),
+								y = r[c] * (100 / H);
+							b.fillStyle = h, b.font = "bold 16px Arial", b.textAlign = "center", b.fillText(y.toFixed(1) + "%", g, k), R += i
+						}
+					if (1 == f && "horizontal" == P) {
+						for (var w = '<div class="pie-horizontal-list"><ul>', c = 0; c < r.length; c++) w += '<li><span style="background: ' + a[c] + '"></span> ' + r[c] * (100 / H) + " %<li>";
+						w += "</ul></div>", x.insertAdjacentHTML("afterend", w)
+					}
+					if (1 == f && "vertical" == P) {
+						for (var w = '<div class="pie-vertical-list-' + t + '"><ul>', c = 0; c < r.length; c++) w += '<li><span style="background: ' + a[c] + '"></span> ' + r[c] * (100 / H) + " %<li>";
+						w += "</ul></div>", x.parentElement.insertAdjacentHTML("beforeend", w)
+					}
+				}
+			}()
+		}
+	</script>
+
+	<script type="text/javascript">
+		var obj = {
+			values: [25, 25, 25, 25],
+			colors: ['#424242', '#14D15D', '#F76D6D', '#6D87F7'],
+			animation: true, // Takes boolean value & default behavious is false
+			animationSpeed: 10, // Time in miliisecond & default animation speed is 20ms
+			fillTextData: false, // Takes boolean value & text is not generate by default 
+			fillTextColor: '#fff', // For Text colour & default colour is #fff (White)
+			fillTextAlign: 1.30, // for alignment of inner text position i.e. higher values gives closer view to center & default text alignment is 1.85 i.e closer to center
+			fillTextPosition: 'inner', // 'horizontal' or 'vertical' or 'inner' & default text position is 'horizontal' position i.e. outside the canvas
+			doughnutHoleSize: 55, // Percentage of doughnut size within the canvas & default doughnut size is null
+			doughnutHoleColor: '#fff', // For doughnut colour & default colour is #fff (White)
+			offset: 5, // Offeset between two segments & default value is null
+			pie: 'normal', // if the pie graph is single stroke then we will add the object key as "stroke" & default is normal as simple as pie graph
+			isStrokePie: {
+				stroke: 20, // Define the stroke of pie graph. It takes number value & default value is 20
+				overlayStroke: true, // Define the background stroke within pie graph. It takes boolean value & default value is false
+				overlayStrokeColor: '#eee', // Define the background stroke colour within pie graph & default value is #eee (Grey)
+				strokeStartEndPoints: 'Yes', // Define the start and end point of pie graph & default value is No
+				strokeAnimation: true, // Used for animation. It takes boolean value & default value is true
+				strokeAnimationSpeed: 40, // Used for animation speed in miliisecond. It takes number & default value is 20ms
+				fontSize: '60px', // Used to define text font size & default value is 60px
+				textAlignement: 'center', // Used for position of text within the pie graph & default value is 'center'
+				fontFamily: 'Arial', // Define the text font family & the default value is 'Arial'
+				fontWeight: 'bold' //  Define the font weight of the text & the default value is 'bold'
+			}
+		};
+
+		//Generate myCanvas		
+		generatePieGraph('myCanvas', obj);
+	</script>
+
+	<script src="js/app.min.js?_v=20231212031624"></script>
+</body>
+
+</html>

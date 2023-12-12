@@ -5821,6 +5821,7 @@
                 speed: 800,
                 centeredSlides: false,
                 autoHeight: false,
+                loop: true,
                 grabCursor: false,
                 initSliders: true,
                 allowTouchMove: true,
@@ -5835,7 +5836,7 @@
                         destroy: true,
                         slidesPerView: 4.3
                     },
-                    991.98: {
+                    992: {
                         grabCursor: false,
                         initSliders: false,
                         allowTouchMove: false,
@@ -5844,11 +5845,12 @@
                         slidesPerView: 3.2
                     },
                     768: {
-                        grabCursor: true,
-                        initSliders: true,
-                        allowTouchMove: true,
-                        init: true,
-                        destroy: false,
+                        grabCursor: false,
+                        initSliders: false,
+                        allowTouchMove: false,
+                        init: false,
+                        destroy: true,
+                        spaceBetween: 0,
                         slidesPerView: 2.1
                     },
                     575.98: {
@@ -5857,7 +5859,8 @@
                         allowTouchMove: true,
                         init: true,
                         destroy: false,
-                        slidesPerView: 1.8
+                        slidesPerView: 1.8,
+                        spaceBetween: 15
                     },
                     320: {
                         grabCursor: true,
@@ -5865,7 +5868,26 @@
                         allowTouchMove: true,
                         init: true,
                         destroy: false,
-                        slidesPerView: 1.5
+                        slidesPerView: 1.5,
+                        spaceBetween: 15
+                    }
+                }
+            });
+            if (document.querySelector(".plant-stat__slider")) new Swiper(".plant-stat__slider", {
+                modules: [ Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                speed: 800,
+                centeredSlides: false,
+                autoHeight: false,
+                grabCursor: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function(index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
                     }
                 }
             });
