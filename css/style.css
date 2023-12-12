@@ -19793,6 +19793,7 @@ body.shooter__body-main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   max-width: 140px;
+  margin: 0 auto;
 }
 
 .plant-common__bottom-img .plant-common__bottom-cat {
@@ -20851,6 +20852,12 @@ body.shooter__body-main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.plant-stat__main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /**
@@ -30003,6 +30010,10 @@ button.swiper-pagination-bullet {
   }
 
   .plant-stat__main-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     gap: 10px;
   }
 }
