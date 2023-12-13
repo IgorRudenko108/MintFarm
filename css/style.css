@@ -24087,6 +24087,10 @@ button.swiper-pagination-bullet {
     min-width: 90px;
   }
 
+  .flyer__cards-item {
+    height: 80px;
+  }
+
   .flyer__koef {
     left: 40%;
   }
@@ -28233,6 +28237,12 @@ button.swiper-pagination-bullet {
     font-size: 10px;
   }
 
+  .flyer__content-controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .flyer__fly-down {
     width: 370%;
   }
@@ -29716,6 +29726,11 @@ button.swiper-pagination-bullet {
 
   .knight__battery-box {
     margin-bottom: 25px;
+  }
+
+  .flyer__music--mobile {
+    right: 15px;
+    top: 75px;
   }
 
   .popup-flyer__button {
