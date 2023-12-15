@@ -1670,6 +1670,7 @@ body._touch .lang-dropdown.dropdown-open > .dropdown-list {
 
 .header__container {
   position: relative;
+  max-width: 100% !important;
 }
 
 .header__nav-list--pc {
@@ -5814,7 +5815,7 @@ body {
 
 .header__container--big {
   position: relative;
-  max-width: 1440px;
+  max-width: 100%;
   padding: 0 20px;
 }
 
@@ -23526,20 +23527,20 @@ button.swiper-pagination-bullet {
 @media (max-width: 1440px) and (max-height: 767px) {
   .knight-level__value,
   .knight-maxlevel__value {
-    font-size: 40px !important;
+    font-size: 30px !important;
   }
 
   .knight-level__value span,
   .knight-maxlevel__value span {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
 
   .knight-level__box--active .knight-level__value {
-    font-size: 50px !important;
+    font-size: 35px !important;
   }
 
   .knight-level__box--active .knight-level__value span {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
 
   .knight-game__row-content {
