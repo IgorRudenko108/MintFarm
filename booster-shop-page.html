@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scrollbar-initial">
 
 <head>
-	<title>Settings</title>
+	<title>Booster shop</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper plant__wrapper">
 		<header class="header">
 			<div class="header__container">
 				<div class="header__inner">
@@ -34,7 +34,7 @@
 						</li>
 
 						<li class="header__nav-item">
-							<a class="header__nav-link" href="news-page-user.html">Новости</a>
+							<a class="header__nav-link" href="waiting-page.html">Новости</a>
 						</li>
 
 						<li class="header__nav-item">
@@ -279,99 +279,115 @@
 			</div>
 		</header>
 
-		<main class="page settings__page page-color">
-			<div class="settings__container">
-				<div class="settings__inner">
-					<h1 class="settings__main-title">Настройки аккаунта</h1>
+		<main class="page booster__page page-color">
+			<div class="booster__container">
+				<div class="booster__body">
+					<div class="booster__top-controls">
+						<a class="booster__page-back page-back" href="sign-in.html">
+							<svg width="6" height="12">
+								<use xlink:href="img/icons/icons.svg#arrow-left"></use>
+							</svg>
 
-					<div class="settings__body">
-						<div class="settings__top">
+							<span>Назад</span>
+						</a>
+					</div>
 
-							<div class="settings__title parsonage__slider-title">
-								<svg class="settings__title-deco parsonage__slider-title-deco parsonage__slider-title-deco--1" width="46" height="46">
-									<use xlink:href="img/icons/icons.svg#cat"></use>
-								</svg>
-								CatFarm
-								<svg class="settings__title-deco parsonage__slider-title-deco parsonage__slider-title-deco--2" width="46" height="46">
-									<use xlink:href="img/icons/icons.svg#cat"></use>
-								</svg>
-							</div>
+					<div class="booster__top">
+						<h1 class="present-main__title">Магазин бустеров</h1>
 
-							<div class="settings__top-content">
-								<button class="settings__edit-avatar">
-									<picture><source srcset="img/settings__page/settings-ava.webp" type="image/webp"><img class="settings__avatar-img" width="184" height="184" src="img/settings__page/settings-ava.png" alt="Image"></picture>
+						<div class="booster__cart-wrapper">
+							<button class="booster__cart-btn btn btn__accent-2">
+								Корзина
 
-									<div class="settings__avatar-edit">
-										<svg width="13" height="13">
-											<use xlink:href="img/icons/icons.svg#settings-edit"></use>
+								<div class="booster__cart-icons">
+									<img src="img/booster-shop__page/cart.svg" width="25" height="25" alt="Icon">
+
+									<span>3</span>
+								</div>
+							</button>
+
+							<div class="booster__cart-body">
+								<div class="booster__cart-top">
+									<h2 class="booster__cart-title">Ваши бустеры</h2>
+
+									<button data-close type="button" class="popup-saper-stat__close popup__close">
+										<svg width="18" height="18">
+											<use xlink:href="img/icons/icons.svg#close"></use>
 										</svg>
-									</div>
-								</button>
+									</button>
+								</div>
 
-								<button class="settings__edit-name">
-									Samurai
+								<div class="booster__cart-inner">
+									<div class="booster__cart-item">
+										<picture><source srcset="img/booster-shop__page/cart-1.webp" type="image/webp"><img class="booster__cart-iamge" src="img/booster-shop__page/cart-1.jpg" width="40" height="40" alt="Image"></picture>
 
-									<div class="settings__name-edit">
-										<svg width="13" height="13">
-											<use xlink:href="img/icons/icons.svg#settings-edit"></use>
-										</svg>
+										<h3 class="booster__cart-item-title">Запасной парашют</h3>
+
+										<div class="booster__cart-counter counter" data-counter>
+											<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
+											<div class="counter__input-box">
+												<input type="text" placeholder="" value="1">
+											</div>
+											<div class="booster__cart-counter-plus counter__button counter__button_plus">+</div>
+										</div>
+
+										<div class="booster__cart-mint">
+											<span class="booster__cart-mint-value">25</span>
+											<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+										</div>
 									</div>
-								</button>
+
+									<div class="booster__cart-item">
+										<picture><source srcset="img/booster-shop__page/cart-2.webp" type="image/webp"><img class="booster__cart-iamge" src="img/booster-shop__page/cart-2.jpg" width="40" height="40" alt="Image"></picture>
+
+										<h3 class="booster__cart-item-title">Запасной патрон</h3>
+
+										<div class="booster__cart-counter counter" data-counter>
+											<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
+											<div class="counter__input-box">
+												<input type="text" placeholder="" value="1">
+											</div>
+											<div class="booster__cart-counter-plus counter__button counter__button_plus">+</div>
+										</div>
+
+										<div class="booster__cart-mint">
+											<span class="booster__cart-mint-value">25</span>
+											<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+										</div>
+									</div>
+
+									<div class="booster__cart-item">
+										<picture><source srcset="img/booster-shop__page/cart-3.webp" type="image/webp"><img class="booster__cart-iamge" src="img/booster-shop__page/cart-3.jpg" width="40" height="40" alt="Image"></picture>
+
+										<h3 class="booster__cart-item-title">Щит рыцаря</h3>
+
+										<div class="booster__cart-counter counter" data-counter>
+											<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
+											<div class="counter__input-box">
+												<input type="text" placeholder="" value="1">
+											</div>
+											<div class="booster__cart-counter-plus counter__button counter__button_plus">+</div>
+										</div>
+
+										<div class="booster__cart-mint">
+											<span class="booster__cart-mint-value">25</span>
+											<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+										</div>
+									</div>
+								</div>
+
+								<div class="booster__cart-tital">
+									Итого: <span>75</span>
+									<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+								</div>
+
+								<a class="booster__cart-buy btn btn__accent-2" href="#">Приобрести</a>
 							</div>
 						</div>
-
-						<form class="settings__form" action="#">
-							<div class="settings__form-item">
-								<input type="email" class="settings__input" placeholder="Email">
-								<button class="settings__form-btn btn btn__accent">Изменить</button>
-								<button class="settings__form-btn--mobile">
-									<svg width="10" height="10">
-										<use xlink:href="img/icons/icons.svg#settings-edit"></use>
-									</svg>
-								</button>
-							</div>
-
-							<div class="settings__form-item">
-								<input type="password" class="settings__input" placeholder="Пароль">
-								<button class="settings__form-btn btn btn__accent">Изменить</button>
-								<button class="settings__form-btn--mobile">
-									<svg width="10" height="10">
-										<use xlink:href="img/icons/icons.svg#settings-edit"></use>
-									</svg>
-								</button>
-							</div>
-
-							<div class="settings__form-item">
-								<input type="text" class="settings__input" placeholder="Адрес">
-								<button class="settings__form-btn btn btn__accent">Изменить</button>
-								<button class="settings__form-btn--mobile">
-									<svg width="10" height="10">
-										<use xlink:href="img/icons/icons.svg#settings-edit"></use>
-									</svg>
-								</button>
-							</div>
-
-							<div class="settings__form-item">
-								<a class="settings__form-link" href="#">Реферальная ссылка</a>
-								<button class="settings__form-btn btn btn__accent">Скопировать</button>
-
-								<button class="settings__form-btn--mobile">
-									<img src="img/settings__page/copy-icon.svg" width="15" height="15" alt="Image">
-								</button>
-							</div>
-						</form>
-
-						<a class="settings__link-exit" href="#">
-							Выйти из аккаунта
-							<svg width="24" height="24">
-								<use xlink:href="img/icons/icons.svg#accaunt-exit"></use>
-							</svg>
-						</a>
 					</div>
 				</div>
 			</div>
 		</main>
-
 	</div>
 
 	<script src="js/app.min.js?_v=20231215101431"></script>

@@ -24044,12 +24044,12 @@ button.swiper-pagination-bullet {
     grid-template-columns: 1fr 270px 1fr;
   }
 
-  .shooter__live {
+  .shooter__live-title {
     display: none;
   }
 
   .shooter__live-box {
-    gap: 8px;
+    display: none;
   }
 
   .shooter__live-item {
