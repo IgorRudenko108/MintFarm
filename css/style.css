@@ -21625,7 +21625,11 @@ body.shooter__body-main {
 }
 
 .booster__product-cart:active {
-  background-color: #6D87F7;
+  background-color: #6D87F7 !important;
+}
+
+.booster__product-cart:focus-visible {
+  background-color: #6D87F7 !important;
 }
 
 .booster__product-cart .booster__cart-btn-name {
@@ -21635,6 +21639,14 @@ body.shooter__body-main {
 .booster__product-cart img {
   width: 15px;
   height: 15px;
+}
+
+.booster__product-cart:active {
+  background-color: #14D15D !important;
+}
+
+.booster__product-cart:focus-visible {
+  background-color: #14D15D !important;
 }
 
 .booster__product-counter {
