@@ -5863,6 +5863,20 @@
                     }
                 }
             });
+            if (document.querySelector(".booster__slider")) new Swiper(".booster__slider", {
+                modules: [ Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                speed: 800,
+                centeredSlides: false,
+                autoHeight: false,
+                grabCursor: true,
+                pagination: {
+                    el: ".swiper-pagination"
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();

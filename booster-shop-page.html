@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru" class="scrollbar-initial">
+<html lang="ru" class="scrollbar-initial booster-overlay">
 
 <head>
 	<title>Booster shop</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231215101431">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231218010013">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="_touch">
 	<div class="wrapper plant__wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -283,7 +283,7 @@
 			<div class="booster__container">
 				<div class="booster__body">
 					<div class="booster__top-controls">
-						<a class="booster__page-back page-back" href="sign-in.html">
+						<a class="booster__page-back page-back" href="game-catalog-page.html">
 							<svg width="6" height="12">
 								<use xlink:href="img/icons/icons.svg#arrow-left"></use>
 							</svg>
@@ -293,11 +293,11 @@
 					</div>
 
 					<div class="booster__top">
-						<h1 class="present-main__title">Магазин бустеров</h1>
+						<h1 class="booster-main__title">Магазин бустеров</h1>
 
-						<div class="booster__cart-wrapper">
+						<div class="booster__cart-wrapper" data-da=".booster__body,479.98,1">
 							<button class="booster__cart-btn btn btn__accent-2">
-								Корзина
+								<span class="booster__cart-btn-name">Корзина</span>
 
 								<div class="booster__cart-icons">
 									<img src="img/booster-shop__page/cart.svg" width="25" height="25" alt="Icon">
@@ -310,7 +310,7 @@
 								<div class="booster__cart-top">
 									<h2 class="booster__cart-title">Ваши бустеры</h2>
 
-									<button data-close type="button" class="popup-saper-stat__close popup__close">
+									<button data-close type="button" class="booster-cart__close popup-saper-stat__close popup__close">
 										<svg width="18" height="18">
 											<use xlink:href="img/icons/icons.svg#close"></use>
 										</svg>
@@ -321,7 +321,7 @@
 									<div class="booster__cart-item">
 										<picture><source srcset="img/booster-shop__page/cart-1.webp" type="image/webp"><img class="booster__cart-iamge" src="img/booster-shop__page/cart-1.jpg" width="40" height="40" alt="Image"></picture>
 
-										<h3 class="booster__cart-item-title">Запасной парашют</h3>
+										<a href="#" class="booster__cart-item-title">Запасной парашют</a>
 
 										<div class="booster__cart-counter counter" data-counter>
 											<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
@@ -340,7 +340,7 @@
 									<div class="booster__cart-item">
 										<picture><source srcset="img/booster-shop__page/cart-2.webp" type="image/webp"><img class="booster__cart-iamge" src="img/booster-shop__page/cart-2.jpg" width="40" height="40" alt="Image"></picture>
 
-										<h3 class="booster__cart-item-title">Запасной патрон</h3>
+										<a href="#" class="booster__cart-item-title">Запасной патрон</a>
 
 										<div class="booster__cart-counter counter" data-counter>
 											<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
@@ -359,7 +359,7 @@
 									<div class="booster__cart-item">
 										<picture><source srcset="img/booster-shop__page/cart-3.webp" type="image/webp"><img class="booster__cart-iamge" src="img/booster-shop__page/cart-3.jpg" width="40" height="40" alt="Image"></picture>
 
-										<h3 class="booster__cart-item-title">Щит рыцаря</h3>
+										<a href="#" class="booster__cart-item-title">Щит рыцаря</a>
 
 										<div class="booster__cart-counter counter" data-counter>
 											<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
@@ -385,12 +385,946 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="booster__slider swiper">
+						<div class="booster__wrapper swiper-wrapper">
+
+							<div class="booster__slide swiper-slide">
+								<div class="booster__slide-inner">
+									<div class="booster__slide-img-box">
+										<picture><source srcset="img/booster-shop__page/slide-1.webp" type="image/webp"><img class="booster__slide-img" src="img/booster-shop__page/slide-1.png" alt="Image"></picture>
+									</div>
+
+									<div class="booster__slide-content">
+
+										<div class="booster__slide-title-box">
+											<div class="booster__slide-label">
+												<p class="booster__slide-label-title">Спецпредложение</p>
+												<span class="booster__slide-label-value">-20%</span>
+											</div>
+
+											<p class="booster__slide-offer-item booster__slide-offer-item--mobile">Только до 10 декабря</p>
+
+											<h2 class="booster__slide-title">Спецпредложение</h2>
+											<div class="booster__slide-offer">
+												<p class="booster__slide-offer-item booster__slide-offer-item--pc">Только до 10 декабря</p>
+												<p class="booster__slide-offer-item">при покупке сразу трех для вещей рыцаря</p>
+											</div>
+											<p class="booster__slide-sale">скидка 20%</p>
+										</div>
+
+										<picture><source srcset="img/booster-shop__page/deco.webp" type="image/webp"><img class="booster__slide-deco" src="img/booster-shop__page/deco.png" alt="Image"></picture>
+
+										<a href="#" class="booster__slide-btn">Перейти
+											<img src="img/plant__page/card-arrow.svg" width="14" height="14" alt="Icon">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="booster__slide swiper-slide">
+								<div class="booster__slide-inner">
+									<div class="booster__slide-img-box">
+										<picture><source srcset="img/booster-shop__page/slide-1.webp" type="image/webp"><img class="booster__slide-img" src="img/booster-shop__page/slide-1.png" alt="Image"></picture>
+									</div>
+
+									<div class="booster__slide-content">
+
+										<div class="booster__slide-title-box">
+											<div class="booster__slide-label">
+												<p class="booster__slide-label-title">Спецпредложение</p>
+												<span class="booster__slide-label-value">-20%</span>
+											</div>
+
+											<p class="booster__slide-offer-item booster__slide-offer-item--mobile">Только до 10 декабря</p>
+
+											<h2 class="booster__slide-title">Спецпредложение</h2>
+											<div class="booster__slide-offer">
+												<p class="booster__slide-offer-item booster__slide-offer-item--pc">Только до 10 декабря</p>
+												<p class="booster__slide-offer-item">при покупке сразу трех для вещей рыцаря</p>
+											</div>
+											<p class="booster__slide-sale">скидка 20%</p>
+										</div>
+
+										<picture><source srcset="img/booster-shop__page/deco.webp" type="image/webp"><img class="booster__slide-deco" src="img/booster-shop__page/deco.png" alt="Image"></picture>
+
+										<a href="#" class="booster__slide-btn">Перейти
+											<img src="img/plant__page/card-arrow.svg" width="14" height="14" alt="Icon">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__slider-pagination swiper-pagination"></div>
+					</div>
+
+					<div class="booster__main">
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game">
+										<span>Летун</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-1.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-1.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Индикатор безопасности</h3>
+								<p class="booster__product-text">
+									Появляется лампочка на гарантированно безопасное время
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label booster__product-label--sale">АКЦИЯ <span>-10%</span></div>
+
+									<div class="booster__product-game">
+										<span>Стрелок</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-2.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-2.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Выстрел на упреждение</h3>
+								<p class="booster__product-text">
+									-1 жизнь противнику на старте
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game">
+										<span>Рыцарь</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-3.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-3.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Кошачье зрение</h3>
+								<p class="booster__product-text">
+									Показывает что за дверью
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game booster__product-game--white">
+										<span>Сапёр</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-4.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-4.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Собачий радар</h3>
+								<p class="booster__product-text">
+									Открывает 3 плитки с собаками
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game">
+										<span>Летун</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-5.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-5.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Зелье множителя</h3>
+								<p class="booster__product-text">
+									Коэффициент умножается на 2
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label booster__product-label--sale">АКЦИЯ <span>-10%</span></div>
+
+									<div class="booster__product-game">
+										<span>Стрелок</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-6.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-6.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Зелье жизненной силы</h3>
+								<p class="booster__product-text">
+									+1 жизнь себе, у игрока становится 4 сердца
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game">
+										<span>Рыцарь</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-7.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-7.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Девятая жизнь</h3>
+								<p class="booster__product-text">
+									Позволяет проскочить 1 раз мимо собаки и возвращает игрока на этаж ниже
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game booster__product-game--white">
+										<span>Сапёр</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-8.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-8.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Зелье множителя</h3>
+								<p class="booster__product-text">
+									Коэффициент умножается на 2
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game">
+										<span>Летун</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-9.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-9.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Ускоренное падение</h3>
+								<p class="booster__product-text">
+									Коэффициент ставки начинается с 1,00
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label booster__product-label--sale">АКЦИЯ <span>-10%</span></div>
+
+									<div class="booster__product-game">
+										<span>Стрелок</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-10.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-10.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Фальшивый щит</h3>
+								<p class="booster__product-text">
+									Противник может закрыть только 1 часть тела в 1 раунде
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game">
+										<span>Рыцарь</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-11.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-11.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Долгожданный поцелуй</h3>
+								<p class="booster__product-text">
+									1 раз принцесса увеличит коэффициент в 1,5 раз больше
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+						<div class="booster__product-item">
+							<div class="booster__product-box">
+								<div class="booster__product-top">
+									<div class="booster__product-label">ХИТ</div>
+
+									<div class="booster__product-game booster__product-game--white">
+										<span>Сапёр</span>
+									</div>
+
+								</div>
+
+								<picture><source srcset="img/booster-shop__page/product-bg-12.webp" type="image/webp"><img class="booster__product-img" src="img/booster-shop__page/product-bg-12.jpg" alt="Image"></picture>
+							</div>
+
+							<div class="booster__product-info">
+								<h3 class="booster__product-title">Монетка удачи</h3>
+								<p class="booster__product-text">
+									Подсвечивает две плитки одна из которых собака
+								</p>
+							</div>
+
+							<div class="booster__product-controls">
+
+								<button class="booster__product-buy btn btn__accent">
+									Купить
+								</button>
+
+								<button class="booster__product-confirm btn btn__accent">
+									Подтвердить
+								</button>
+
+								<button class="booster__product-cart btn btn__accent-2">
+									<span class="booster__cart-btn-name">В корзину</span>
+
+									<div class="booster__cart-icons">
+										<img src="img/booster-shop__page/cart.svg" width="15" height="15" alt="Icon">
+									</div>
+								</button>
+
+								<div class="booster__product-counter">
+									<div class="booster__cart-counter counter" data-counter>
+										<div class="booster__product-counter-minus booster__cart-counter-minus counter__button counter__button_minus">-</div>
+										<div class="counter__input-box">
+											<input type="text" placeholder="" value="1">
+										</div>
+										<div class="booster__product-counter-plus booster__cart-counter-plus counter__button counter__button_plus">+</div>
+									</div>
+
+									<div class="booster__cart-mint">
+										<span class="booster__cart-mint-value">25</span>
+										<img src="img/common/mint.svg" width="13" height="13" alt="Image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="booster__product-bottom">
+								<div class="booster__product-bottom-item">
+									Стоимость <span>25</span>
+									<img src="img/common/mint.svg" width="9" height="9" alt="Image">
+								</div>
+
+								<div class="booster__product-bottom-item">
+									В наличии: <span>5шт</span>.
+								</div>
+							</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</main>
 	</div>
 
-	<script src="js/app.min.js?_v=20231215101431"></script>
+	<script>
+		const cartBtn = document.querySelector('.booster__cart-btn');
+		const cartBody = document.querySelector('.booster__cart-body');
+		const cartClose = document.querySelector('.booster-cart__close');
+		const cartOverlay = document.querySelector('.booster-overlay');
+
+		if (cartBtn) {
+			cartBtn.addEventListener("click", function(e) {
+				cartBody.classList.toggle("cart-open");
+				cartOverlay.classList.toggle("popup-show");
+			});
+		};
+
+		if (cartClose) {
+			cartClose.addEventListener("click", function(e) {
+				cartBody.classList.remove("cart-open");
+				cartOverlay.classList.remove("popup-show");
+			});
+		};
+	</script>
+
+	<script>
+		let controlsBuy = document.querySelectorAll('.booster__product-buy');
+		let controlsConf = document.querySelectorAll('.booster__product-confirm');
+		let controlsBox = document.querySelectorAll('.booster__product-controls');
+
+		controlsBuy.forEach(item => {
+			item.addEventListener('click', function(e) {
+				item.parentElement.classList.add('controls-open')
+			})
+		});
+
+		controlsConf.forEach(item => {
+			item.addEventListener('click', function(e) {
+				item.parentElement.classList.remove('controls-open')
+			})
+		});
+	</script>
+
+	<script src="js/app.min.js?_v=20231218010013"></script>
 </body>
 
 </html>
