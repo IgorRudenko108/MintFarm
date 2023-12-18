@@ -5873,8 +5873,44 @@
                 centeredSlides: false,
                 autoHeight: false,
                 grabCursor: true,
+                allowTouchMove: true,
+                init: true,
+                destroy: false,
                 pagination: {
-                    el: ".swiper-pagination"
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                breakpoints: {
+                    1199.98: {
+                        grabCursor: true,
+                        allowTouchMove: true,
+                        init: true,
+                        destroy: false
+                    },
+                    992: {
+                        grabCursor: true,
+                        allowTouchMove: true,
+                        init: true,
+                        destroy: false
+                    },
+                    768: {
+                        grabCursor: true,
+                        allowTouchMove: true,
+                        init: true,
+                        destroy: false
+                    },
+                    575.98: {
+                        grabCursor: true,
+                        allowTouchMove: true,
+                        init: true,
+                        destroy: false
+                    },
+                    320: {
+                        grabCursor: true,
+                        allowTouchMove: true,
+                        init: true,
+                        destroy: false
+                    }
                 }
             });
         }
