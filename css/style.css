@@ -21100,7 +21100,7 @@ body.shooter__body-main {
 .booster__cart-inner {
   border-top: 1px solid #424242;
   border-bottom: 1px solid #424242;
-  padding: 20px 0;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21108,7 +21108,7 @@ body.shooter__body-main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  min-height: 45px;
 }
 
 .booster__cart-item {
@@ -21122,6 +21122,10 @@ body.shooter__body-main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 10px;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  padding-top: 20px;
 }
 
 .booster__cart-counter {
@@ -21134,6 +21138,16 @@ body.shooter__body-main {
   font-weight: 400;
   line-height: 120%;
   width: 25px;
+}
+
+.booster__cart-counter-plus {
+  rotate: 45deg;
+}
+
+.booster__cart-counter-plus svg {
+  fill: #6D87F7;
+  -webkit-transition: fill 0.1s ease-in-out;
+  transition: fill 0.1s ease-in-out;
 }
 
 .booster__cart-counter-plus,
@@ -21149,15 +21163,24 @@ body.shooter__body-main {
   font-size: 13px;
   font-weight: 400;
   line-height: inherit;
-  width: 18px;
+  width: 16px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 18px;
-          flex: 0 0 18px;
-  height: 18px;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
   border-radius: 50%;
   border: 1px solid #6D87F7;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+.booster__cart-counter-plus span,
+.booster__cart-counter-minus span {
+  width: 6px;
+  height: 6px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 6px;
+          flex: 0 0 6px;
 }
 
 .booster__cart-counter-minus.disabled {
@@ -21649,18 +21672,6 @@ body.shooter__body-main {
   background-color: #14D15D !important;
 }
 
-.booster__product-counter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
-  margin-left: auto;
-  display: none;
-}
-
 .booster__product-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21709,6 +21720,37 @@ body.shooter__body-main {
   font-size: 12px;
 }
 
+.booster__product-reject {
+  color: #5AB0FF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  height: 30px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-flow: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.booster__product-reject:active {
+  background-color: #4d6dff;
+}
+
+.booster__product-reject:focus-visible {
+  background-color: #4d6dff;
+}
+
 .booster__product-controls .booster__cart-counter input {
   width: 18px;
 }
@@ -21738,10 +21780,6 @@ body.shooter__body-main {
   position: relative;
 }
 
-.booster__product-counter {
-  display: none;
-}
-
 .booster__product-controls.controls-open .booster__product-buy {
   display: none;
 }
@@ -21752,25 +21790,79 @@ body.shooter__body-main {
   display: flex;
 }
 
-.booster__product-controls.controls-open .booster__product-counter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 1;
-}
-
 .booster__product-controls.controls-open .booster__product-cart {
   display: none;
 }
 
-.booster__product-counter .booster__cart-counter input {
-  color: #14D15D;
+.booster__product-controls.controls-open .booster__product-reject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.booster__product-counter .booster__cart-counter-plus,
-.booster__product-counter .booster__cart-counter-minus {
-  color: #14D15D;
-  border: 1px solid #14D15D;
+.booster__cart-delete {
+  width: 16px;
+  height: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px solid #A1A1A1;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.booster__cart-delete svg {
+  fill: #A1A1A1;
+  width: 6px;
+  height: 6px;
+  -webkit-transition: fill 0.1s ease-in-out;
+  transition: fill 0.1s ease-in-out;
+}
+
+.booster__cart-delete:active {
+  border: 1px solid red;
+}
+
+.booster__cart-delete:active svg {
+  fill: red;
+}
+
+.booster__cart-delete:focus-visible {
+  border: 1px solid red;
+}
+
+.booster__cart-delete:focus-visible svg {
+  fill: red;
+}
+
+.booster__cart-item.product-delete {
+  display: none;
+}
+
+.booster__cart-empty {
+  color: #A1A1A1;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  white-space: nowrap;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /**
@@ -37993,6 +38085,13 @@ button.swiper-pagination-bullet {
     transition: all 0.1s ease-in-out;
   }
 
+  .booster__cart-counter-plus:hover svg,
+  .booster__cart-counter-minus:hover svg {
+    fill: #fff;
+    -webkit-transition: fill 0.1s ease-in-out;
+    transition: fill 0.1s ease-in-out;
+  }
+
   .booster__cart-item-title:hover {
     color: #6D87F7;
     -webkit-transition: color 0.2s ease-in-out;
@@ -38013,12 +38112,23 @@ button.swiper-pagination-bullet {
     background-color: #FFB000;
   }
 
-  .booster__product-counter .booster__cart-counter-plus:hover,
-  .booster__product-counter .booster__cart-counter-minus:hover {
-    background-color: #14D15D;
-    color: #fff;
+  .booster__product-reject:hover {
+    background-color: #6D87F7;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
+    color: #fff;
+  }
+
+  .booster__cart-delete:hover {
+    border: 1px solid red;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .booster__cart-delete:hover svg {
+    fill: red;
+    -webkit-transition: fill 0.1s ease-in-out;
+    transition: fill 0.1s ease-in-out;
   }
 }
 
