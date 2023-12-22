@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231222154355">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231222220041">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -622,7 +622,7 @@
 					<div class="popup-saper-info__body">
 
 						<div class="popup-saper__title-box popup-saper__title-box--mobile">
-							<h2 class="popup-saper-info__title">Средний завод</h2>
+							<h2 class="popup-saper-info__title">Маленький завод</h2>
 						</div>
 
 						<div class="popup-saper-info__left">
@@ -632,7 +632,7 @@
 
 						<div class="popup-saper-info__right">
 							<div class="popup-saper__title-box">
-								<h2 class="popup-saper-info__title">Средний завод</h2>
+								<h2 class="popup-saper-info__title">Маленький завод</h2>
 							</div>
 
 							<p class="popup-saper-info__text">
@@ -695,7 +695,7 @@
 			<div class="popup__content popup-saper-info__content">
 
 				<div class="popup-saper-info__content-top popup__content-top">
-					<button data-close type="button" class="popup-saper-stat__close popup__close">
+					<button type="button" class="popup-saper-stat__close" data-popup="#popup-plant-info-1">
 						<svg width="18" height="18">
 							<use xlink:href="img/icons/icons.svg#close"></use>
 						</svg>
@@ -725,24 +725,16 @@
 
 							<div class="popup-dogs__controls">
 								<div class="popup-dogs__item">
-									<div class="plant-my__item-controls">
-										<div class="plant-my__item-btn">Защитить</div>
-
-										<div class="plant__my-arrow" width="30" height="30"></div>
-									</div>
+									<picture><source srcset="img/plant-build__page/popup-label-1.webp" type="image/webp"><img src="img/plant-build__page/popup-label-1.jpg" alt="Icon"></picture>
 								</div>
 
-								<div class="popup-dogs__item plant-my__slide--save">
-									<div class="plant-my__item-controls">
-										<div class="plant-my__item-btn">Защищено</div>
-
-										<div class="plant__my-arrow" width="30" height="30"></div>
-									</div>
+								<div class="popup-dogs__item">
+									<picture><source srcset="img/plant-build__page/popup-label-2.webp" type="image/webp"><img src="img/plant-build__page/popup-label-2.jpg" alt="Icon"></picture>
 								</div>
 							</div>
 
 							<div class="popup-plant-info__bottom">
-								<a class="popup-plant-info__btn btn btn__accent-2 fly__popup-close--white" href="#">Понятно</a>
+								<a class="popup-plant-info__btn btn btn__accent-2 fly__popup-close--white" data-popup="#popup-plant-info-1" href="#">Понятно</a>
 							</div>
 						</div>
 					</div>
@@ -751,7 +743,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20231222154355"></script>
+	<script src="js/app.min.js?_v=20231222220041"></script>
 </body>
 
 </html>
