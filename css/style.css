@@ -21118,14 +21118,26 @@ body.shooter__body-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 10px;
   background-color: #fff;
   position: relative;
   z-index: 2;
   padding-top: 20px;
+  width: 100%;
+}
+
+.booster__cart-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  width: 100%;
 }
 
 .booster__cart-counter {
@@ -21188,7 +21200,7 @@ body.shooter__body-main {
   pointer-events: none;
 }
 
-.booster__cart-iamge {
+.booster__cart-image {
   border-radius: 5px;
 }
 
@@ -33128,6 +33140,50 @@ button.swiper-pagination-bullet {
   .booster__cart-body.cart-open {
     top: initial;
     bottom: 105%;
+  }
+
+  .booster__cart-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 60px;
+    grid-template-columns: 1fr 60px;
+    -ms-grid-rows: 1fr auto;
+    grid-template-rows: 1fr auto;
+    justify-items: flex-end;
+  }
+
+  .booster__cart-content .booster__cart-item-title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: auto;
+  }
+
+  .booster__cart-content .booster__cart-delete {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .booster__cart-content .booster__cart-counter {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-right: auto;
+  }
+
+  .booster__cart-content .booster__cart-mint {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .booster__cart-image {
+    width: 64px;
+    height: 64px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 64px;
+            flex: 0 0 64px;
   }
 
   .booster__slide-inner {
