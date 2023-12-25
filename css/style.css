@@ -27663,6 +27663,11 @@ button.swiper-pagination-bullet {
     height: 15px;
   }
 
+  .knight-game__door-item::after {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+
   .knight-game__wall-art {
     width: 20px;
     height: 25px;
