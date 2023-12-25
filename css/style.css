@@ -25327,6 +25327,10 @@ button.swiper-pagination-bullet {
     height: calc(100dvh - 130px);
   }
 
+  .knight-game__body {
+    height: calc(100dvh - 61px);
+  }
+
   .plant__content-inner {
     height: calc(100dvh - 101px);
   }
