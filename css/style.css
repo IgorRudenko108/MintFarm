@@ -17112,6 +17112,7 @@ body.shooter__body-main {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 10px;
+  overflow: visible;
   cursor: pointer;
 }
 
@@ -17129,7 +17130,7 @@ body.shooter__body-main {
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   z-index: 2;
 }
 
@@ -17150,6 +17151,7 @@ body.shooter__body-main {
           filter: blur(10px);
   z-index: 1;
   opacity: 0;
+  overflow: visible;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -17218,8 +17220,6 @@ body.shooter__body-main {
   -o-object-fit: cover;
      object-fit: cover;
   margin: auto 0;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .knight-game__picture {
@@ -33001,11 +33001,11 @@ button.swiper-pagination-bullet {
   }
 
   .knight-game__door-item {
-    width: 4.6875rem;
+    width: 4.375rem;
   }
 
   .knight-game__door-item {
-    height: 4.0625rem;
+    height: 3.75rem;
   }
 
   .knight-game__door {
@@ -36875,27 +36875,27 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 29.99875em) and (max-width: 74.993125em) {
-@supports (width: clamp( 4.6875rem , 1.9372708047rem  +  9.1678126432vw , 8.8125rem )) {
+@supports (width: clamp( 4.375rem , 1.4164201081rem  +  9.8623439041vw , 8.8125rem )) {
     .knight-game__door-item {
-      width: clamp( 4.6875rem , 1.9372708047rem  +  9.1678126432vw , 8.8125rem );
+      width: clamp( 4.375rem , 1.4164201081rem  +  9.8623439041vw , 8.8125rem );
     }
 }
 
-@supports not (width: clamp( 4.6875rem , 1.9372708047rem  +  9.1678126432vw , 8.8125rem )) {
+@supports not (width: clamp( 4.375rem , 1.4164201081rem  +  9.8623439041vw , 8.8125rem )) {
     .knight-game__door-item {
-      width: calc(4.6875rem + 4.125 * (100vw - 29.99875rem) / 44.994375);
+      width: calc(4.375rem + 4.4375 * (100vw - 29.99875rem) / 44.994375);
     }
 }
 
-@supports (height: clamp( 4.0625rem , 1.1039201081rem  +  9.8623439041vw , 8.5rem )) {
+@supports (height: clamp( 3.75rem , 0.5830694115rem  +  10.556875165vw , 8.5rem )) {
     .knight-game__door-item {
-      height: clamp( 4.0625rem , 1.1039201081rem  +  9.8623439041vw , 8.5rem );
+      height: clamp( 3.75rem , 0.5830694115rem  +  10.556875165vw , 8.5rem );
     }
 }
 
-@supports not (height: clamp( 4.0625rem , 1.1039201081rem  +  9.8623439041vw , 8.5rem )) {
+@supports not (height: clamp( 3.75rem , 0.5830694115rem  +  10.556875165vw , 8.5rem )) {
     .knight-game__door-item {
-      height: calc(4.0625rem + 4.4375 * (100vw - 29.99875rem) / 44.994375);
+      height: calc(3.75rem + 4.75 * (100vw - 29.99875rem) / 44.994375);
     }
 }
 
