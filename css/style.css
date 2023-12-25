@@ -29366,10 +29366,6 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
-  .knight-game__body {
-    height: calc(100dvh - 61px);
-  }
-
   .knight-level__title {
     font-size: 10px;
   }
