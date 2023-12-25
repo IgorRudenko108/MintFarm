@@ -21322,9 +21322,9 @@ body.shooter__body-main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
 }
 
@@ -21369,6 +21369,9 @@ body.shooter__body-main {
           flex-direction: column;
   padding-right: 40px;
   rotate: -3deg;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .booster__slide-label-title {
@@ -21463,6 +21466,7 @@ body.shooter__body-main {
   width: 150px;
   border-radius: 5px;
   margin-top: auto;
+  margin-left: auto;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
