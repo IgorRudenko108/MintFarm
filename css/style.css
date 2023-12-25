@@ -20566,17 +20566,17 @@ body.shooter__body-main {
   width: 170px;
 }
 
-.plant-my__top-controls.active .plant-my__item-btn {
+.plant-my__item.active .plant-my__item-btn {
   display: none;
 }
 
-.plant-my__top-controls.active .plant-my__item-btn--save {
+.plant-my__item.active .plant-my__item-btn--save {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.plant-my__img-box.active {
+.plant-my__item.active .plant-my__img-box {
   outline: 5px solid #6D87F7;
   outline-offset: -5px;
   position: relative;
