@@ -20581,6 +20581,7 @@ body.shooter__body-main {
   outline-offset: -5px;
   position: relative;
   z-index: 2;
+  border-radius: 10px;
 }
 
 .plant-stat__main {
@@ -24545,10 +24546,6 @@ button.swiper-pagination-bullet {
   .knight__body-cat {
     height: 130px !important;
   }
-
-  .knight-game__body {
-    height: 100%;
-  }
 }
 
 @media (max-width: 1440px) and (max-height: 640px) {
@@ -24610,6 +24607,12 @@ button.swiper-pagination-bullet {
   .plant__body {
     gap: 10px;
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 480px) {
+  .knight-game__body {
+    height: 100%;
   }
 }
 
@@ -27929,7 +27932,7 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 575.98px) and (max-height: 575px) {
+@media (max-width: 575.98px) and (max-height: 480px) {
   .knight-game__body {
     height: 100%;
   }
