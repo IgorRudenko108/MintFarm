@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231225193427">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231225211740">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -336,14 +336,12 @@
 
 											<div class="booster__cart-counter counter" data-counter>
 												<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
+
 												<div class="counter__input-box">
-													<input type="text" placeholder="" value="1">
+													<input type="number" placeholder="" value="1">
 												</div>
-												<div class="booster__cart-counter-plus counter__button counter__button_plus">
-													<svg width="6" height="6">
-														<use xlink:href="img/icons/icons.svg#close"></use>
-													</svg>
-												</div>
+
+												<div class="booster__cart-counter-plus counter__button counter__button_plus">+</div>
 											</div>
 
 											<div class="booster__cart-mint">
@@ -367,14 +365,12 @@
 
 											<div class="booster__cart-counter counter" data-counter>
 												<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
+
 												<div class="counter__input-box">
-													<input type="text" placeholder="" value="1">
+													<input type="number" placeholder="" value="1">
 												</div>
-												<div class="booster__cart-counter-plus counter__button counter__button_plus">
-													<svg width="6" height="6">
-														<use xlink:href="img/icons/icons.svg#close"></use>
-													</svg>
-												</div>
+
+												<div class="booster__cart-counter-plus counter__button counter__button_plus">+</div>
 											</div>
 
 											<div class="booster__cart-mint">
@@ -398,14 +394,12 @@
 
 											<div class="booster__cart-counter counter" data-counter>
 												<div class="booster__cart-counter-minus counter__button counter__button_minus">-</div>
+
 												<div class="counter__input-box">
-													<input type="text" placeholder="" value="1">
+													<input type="number" placeholder="" value="1">
 												</div>
-												<div class="booster__cart-counter-plus counter__button counter__button_plus">
-													<svg width="6" height="6">
-														<use xlink:href="img/icons/icons.svg#close"></use>
-													</svg>
-												</div>
+
+												<div class="booster__cart-counter-plus counter__button counter__button_plus">+</div>
 											</div>
 
 											<div class="booster__cart-mint">
@@ -1221,17 +1215,17 @@
 		});
 	</script>
 
-	<script>
-		const cartItemDelete = document.querySelectorAll('.booster__cart-delete');
+	<!-- <script>
+			const cartItemDelete = document.querySelectorAll('.booster__cart-delete');
 
-		cartItemDelete.forEach(item => {
-			item.addEventListener('click', function(e) {
-				item.closest('.booster__cart-item').classList.add('product-delete')
-			})
-		});
-	</script>
+			cartItemDelete.forEach(item => {
+				item.addEventListener('click', function(e) {
+					item.closest('.booster__cart-item').classList.add('product-delete')
+				})
+			});
+		</script> -->
 
-	<script src="js/app.min.js?_v=20231225193427"></script>
+	<script src="js/app.min.js?_v=20231225211740"></script>
 </body>
 
 </html>

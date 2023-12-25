@@ -16050,6 +16050,18 @@ body.shooter__body-main {
   width: 100%;
 }
 
+.counter__input-box input[type=number]::-webkit-inner-spin-button,
+.counter__input-box input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  pointer-events: none;
+}
+
+.counter__input-box input[type=number] {
+  -moz-appearance: textfield;
+  pointer-events: none;
+}
+
 .shooter__bottom--middle {
   position: relative;
   border-radius: 15px;
@@ -17130,7 +17142,7 @@ body.shooter__body-main {
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   z-index: 2;
 }
 
@@ -17156,6 +17168,10 @@ body.shooter__body-main {
   transition: all 0.2s linear;
 }
 
+.knight-game__door-item:active::after {
+  display: none;
+}
+
 .no-webp .knight-game__door-item:hover::after{
   background-image: url(../img/knight-game__page/door-frame-hover.png); }
 
@@ -17175,6 +17191,7 @@ body.shooter__body-main {
 
 .knight-game__door-item.active::after {
   pointer-events: none;
+  display: none;
 }
 
 .knight-game__door-item.active .knight-game__door {
@@ -21165,16 +21182,6 @@ body.shooter__body-main {
   font-weight: 400;
   line-height: 120%;
   width: 25px;
-}
-
-.booster__cart-counter-plus {
-  rotate: 45deg;
-}
-
-.booster__cart-counter-plus svg {
-  fill: #6D87F7;
-  -webkit-transition: fill 0.1s ease-in-out;
-  transition: fill 0.1s ease-in-out;
 }
 
 .booster__cart-counter-plus,
