@@ -27940,6 +27940,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 479.98px) and (min-height: 900px) {
+  .knight-game__body {
+    height: 100%;
+  }
+}
+
 @media (max-width: 425px) {
   .knight__body {
     -ms-grid-columns: 1fr 100px 1fr !important;
