@@ -33016,11 +33016,11 @@ button.swiper-pagination-bullet {
   }
 
   .knight-game__door {
-    width: 4.375rem;
+    width: 4.0625rem;
   }
 
   .knight-game__door {
-    height: 4.0625rem;
+    height: 3.75rem;
   }
 
   .knight-game__stairs {
@@ -36906,27 +36906,27 @@ button.swiper-pagination-bullet {
     }
 }
 
-@supports (width: clamp( 4.375rem , 1.4164201081rem  +  9.8623439041vw , 8.8125rem )) {
+@supports (width: clamp( 4.0625rem , 0.8955694115rem  +  10.556875165vw , 8.8125rem )) {
     .knight-game__door {
-      width: clamp( 4.375rem , 1.4164201081rem  +  9.8623439041vw , 8.8125rem );
+      width: clamp( 4.0625rem , 0.8955694115rem  +  10.556875165vw , 8.8125rem );
     }
 }
 
-@supports not (width: clamp( 4.375rem , 1.4164201081rem  +  9.8623439041vw , 8.8125rem )) {
+@supports not (width: clamp( 4.0625rem , 0.8955694115rem  +  10.556875165vw , 8.8125rem )) {
     .knight-game__door {
-      width: calc(4.375rem + 4.4375 * (100vw - 29.99875rem) / 44.994375);
+      width: calc(4.0625rem + 4.75 * (100vw - 29.99875rem) / 44.994375);
     }
 }
 
-@supports (height: clamp( 4.0625rem , 1.1039201081rem  +  9.8623439041vw , 8.5rem )) {
+@supports (height: clamp( 3.75rem , 0.5830694115rem  +  10.556875165vw , 8.5rem )) {
     .knight-game__door {
-      height: clamp( 4.0625rem , 1.1039201081rem  +  9.8623439041vw , 8.5rem );
+      height: clamp( 3.75rem , 0.5830694115rem  +  10.556875165vw , 8.5rem );
     }
 }
 
-@supports not (height: clamp( 4.0625rem , 1.1039201081rem  +  9.8623439041vw , 8.5rem )) {
+@supports not (height: clamp( 3.75rem , 0.5830694115rem  +  10.556875165vw , 8.5rem )) {
     .knight-game__door {
-      height: calc(4.0625rem + 4.4375 * (100vw - 29.99875rem) / 44.994375);
+      height: calc(3.75rem + 4.75 * (100vw - 29.99875rem) / 44.994375);
     }
 }
 
