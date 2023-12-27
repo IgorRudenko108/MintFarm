@@ -5689,7 +5689,7 @@
                     speed: 800,
                     freeMode: true,
                     mousewheel: true,
-                    grabCursor: true,
+                    grabCursor: false,
                     watchOverflow: false,
                     direction: "horizontal",
                     init: true,
