@@ -15139,6 +15139,7 @@ body {
   height: 100%;
   min-width: 365px;
   margin-left: -5px !important;
+  min-height: auto !important;
 }
 
 .kotopas__last {
@@ -32857,10 +32858,12 @@ button.swiper-pagination-bullet {
 
   .kotopas-swiper__slide--last {
     min-width: auto;
+    max-height: auto;
   }
 
   .kotopas__last {
     height: 100%;
+    min-height: 100%;
     border-radius: 10px;
     margin-bottom: auto;
   }
@@ -32898,6 +32901,7 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 10px !important;
   }
 
   .shooter__vs-name {
