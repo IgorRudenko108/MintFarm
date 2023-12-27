@@ -14319,7 +14319,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .kotopas__cards-img {
   max-width: 100%;
-  margin-left: auto;
+  margin-left: auto !important;
 }
 
 .kotopas__cards-btn {
@@ -27324,6 +27324,10 @@ button.swiper-pagination-bullet {
             flex: 0 0 12px;
   }
 
+  .kotopas__cards-title--mobile {
+    font-size: 12px;
+  }
+
   .shooter__inner {
     gap: 7px;
   }
@@ -30604,6 +30608,10 @@ button.swiper-pagination-bullet {
     right: 0px;
   }
 
+  .kotopas__cards-title--mobile {
+    font-size: 14px;
+  }
+
   .shooter__raund {
     display: none;
   }
@@ -32859,11 +32867,10 @@ button.swiper-pagination-bullet {
   .kotopas-swiper__slide--last {
     min-width: auto;
     max-height: auto;
+    min-height: 270px !important;
   }
 
   .kotopas__last {
-    height: 100%;
-    min-height: 100%;
     border-radius: 10px;
     margin-bottom: auto;
   }
@@ -32901,7 +32908,6 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 10px !important;
   }
 
   .shooter__vs-name {
