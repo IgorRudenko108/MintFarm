@@ -177,19 +177,6 @@ body {
 .kotopas__wrapper {
   overflow-x: clip;
   overflow-y: auto;
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  /* Hide scrollbar for IE, Edge and Firefox */
-}
-
-.kotopas__wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.kotopas__wrapper {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
 }
 
 /*
