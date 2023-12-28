@@ -14306,6 +14306,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 
 .kotopas__cards-img {
   max-width: 100%;
+  display: block;
   margin-left: auto !important;
 }
 
@@ -14330,6 +14331,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   margin-top: auto;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .kotopas__cards-btn span {
@@ -27277,16 +27279,16 @@ button.swiper-pagination-bullet {
   }
 
   .kotopas__last-label {
-    width: 60px;
-    height: 60px;
+    width: 60px !important;
+    height: 60px !important;
   }
 
   .kotopas__last-label-text {
-    font-size: 8px;
+    font-size: 8px !important;
   }
 
   .kotopas__last-label-value {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   .kotopas__last-title {
@@ -27982,6 +27984,12 @@ button.swiper-pagination-bullet {
   .shooter__inner.shooter-started .shooter__content-info-top::before {
     top: -30px;
     border-width: 0 3px 32px 3px;
+  }
+}
+
+@media (max-width: 360px) {
+  .kotopas__cards-title {
+    font-size: 10px !important;
   }
 }
 
