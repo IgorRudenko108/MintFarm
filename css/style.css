@@ -27278,19 +27278,6 @@ button.swiper-pagination-bullet {
             justify-content: space-between !important;
   }
 
-  .kotopas__last-label {
-    width: 60px !important;
-    height: 60px !important;
-  }
-
-  .kotopas__last-label-text {
-    font-size: 8px !important;
-  }
-
-  .kotopas__last-label-value {
-    font-size: 12px !important;
-  }
-
   .kotopas__last-title {
     padding: 0 60px;
   }
@@ -27990,6 +27977,19 @@ button.swiper-pagination-bullet {
 @media (max-width: 360px) {
   .kotopas__cards-title {
     font-size: 10px !important;
+  }
+
+  .kotopas__last-label {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .kotopas__last-label-text {
+    font-size: 8px !important;
+  }
+
+  .kotopas__last-label-value {
+    font-size: 12px !important;
   }
 }
 
