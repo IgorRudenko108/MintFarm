@@ -26797,6 +26797,12 @@ button.swiper-pagination-bullet {
     height: 10px;
   }
 
+  .user-progress__wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
   .no-webp .cabinet__body::after{
     background-image: url(../img/cabinet__page/popup-bg--mobile.jpg); }
 
@@ -28066,7 +28072,7 @@ button.swiper-pagination-bullet {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .settings__form-btn--mobile {
@@ -32637,6 +32643,10 @@ button.swiper-pagination-bullet {
     font-size: 1.5rem;
   }
 
+  .user-progress__cards {
+    margin-bottom: 10px;
+  }
+
   .user-progress__item-img {
     margin-bottom: 4px;
     width: 120px;
@@ -32645,6 +32655,7 @@ button.swiper-pagination-bullet {
 
   .user-progress__btn {
     width: 100%;
+    min-height: 30px;
   }
 
   .user-progress__lvl-value {
