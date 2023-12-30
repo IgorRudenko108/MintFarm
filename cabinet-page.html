@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="cabinet__main-wrapper">
 
 <head>
 	<title>Cabinet</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231228095010">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231230050046">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="cabinet__main-wrapper">
+<body class="cabinet__body">
 	<div class="wrapper">
 		<header class="header cabinet__header">
 			<div class="header__container">
@@ -285,6 +285,7 @@
 		</header>
 
 		<main class="page cabinet__page page-color">
+
 			<div class="cabinet__container">
 				<div class="cabinet__body">
 					<div class="cabinet__main">
@@ -766,9 +767,33 @@
 					<picture><source srcset="img/cabinet__page/user-person.webp" type="image/webp"><img src="img/cabinet__page/user-person.png" width="50" height="50" alt="Image"></picture>
 				</a>
 			</div>
+
+
+
+
+
+			<div class="test-popup" style="display: flex; flex-direction: column; gap: 10px; margin: 10px auto;">
+				<div class="test-popup__title" style="font-size: 16px; color: red; text-align: center;">Прогресс игрока</div>
+
+				<div class="text-popup__body" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 5px;">
+					<button class="test-popup__btn btn btn__accent" style="padding: 5px 10px;" data-popup="#user-progress-1">1</button>
+					<button class="test-popup__btn btn btn__accent" style="padding: 5px 10px;" data-popup="#user-progress-2">2</button>
+					<button class="test-popup__btn btn btn__accent" style="padding: 5px 10px;" data-popup="#user-progress-3">3</button>
+					<button class="test-popup__btn btn btn__accent" style="padding: 5px 10px;" data-popup="#user-progress-4">4</button>
+					<button class="test-popup__btn btn btn__accent" style="padding: 5px 10px;" data-popup="#user-progress-5">5</button>
+					<button class="test-popup__btn btn btn__accent" style="padding: 5px 10px;" data-popup="#user-progress-6">6</button>
+					<button class="test-popup__btn btn btn__accent" style="padding: 5px 10px;" data-popup="#user-progress-7">7</button>
+				</div>
+			</div>
+
+
+
+
+
 		</main>
 
 	</div>
+
 
 	<div id="popup-cabinet-target" aria-hidden="true" class="popup-cabinet-target popup">
 		<div class="popup__wrapper popup-cabinet-target__wrapper">
@@ -1209,7 +1234,406 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20231228095010"></script>
+
+
+
+
+
+
+
+	<div id="user-progress-1" aria-hidden="true" class="user-progress user-progress-1 popup">
+		<div class="popup__wrapper user-progress__wrapper">
+			<div class="popup__content user-progress__content">
+
+				<picture><source srcset="img/cabinet__page/cloud-pc.webp" type="image/webp"><img class="cloud-deco" src="img/cabinet__page/cloud-pc.png" alt="Image"></picture>
+
+				<div class="popup__text user-progress__text">
+					<div class="user-progress__body">
+						<div class="user-progress__inner">
+							<h2 class="user-progress__title">Поздравляем! <br> Вы достигли уровень 1!</h2>
+
+							<div class="user-progress__mobile">
+								<img src="img/cabinet__page/cup-mobile.svg" alt="Image">
+
+								<div class="user-progress__lvl user-progress__lvl--mobile">
+									<div class="user-progress__lvl-value"><span>1</span></div>
+									<div class="user-progress__lvl-text">Ур</div>
+								</div>
+							</div>
+
+							<div class="user-progress__subtitle">Ваши награды:</div>
+
+							<div class="user-progress__cards">
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-1.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-1.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Мята <br>
+										<span>+200</span>
+									</p>
+								</div>
+
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-2.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-2.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">
+										Открыта игра Сапёр
+									</p>
+								</div>
+							</div>
+
+							<a class="user-progress__btn btn btn__accent" data-close href="#">Забрать награды</a>
+						</div>
+
+						<div class="user-progress__picture">
+							<img src="img/cabinet__page/cup-pc.svg" alt="Image">
+
+							<div class="user-progress__lvl">
+								<div class="user-progress__lvl-value"><span>1</span></div>
+								<div class="user-progress__lvl-text">Ур</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="user-progress-2" aria-hidden="true" class="user-progress user-progress-1 popup">
+		<div class="popup__wrapper user-progress__wrapper">
+			<div class="popup__content user-progress__content">
+
+				<picture><source srcset="img/cabinet__page/cloud-pc.webp" type="image/webp"><img class="cloud-deco" src="img/cabinet__page/cloud-pc.png" alt="Image"></picture>
+
+				<div class="popup__text user-progress__text">
+					<div class="user-progress__body">
+						<div class="user-progress__inner">
+							<h2 class="user-progress__title">Поздравляем! <br> Вы достигли уровень 3!</h2>
+
+							<div class="user-progress__mobile">
+								<img src="img/cabinet__page/cup-mobile.svg" alt="Image">
+
+								<div class="user-progress__lvl user-progress__lvl--mobile">
+									<div class="user-progress__lvl-value"><span>3</span></div>
+									<div class="user-progress__lvl-text">Ур</div>
+								</div>
+							</div>
+
+							<div class="user-progress__subtitle">Ваши награды:</div>
+
+							<div class="user-progress__cards">
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-1.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-1.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Мята <br>
+										<span>+200</span>
+									</p>
+								</div>
+
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-3.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-3.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">
+										Открыта игра Стрелок
+									</p>
+								</div>
+							</div>
+
+							<a class="user-progress__btn btn btn__accent" data-close href="#">Забрать награды</a>
+						</div>
+
+						<div class="user-progress__picture">
+							<img src="img/cabinet__page/cup-pc.svg" alt="Image">
+
+							<div class="user-progress__lvl">
+								<div class="user-progress__lvl-value"><span>3</span></div>
+								<div class="user-progress__lvl-text">Ур</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="user-progress-3" aria-hidden="true" class="user-progress user-progress-1 popup">
+		<div class="popup__wrapper user-progress__wrapper">
+			<div class="popup__content user-progress__content">
+
+				<picture><source srcset="img/cabinet__page/cloud-pc.webp" type="image/webp"><img class="cloud-deco" src="img/cabinet__page/cloud-pc.png" alt="Image"></picture>
+
+				<div class="popup__text user-progress__text">
+					<div class="user-progress__body">
+						<div class="user-progress__inner">
+							<h2 class="user-progress__title">Поздравляем! <br> Вы достигли уровень 5!</h2>
+
+							<div class="user-progress__mobile">
+								<img src="img/cabinet__page/cup-mobile.svg" alt="Image">
+
+								<div class="user-progress__lvl user-progress__lvl--mobile">
+									<div class="user-progress__lvl-value"><span>5</span></div>
+									<div class="user-progress__lvl-text">Ур</div>
+								</div>
+							</div>
+
+							<div class="user-progress__subtitle">Ваши награды:</div>
+
+							<div class="user-progress__cards">
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-1.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-1.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Мята <br>
+										<span>+200</span>
+									</p>
+								</div>
+
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-4.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-4.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">
+										Открыта игра Летун
+									</p>
+								</div>
+							</div>
+
+							<a class="user-progress__btn btn btn__accent" data-close href="#">Забрать награды</a>
+						</div>
+
+						<div class="user-progress__picture">
+							<img src="img/cabinet__page/cup-pc.svg" alt="Image">
+
+							<div class="user-progress__lvl">
+								<div class="user-progress__lvl-value"><span>5</span></div>
+								<div class="user-progress__lvl-text">Ур</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="user-progress-4" aria-hidden="true" class="user-progress user-progress-1 popup">
+		<div class="popup__wrapper user-progress__wrapper">
+			<div class="popup__content user-progress__content">
+
+				<picture><source srcset="img/cabinet__page/cloud-pc.webp" type="image/webp"><img class="cloud-deco" src="img/cabinet__page/cloud-pc.png" alt="Image"></picture>
+
+				<div class="popup__text user-progress__text">
+					<div class="user-progress__body">
+						<div class="user-progress__inner">
+							<h2 class="user-progress__title">Поздравляем! <br> Вы достигли уровень 7!</h2>
+
+							<div class="user-progress__mobile">
+								<img src="img/cabinet__page/cup-mobile.svg" alt="Image">
+
+								<div class="user-progress__lvl user-progress__lvl--mobile">
+									<div class="user-progress__lvl-value"><span>7</span></div>
+									<div class="user-progress__lvl-text">Ур</div>
+								</div>
+							</div>
+
+							<div class="user-progress__subtitle">Ваши награды:</div>
+
+							<div class="user-progress__cards">
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-1.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-1.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Мята <br>
+										<span>+200</span>
+									</p>
+								</div>
+
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-5.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-5.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">
+										Открыта игра Рыцарь
+									</p>
+								</div>
+							</div>
+
+							<a class="user-progress__btn btn btn__accent" data-close href="#">Забрать награды</a>
+						</div>
+
+						<div class="user-progress__picture">
+							<img src="img/cabinet__page/cup-pc.svg" alt="Image">
+
+							<div class="user-progress__lvl">
+								<div class="user-progress__lvl-value"><span>7</span></div>
+								<div class="user-progress__lvl-text">Ур</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="user-progress-5" aria-hidden="true" class="user-progress user-progress-1 popup">
+		<div class="popup__wrapper user-progress__wrapper">
+			<div class="popup__content user-progress__content">
+
+				<picture><source srcset="img/cabinet__page/cloud-pc.webp" type="image/webp"><img class="cloud-deco" src="img/cabinet__page/cloud-pc.png" alt="Image"></picture>
+
+				<div class="popup__text user-progress__text">
+					<div class="user-progress__body">
+						<div class="user-progress__inner">
+							<h2 class="user-progress__title">Поздравляем! <br> Вы достигли уровень 10!</h2>
+
+							<div class="user-progress__mobile">
+								<img src="img/cabinet__page/cup-mobile.svg" alt="Image">
+
+								<div class="user-progress__lvl user-progress__lvl--mobile">
+									<div class="user-progress__lvl-value"><span>10</span></div>
+									<div class="user-progress__lvl-text">Ур</div>
+								</div>
+							</div>
+
+							<div class="user-progress__subtitle">Ваши награды:</div>
+
+							<div class="user-progress__cards">
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-6.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-6.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Голда<br>
+										<span>+200</span>
+									</p>
+								</div>
+							</div>
+
+							<a class="user-progress__btn btn btn__accent" data-close href="#">Забрать награды</a>
+						</div>
+
+						<div class="user-progress__picture">
+							<img src="img/cabinet__page/cup-pc.svg" alt="Image">
+
+							<div class="user-progress__lvl">
+								<div class="user-progress__lvl-value"><span>10</span></div>
+								<div class="user-progress__lvl-text">Ур</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="user-progress-6" aria-hidden="true" class="user-progress user-progress-1 popup">
+		<div class="popup__wrapper user-progress__wrapper">
+			<div class="popup__content user-progress__content">
+
+				<picture><source srcset="img/cabinet__page/cloud-pc.webp" type="image/webp"><img class="cloud-deco" src="img/cabinet__page/cloud-pc.png" alt="Image"></picture>
+
+				<div class="popup__text user-progress__text">
+					<div class="user-progress__body">
+						<div class="user-progress__inner">
+							<h2 class="user-progress__title">Поздравляем! <br> Вы достигли уровень 30!</h2>
+
+							<div class="user-progress__mobile">
+								<img src="img/cabinet__page/cup-mobile.svg" alt="Image">
+
+								<div class="user-progress__lvl user-progress__lvl--mobile">
+									<div class="user-progress__lvl-value"><span>30</span></div>
+									<div class="user-progress__lvl-text">Ур</div>
+								</div>
+							</div>
+
+							<div class="user-progress__subtitle">Ваши награды:</div>
+
+							<div class="user-progress__cards">
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-6.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-6.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Голда<br>
+										<span>+200</span>
+									</p>
+								</div>
+
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-7.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-7.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Бесплатный пропуск «Котопас»</p>
+								</div>
+							</div>
+
+							<a class="user-progress__btn btn btn__accent" data-close href="#">Забрать награды</a>
+						</div>
+
+						<div class="user-progress__picture">
+							<img src="img/cabinet__page/cup-pc.svg" alt="Image">
+
+							<div class="user-progress__lvl">
+								<div class="user-progress__lvl-value"><span>30</span></div>
+								<div class="user-progress__lvl-text">Ур</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="user-progress-7" aria-hidden="true" class="user-progress user-progress-1 popup">
+		<div class="popup__wrapper user-progress__wrapper">
+			<div class="popup__content user-progress__content">
+
+				<picture><source srcset="img/cabinet__page/cloud-pc.webp" type="image/webp"><img class="cloud-deco" src="img/cabinet__page/cloud-pc.png" alt="Image"></picture>
+
+				<div class="popup__text user-progress__text">
+					<div class="user-progress__body">
+						<div class="user-progress__inner">
+							<h2 class="user-progress__title">Поздравляем! <br> Вы достигли уровень 50!</h2>
+
+							<div class="user-progress__mobile">
+								<img src="img/cabinet__page/cup-mobile.svg" alt="Image">
+
+								<div class="user-progress__lvl user-progress__lvl--mobile">
+									<div class="user-progress__lvl-value"><span>50</span></div>
+									<div class="user-progress__lvl-text">Ур</div>
+								</div>
+							</div>
+
+							<div class="user-progress__subtitle">Ваши награды:</div>
+
+							<div class="user-progress__cards">
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-6.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-6.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Голда<br>
+										<span>+200</span>
+									</p>
+								</div>
+
+								<div class="user-progress__item">
+									<picture><source srcset="img/cabinet__page/popup-card-8.webp" type="image/webp"><img class="user-progress__item-img" src="img/cabinet__page/popup-card-8.jpg" width="140" height="140" alt="Image"></picture>
+
+									<p class="user-progress__item-text">Новый статус «Котёнок»</p>
+								</div>
+							</div>
+
+							<a class="user-progress__btn btn btn__accent" data-close href="#">Забрать награды</a>
+						</div>
+
+						<div class="user-progress__picture">
+							<img src="img/cabinet__page/cup-pc.svg" alt="Image">
+
+							<div class="user-progress__lvl">
+								<div class="user-progress__lvl-value"><span>50</span></div>
+								<div class="user-progress__lvl-text">Ур</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<script src="js/app.min.js?_v=20231230050046"></script>
 </body>
 
 </html>
