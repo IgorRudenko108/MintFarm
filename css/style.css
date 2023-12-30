@@ -26807,7 +26807,7 @@ button.swiper-pagination-bullet {
   }
 
   .user-progress__content {
-    background-image: none;
+    background-image: none !important;
     background-color: transparent;
   }
 
@@ -26856,6 +26856,7 @@ button.swiper-pagination-bullet {
             justify-content: center;
     margin-bottom: 10px;
     position: relative;
+    z-index: 3;
   }
 
   .personage__btn {
