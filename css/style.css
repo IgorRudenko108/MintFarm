@@ -26811,6 +26811,10 @@ button.swiper-pagination-bullet {
     background-color: transparent;
   }
 
+  .user-progress__content {
+    padding: 20px 0;
+  }
+
   .user-progress__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -26828,6 +26832,7 @@ button.swiper-pagination-bullet {
 
   .user-progress__subtitle {
     text-align: center;
+    margin-bottom: 8px;
   }
 
   .user-progress__btn {
@@ -26840,7 +26845,7 @@ button.swiper-pagination-bullet {
 
   .user-progress__lvl {
     top: 32%;
-    gap: 3px;
+    gap: 0;
   }
 
   .cloud-deco {
@@ -28061,6 +28066,7 @@ button.swiper-pagination-bullet {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 10px;
+    margin-bottom: 10px;
   }
 
   .settings__form-btn--mobile {
@@ -32624,11 +32630,17 @@ button.swiper-pagination-bullet {
   }
 
   .user-progress__content {
-    padding: 30px 0;
+    padding: 10px 0;
   }
 
   .user-progress__title {
     font-size: 1.5rem;
+  }
+
+  .user-progress__item-img {
+    margin-bottom: 4px;
+    width: 120px;
+    height: 120px;
   }
 
   .user-progress__btn {
@@ -32653,6 +32665,10 @@ button.swiper-pagination-bullet {
 
   .user-progress__lvl-text {
     font-size: 0.875rem;
+  }
+
+  .user-progress__mobile img {
+    width: 275px;
   }
 
   .personage__top {
