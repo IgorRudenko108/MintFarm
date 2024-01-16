@@ -33010,6 +33010,14 @@ button.swiper-pagination-bullet {
     width: 50%;
   }
 
+  .saper__tabs:active {
+    background-color: #fff;
+  }
+
+  .saper__tabs:focus-visible {
+    background-color: #fff;
+  }
+
   .saper__tabs-title {
     min-width: 45px;
     height: 20px;
@@ -33034,11 +33042,11 @@ button.swiper-pagination-bullet {
   }
 
   .tabs__title.saper__tabs-title:active {
-    background-color: #fff;
+    background-color: #fff !important;
   }
 
   .tabs__title.saper__tabs-title:focus-visible {
-    background-color: #fff;
+    background-color: #fff !important;
   }
 
   .saper-tabs__body--1 .saper__tabs-button {
@@ -33064,7 +33072,7 @@ button.swiper-pagination-bullet {
   }
 
   .saper__inner.saper-started .saper__main-body {
-    height: calc(100dvh - 219px) !important;
+    height: calc(100dvh - 200px) !important;
   }
 
   .game__button-title {
@@ -33182,11 +33190,11 @@ button.swiper-pagination-bullet {
   }
 
   .saper__counter--mobile:active {
-    background-color: #fff;
+    background-color: #fff !important;
   }
 
   .saper__counter--mobile:focus-visible {
-    background-color: #fff;
+    background-color: #fff !important;
   }
 
   .saper__counter--mobile .counter__input-box input {
@@ -33961,15 +33969,13 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (any-hover: hover) and (max-width: 29.99875em) {
-  .tabs__title.saper__tabs-title:hover {
+@media (max-width: 29.99875em) and (any-hover: hover) {
+  .saper__tabs:hover {
     background-color: #fff;
   }
-}
 
-@media (max-width: 29.99875em) and (any-hover: hover) {
   .saper__counter--mobile:hover {
-    background-color: #fff;
+    background-color: #fff !important;
   }
 
   .saper__counter--mobile .counter__button:hover {
@@ -33982,6 +33988,12 @@ button.swiper-pagination-bullet {
     background-color: #4d6dff;
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
+  }
+}
+
+@media (any-hover: hover) and (max-width: 29.99875em) {
+  .tabs__title.saper__tabs-title:hover {
+    background-color: #fff !important;
   }
 }
 
