@@ -33010,14 +33010,6 @@ button.swiper-pagination-bullet {
     width: 50%;
   }
 
-  .saper__tabs:active {
-    background-color: #fff;
-  }
-
-  .saper__tabs:focus-visible {
-    background-color: #fff;
-  }
-
   .saper__tabs-title {
     min-width: 45px;
     height: 20px;
@@ -33969,11 +33961,13 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 29.99875em) and (any-hover: hover) {
-  .saper__tabs:hover {
-    background-color: #fff;
+@media (any-hover: hover) and (max-width: 29.99875em) {
+  .tabs__title.saper__tabs-title:hover {
+    background-color: #fff !important;
   }
+}
 
+@media (max-width: 29.99875em) and (any-hover: hover) {
   .saper__counter--mobile:hover {
     background-color: #fff !important;
   }
@@ -33988,12 +33982,6 @@ button.swiper-pagination-bullet {
     background-color: #4d6dff;
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
-  }
-}
-
-@media (any-hover: hover) and (max-width: 29.99875em) {
-  .tabs__title.saper__tabs-title:hover {
-    background-color: #fff !important;
   }
 }
 
