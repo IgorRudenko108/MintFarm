@@ -33232,15 +33232,19 @@ button.swiper-pagination-bullet {
     background-color: #4d6dff;
   }
 
+  .no-webp .saper__counter--mobile .counter__button_plus{
+    background-image: url(../img/saper__page/btn-deco-right.png); }
+
   .saper__counter--mobile .counter__button_plus {
-    background-image: url(../img/saper__page/btn-deco-right.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
+  .no-webp .saper__counter--mobile .counter__button_minus{
+    background-image: url(../img/saper__page/btn-deco-left.png); }
+
   .saper__counter--mobile .counter__button_minus {
-    background-image: url(../img/saper__page/btn-deco-left.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39435,6 +39439,16 @@ button.swiper-pagination-bullet {
 @media (max-width: 47.99875em){
 
   .webp .knight__inner{ background-image: url(../img/knight__page/knight-bg--mobile.webp); }
+}
+
+@media (max-width: 29.99875em){
+
+  .webp .saper__counter--mobile .counter__button_plus{ background-image: url(../img/saper__page/btn-deco-right.webp); }
+}
+
+@media (max-width: 29.99875em){
+
+  .webp .saper__counter--mobile .counter__button_minus{ background-image: url(../img/saper__page/btn-deco-left.webp); }
 }
 
 @media (max-width: 29.99875em){
