@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231230060214">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240116011536">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2251,7 +2251,7 @@
 					</div>
 
 					<div class="saper__bottom">
-						<div class="saper__bottom-item saper__counter counter" data-counter>
+						<div class="saper__bottom-item saper__counter saper__counter--mobile counter" data-counter>
 							<div class="counter__button counter__button_minus">-</div>
 							<div class="counter__input-box">
 								<div class="saper__item-title">Ставка</div>
@@ -2262,6 +2262,17 @@
 								</div>
 							</div>
 							<div class="counter__button counter__button_plus">+</div>
+						</div>
+
+						<div class="saper__bottom-item saper__balans saper__balans--mobile">
+							<div class="saper__item-title">Баланс</div>
+
+							<div class="saper__item-value">
+								350
+								<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+							</div>
+
+							<div class="saper__balans-error">Выше вашего баланса</div>
 						</div>
 
 						<div class="saper__stavka">
@@ -2310,15 +2321,14 @@
 							</div>
 						</button>
 
-						<div class="saper__bottom-item saper__balans">
-							<div class="saper__item-title">Баланс</div>
+						<div class="min-box min-max__item">
+							<button class="min-max__btn">Min</button>
+							<button class="min-max__btn">X/2</button>
+						</div>
 
-							<div class="saper__item-value">
-								350
-								<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
-							</div>
-
-							<div class="saper__balans-error">Выше вашего баланса</div>
+						<div class="max-box min-max__item">
+							<button class="min-max__btn">X*2</button>
+							<button class="min-max__btn">Max</button>
 						</div>
 					</div>
 				</div>
@@ -3171,7 +3181,7 @@
 			}));
 	</script>
 
-	<script src="js/app.min.js?_v=20231230060214"></script>
+	<script src="js/app.min.js?_v=20240116011536"></script>
 </body>
 
 </html>
