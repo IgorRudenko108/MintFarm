@@ -8229,6 +8229,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   background-image: url(../img/start__page/circle-text.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 140px;
 }
 
 .start__middle-btn::before {
@@ -30461,7 +30462,7 @@ button.swiper-pagination-bullet {
     font-size: 14px;
     width: 115px;
     height: 115px;
-    background-size: 155px;
+    background-size: 125px;
   }
 
   .start__middle-btn::before {
