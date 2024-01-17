@@ -12004,7 +12004,7 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
-  width: 25px;
+  width: 50px;
 }
 
 .counter__input-box input::-webkit-input-placeholder {
@@ -16302,12 +16302,10 @@ body.shooter__body-main {
 .counter__input-box input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-  pointer-events: none;
 }
 
 .counter__input-box input[type=number] {
   -moz-appearance: textfield;
-  pointer-events: none;
 }
 
 .shooter__bottom--middle {
