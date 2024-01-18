@@ -14074,14 +14074,21 @@ body._touch .cabinet__skin-item.skin-open .cabinet__skin-controls {
 }
 
 .exchange__tabs-title {
-  color: #424242;
   font-family: Raleway;
   font-style: normal;
   font-weight: 900;
   line-height: 130%;
   text-align: center;
   margin: 0 auto;
-  pointer-events: none;
+  border-bottom: 2px solid #D9D9D9;
+  padding: 0 5px 5px;
+  color: #D9D9D9;
+  width: 100%;
+}
+
+.tabs__title._tab-active.exchange__tabs-title {
+  color: #6D87F7;
+  border-bottom: 2px solid #6D87F7;
 }
 
 .kotopas__top {
@@ -29405,19 +29412,6 @@ button.swiper-pagination-bullet {
 
   .exchange__tabs-title {
     font-size: 1.25rem;
-  }
-
-  .exchange__tabs-title {
-    border-bottom: 2px solid #D9D9D9;
-    padding: 0 5px 5px;
-    color: #D9D9D9;
-    width: 100%;
-    pointer-events: all;
-  }
-
-  .tabs__title._tab-active.exchange__tabs-title {
-    color: #6D87F7;
-    border-bottom: 2px solid #6D87F7;
   }
 
   .kotopas__title-bg {
