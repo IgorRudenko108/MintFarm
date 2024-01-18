@@ -27218,12 +27218,12 @@ button.swiper-pagination-bullet {
   }
 
   .menubar svg {
-    width: auto;
-    height: auto;
+    width: auto !important;
+    height: auto !important;
   }
 
   .menubar-title {
-    font-size: 8px;
+    font-size: 8px !important;
   }
 
   .menubar-more {
