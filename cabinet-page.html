@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240117194840">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240118021548">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -217,7 +217,7 @@
 											<img src="img/header/burger-mint-1.svg" alt="Icon">
 
 											<div class="burger__market-input-wrapper">
-												<input class="burger__market-input" type="number">
+												<input class="burger__market-input" type="number" inputmode="numeric">
 											</div>
 										</div>
 
@@ -225,7 +225,7 @@
 
 										<div class="burger__market-item">
 											<div class="burger__market-input-wrapper">
-												<input class="burger__market-input" type="number">
+												<input class="burger__market-input" type="number" inputmode="numeric">
 											</div>
 
 											<img src="img/header/burger-coin-2.svg" alt="Icon">
@@ -741,30 +741,36 @@
 			</div>
 
 			<div class="cabinet__controls--mobile">
-				<a class="mobile-controls__item" href="#" data-popup="#popup-cabinet-target">
-					<div class="circle-wrap">
-						<div class="circle">
-							<div class="mask full-1">
-								<div class="fill-1"></div>
-							</div>
-							<div class="mask half">
-								<div class="fill-1"></div>
-							</div>
-							<div class="inside-circle">48%</div>
-						</div>
-					</div>
+				<a class="mobile-controls__item menubar" href="#" data-popup="#popup-cabinet-target">
+					<svg width="22" height="22">
+						<use xlink:href="img/icons/icons.svg#m-target"></use>
+					</svg>
+
+					<h4 class="menubar-title">Цели</h4>
 				</a>
 
-				<a class="mobile-controls__item" href="#" data-popup="#popup-cabinet-ferma">
-					<picture><source srcset="img/cabinet__page/card-icon-1.webp" type="image/webp"><img src="img/cabinet__page/card-icon-1.png" alt="Icon"></picture>
+				<a class="mobile-controls__item menubar" href="#" data-popup="#popup-cabinet-ferma">
+					<svg width="22" height="22">
+						<use xlink:href="img/icons/icons.svg#m-plant"></use>
+					</svg>
+
+					<h4 class="menubar-title">Мои заводы</h4>
 				</a>
 
-				<a class="mobile-controls__item" href="#" data-popup="#popup-cabinet-buster">
-					<picture><source srcset="img/cabinet__page/buster-icon.webp" type="image/webp"><img class="cabinet__buster-icon" src="img/cabinet__page/buster-icon.png" width="50" height="50" alt="Image"></picture>
+				<a class="mobile-controls__item menubar" href="#" data-popup="#popup-cabinet-buster">
+					<svg width="23" height="23">
+						<use xlink:href="img/icons/icons.svg#m-progress"></use>
+					</svg>
+
+					<h4 class="menubar-title">Прогресс</h4>
 				</a>
 
-				<a class="mobile-controls__item" href="#" data-popup="#popup-cabinet-personage">
-					<picture><source srcset="img/cabinet__page/user-person.webp" type="image/webp"><img src="img/cabinet__page/user-person.png" width="50" height="50" alt="Image"></picture>
+				<a class="mobile-controls__item menubar" href="#" data-popup="#popup-cabinet-personage">
+					<svg width="28" height="28">
+						<use xlink:href="img/icons/icons.svg#m-personage"></use>
+					</svg>
+
+					<h4 class="menubar-title">Персонаж</h4>
 				</a>
 			</div>
 
@@ -1633,7 +1639,7 @@
 
 
 
-	<script src="js/app.min.js?_v=20240117194840"></script>
+	<script src="js/app.min.js?_v=20240118021548"></script>
 </body>
 
 </html>

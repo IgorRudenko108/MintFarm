@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240117194840">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240118021548">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -218,7 +218,7 @@
 											<img src="img/header/burger-mint-1.svg" alt="Icon">
 
 											<div class="burger__market-input-wrapper">
-												<input class="burger__market-input" type="number">
+												<input class="burger__market-input" type="number" inputmode="numeric">
 											</div>
 										</div>
 
@@ -226,7 +226,7 @@
 
 										<div class="burger__market-item">
 											<div class="burger__market-input-wrapper">
-												<input class="burger__market-input" type="number">
+												<input class="burger__market-input" type="number" inputmode="numeric">
 											</div>
 
 											<img src="img/header/burger-coin-2.svg" alt="Icon">
@@ -683,44 +683,37 @@
 			</div>
 
 			<div class="game-catalog__bottom-controls tasks__bottom-controls">
-				<a class="game-catalog__button" href="daily-tasks-page.html">
-					<div class="game-catalog__icon-wrapper">
-						<span class="tasks__button-span">
-							<img src="img/tasks__page/!.svg" width="8" height="8" alt="Icon">
-						</span>
 
-						<picture><source srcset="img/tasks__page/icon-mobile-1.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/tasks__page/icon-mobile-1.png" width="35" height="35" alt="Icon"></picture>
-					</div>
-					<h3 class="tasks__button-title">Ежедневные</h3>
+				<a class="game-catalog__button menubar" href="daily-tasks-page.html">
+					<svg width="25" height="25">
+						<use xlink:href="img/icons/icons.svg#m-calendar"></use>
+					</svg>
+
+					<h4 class="menubar-title">Ежедневные</h4>
 				</a>
 
-				<a class="game-catalog__button" href="quest-page.html">
-					<div class="game-catalog__icon-wrapper">
-						<span class="tasks__button-span">
-							<img src="img/tasks__page/!.svg" width="8" height="8" alt="Icon">
-						</span>
+				<a class="game-catalog__button menubar active" href="quest-page.html">
+					<svg width="24" height="24">
+						<use xlink:href="img/icons/icons.svg#m-quest"></use>
+					</svg>
 
-						<picture><source srcset="img/tasks__page/icon-mobile-2.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/tasks__page/icon-mobile-2.png" width="35" height="35" alt="Icon"></picture>
-					</div>
-					<h3 class="tasks__button-title">Квесты</h3>
+					<h4 class="menubar-title">Квесты</h4>
 				</a>
 
-				<a class="game-catalog__button" href="tasks-page.html">
-					<div class="game-catalog__icon-wrapper">
-						<span class="tasks__button-span">
-							<img src="img/tasks__page/!.svg" width="8" height="8" alt="Icon">
-						</span>
+				<a class="game-catalog__button menubar" href="tasks-page.html">
+					<svg width="22" height="22">
+						<use xlink:href="img/icons/icons.svg#m-wins"></use>
+					</svg>
 
-						<picture><source srcset="img/tasks__page/icon-mobile-3.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/tasks__page/icon-mobile-3.png" width="35" height="35" alt="Icon"></picture>
-					</div>
-					<h3 class="tasks__button-title">Достижения</h3>
+					<h4 class="menubar-title">Достижения</h4>
 				</a>
 
-				<a class="game-catalog__button" href="#" data-popup="#daily-statistic-popup">
-					<div class="game-catalog__icon-wrapper">
-						<picture><source srcset="img/tasks__page/icon-mobile-4.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/tasks__page/icon-mobile-4.png" width="35" height="35" alt="Icon"></picture>
-					</div>
-					<h3 class="tasks__button-title">Статистика</h3>
+				<a class="game-catalog__button menubar" href="#" data-popup="#daily-statistic-popup">
+					<svg width="26" height="22">
+						<use xlink:href="img/icons/icons.svg#m-statistic"></use>
+					</svg>
+
+					<h4 class="menubar-title">Статистика</h4>
 				</a>
 			</div>
 		</main>
@@ -902,7 +895,7 @@
 	</div>
 
 
-	<script src="js/app.min.js?_v=20240117194840"></script>
+	<script src="js/app.min.js?_v=20240118021548"></script>
 </body>
 
 </html>

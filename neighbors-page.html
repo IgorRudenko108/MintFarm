@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240117194840">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240118021548">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -218,7 +218,7 @@
 											<img src="img/header/burger-mint-1.svg" alt="Icon">
 
 											<div class="burger__market-input-wrapper">
-												<input class="burger__market-input" type="number">
+												<input class="burger__market-input" type="number" inputmode="numeric">
 											</div>
 										</div>
 
@@ -226,7 +226,7 @@
 
 										<div class="burger__market-item">
 											<div class="burger__market-input-wrapper">
-												<input class="burger__market-input" type="number">
+												<input class="burger__market-input" type="number" inputmode="numeric">
 											</div>
 
 											<img src="img/header/burger-coin-2.svg" alt="Icon">
@@ -1022,22 +1022,28 @@
 
 			<div class="neighbors__bottom-controls">
 				<!-- <button data-popup="#popup-statistic" class="game-catalog__button"> -->
-				<button data-popup="#popup-neighbors-success" class="game-catalog__button">
-					<div class="game-catalog__icon-wrapper">
-						<picture><source srcset="img/neighbors__page/control-icon-1.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/neighbors__page/control-icon-1.png" width="35" height="35" alt="Icon"></picture>
-					</div>
-				</button>
+				<a data-popup="#popup-neighbors-success" href="#" class="game-catalog__button menubar">
+					<svg width="23" height="23">
+						<use xlink:href="img/icons/icons.svg#m-info"></use>
+					</svg>
 
-				<button data-popup="#popup-message" class="game-catalog__button">
-					<div class="game-catalog__icon-wrapper">
-						<picture><source srcset="img/neighbors__page/control-icon-2.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/neighbors__page/control-icon-2.png" width="35" height="35" alt="Icon"></picture>
-					</div>
-				</button>
+					<h4 class="menubar-title">Информация</h4>
+				</a>
 
-				<a data-popup="#popup-calc" href="#" class="game-catalog__button">
-					<div class="game-catalog__icon-wrapper">
-						<picture><source srcset="img/neighbors__page/control-icon-3.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/neighbors__page/control-icon-3.png" width="35" height="35" alt="Icon"></picture>
-					</div>
+				<a data-popup="#popup-message" href="#" class="game-catalog__button menubar">
+					<svg width="23" height="23">
+						<use xlink:href="img/icons/icons.svg#m-chat"></use>
+					</svg>
+
+					<h4 class="menubar-title">Информация</h4>
+				</a>
+
+				<a data-popup="#popup-calc" href="#" class="game-catalog__button menubar">
+					<svg width="25" height="25">
+						<use xlink:href="img/icons/icons.svg#m-calc"></use>
+					</svg>
+
+					<h4 class="menubar-title">Информация</h4>
 				</a>
 			</div>
 		</main>
@@ -1432,7 +1438,7 @@
 		}
 	</script>
 
-	<script src="js/app.min.js?_v=20240117194840"></script>
+	<script src="js/app.min.js?_v=20240118021548"></script>
 
 </body>
 

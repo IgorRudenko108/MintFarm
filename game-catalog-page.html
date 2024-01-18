@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240117194840">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240118021548">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -218,7 +218,7 @@
 											<img src="img/header/burger-mint-1.svg" alt="Icon">
 
 											<div class="burger__market-input-wrapper">
-												<input class="burger__market-input" type="number">
+												<input class="burger__market-input" type="number" inputmode="numeric">
 											</div>
 										</div>
 
@@ -226,7 +226,7 @@
 
 										<div class="burger__market-item">
 											<div class="burger__market-input-wrapper">
-												<input class="burger__market-input" type="number">
+												<input class="burger__market-input" type="number" inputmode="numeric">
 											</div>
 
 											<img src="img/header/burger-coin-2.svg" alt="Icon">
@@ -332,7 +332,7 @@
 
 							<div class="gc-aside__lider-list">
 								<div class="gc-aside__lider-list-inner">
-									<div class="gc-aside__lider-link active">
+									<div class="gc-aside__lider-link">
 										<div class="gc-aside__lider-image-box">
 											<img class="gc-aside__lider-image" src="img/game-catalog/rating-1.svg" width="15" height="15" alt="Image">
 										</div>
@@ -342,6 +342,20 @@
 												Tschar
 											</span>
 										</div>
+
+										<!-- <div class="gc-aside__lider-link--info">
+                     <div class="gc-aside__lider-link--info-img">
+                        <picture><source srcset="img/game-catalog/avatar-1.webp" type="image/webp"><img src="img/game-catalog/avatar-1.jpg" alt="Image"></picture>
+                     </div>
+
+                     <div class="gc-aside__lider-link--info-body">
+                        <p class="gc-aside__lider-link--info-lvl">30 уровень</p>
+                        <div class="gc-aside__lider-link--info-value">
+                           <span>25.000</span>
+								   <img src="img/present__page/coin-gold.svg" width="20" height="20" alt="Coin gold">
+                        </div>
+                     </div>
+                  </div> -->
 									</div>
 
 									<div class="gc-aside__lider-link">
@@ -641,37 +655,45 @@
 				</div>
 			</div>
 
-			<div class="game-catalog__bottom-controls">
-				<button data-popup="#popup-rich" class="game-catalog__button">
-					<div class="game-catalog__icon-wrapper">
-						<picture><source srcset="img/game-catalog/aside-icon-1.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/game-catalog/aside-icon-1.png" alt="Icon"></picture>
-					</div>
+			<div class="game-catalog__bottom-controls game-catalog__bottom-controls--5">
+				<button data-popup="#popup-rich" class="game-catalog__button menubar">
+					<svg width="22" height="22">
+						<use xlink:href="img/icons/icons.svg#m-top"></use>
+					</svg>
 
-					<h3 class="game-catalog__button-title">Самые богатые</h3>
+					<h4 class="menubar-title">Топ</h4>
 				</button>
 
-				<button data-popup="#popup-neighbours" class="game-catalog__button">
-					<div class="game-catalog__icon-wrapper">
-						<picture><source srcset="img/game-catalog/aside-icon-2.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/game-catalog/aside-icon-2.png" alt="Icon"></picture>
-					</div>
+				<button data-popup="#popup-neighbours" class="game-catalog__button menubar">
+					<svg width="22" height="22">
+						<use xlink:href="img/icons/icons.svg#m-neighbors"></use>
+					</svg>
 
-					<h3 class="game-catalog__button-title">Соседи</h3>
+					<h4 class="menubar-title">Соседи</h4>
 				</button>
 
-				<button data-popup="#popup-status" class="game-catalog__button">
-					<div class="game-catalog__icon-wrapper">
-						<picture><source srcset="img/game-catalog/aside-icon-3.webp" type="image/webp"><img class="game-catalog__button-icon" src="img/game-catalog/aside-icon-3.png" alt="Icon"></picture>
-					</div>
+				<a class="manubar__main-btn" href="plant-page.html">
+					<img src="img/common/m-cat-main.svg" width="30" height="30" alt="Icon">
 
-					<h3 class="game-catalog__button-title">Статус</h3>
+					<span class="tasks__button-span">
+						<img src="img/tasks__page/!.svg" width="8" height="8" alt="Icon">
+					</span>
+				</a>
+
+				<button data-popup="#popup-status" class="game-catalog__button menubar">
+					<svg width="22" height="22">
+						<use xlink:href="img/icons/icons.svg#m-status"></use>
+					</svg>
+
+					<h4 class="menubar-title">Статус</h4>
 				</button>
 
-				<button data-popup="#popup-others" class="game-catalog__button">
-					<div class="game-catalog__icon-wrapper">
-						<img class="game-catalog__button-icon" src="img/game-catalog/dots.svg" width="32" height="32" alt="Icon">
+				<button data-popup="#popup-others" class="game-catalog__button menubar">
+					<div class="menubar-more">
+						<img src="img/common/m-dots.svg" width="14" alt="Icon">
 					</div>
 
-					<h3 class="game-catalog__button-title">Разное</h3>
+					<h4 class="menubar-title">Еще</h4>
 				</button>
 			</div>
 		</main>
@@ -707,7 +729,7 @@
 
 						<div class="gc-aside__lider-list">
 							<div class="gc-aside__lider-list-inner">
-								<div class="gc-aside__lider-link active">
+								<div class="gc-aside__lider-link">
 									<div class="gc-aside__lider-image-box">
 										<img class="gc-aside__lider-image" src="img/game-catalog/rating-1.svg" width="15" height="15" alt="Image">
 									</div>
@@ -949,7 +971,7 @@
 	</div>
 	<!---------------------------------------------------------->
 
-	<script src="js/app.min.js?_v=20240117194840"></script>
+	<script src="js/app.min.js?_v=20240118021548"></script>
 </body>
 
 </html>
