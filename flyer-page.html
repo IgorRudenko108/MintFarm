@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240118150022">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240125152207">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -432,51 +432,102 @@
 			</div>
 
 			<div class="flyer__bottom">
+				<!-- <div class="flyer__bottom-buttons">
+						<div class="flyer__counter saper__counter counter" data-counter>
+							<div class="counter__button counter__button_minus">-</div>
+							<div class="counter__input-box">
+								<div class="saper__item-title">Ставка</div>
+
+								<div class="counter__bottom">
+									<input type="text" placeholder="" value="10">
+									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+								</div>
+							</div>
+							<div class="counter__button counter__button_plus">+</div>
+						</div>
+
+						<button class="flyer__bet-btn">
+							<p class="flyer__bet-btn-text">Поднять ставку</p>
+
+							<div class="flyer__bet-btn-content">
+								+10
+								<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+							</div>
+						</button>
+						
+						<button class="flyer__bet-btn">
+							<p class="flyer__bet-btn-text">Поднять ставку</p>
+
+							<div class="flyer__bet-btn-content">
+								+20
+								<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+							</div>
+						</button>
+
+						<button class="flyer__bet-btn flyer__bet-btn--mobile">
+							<div class="flyer__bet-btn-content">
+								+40
+								<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+							</div>
+						</button>
+
+						<button class="flyer__bet-btn">
+							<p class="flyer__bet-btn-text">Поднять ставку</p>
+
+							<div class="flyer__bet-btn-content">
+								+50
+								<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+							</div>
+						</button>
+					</div> -->
+
 				<div class="flyer__bottom-buttons">
-					<div class="flyer__counter saper__counter counter" data-counter>
-						<div class="counter__button counter__button_minus">-</div>
+					<div class="flyer__counter saper__counter counter" data-counter="">
+						<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt($('#bet').val())-1);$('#bet').change();" class="counter__button counter__button_minus">-</div>
 						<div class="counter__input-box">
 							<div class="saper__item-title">Ставка</div>
 
 							<div class="counter__bottom">
-								<input type="text" placeholder="" value="10">
+								<input type="number" readonly="" placeholder="" id="bet" oninput="if (!window.__cfRLUnblockHandlers) return false;     $('.saper__balans-error').hide();
+			" value="10">
 								<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
 							</div>
 						</div>
-						<div class="counter__button counter__button_plus">+</div>
+						<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())+1);$('#bet').change();" class="counter__button counter__button_plus">+</div>
 					</div>
 
-					<button class="flyer__bet-btn">
-						<p class="flyer__bet-btn-text">Поднять ставку</p>
+					<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val(1);$('#bet').change();" class="flyer__bet-btn">
+						<p class="flyer__bet-btn-text">Ставка</p>
 
 						<div class="flyer__bet-btn-content">
-							+10
-							<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+							MIN
+
 						</div>
 					</button>
 
-					<button class="flyer__bet-btn">
-						<p class="flyer__bet-btn-text">Поднять ставку</p>
+					<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt(parseInt($('#bet').val())/2));$('#bet').change();" class="flyer__bet-btn">
+						<p class="flyer__bet-btn-text">Ставка</p>
 
 						<div class="flyer__bet-btn-content">
-							+20
-							<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+							X / 2
+
 						</div>
 					</button>
 
-					<button class="flyer__bet-btn flyer__bet-btn--mobile">
+					<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*2);$('#bet').change();" class="flyer__bet-btn">
+						<p class="flyer__bet-btn-text">Ставка</p>
 						<div class="flyer__bet-btn-content">
-							+40
-							<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+							X * 2
+
 						</div>
 					</button>
 
-					<button class="flyer__bet-btn">
-						<p class="flyer__bet-btn-text">Поднять ставку</p>
+					<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val($('#bal').text());$('#bet').change();" class="flyer__bet-btn">
+						<p class="flyer__bet-btn-text">Ставка</p>
 
 						<div class="flyer__bet-btn-content">
-							+50
-							<img class="flyer__bet-mint" src="img/common/mint.svg" width="16" height="16" alt="Image">
+							MAX
+
 						</div>
 					</button>
 				</div>
@@ -1161,7 +1212,7 @@
 			}));
 	</script>
 
-	<script src="js/app.min.js?_v=20240118150022"></script>
+	<script src="js/app.min.js?_v=20240125152207"></script>
 </body>
 
 </html>

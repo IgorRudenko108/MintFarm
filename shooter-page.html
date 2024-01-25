@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240118150022">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240125152207">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -529,61 +529,63 @@
 
 					<div class="shooter__bottom-wrapper">
 						<div class="shooter__bottom shooter__bottom--1">
-							<div class="shooter__bottom-item saper__bottom-item shooter__bottom-item--1 saper__counter counter" data-counter>
-								<div class="counter__button counter__button_minus">-</div>
+							<div class="shooter__bottom-item saper__bottom-item shooter__bottom-item--1 saper__counter counter" data-counter="">
+
+								<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt($('#bet').val())-1);$('#bet').change();" class="counter__button counter__button_minus">-</div>
 								<div class="counter__input-box">
 									<div class="saper__item-title">Ставка</div>
 
 									<div class="counter__bottom">
-										<input type="number" placeholder="" value="1" inputmode="numeric">
+										<input type="number" min="1" id="bet" readonly="" oninput="if (!window.__cfRLUnblockHandlers) return false;     $('.saper__balans-error').hide();
+	" placeholder="" value="10">
 										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
 									</div>
 								</div>
-								<div class="counter__button counter__button_plus">+</div>
+								<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())+1);$('#bet').change();" class="counter__button counter__button_plus">+</div>
 							</div>
 
-							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
-								<div class="saper__item-title">Поднять ставку</div>
+							<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val(1);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
+								<div class="saper__item-title">Ставка</div>
 
 								<div class="saper__stavka-value saper__item-value">
-									+ 10
-									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									MIN
+
 								</div>
 							</button>
 
-							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--3">
-								<div class="saper__item-title">Поднять ставку</div>
+							<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt(parseInt($('#bet').val())/2));$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--3">
+								<div class="saper__item-title">Ставка</div>
 
 								<div class="saper__stavka-value saper__item-value">
-									+ 20
-									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									X / 2
+
 								</div>
 							</button>
 
-							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--4">
-								<div class="saper__item-title">Поднять ставку</div>
+							<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*2);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--4">
+								<div class="saper__item-title">Ставка</div>
 
 								<div class="saper__stavka-value saper__item-value">
-									+ 30
-									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									X * 2
+
 								</div>
 							</button>
 
-							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--5">
-								<div class="saper__item-title">Поднять ставку</div>
+							<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*4);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--5">
+								<div class="saper__item-title">Ставка</div>
 
 								<div class="saper__stavka-value saper__item-value">
-									+ 50
-									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									X * 4
+
 								</div>
 							</button>
 
-							<button class="shooter__bottom-item saper__bottom-item shooter__bottom-item--6">
-								<div class="saper__item-title">Поднять ставку</div>
+							<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val($('#bal').text());$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--6">
+								<div class="saper__item-title">Ставка</div>
 
 								<div class="saper__stavka-value saper__item-value">
-									+ 100
-									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									MAX
+
 								</div>
 							</button>
 
@@ -591,7 +593,7 @@
 								<div class="saper__item-title">Баланс</div>
 
 								<div class="saper__item-value">
-									350
+									<span id="bal">0</span>
 									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
 								</div>
 
@@ -1464,7 +1466,7 @@
 			}));
 	</script>
 
-	<script src="js/app.min.js?_v=20240118150022"></script>
+	<script src="js/app.min.js?_v=20240125152207"></script>
 
 </body>
 
