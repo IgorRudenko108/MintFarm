@@ -27263,9 +27263,6 @@ button.swiper-pagination-bullet {
 
   .saper__tabs {
     border-radius: 10px !important;
-  }
-
-  .saper__tabs {
     height: 30px;
     padding: 5px;
     display: -webkit-box;
@@ -27280,7 +27277,7 @@ button.swiper-pagination-bullet {
     gap: 3px;
     border-radius: 8px;
     background-color: #D4DDFF;
-    width: 50%;
+    width: 50% !important;
   }
 
   .saper__tabs-title {
@@ -27833,11 +27830,11 @@ button.swiper-pagination-bullet {
   }
 
   .min-max__btn:active {
-    background-color: #fff;
+    background-color: #fff !important;
   }
 
   .min-max__btn:focus-visible {
-    background-color: #fff;
+    background-color: #fff !important;
   }
 
   .exchange__page {
@@ -28600,9 +28597,9 @@ button.swiper-pagination-bullet {
   }
 
   .min-max__btn:hover {
-    background-color: #fff;
-    -webkit-transition: background-color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out;
+    background-color: #fff !important;
+    -webkit-transition: background-color 0.2s ease-in-out !important;
+    transition: background-color 0.2s ease-in-out !important;
   }
 }
 
