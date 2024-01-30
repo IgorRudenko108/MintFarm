@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240125154139">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240130221128">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -544,60 +544,66 @@
 								<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())+1);$('#bet').change();" class="counter__button counter__button_plus">+</div>
 							</div>
 
-							<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val(1);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
-								<div class="saper__item-title">Ставка</div>
+							<div class="shooter__bottom-item-wrapper shooter__bottom-item-wrapper--1">
+								<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val(1);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--2">
+									<div class="saper__item-title">Ставка</div>
 
-								<div class="saper__stavka-value saper__item-value">
-									MIN
+									<div class="saper__stavka-value saper__item-value">
+										MIN
 
+									</div>
+								</button>
+
+								<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt(parseInt($('#bet').val())/2));$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--3">
+									<div class="saper__item-title">Ставка</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										X / 2
+
+									</div>
+								</button>
+							</div>
+
+							<div class="shooter__bottom-item-wrapper shooter__bottom-item-wrapper--2">
+								<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*2);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--4">
+									<div class="saper__item-title">Ставка</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										X * 2
+
+									</div>
+								</button>
+
+								<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*4);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--5">
+									<div class="saper__item-title">Ставка</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										X * 4
+
+									</div>
+								</button>
+
+								<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val($('#bal').text());$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--6">
+									<div class="saper__item-title">Ставка</div>
+
+									<div class="saper__stavka-value saper__item-value">
+										MAX
+
+									</div>
+								</button>
+							</div>
+
+							<div class="shooter__balans--wrapper">
+								<div class="shooter__bottom-item saper__bottom-item shooter__bottom-item--7 saper__balans">
+									<div class="saper__item-title">Баланс</div>
+
+									<div class="saper__item-value">
+										<span id="bal">0</span>
+										<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									</div>
+
+									<div class="saper__balans-error">Выше вашего баланса</div>
 								</div>
-							</button>
-
-							<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt(parseInt($('#bet').val())/2));$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--3">
-								<div class="saper__item-title">Ставка</div>
-
-								<div class="saper__stavka-value saper__item-value">
-									X / 2
-
-								</div>
-							</button>
-
-							<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*2);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--4">
-								<div class="saper__item-title">Ставка</div>
-
-								<div class="saper__stavka-value saper__item-value">
-									X * 2
-
-								</div>
-							</button>
-
-							<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*4);$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--5">
-								<div class="saper__item-title">Ставка</div>
-
-								<div class="saper__stavka-value saper__item-value">
-									X * 4
-
-								</div>
-							</button>
-
-							<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val($('#bal').text());$('#bet').change();" class="shooter__bottom-item saper__bottom-item shooter__bottom-item--6">
-								<div class="saper__item-title">Ставка</div>
-
-								<div class="saper__stavka-value saper__item-value">
-									MAX
-
-								</div>
-							</button>
-
-							<div class="shooter__bottom-item saper__bottom-item shooter__bottom-item--7 saper__balans">
-								<div class="saper__item-title">Баланс</div>
-
-								<div class="saper__item-value">
-									<span id="bal">0</span>
-									<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
-								</div>
-
-								<div class="saper__balans-error">Выше вашего баланса</div>
 							</div>
 						</div>
 
@@ -1466,7 +1472,7 @@
 			}));
 	</script>
 
-	<script src="js/app.min.js?_v=20240125154139"></script>
+	<script src="js/app.min.js?_v=20240130221128"></script>
 
 </body>
 

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240125154139">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240130221128">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -348,6 +348,18 @@
 				</div>
 
 				<div class="knight__bottom">
+					<div class="knight__balans-box">
+						<div class="knight__balans saper__bottom-item saper__balans">
+							<div class="saper__item-title">Баланс</div>
+
+							<div class="saper__item-value">
+								<span id="bal">0</span>
+								<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+							</div>
+
+							<div class="saper__balans-error">Выше вашего баланса</div>
+						</div>
+					</div>
 
 					<div class="knight__bottom-item--half-left knight__bottom-item saper__counter counter" data-counter="">
 						<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt($('#bet').val())-1);$('#bet').change();" class="counter__button counter__button_minus">-</div>
@@ -364,37 +376,41 @@
 						<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())+1);$('#bet').change();" class="counter__button counter__button_plus">+</div>
 					</div>
 
-					<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val(1);$('#bet').change();" class="knight__bottom-item">
-						<div class="saper__item-title">Ставка</div>
+					<div class="knight__bottom-item-wrapper knight__bottom-item-wrapper--1">
+						<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val(1);$('#bet').change();" class="knight__bottom-item">
+							<div class="saper__item-title">Ставка</div>
 
-						<div class="saper__stavka-value saper__item-value">
-							MIN
-						</div>
-					</button>
+							<div class="saper__stavka-value saper__item-value">
+								MIN
+							</div>
+						</button>
 
-					<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt(parseInt($('#bet').val())/2));$('#bet').change();" class="knight__bottom-item">
-						<div class="saper__item-title">Ставка</div>
+						<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt(parseInt($('#bet').val())/2));$('#bet').change();" class="knight__bottom-item">
+							<div class="saper__item-title">Ставка</div>
 
-						<div class="saper__stavka-value saper__item-value">
-							X / 2
-						</div>
-					</button>
+							<div class="saper__stavka-value saper__item-value">
+								X / 2
+							</div>
+						</button>
+					</div>
 
-					<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*2);$('#bet').change();" class="knight__bottom-item">
-						<div class="saper__item-title">Ставка</div>
+					<div class="knight__bottom-item-wrapper knight__bottom-item-wrapper--2">
+						<button onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())*2);$('#bet').change();" class="knight__bottom-item">
+							<div class="saper__item-title">Ставка</div>
 
-						<div class="saper__stavka-value saper__item-value">
-							X * 2
-						</div>
-					</button>
+							<div class="saper__stavka-value saper__item-value">
+								X * 2
+							</div>
+						</button>
 
-					<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val($('#bal').text());$('#bet').change();" class="knight__bottom-item">
-						<div class="saper__item-title">Ставка</div>
+						<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('#bet').val($('#bal').text());$('#bet').change();" class="knight__bottom-item">
+							<div class="saper__item-title">Ставка</div>
 
-						<div class="saper__stavka-value saper__item-value">
-							MAX
-						</div>
-					</button>
+							<div class="saper__stavka-value saper__item-value">
+								MAX
+							</div>
+						</button>
+					</div>
 
 					<div class="knight__dogs-count--pc">
 						<p class="knight__dogs-count-text">Выберите количество псов</p>
@@ -431,7 +447,7 @@
 							<div class="saper__item-title">Количество псов</div>
 
 							<div class="counter__bottom">
-								<input type="text" placeholder="" value="1">
+								<input type="number" inputmode="numeric" placeholder="" value="1">
 							</div>
 						</div>
 						<div class="counter__button counter__button_plus">+</div>
@@ -1017,7 +1033,7 @@
 		// -- /knight__music--mobile ----------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20240125154139"></script>
+	<script src="js/app.min.js?_v=20240130221128"></script>
 </body>
 
 </html>
