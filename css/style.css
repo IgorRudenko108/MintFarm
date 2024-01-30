@@ -27808,8 +27808,8 @@ button.swiper-pagination-bullet {
     background-color: #fff;
     padding: 0;
     height: 55px;
-    border-radius: 15px;
-    overflow: hidden;
+    border-radius: 15px !important;
+    overflow: hidden !important;
     min-width: 160px;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -34407,6 +34407,10 @@ button.swiper-pagination-bullet {
   .knight__bottom-item--half-right {
     -ms-grid-column-span: 2 !important;
     grid-column: span 2 !important;
+  }
+
+  .knight__inner {
+    height: calc(100dvh - 240px) !important;
   }
 
   .knight__bottom-item-wrapper {
