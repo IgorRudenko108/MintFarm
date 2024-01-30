@@ -27877,6 +27877,7 @@ button.swiper-pagination-bullet {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 0 15px 15px 0;
   }
 
   .no-webp .saper__page .saper__counter .counter__button_minus{
@@ -27886,6 +27887,7 @@ button.swiper-pagination-bullet {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 15px 0 0 15px;
   }
 
   .popup-saper-info__bottom--2 {
