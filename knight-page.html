@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240130234334">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240131193842">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -364,13 +364,15 @@
 					<div class="knight__bottom-item--half-left knight__bottom-item saper__counter counter" data-counter="">
 						<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<2)$('#bet').val(2);$('#bet').val(parseInt($('#bet').val())-1);$('#bet').change();" class="counter__button counter__button_minus">-</div>
 						<div class="counter__input-box">
-							<div class="saper__item-title">Ставка</div>
+							<div class="saper__item-title">
+								Ставка
+								<img src="img/common/mint.svg" width="12" height="12" alt="Icon">
+							</div>
 
 							<div class="counter__bottom">
 								<input type="number" placeholder="" id="bet" oninput="if (!window.__cfRLUnblockHandlers) return false;    
 									$('.saper__balans-error').hide();
-									" readonly="" value="10">
-								<img src="img/common/mint.svg" width="16" height="16" alt="Icon">
+									" readonly="" value="1">
 							</div>
 						</div>
 						<div onclick="if (!window.__cfRLUnblockHandlers) return false; if($('#bet').val()=='')$('#bet').val(1);if(parseInt($('#bet').val())==undefined || parseInt($('#bet').val())<1)$('#bet').val(1);$('#bet').val(parseInt($('#bet').val())+1);$('#bet').change();" class="counter__button counter__button_plus">+</div>
@@ -1033,7 +1035,7 @@
 		// -- /knight__music--mobile ----------------------------------------------
 	</script>
 
-	<script src="js/app.min.js?_v=20240130234334"></script>
+	<script src="js/app.min.js?_v=20240131193842"></script>
 </body>
 
 </html>

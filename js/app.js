@@ -6065,7 +6065,16 @@
                 if (target.closest(".counter__button")) {
                     if (target.closest(".counter").querySelector("input").value == "" && (target.classList.contains("counter__button_minus") || target.classList.contains("counter__button_plus"))) target.closest(".counter").querySelector("input").value = 0;
                     let value = parseInt(target.closest(".counter").querySelector("input").value);
-                    if (target.classList.contains("counter__button_plus")) value++; else --value;
+                    if (target.classList.contains("counter__button_plus")) {
+                        value++;
+                        let input = document.getElementById("bet");
+                        input.addEventListener("input", autoresize);
+                        function autoresize() {
+                            let size = input.scrollWidth;
+                            input.style.width = size + "px";
+                            input.style.transition = "none";
+                        }
+                    } else --value;
                     if (value <= 0) {
                         value = 0;
                         target.closest(".counter").querySelector(".counter__button_minus").classList.add("disabled");
